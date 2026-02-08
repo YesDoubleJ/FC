@@ -1,0 +1,137 @@
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__65:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:355)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)

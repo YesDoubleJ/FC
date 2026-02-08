@@ -1,0 +1,431 @@
+<color=#ffaa00>warn:</color> [01:43:09:9460] <color=#B4FF32>[AI]</color> <color=#85C1E2><b>BufferedFileLogStorage</b></color> Flush called but already disposed, ignored.
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.Unity.MCP.BufferedFileLogStorage:Flush () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Unity/Logs/BufferedFileLogStorage.cs:52)
+com.IvanMurzak.Unity.MCP.FileLogStorage:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Unity/Logs/FileLogStorage.cs:455)
+com.IvanMurzak.Unity.MCP.UnityLogCollector:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Unity/Logs/UnityLogCollector.cs:121)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:DisposeLogCollector () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.cs:95)
+com.IvanMurzak.Unity.MCP.Editor.Startup:TryDisconnectAndCleanup (string,bool) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.Editor.cs:84)
+com.IvanMurzak.Unity.MCP.Editor.Startup:OnBeforeAssemblyReload () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.Editor.cs:35)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+<color=#ffaa00>warn:</color> [01:43:24:1786] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[1d85b3a1-78be-4fb0-a0bf-7fc4b937114a] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3> (com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3&)
+com.IvanMurzak.McpPlugin.ConnectionManager:EnsureConnection (System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>> (com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>&)
+com.IvanMurzak.McpPlugin.ConnectionManager:InvokeAsync<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData> (string,com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedTools (com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedTools (com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated)
+com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_4>d:MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_4>d> (com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_4>d&)
+com.IvanMurzak.McpPlugin.McpPlugin:<.ctor>b__25_4 (R3.Unit)
+R3.AnonymousObserver`1<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.ThrottleFirst`1/_ThrottleFirst<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.Subject`1<R3.Unit>:OnNext (R3.Unit)
+com.IvanMurzak.McpPlugin.McpToolManager:SetToolEnabled (string,bool)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:ApplyConfigToMcpPlugin (com.IvanMurzak.McpPlugin.IMcpPlugin) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:143)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:BuildMcpPluginIfNeeded () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:74)
+com.IvanMurzak.Unity.MCP.Editor.Startup:.cctor () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.cs:28)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+<color=#ffaa00>warn:</color> [01:43:24:1893] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[1d85b3a1-78be-4fb0-a0bf-7fc4b937114a] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3> (com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3&)
+com.IvanMurzak.McpPlugin.ConnectionManager:EnsureConnection (System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>> (com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>&)
+com.IvanMurzak.McpPlugin.ConnectionManager:InvokeAsync<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData> (string,com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedPrompts (com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedPrompts (com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated)
+com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_5>d:MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_5>d> (com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_5>d&)
+com.IvanMurzak.McpPlugin.McpPlugin:<.ctor>b__25_5 (R3.Unit)
+R3.AnonymousObserver`1<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.ThrottleFirst`1/_ThrottleFirst<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.Subject`1<R3.Unit>:OnNext (R3.Unit)
+com.IvanMurzak.McpPlugin.McpPromptManager:SetPromptEnabled (string,bool)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:ApplyConfigToMcpPlugin (com.IvanMurzak.McpPlugin.IMcpPlugin) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:157)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:BuildMcpPluginIfNeeded () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:74)
+com.IvanMurzak.Unity.MCP.Editor.Startup:.cctor () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.cs:28)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+<color=#ffaa00>warn:</color> [01:43:24:1908] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[1d85b3a1-78be-4fb0-a0bf-7fc4b937114a] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3> (com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3&)
+com.IvanMurzak.McpPlugin.ConnectionManager:EnsureConnection (System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>> (com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>&)
+com.IvanMurzak.McpPlugin.ConnectionManager:InvokeAsync<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData> (string,com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedResources (com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedResources (com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated)
+com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_6>d:MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_6>d> (com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_6>d&)
+com.IvanMurzak.McpPlugin.McpPlugin:<.ctor>b__25_6 (R3.Unit)
+R3.AnonymousObserver`1<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.ThrottleFirst`1/_ThrottleFirst<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.Subject`1<R3.Unit>:OnNext (R3.Unit)
+com.IvanMurzak.McpPlugin.McpResourceManager:SetResourceEnabled (string,bool)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:ApplyConfigToMcpPlugin (com.IvanMurzak.McpPlugin.IMcpPlugin) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:171)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:BuildMcpPluginIfNeeded () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:74)
+com.IvanMurzak.Unity.MCP.Editor.Startup:.cctor () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.cs:28)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+The referenced script (Unknown) on this Behaviour is missing!
+
+Home_CM: Already on NavMesh at (10.00, 0.00, -5.00)
+
+Home_CB: Already on NavMesh at (6.00, 0.00, -14.00)
+
+Away_CM2: Already on NavMesh at (10.00, 0.00, 16.00)
+
+Away_CB: Already on NavMesh at (-6.00, 0.00, 26.00)
+
+Away_ST: Already on NavMesh at (0.00, 0.00, 12.00)
+
+Away_GK: Already on NavMesh at (0.00, 0.00, 48.00)
+
+Home_ST: Already on NavMesh at (0.00, 0.00, -1.00)
+
+Away_CB2: Already on NavMesh at (6.00, 0.00, 26.00)
+
+Home_CB2: Already on NavMesh at (-6.00, 0.00, -14.00)
+
+Home_CM2: Already on NavMesh at (-10.00, 0.00, -5.00)
+
+Away_CM: Already on NavMesh at (-10.00, 0.00, 16.00)
+
+Home_GK: Already on NavMesh at (0.00, 0.00, -48.00)
+
+<b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+<color=green>[PASS]</color> ShootScore_Close
+
+<color=green>[PASS]</color> ShootScore_Far
+
+<color=green>[PASS]</color> ShootScore_Angle
+
+<b>[Unit Tests] Finished.</b>
+
+[MatchManager] HOME KICK OFF!
+
+[MatchManager] Ready...
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-10.00, 0.32, -5.00), Vel=1.220207, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.00, 0.31, 16.00), Vel=1.167153, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.00, 0.29, -48.00), Vel=0.4952367, DesVel=0, RemDist=0
+
+[MatchManager] PLAY!
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-10.00, 0.08, -5.00), Vel=0.4695889, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.00, 0.08, 16.00), Vel=0.451688, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.00, 0.08, -48.00), Vel=0.8760791, DesVel=0, RemDist=0
+
+[AgentMover] Home_CM: OnNav=True, Pos=(10.03, 0.08, -5.00), Vel=0.469589, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(6.02, 0.08, -14.01), Vel=0.4695888, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(10.00, 0.08, 16.03), Vel=0.4516882, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.02, 0.08, 26.02), Vel=0.4516879, DesVel=0, RemDist=0
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.02, 0.08, 12.02), Vel=0.4516881, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.03, 0.08, 47.97), Vel=0.81963, DesVel=0, RemDist=0
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.02, 0.08, -0.92), Vel=0.4695889, DesVel=0, RemDist=0
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 11.17
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.99, 0.08, 26.02), Vel=0.451688, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-5.99, 0.08, -14.03), Vel=0.4695889, DesVel=0, RemDist=0
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.49, 0.08, 1.74), Vel=8.185844, DesVel=9.927036, RemDist=6.712209
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.18, 0.08, 13.39), Vel=1.507066, DesVel=2.352503, RemDist=0.1648946
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.02, 0.08, -45.05), Vel=0.4905155, DesVel=9.974748, RemDist=0.06441353
+
+[AgentMover] Home_CM: OnNav=True, Pos=(9.63, 0.08, 1.47), Vel=8.185846, DesVel=9.974748, RemDist=6.827671
+
+[AgentMover] Home_CB: OnNav=True, Pos=(2.28, 0.08, -17.18), Vel=6.324174, DesVel=10.4798, RemDist=3.546863
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(7.18, 0.08, 11.84), Vel=8.212091, DesVel=9.974748, RemDist=12.81691
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.19, 0.08, 22.42), Vel=1.248518, DesVel=2.073221, RemDist=0.1341881
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.02, 0.08, 6.57), Vel=8.783107, DesVel=10.93231, RemDist=4.955783
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.02, 0.08, 45.04), Vel=0.4576398, DesVel=0.6127886, RemDist=0.05961784
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.02, 0.08, -0.93), Vel=4.375446E-06, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.82, 0.08, 22.41), Vel=8.666637, DesVel=2.490899, RemDist=0.1437912
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-2.34, 0.08, -17.24), Vel=8.64039, DesVel=10.4798, RemDist=2.193702
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.47, 0.08, 6.77), Vel=7.827614, DesVel=9.640903, RemDist=0.9822071
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.18, 0.08, 13.32), Vel=3.238718, DesVel=9.290173, RemDist=0.414565
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.02, 0.08, -45.02), Vel=8.982302, DesVel=0.3344632, RemDist=0.01832314
+
+[AgentMover] Home_CM: OnNav=True, Pos=(8.88, 0.08, 7.41), Vel=3.587278, DesVel=4.228743, RemDist=0.2509998
+
+[AgentMover] Home_CB: OnNav=True, Pos=(0.14, 0.08, -18.23), Vel=2.690799, DesVel=3.833815, RemDist=1.371578
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(3.98, 0.08, 7.53), Vel=8.469518, DesVel=9.974747, RemDist=7.796669
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.18, 0.08, 22.30), Vel=3.391577, DesVel=10.4798, RemDist=0.3978657
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.47, 0.08, 2.96), Vel=7.152558E-07, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.02, 0.08, 45.03), Vel=8.984657, DesVel=0.4242237, RemDist=0.02781446
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.02, 0.08, -0.92), Vel=4.388363E-06, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.82, 0.08, 22.30), Vel=3.379429, DesVel=10.4798, RemDist=0.3952046
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-0.72, 0.08, -19.09), Vel=4.741643, DesVel=10.47612, RemDist=0.5127363
+
+<color=orange>Home_CM Action Rotation Timed Out!</color>
+UnityEngine.Debug:LogWarning (object)
+Game.Scripts.AI.AgentMover:HandleActionRotation () (at Assets/Game/Scripts/AI/AgentMover.cs:436)
+Game.Scripts.AI.AgentMover:Tick () (at Assets/Game/Scripts/AI/AgentMover.cs:159)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:132)
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.53, 0.08, 7.90), Vel=8.718413, DesVel=0.4293863, RemDist=0.0293825
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.16, 0.08, 13.04), Vel=0.2243957, DesVel=0.4719656, RemDist=0.02647505
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.04, 0.08, -45.01), Vel=8.977422, DesVel=0.270177, RemDist=0.01110909
+
+[AgentMover] Home_CM: OnNav=True, Pos=(8.81, 0.08, 7.76), Vel=8.718413, DesVel=0.4368841, RemDist=0.03676366
+
+[AgentMover] Home_CB: OnNav=True, Pos=(0.04, 0.08, -18.47), Vel=2.987327, DesVel=3.617361, RemDist=1.111946
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(1.09, 0.08, 3.29), Vel=8.724357, DesVel=9.974748, RemDist=2.650066
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.16, 0.08, 22.04), Vel=0.08122187, DesVel=0.3422188, RemDist=0.02471725
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.47, 0.08, 2.96), Vel=4.768372E-07, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.07, 0.08, 44.97), Vel=0.1489206, DesVel=9.974749, RemDist=0.04248307
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.02, 0.08, -0.93), Vel=1.323825E-05, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.84, 0.08, 22.04), Vel=0.08122108, DesVel=0.3422185, RemDist=0.0247174
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-0.58, 0.08, -19.41), Vel=2.980316E-08, DesVel=0.3734596, RemDist=0.03244603
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.42, 0.08, 7.74), Vel=1.440265, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.08, 0.08, 12.88), Vel=1.385362, DesVel=0.3188587, RemDist=0.02218205
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.03, 0.08, -45.00), Vel=0.512848, DesVel=0, RemDist=0
+
+[AgentMover] Home_CM: OnNav=True, Pos=(8.96, 0.08, 7.64), Vel=1.440266, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-0.09, 0.08, -18.75), Vel=1.440266, DesVel=2.881798, RemDist=0.8063068
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(0.67, 0.08, 2.70), Vel=1.385362, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.08, 0.08, 21.88), Vel=1.385362, DesVel=10.4798, RemDist=0.02462794
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.48, 0.08, 2.89), Vel=1.385362, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(0.00, 0.08, 45.08), Vel=0.5080082, DesVel=9.974748, RemDist=0.08144411
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.02, 0.08, -0.93), Vel=1.440265, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.91, 0.08, 21.88), Vel=1.385362, DesVel=0.2582407, RemDist=0.0203914
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-0.56, 0.08, -19.63), Vel=1.440266, DesVel=3.257549, RemDist=0.2237734
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.58, 0.08, 7.92), Vel=1.466962, DesVel=1.222252, RemDist=0.04914496
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.16, 0.08, 13.04), Vel=1.141104, DesVel=0.7095519, RemDist=0.02732429
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.04, 0.08, -44.93), Vel=8.769081, DesVel=9.974747, RemDist=0.07136986
+
+[AgentMover] Home_CM: OnNav=True, Pos=(8.77, 0.08, 7.70), Vel=1.461161, DesVel=1.413993, RemDist=0.06462254
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-0.24, 0.08, -18.80), Vel=5.00894, DesVel=3.485156, RemDist=0.6860425
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(0.67, 0.08, 2.70), Vel=0.8826991, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.15, 0.08, 22.00), Vel=8.788032, DesVel=0.2846737, RemDist=0.01126458
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.49, 0.08, 2.86), Vel=0.8826991, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.11, 0.08, 45.04), Vel=8.740158, DesVel=9.974749, RemDist=0.07873557
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.02, 0.08, -0.93), Vel=0.9245796, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.85, 0.08, 22.01), Vel=9.473028, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-0.70, 0.08, -19.68), Vel=5.014117, DesVel=2.542451, RemDist=0.3154575
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.49, 0.08, 7.80), Vel=1.352147, DesVel=9.974748, RemDist=0.1888005
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.15, 0.08, 13.03), Vel=0.4148642, DesVel=9.974748, RemDist=0.05642507
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.03, 0.08, -45.08), Vel=2.980235E-07, DesVel=9.974748, RemDist=0.08163072
+
+[AgentMover] Home_CM: OnNav=True, Pos=(8.91, 0.08, 7.65), Vel=1.355672, DesVel=9.974748, RemDist=0.1797057
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-0.29, 0.08, -18.79), Vel=2.534798, DesVel=6.166826, RemDist=0.6392763
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(0.67, 0.08, 2.70), Vel=1.937153E-07, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.16, 0.08, 22.04), Vel=0.2096759, DesVel=10.4798, RemDist=0.03812491
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.49, 0.08, 2.86), Vel=1.937152E-07, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.06, 0.08, 45.01), Vel=5.960588E-08, DesVel=0.6050253, RemDist=0.01765878
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.02, 0.08, -0.93), Vel=1.348715E-05, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.85, 0.08, 22.03), Vel=0.7561104, DesVel=0.9062772, RemDist=0.0558629
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-0.74, 0.08, -19.68), Vel=2.540039, DesVel=6.978548, RemDist=0.375614
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.29, 0.08, 7.63), Vel=1.371785, DesVel=9.974748, RemDist=0.06976377
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.08, 0.08, 12.90), Vel=1.319492, DesVel=0.5027647, RemDist=0.03864655
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.03, 0.08, -45.00), Vel=0.7276168, DesVel=9.974748, RemDist=0.009389648
+
+[AgentMover] Home_CM: OnNav=True, Pos=(9.11, 0.08, 7.59), Vel=1.371785, DesVel=9.974748, RemDist=0.06857944
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-0.15, 0.08, -18.89), Vel=1.371785, DesVel=2.225339, RemDist=0.6580868
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(0.67, 0.08, 2.70), Vel=1.319492, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.07, 0.08, 21.89), Vel=1.319492, DesVel=0.4273269, RemDist=0.03160778
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.49, 0.08, 2.86), Vel=1.319492, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.03, 0.08, 44.98), Vel=0.7649021, DesVel=9.974749, RemDist=0.02172591
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.03, 0.08, -0.92), Vel=1.371785, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.93, 0.08, 21.89), Vel=1.319492, DesVel=0.4293682, RemDist=0.03179621
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-0.48, 0.08, -19.83), Vel=1.371785, DesVel=4.516179, RemDist=0.377634
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.60, 0.08, 7.99), Vel=0.9669992, DesVel=9.974748, RemDist=0.02545262
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.17, 0.08, 13.09), Vel=0.9301368, DesVel=0.4957533, RemDist=0.001633909
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.03, 0.08, -45.00), Vel=0.6792121, DesVel=9.974749, RemDist=0.01912383
+
+[AgentMover] Home_CM: OnNav=True, Pos=(8.79, 0.08, 7.82), Vel=0.9669991, DesVel=9.974748, RemDist=0.02978787
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-0.49, 0.08, -18.77), Vel=0.9669991, DesVel=2.881681, RemDist=0.5594024
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(0.67, 0.08, 2.70), Vel=0.9301369, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.17, 0.08, 22.09), Vel=0.9301369, DesVel=0.4534149, RemDist=0.0007115767
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.49, 0.08, 2.81), Vel=0.9301369, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.06, 0.08, 44.99), Vel=0.7288615, DesVel=9.974749, RemDist=0.01855448
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.03, 0.08, -0.91), Vel=0.9669992, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.83, 0.08, 22.11), Vel=0.9301369, DesVel=0.346193, RemDist=0.0217556
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-0.82, 0.08, -19.72), Vel=0.9669991, DesVel=3.096719, RemDist=0.4400896
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.41, 0.08, 7.75), Vel=8.98598, DesVel=0.4880604, RemDist=0.009575024
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.10, 0.08, 12.91), Vel=8.985053, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.04, 0.08, -45.00), Vel=1.192095E-07, DesVel=0.6523505, RemDist=0.06536316
+
+[AgentMover] Home_CM: OnNav=True, Pos=(9.03, 0.08, 7.62), Vel=4.399758, DesVel=0.7533751, RemDist=0.06726013
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-0.26, 0.08, -18.91), Vel=0.9827088, DesVel=6.963612, RemDist=0.5920485
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(0.67, 0.08, 2.70), Vel=0.3739189, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.11, 0.08, 21.93), Vel=9.439224, DesVel=0.2373922, RemDist=0.0246043
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.49, 0.08, 2.81), Vel=0.3739189, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(0.02, 0.08, 45.01), Vel=3.576279E-07, DesVel=0.6604879, RemDist=0.04937657
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.02, 0.08, -0.91), Vel=0.3948916, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.89, 0.08, 21.93), Vel=9.439223, DesVel=0.2392204, RemDist=0.02438024
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-0.57, 0.08, -19.86), Vel=1.215997, DesVel=6.164181, RemDist=0.417882
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.59, 0.08, 7.95), Vel=1.649543, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.14, 0.08, 12.99), Vel=1.586662, DesVel=9.974748, RemDist=0.0905516
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.06, 0.08, -45.00), Vel=0.910071, DesVel=9.974748, RemDist=0.01381528
+
+[AgentMover] Home_CM: OnNav=True, Pos=(8.80, 0.08, 7.78), Vel=1.649543, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-0.52, 0.08, -18.81), Vel=1.649543, DesVel=4.571613, RemDist=0.5311727
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(0.67, 0.08, 2.70), Vel=1.586662, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.16, 0.08, 22.04), Vel=1.586662, DesVel=10.4798, RemDist=0.03592116
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.49, 0.08, 2.81), Vel=1.586662, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.07, 0.08, 44.99), Vel=0.847144, DesVel=9.974748, RemDist=0.02437064
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.03, 0.08, -0.92), Vel=1.649543, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.84, 0.08, 22.04), Vel=1.586662, DesVel=10.4798, RemDist=0.03592103
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-0.83, 0.08, -19.76), Vel=1.649543, DesVel=4.518396, RemDist=0.4696419
+

@@ -1,0 +1,126 @@
+Home_CM: Already on NavMesh at (10.00, 0.00, -5.00)
+
+Home_CB: Already on NavMesh at (6.00, 0.00, -14.00)
+
+Away_CM2: Already on NavMesh at (10.00, 0.00, 16.00)
+
+Away_CB: Already on NavMesh at (-6.00, 0.00, 26.00)
+
+Away_ST: Already on NavMesh at (0.00, 0.00, 12.00)
+
+Away_GK: Already on NavMesh at (0.00, 0.00, 48.00)
+
+Home_ST: Already on NavMesh at (0.00, 0.00, -1.00)
+
+Away_CB2: Already on NavMesh at (6.00, 0.00, 26.00)
+
+Home_CB2: Already on NavMesh at (-6.00, 0.00, -14.00)
+
+Home_CM2: Already on NavMesh at (-10.00, 0.00, -5.00)
+
+Away_CM: Already on NavMesh at (-10.00, 0.00, 16.00)
+
+Home_GK: Already on NavMesh at (0.00, 0.00, -48.00)
+
+<b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+<color=green>[PASS]</color> ShootScore_Close
+
+<color=green>[PASS]</color> ShootScore_Far
+
+<color=green>[PASS]</color> ShootScore_Angle
+
+<b>[Unit Tests] Finished.</b>
+
+[MatchManager] HOME KICK OFF!
+
+[MatchManager] Ready...
+
+[MatchManager] PLAY!
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 11.65
+
+<color=green>Away_CM SKILL: DEFENSE BURST</color>
+
+<color=green>Away_CM2 SKILL: DEFENSE BURST</color>
+
+<color=green>Away_ST SKILL: DEFENSE BURST</color>
+
+<color=green>Away_CB SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_CB SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+<color=red>Home_ST Aborting Kick: Ball Lost (23.36m)!</color>
+
+<color=green>Away_ST SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+<color=red>Home_ST Aborting Kick: Ball Lost (20.56m)!</color>
+
+<color=red>Home_ST Aborting Kick: Ball Lost (25.94m)!</color>
+
+[AgentBallHandler] Home_ST lost ball. Dist: 27.54
+
+[MatchManager] Away_CB has the ball!
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.50, Angle: 31.13
+
+<color=green>Home_CM SKILL: TACKLE on Away_CB</color>
+
+<color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+<color=red>Away_CB Aborting Kick: Ball Lost (27.66m)!</color>
+
+<color=green>Home_CM SKILL: DEFENSE BURST</color>
+
+<color=green>Home_ST SKILL: TACKLE on Away_CB</color>
+
+<color=green>Home_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+<color=green>Home_CM2 SKILL: DEFENSE BURST</color>
+
+[AgentBallHandler] Away_CB lost ball. Dist: 24.17
+
+[MatchManager] Home_CB2 has the ball!
+
+[AgentBallHandler] Home_CB2 CLAIMED BALL. Dist: 1.44, Angle: 10.99
+
+<color=red>Home_CB2 Aborting Kick: Ball Lost (18.20m)!</color>
+
+<color=green>Away_CM SKILL: TACKLE on Home_CB2</color>
+
+<color=green>Away_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+<color=red>Home_CB2 Aborting Kick: Ball Lost (18.47m)!</color>
+
+<color=green>Away_CB SKILL: TACKLE on Home_CB2</color>
+
+<color=green>Away_CB SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+<color=green>Away_CM2 SKILL: TACKLE on Home_CB2</color>
+
+<color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_CB2 lost ball. Dist: 21.36
+
+[MatchManager] Away_CB has the ball!
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.42, Angle: 14.18
+
+<color=green>Home_ST SKILL: DEFENSE BURST</color>
+
+<color=green>Home_CM SKILL: TACKLE on Away_CB</color>
+
+<color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+<color=green>Home_CM2 SKILL: TACKLE on Away_CB</color>
+
+<color=green>Home_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+<color=green>Home_ST SKILL: TACKLE on Away_CB</color>
+
+<color=green>Home_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+

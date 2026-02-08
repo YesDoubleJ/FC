@@ -1,0 +1,84 @@
+The referenced script (Unknown) on this Behaviour is missing!
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+Auto-Added ActionLogDisplay to MatchManager
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+NullReferenceException: Object reference not set to an instance of an object
+Game.Scripts.AI.AgentMover.Initialize (Game.Scripts.AI.HybridAgentController controller) (at Assets/Game/Scripts/AI/AgentMover.cs:46)
+Game.Scripts.AI.HybridAgentController.Awake () (at Assets/Game/Scripts/AI/HybridAgentController.cs:77)
+
+<b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+<color=green>[PASS]</color> ShootScore_Close
+
+<color=green>[PASS]</color> ShootScore_Far
+
+<color=green>[PASS]</color> ShootScore_Angle
+
+<b>[Unit Tests] Finished.</b>
+
+[MatchManager] HOME KICK OFF!
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:428)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+Setting angular velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_angularVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:429)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+[MatchManager] SetPlayersActiveState(False) - Agent Count: 0
+
+[MatchManager] Ready...
+
+[MatchManager] SetPlayersActiveState(True) - Agent Count: 0
+
+[MatchManager] PLAY!
+

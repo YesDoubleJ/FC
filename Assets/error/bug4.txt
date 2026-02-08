@@ -1,0 +1,585 @@
+<color=#ffaa00>warn:</color> [06:33:32:0612] <color=#B4FF32>[AI]</color> <color=#85C1E2><b>BufferedFileLogStorage</b></color> Flush called but already disposed, ignored.
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.Unity.MCP.BufferedFileLogStorage:Flush () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Unity/Logs/BufferedFileLogStorage.cs:52)
+com.IvanMurzak.Unity.MCP.FileLogStorage:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Unity/Logs/FileLogStorage.cs:455)
+com.IvanMurzak.Unity.MCP.UnityLogCollector:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Unity/Logs/UnityLogCollector.cs:121)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:DisposeLogCollector () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.cs:95)
+com.IvanMurzak.Unity.MCP.Editor.Startup:TryDisconnectAndCleanup (string,bool) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.Editor.cs:84)
+com.IvanMurzak.Unity.MCP.Editor.Startup:OnBeforeAssemblyReload () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.Editor.cs:35)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+<color=#ffaa00>warn:</color> [06:33:32:6614] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> DisconnectImmediate called on disposed object. Ignoring.
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.BaseHubConnector:DisconnectImmediate ()
+com.IvanMurzak.McpPlugin.McpPlugin:Dispose ()
+com.IvanMurzak.McpPlugin.McpPlugin:Finalize ()
+
+<color=#ffaa00>warn:</color> [06:33:47:0960] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[9d3d480f-0d41-431e-893f-3c479776650a] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3> (com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3&)
+com.IvanMurzak.McpPlugin.ConnectionManager:EnsureConnection (System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>> (com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>&)
+com.IvanMurzak.McpPlugin.ConnectionManager:InvokeAsync<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData> (string,com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedTools (com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedTools (com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated)
+com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_4>d:MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_4>d> (com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_4>d&)
+com.IvanMurzak.McpPlugin.McpPlugin:<.ctor>b__25_4 (R3.Unit)
+R3.AnonymousObserver`1<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.ThrottleFirst`1/_ThrottleFirst<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.Subject`1<R3.Unit>:OnNext (R3.Unit)
+com.IvanMurzak.McpPlugin.McpToolManager:SetToolEnabled (string,bool)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:ApplyConfigToMcpPlugin (com.IvanMurzak.McpPlugin.IMcpPlugin) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:143)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:BuildMcpPluginIfNeeded () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:74)
+com.IvanMurzak.Unity.MCP.Editor.Startup:.cctor () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.cs:28)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+<color=#ffaa00>warn:</color> [06:33:47:1070] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[9d3d480f-0d41-431e-893f-3c479776650a] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3> (com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3&)
+com.IvanMurzak.McpPlugin.ConnectionManager:EnsureConnection (System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>> (com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>&)
+com.IvanMurzak.McpPlugin.ConnectionManager:InvokeAsync<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData> (string,com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedPrompts (com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedPrompts (com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated)
+com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_5>d:MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_5>d> (com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_5>d&)
+com.IvanMurzak.McpPlugin.McpPlugin:<.ctor>b__25_5 (R3.Unit)
+R3.AnonymousObserver`1<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.ThrottleFirst`1/_ThrottleFirst<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.Subject`1<R3.Unit>:OnNext (R3.Unit)
+com.IvanMurzak.McpPlugin.McpPromptManager:SetPromptEnabled (string,bool)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:ApplyConfigToMcpPlugin (com.IvanMurzak.McpPlugin.IMcpPlugin) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:157)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:BuildMcpPluginIfNeeded () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:74)
+com.IvanMurzak.Unity.MCP.Editor.Startup:.cctor () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.cs:28)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+<color=#ffaa00>warn:</color> [06:33:47:1080] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[9d3d480f-0d41-431e-893f-3c479776650a] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3> (com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3&)
+com.IvanMurzak.McpPlugin.ConnectionManager:EnsureConnection (System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>> (com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>&)
+com.IvanMurzak.McpPlugin.ConnectionManager:InvokeAsync<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData> (string,com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedResources (com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedResources (com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated)
+com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_6>d:MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_6>d> (com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_6>d&)
+com.IvanMurzak.McpPlugin.McpPlugin:<.ctor>b__25_6 (R3.Unit)
+R3.AnonymousObserver`1<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.ThrottleFirst`1/_ThrottleFirst<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.Subject`1<R3.Unit>:OnNext (R3.Unit)
+com.IvanMurzak.McpPlugin.McpResourceManager:SetResourceEnabled (string,bool)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:ApplyConfigToMcpPlugin (com.IvanMurzak.McpPlugin.IMcpPlugin) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:171)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:BuildMcpPluginIfNeeded () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.Build.cs:74)
+com.IvanMurzak.Unity.MCP.Editor.Startup:.cctor () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.cs:28)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+The referenced script (Unknown) on this Behaviour is missing!
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:368)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting angular velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_angularVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:369)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:261)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:206)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:142)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: GoalNet is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Tag: Wall is not defined.
+UnityEngine.GameObject:CompareTag (string)
+Game.Scripts.Physics.BallAerodynamics:OnCollisionEnter (UnityEngine.Collision) (at Assets/Game/Scripts/Physics/BallAerodynamics.cs:96)
+UnityEngine.Physics:OnSceneContact (UnityEngine.PhysicsScene,intptr,int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+Screen position out of view frustum (screen pos 0.000000, 0.000000) (Camera rect 0 0 1920 1080)
+UnityEngine.SendMouseEvents:DoSendMouseEvents (int)
+
+<color=#ffaa00>warn:</color> [06:33:57:9622] <color=#B4FF32>[AI]</color> <color=#85C1E2><b>BufferedFileLogStorage</b></color> Flush called but already disposed, ignored.
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.Unity.MCP.BufferedFileLogStorage:Flush () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Unity/Logs/BufferedFileLogStorage.cs:52)
+com.IvanMurzak.Unity.MCP.FileLogStorage:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Unity/Logs/FileLogStorage.cs:455)
+com.IvanMurzak.Unity.MCP.UnityLogCollector:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/Unity/Logs/UnityLogCollector.cs:121)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:DisposeLogCollector () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Runtime/UnityMcpPlugin.cs:95)
+com.IvanMurzak.Unity.MCP.Editor.Startup:TryDisconnectAndCleanup (string,bool) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.Editor.cs:84)
+com.IvanMurzak.Unity.MCP.Editor.Startup:OnApplicationQuitting () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@71a1da29e6f5/Editor/Scripts/Startup.Editor.cs:34)
+UnityEngine.Application:Internal_ApplicationQuit ()
+

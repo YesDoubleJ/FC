@@ -1,0 +1,56 @@
+# Implement Phase 1: 3D Physics Framework
+
+## Goal Description
+Start the development of the "Lotto Soccer Team" 3D Match Engine by establishing the core physics layer.
+As per `3D_축구_매치_엔진_개발_문서화.md`, the first step is to implement realistic ball ballistics using Unity's PhysX and a custom Magnus effect script.
+
+## User Review Required
+> [!NOTE]
+> This plan focuses purely on the physics foundation (Ball). It does not yet include AI or Player Movement.
+
+## Proposed Changes
+
+### Assets/Game/Scripts/Physics
+#### [NEW] [BallAerodynamics.cs](file:///d:/unity/workspace/로또축구단/Assets/Game/Scripts/Physics/BallAerodynamics.cs)
+- Implement `MagnusForce` calculation based on angular velocity and velocity.
+- Apply force to the Rigidbody in `FixedUpdate`.
+- Expose `magnusCoefficient` for tuning.
+
+#### [NEW] [BallPhysicsConfig.cs](file:///d:/unity/workspace/로또축구단/Assets/Game/Scripts/Physics/BallPhysicsConfig.cs)
+- A ScriptableObject or Singleton to hold global physics constants (Air density, etc) if needed, or simply keep it within BallAerodynamics for now. (Standardizing on `BallAerodynamics` first).
+
+### Assets/Game/Prefabs
+#### [NEW] [Ball.prefab](file:///d:/unity/workspace/로또축구단/Assets/Game/Prefabs/Ball.prefab)
+- **Rigidbody Settings**:
+    - Mass: 0.43kg (FIFA standard)
+    - Drag: 0.5 (Tune for air resistance)
+    - Angular Drag: 0.8
+    - Collision Detection: Continuous Dynamic
+- **Collider**: SphereCollider
+- **Material**: `SoccerBall` (PhysicMaterial)
+
+### Assets/Game/PhysicsMaterials
+#### [NEW] [SoccerBall.physicMaterial](file:///d:/unity/workspace/로또축구단/Assets/Game/PhysicsMaterials/SoccerBall.physicMaterial)
+- Bounciness: 0.7
+- Dynamic Friction: 0.6
+- Static Friction: 0.6
+- Friction Combine: Average
+- Bounce Combine: Average (or Maximum based on testing)
+
+#### [NEW] [Grass.physicMaterial](file:///d:/unity/workspace/로또축구단/Assets/Game/PhysicsMaterials/Grass.physicMaterial)
+- Bounciness: 0.1
+- Friction: High (0.6-0.8)
+
+## Verification Plan
+
+### Automated Tests
+- None at this stage (Unity Physics is hard to unit test without a PlayMode test runner setup, dependent on user environment).
+
+### Manual Verification
+1.  **Scene Setup**: Create a test scene `Assets/Game/Scenes/PhysicsTest.unity`.
+2.  **Ball Drop Test**: Place the Ball prefab in the air. Verify it falls and bounces realistically on a Plane with `Grass` material.
+3.  **Magnus Effect Test**:
+    - Add a script `TestKicker.cs` that applies a strong forward force + strong side spin (torque) to the ball.
+    - Run the scene.
+    - Observe if the ball curves in the air (Banana shoot).
+    - If it curves, the Magnus effect is working.

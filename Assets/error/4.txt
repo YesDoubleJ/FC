@@ -1,0 +1,1142 @@
+Home_CM: Already on NavMesh at (10.00, 0.00, -5.00)
+
+Home_CB: Already on NavMesh at (6.00, 0.00, -14.00)
+
+Away_CM2: Already on NavMesh at (10.00, 0.00, 16.00)
+
+Away_CB: Already on NavMesh at (-6.00, 0.00, 26.00)
+
+Away_ST: Already on NavMesh at (0.00, 0.00, 12.00)
+
+Away_GK: Already on NavMesh at (0.00, 0.00, 48.00)
+
+Home_ST: Already on NavMesh at (0.00, 0.00, -1.00)
+
+Away_CB2: Already on NavMesh at (6.00, 0.00, 26.00)
+
+Home_CB2: Already on NavMesh at (-6.00, 0.00, -14.00)
+
+Home_CM2: Already on NavMesh at (-10.00, 0.00, -5.00)
+
+Away_CM: Already on NavMesh at (-10.00, 0.00, 16.00)
+
+Home_GK: Already on NavMesh at (0.00, 0.00, -48.00)
+
+<b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+<color=green>[PASS]</color> ShootScore_Close
+
+<color=green>[PASS]</color> ShootScore_Far
+
+<color=green>[PASS]</color> ShootScore_Angle
+
+<b>[Unit Tests] Finished.</b>
+
+[MatchManager] HOME KICK OFF!
+
+[MatchManager] Ready...
+
+[MatchManager] PLAY!
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.31
+
+<color=cyan>Home_CM is expecting a PASS at (9.25, 0.08, 8.92)!</color>
+
+[KICK-EXEC] Home_ST Kicked! Force: 17.3, Mode: VelocityChange
+
+[MatchManager] Away_CM2 has the ball!
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.97, Angle: 41.60
+
+<color=green>Home_CM2 SKILL: DEFENSE BURST</color>
+
+<color=green>Home_CM SKILL: DEFENSE BURST</color>
+
+<color=green>Home_ST SKILL: TACKLE on Away_CM2</color>
+
+<color=green>Home_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.87, Angle: 20.09
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.87, Angle: 20.06
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 20.79
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 19.36
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.01, Angle: 19.09
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.01, Angle: 18.57
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.08, Angle: 18.68
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.08, Angle: 18.45
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.08, Angle: 17.67
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.07, Angle: 44.37
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.88, Angle: 43.88
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.88, Angle: 41.58
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.88, Angle: 40.62
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.74, Angle: 43.94
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.74, Angle: 43.06
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.93, Angle: 44.34
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.93, Angle: 44.10
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.06, Angle: 23.92
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.91, Angle: 29.34
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.91, Angle: 29.09
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 35.29
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 35.57
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 35.18
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 34.82
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.06, Angle: 17.10
+
+<color=green>Away_CM2 SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 14.62
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 14.75
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.81, Angle: 14.92
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.85, Angle: 20.85
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.84, Angle: 21.44
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.83, Angle: 22.11
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 22.75
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 17.36
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.78, Angle: 17.71
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 18.10
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.80, Angle: 16.97
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.78, Angle: 17.43
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.78, Angle: 17.11
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 17.80
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 18.61
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.80, Angle: 16.37
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 17.10
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.73, Angle: 17.90
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 18.75
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 16.74
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 17.76
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.68, Angle: 18.82
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 16.68
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 17.91
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 19.30
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 16.05
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 17.26
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 16.26
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.68, Angle: 18.24
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.63, Angle: 19.76
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 15.59
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 16.86
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 15.20
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 16.32
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 18.01
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 14.95
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 16.26
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 17.68
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 14.63
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 15.68
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 16.00
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.64, Angle: 17.17
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.58, Angle: 19.04
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.54, Angle: 20.87
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 14.29
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.73, Angle: 14.37
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.67, Angle: 15.62
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.62, Angle: 17.08
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 13.45
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 14.38
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.67, Angle: 15.46
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 13.35
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 14.22
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 15.19
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 12.68
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.67, Angle: 14.79
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 13.89
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.65, Angle: 15.03
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.61, Angle: 16.27
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 13.05
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 13.98
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.65, Angle: 14.97
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 12.90
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 13.79
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 13.01
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 14.03
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.65, Angle: 15.10
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.61, Angle: 16.26
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 12.52
+
+<color=green>Away_CM2 SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.80, Angle: 44.89
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 44.58
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 44.60
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 43.44
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 42.35
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 41.28
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.97, Angle: 41.95
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.97, Angle: 39.96
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.97, Angle: 38.90
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.00, Angle: 38.34
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.00, Angle: 36.25
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.00, Angle: 35.21
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.03, Angle: 34.86
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.03, Angle: 33.22
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.03, Angle: 32.39
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.03, Angle: 31.54
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.05, Angle: 31.08
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.05, Angle: 29.65
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.05, Angle: 29.21
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.08, Angle: 29.14
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.08, Angle: 27.84
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.08, Angle: 27.52
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.08, Angle: 27.19
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 27.02
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 25.65
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 25.63
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 20.53
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 19.50
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 19.27
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 19.03
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.07, Angle: 18.91
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.07, Angle: 17.95
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.07, Angle: 17.70
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.04, Angle: 17.62
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.04, Angle: 16.59
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 17.08
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 16.20
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 16.04
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 16.71
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 15.89
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 15.70
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 16.34
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 15.64
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 16.16
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 15.63
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 15.54
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 16.47
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 15.93
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 16.40
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 15.82
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 15.80
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 15.54
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 16.48
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 16.22
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 16.18
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 16.02
+
+<color=green>Away_CM2 SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.05, Angle: 43.26
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.05, Angle: 42.61
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.03, Angle: 41.49
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.03, Angle: 39.40
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.03, Angle: 38.59
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.03, Angle: 37.78
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 36.90
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 34.89
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 34.79
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 34.66
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 31.98
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.90, Angle: 31.52
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.90, Angle: 28.44
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.90, Angle: 28.45
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.83, Angle: 28.50
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.83, Angle: 27.03
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.83, Angle: 28.11
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 29.39
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 27.90
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 28.95
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 30.43
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 28.97
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 30.03
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 31.05
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 31.87
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 30.28
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 29.24
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.90, Angle: 28.06
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.90, Angle: 26.58
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.90, Angle: 25.72
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.90, Angle: 24.86
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 23.70
+
+<color=green>Away_CB SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_CB SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 27.43
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.87, Angle: 27.87
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 23.12
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.64, Angle: 24.69
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.58, Angle: 27.51
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.10, Angle: 20.33
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 18.79
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.09, Angle: 18.33
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 20.09
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.09, Angle: 16.67
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 21.42
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.98, Angle: 19.03
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.78, Angle: 17.77
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.97, Angle: 17.23
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 18.93
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.90, Angle: 16.07
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 18.00
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.89, Angle: 15.37
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 19.38
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.89, Angle: 15.31
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.67, Angle: 20.65
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.77, Angle: 17.64
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 16.97
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.77, Angle: 17.55
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 18.00
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.77, Angle: 17.56
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 19.15
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.72, Angle: 20.17
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 18.70
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.72, Angle: 20.17
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.73, Angle: 19.73
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.72, Angle: 20.18
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 20.85
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.72, Angle: 20.20
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 22.06
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 25.35
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 20.20
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 25.09
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 21.14
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 25.09
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 22.07
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.61, Angle: 30.43
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.81, Angle: 20.92
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.61, Angle: 29.91
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.78, Angle: 21.62
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.61, Angle: 29.91
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 22.34
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.60, Angle: 34.88
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 22.08
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.60, Angle: 34.18
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.80, Angle: 22.66
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.60, Angle: 34.16
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.78, Angle: 23.28
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.61, Angle: 38.12
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.84, Angle: 23.77
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.61, Angle: 37.22
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 24.23
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.61, Angle: 37.20
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.81, Angle: 24.67
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 40.69
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.85, Angle: 25.97
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 39.82
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.84, Angle: 26.35
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 39.71
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.83, Angle: 26.74
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 39.57
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.81, Angle: 27.17
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 43.82
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.87, Angle: 26.72
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 42.89
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 27.13
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.64, Angle: 42.57
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.85, Angle: 27.65
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.68, Angle: 44.16
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 28.79
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.68, Angle: 42.90
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 29.38
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.69, Angle: 44.52
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.89, Angle: 29.75
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.69, Angle: 43.67
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 30.22
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.69, Angle: 43.22
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 30.67
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.73, Angle: 44.29
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.91, Angle: 30.60
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.73, Angle: 43.51
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.89, Angle: 31.02
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.73, Angle: 43.31
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.89, Angle: 31.37
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.80, Angle: 42.88
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 32.67
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.80, Angle: 42.49
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.92, Angle: 33.05
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.80, Angle: 42.33
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.91, Angle: 33.36
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.82, Angle: 43.93
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.95, Angle: 34.35
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.82, Angle: 43.61
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 34.83
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.82, Angle: 43.31
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 35.21
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.82, Angle: 43.03
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.91, Angle: 35.66
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.87, Angle: 43.67
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.97, Angle: 36.05
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.87, Angle: 43.39
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.96, Angle: 36.57
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.87, Angle: 43.10
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 37.08
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.91, Angle: 44.02
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.00, Angle: 37.41
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.91, Angle: 43.77
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.98, Angle: 38.07
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.91, Angle: 43.70
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.96, Angle: 38.63
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.95, Angle: 44.53
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.02, Angle: 39.08
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.95, Angle: 43.55
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.98, Angle: 40.36
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.02, Angle: 42.78
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.05, Angle: 40.95
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.02, Angle: 42.61
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.03, Angle: 41.39
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.02, Angle: 42.50
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.01, Angle: 42.11
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.02, Angle: 41.11
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.00, Angle: 42.47
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.98, Angle: 43.79
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.97, Angle: 44.04
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.00, Angle: 41.48
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.97, Angle: 43.63
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.97, Angle: 43.45
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.02, Angle: 41.03
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.00, Angle: 41.60
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.97, Angle: 42.78
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.97, Angle: 42.78
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.97, Angle: 43.01
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.95, Angle: 44.59
+
+[MatchManager] Away_CB has the ball!
+
+[AgentBallHandler] Away_CB CLAIMED BALL. Dist: 0.97, Angle: 43.05
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.05, Angle: 31.85
+
+<color=green>Away_CB SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_CB SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 11.85
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.82, Angle: 12.11
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.81, Angle: 12.56
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 13.62
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.92, Angle: 13.27
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.91, Angle: 13.08
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 14.81
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 15.31
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.78, Angle: 14.27
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 14.91
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 15.08
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 14.13
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 15.41
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.73, Angle: 14.38
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 15.41
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 14.37
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.62, Angle: 16.44
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 13.81
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.61, Angle: 16.21
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 13.59
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 13.52
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.62, Angle: 15.76
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 13.43
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.64, Angle: 15.33
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 13.96
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.59, Angle: 16.70
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 13.11
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 14.12
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.65, Angle: 15.13
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.68, Angle: 14.16
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.60, Angle: 16.34
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.70, Angle: 13.87
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.64, Angle: 15.16
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 12.98
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 14.03
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.64, Angle: 15.20
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 12.57
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 13.38
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.68, Angle: 14.25
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 12.55
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 13.41
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.68, Angle: 14.35
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 12.80
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 13.77
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.66, Angle: 14.84
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.62, Angle: 15.98
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 12.62
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 13.43
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.68, Angle: 14.30
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 12.93
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.68, Angle: 14.20
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.64, Angle: 15.35
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 12.69
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 13.58
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.67, Angle: 14.59
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 12.90
+
+<color=green>Away_CM2 SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 14.46
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.64, Angle: 15.79
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.84, Angle: 17.71
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 19.04
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.73, Angle: 15.41
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.73, Angle: 15.41
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.73, Angle: 15.41
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.62, Angle: 17.69
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.62, Angle: 17.68
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.62, Angle: 17.68
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 16.74
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 16.74
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 16.73
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 16.07
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 16.06
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 16.06
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 15.41
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 15.40
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 15.40
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.99, Angle: 15.40
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.07, Angle: 9.27
+
+<color=cyan>Home_CM is expecting a PASS at (8.27, 0.08, 13.49)!</color>
+
+[KICK-EXEC] Home_ST Kicked! Force: 17.2, Mode: VelocityChange
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 11.98
+
+<color=green>Away_CM2 SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 12.51
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 13.56
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 13.55
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 13.57
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 17.50
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 17.45
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.75, Angle: 17.51
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 21.99
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 21.60
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 21.52
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 25.34
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 24.72
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.77, Angle: 24.62
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 27.34
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 26.43
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.76, Angle: 25.63
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 27.14
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 26.45
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.74, Angle: 26.27
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 28.06
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 27.41
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 27.33
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.71, Angle: 27.25
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.81, Angle: 27.84
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.81, Angle: 27.16
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.81, Angle: 26.78
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 26.94
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 26.36
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 25.97
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.88, Angle: 25.64
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 26.11
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 25.60
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 25.58
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.95, Angle: 26.05
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.95, Angle: 25.60
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.95, Angle: 25.54
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.95, Angle: 26.07
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.95, Angle: 25.67
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.95, Angle: 25.60
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.95, Angle: 25.53
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.92, Angle: 26.32
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.92, Angle: 25.97
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.92, Angle: 25.55
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.89, Angle: 26.18
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.89, Angle: 25.86
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.89, Angle: 25.51
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.83, Angle: 26.83
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.83, Angle: 26.63
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 27.46
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 27.32
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 27.29
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.79, Angle: 27.20
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.00, Angle: 23.07
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 28.63
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.00, Angle: 23.28
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 28.55
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.00, Angle: 23.20
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.72, Angle: 28.49
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.87, Angle: 23.47
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.80, Angle: 25.81
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.87, Angle: 23.54
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.80, Angle: 25.77
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.87, Angle: 23.36
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.80, Angle: 25.63
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.81, Angle: 26.14
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 23.44
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.81, Angle: 25.98
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 23.44
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.81, Angle: 26.30
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.86, Angle: 23.54
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.75, Angle: 32.92
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 18.64
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.75, Angle: 32.26
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 19.40
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.75, Angle: 32.89
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.09, Angle: 20.02
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.87, Angle: 36.06
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.87, Angle: 35.36
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.87, Angle: 34.65
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.87, Angle: 34.04
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.95, Angle: 35.37
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.95, Angle: 34.30
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.95, Angle: 33.67
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.02, Angle: 34.11
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.02, Angle: 33.28
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.02, Angle: 33.03
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.06, Angle: 33.42
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.06, Angle: 32.42
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.06, Angle: 32.17
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.09, Angle: 32.36
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.09, Angle: 31.34
+
+<color=red>Home_ST Aborting Kick: Ball Lost (1.89m)!</color>
+
+[MatchManager] Home_CM has the ball!
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.09, Angle: 27.75
+
+<color=green>Away_CM2 SKILL: TACKLE on Home_CM</color>
+
+<color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.05, Angle: 44.14
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.00, Angle: 26.29
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.00, Angle: 27.86
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.00, Angle: 28.50
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.83, Angle: 32.35
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.83, Angle: 34.21
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.83, Angle: 34.54
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.65, Angle: 36.38
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.65, Angle: 36.07
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.65, Angle: 36.04
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.85, Angle: 30.99
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.85, Angle: 30.72
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.07, Angle: 27.00
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.07, Angle: 26.81
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.07, Angle: 26.83
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.04, Angle: 42.79
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.04, Angle: 41.46
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.04, Angle: 41.28
+
+[MatchManager] Home_CM has the ball!
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.04, Angle: 9.45
+

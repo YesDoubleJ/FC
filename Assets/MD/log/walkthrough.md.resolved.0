@@ -1,0 +1,43 @@
+# Phase 1: 3D Physics Framework Walkthrough
+
+I have implemented the foundational physics layer for the match engine. This includes the physics properties of the ball and the Magnus effect for curved shots.
+
+## Changes Made
+
+### 1. Physics Logic
+- **[BallAerodynamics.cs](file:///d:/unity/workspace/로또축구단/Assets/Game/Scripts/Physics/BallAerodynamics.cs)**: Calculates and applies the Magnus force (lift) based on the ball's spin (angular velocity).
+- **[PhysicsSetupTools.cs](file:///d:/unity/workspace/로또축구단/Assets/Game/Scripts/Editor/PhysicsSetupTools.cs)**: An editor utility to automatically generate the calibrated Ball prefab.
+
+### 2. Physics Materials
+- **[SoccerBall.physicMaterial](file:///d:/unity/workspace/로또축구단/Assets/Game/PhysicsMaterials/SoccerBall.physicMaterial)**: Configured with high bounciness (0.7) and moderate friction to mimic a real football.
+- **[Grass.physicMaterial](file:///d:/unity/workspace/로또축구단/Assets/Game/PhysicsMaterials/Grass.physicMaterial)**: Configured with low bounciness (0.1) and high friction to represent pitch conditions.
+
+## Verification Steps
+
+Since I cannot run the Unity Editor directly, please perform the following steps to verify the implementation:
+
+### Step 1: Generate the Ball Prefab
+1. In Unity Editor, click the new menu item: **Tools > LottoSoccer > Create Ball Prefab**.
+2. Verify that a [Ball](file:///d:/unity/workspace/%EB%A1%9C%EB%98%90%EC%B6%95%EA%B5%AC%EB%8B%A8/Assets/Game/Scripts/Editor/PhysicsSetupTools.cs#10-57) prefab is created in `Assets/Game/Prefabs`.
+3. Select the prefab and check:
+   - **Rigidbody**: Mass is **0.43**.
+   - **Sphere Collider**: Material is **SoccerBall**.
+   - **BallAerodynamics**: Script is attached.
+
+### Step 2: Physics Test Scene
+1. Create a new Scene (e.g., `PhysicsTest`).
+2. Create a Plane and set its material to default (or green).
+3. **Important**: Assign the `Grass` Physic Material to the Plane's Mesh Collider.
+   - Drag `Assets/Game/PhysicsMaterials/Grass` onto the Collider's "Material" slot.
+4. Drag the [Ball](file:///d:/unity/workspace/%EB%A1%9C%EB%98%90%EC%B6%95%EA%B5%AC%EB%8B%A8/Assets/Game/Scripts/Editor/PhysicsSetupTools.cs#10-57) prefab into the scene in the air.
+5. Press **Play**.
+   - **Expected Result**: The ball should bounce realistically (lose height over time and eventually roll to a stop).
+
+### Step 3: Magnus Effect Test (Optional Fun)
+1. Add a temporary script to the ball or a separate object that applies torque to the ball instantly on Start.
+   ```csharp
+   GetComponent<Rigidbody>().AddForce(Vector3.forward * 20f, ForceMode.Impulse);
+   GetComponent<Rigidbody>().AddTorque(Vector3.up * 50f, ForceMode.Impulse); // Side spin
+   ```
+2. Press Play.
+3. **Expected Result**: The ball should curve in the air (Banana shoot).

@@ -1,0 +1,246 @@
+Home_CM: Already on NavMesh at (10.00, 0.00, -5.00)
+
+Home_CB: Already on NavMesh at (6.00, 0.00, -14.00)
+
+Away_CM2: Already on NavMesh at (10.00, -1.00, 16.00)
+
+Away_CB: Already on NavMesh at (-6.00, 0.00, 26.00)
+
+Away_ST: Already on NavMesh at (0.00, 0.00, 12.00)
+
+Away_GK: Already on NavMesh at (0.00, 0.00, 48.00)
+
+Home_ST: Already on NavMesh at (0.00, 0.00, -1.00)
+
+Away_CB2: Already on NavMesh at (6.00, 0.00, 26.00)
+
+Home_CB2: Already on NavMesh at (-6.00, 0.00, -14.00)
+
+Auto-Added ActionLogDisplay to MatchManager
+
+Home_CM2: Already on NavMesh at (-10.00, 0.00, -5.00)
+
+Away_CM: Already on NavMesh at (-10.00, -1.00, 16.00)
+
+Home_GK: Already on NavMesh at (0.00, 0.00, -48.00)
+
+<b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+<color=green>[PASS]</color> ShootScore_Close
+
+<color=green>[PASS]</color> ShootScore_Far
+
+<color=green>[PASS]</color> ShootScore_Angle
+
+<b>[Unit Tests] Finished.</b>
+
+[MatchManager] HOME KICK OFF!
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:428)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+Setting angular velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_angularVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:429)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+[MatchManager] SetPlayersActiveState(False) - Agent Count: 9
+
+[MatchManager] Ready...
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.99, 0.34, -4.98), Vel=46.45309, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.01, 0.34, 16.01), Vel=44.19882, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.05, 0.31, -44.99), Vel=3933.599, DesVel=4.5, RemDist=17.67431
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Away_CM Executing. AgentActive=True
+
+[MatchManager] SetPlayersActiveState(True) - Agent Count: 12
+
+[MatchManager] Enabling Agent: Home_CM
+
+[MatchManager] Enabling Agent: Home_CB
+
+[MatchManager] Enabling Agent: Away_CM2
+
+[MatchManager] Enabling Agent: Away_CB
+
+[MatchManager] Enabling Agent: Away_ST
+
+[MatchManager] Enabling Agent: Away_GK
+
+[MatchManager] Enabling Agent: Home_ST
+
+[MatchManager] Enabling Agent: Away_CB2
+
+[MatchManager] Enabling Agent: Home_CB2
+
+[MatchManager] Enabling Agent: Home_CM2
+
+Failed to create agent because it is not close enough to the NavMesh
+UnityEngine.AI.NavMeshAgent:Warp (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:SetPlayersActiveState (bool) (at Assets/Game/Scripts/Managers/MatchManager.cs:336)
+Game.Scripts.Managers.MatchManager/<KickOffRoutine>d__61:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:300)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+"Resume" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:set_isStopped (bool)
+Game.Scripts.Managers.MatchManager:SetPlayersActiveState (bool) (at Assets/Game/Scripts/Managers/MatchManager.cs:337)
+Game.Scripts.Managers.MatchManager/<KickOffRoutine>d__61:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:300)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[MatchManager] Enabling Agent: Away_CM
+
+Failed to create agent because it is not close enough to the NavMesh
+UnityEngine.AI.NavMeshAgent:Warp (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:SetPlayersActiveState (bool) (at Assets/Game/Scripts/Managers/MatchManager.cs:336)
+Game.Scripts.Managers.MatchManager/<KickOffRoutine>d__61:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:300)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+"Resume" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:set_isStopped (bool)
+Game.Scripts.Managers.MatchManager:SetPlayersActiveState (bool) (at Assets/Game/Scripts/Managers/MatchManager.cs:337)
+Game.Scripts.Managers.MatchManager/<KickOffRoutine>d__61:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:300)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[MatchManager] Enabling Agent: Home_GK
+
+Failed to create agent because it is not close enough to the NavMesh
+UnityEngine.AI.NavMeshAgent:Warp (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:SetPlayersActiveState (bool) (at Assets/Game/Scripts/Managers/MatchManager.cs:336)
+Game.Scripts.Managers.MatchManager/<KickOffRoutine>d__61:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:300)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+"Resume" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:set_isStopped (bool)
+Game.Scripts.Managers.MatchManager:SetPlayersActiveState (bool) (at Assets/Game/Scripts/Managers/MatchManager.cs:337)
+Game.Scripts.Managers.MatchManager/<KickOffRoutine>d__61:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:300)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[MatchManager] PLAY!
+
+"GetRemainingDistance" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:get_remainingDistance ()
+Game.Scripts.AI.AgentMover:Tick () (at Assets/Game/Scripts/AI/AgentMover.cs:109)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:120)
+
+[AgentMover] Home_CM2: OnNav=False, Pos=(127813.10, 0.31, -111310.60), Vel=3.791846E+07, DesVel=0, RemDist=Infinity
+
+"GetRemainingDistance" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:get_remainingDistance ()
+Game.Scripts.AI.AgentMover:Tick () (at Assets/Game/Scripts/AI/AgentMover.cs:109)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:120)
+
+[AgentMover] Away_CM: OnNav=False, Pos=(121420.90, 0.30, -106081.90), Vel=3.607493E+07, DesVel=0, RemDist=Infinity
+
+"GetRemainingDistance" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:get_remainingDistance ()
+Game.Scripts.AI.AgentMover:Tick () (at Assets/Game/Scripts/AI/AgentMover.cs:109)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:120)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:41)
+
+[AgentMover] Home_GK: OnNav=False, Pos=(271381.30, 0.18, -14250890.00), Vel=3.188743E+09, DesVel=0, RemDist=Infinity
+
+[AgentMover] Home_CM: OnNav=True, Pos=(10.00, 0.37, -5.00), Vel=0.4610828, DesVel=0, RemDist=0
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[AgentMover] Home_CB: OnNav=True, Pos=(6.00, 0.37, -14.00), Vel=0.4610829, DesVel=0, RemDist=0
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(10.00, 0.36, 14.00), Vel=0.4436964, DesVel=0, RemDist=0
+
+[RootState] Away_CM2 Executing. AgentActive=True
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.00, 0.36, 24.00), Vel=0.4436963, DesVel=0, RemDist=0
+
+[RootState] Away_CB Executing. AgentActive=True
+
+[AgentMover] Away_ST: OnNav=True, Pos=(0.00, 0.36, 10.00), Vel=0.4436962, DesVel=0, RemDist=0
+
+[RootState] Away_ST Executing. AgentActive=True
+
+[AgentMover] Away_GK: OnNav=True, Pos=(0.00, 0.30, 48.00), Vel=0.7284071, DesVel=0, RemDist=0
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.00, 0.37, -0.90), Vel=0.4610829, DesVel=0, RemDist=0
+
+<color=green>[POSSESSION] Set to Home_ST</color>
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.91
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(6.00, 0.36, 24.00), Vel=0.4436966, DesVel=0, RemDist=0
+
+[RootState] Away_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-6.00, 0.37, -14.00), Vel=0.4610828, DesVel=0, RemDist=0
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+<color=cyan>PREDICTIVE PASS: Home_ST -> Home_CM (Lead: 7.3m)</color>
+
+<color=cyan><b>Home_ST</b> PASS to Home_CM</color>
+
+<color=cyan>Home_CM is expecting a PASS at (9.95, -0.04, 2.33)!</color>
+
+<color=grey>[POSSESSION] Cleared (Ball in air)</color>
+
+<color=green>[POSSESSION] Set to Home_ST</color>
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.52
+
+<color=green>Away_CB2 SKILL: DEFENSE BURST</color>
+
+"GetRemainingDistance" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:get_remainingDistance ()
+Game.Scripts.AI.AgentMover:Tick () (at Assets/Game/Scripts/AI/AgentMover.cs:109)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:120)
+
+[AgentMover] Home_CM2: OnNav=False, Pos=(-152610.10, 0.20, 132875.80), Vel=1.261219, DesVel=0, RemDist=Infinity
+
+"GetRemainingDistance" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:get_remainingDistance ()
+Game.Scripts.AI.AgentMover:Tick () (at Assets/Game/Scripts/AI/AgentMover.cs:109)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:120)
+
+[AgentMover] Away_CM: OnNav=False, Pos=(-144978.80, 0.20, 126679.60), Vel=1.216745, DesVel=0, RemDist=Infinity
+
+"GetRemainingDistance" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:get_remainingDistance ()
+Game.Scripts.AI.AgentMover:Tick () (at Assets/Game/Scripts/AI/AgentMover.cs:109)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:120)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:41)
+
+[AgentMover] Home_GK: OnNav=False, Pos=(-323986.10, 0.06, 17013150.00), Vel=0.660565, DesVel=0, RemDist=Infinity
+
+[AgentMover] Home_CM: OnNav=True, Pos=(-1666.58, 0.32, 66326.37), Vel=1.55122E+07, DesVel=9.000001, RemDist=Infinity
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-42167.16, 0.32, -31063.88), Vel=1.224361E+07, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(-5005.03, 0.32, -52609.83), Vel=1.235859E+07, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(6702.52, 0.32, -47271.38), Vel=1.11677E+07, DesVel=0, RemDist=0
+
+[AgentMover] Away_ST: OnNav=True, Pos=(2411.82, 0.32, -16133.62), Vel=3815505, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-2143.54, 0.24, -25827.89), Vel=6070066, DesVel=4.5, RemDist=150.8661
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-8.74, 0.32, -5.69), Vel=65656.88, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(-7289.97, 0.32, -30813.60), Vel=7408563, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(31248.99, 0.32, -23083.69), Vel=9082031, DesVel=0, RemDist=0
+

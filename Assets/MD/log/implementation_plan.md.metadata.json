@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Phase 1: Setting up the 3D Physics Framework for the 3D Match Engine.\nIncludes ball physics configuration, Magnus effect implementation, and physic materials.",
+  "updatedAt": "2026-01-24T11:30:19.022279600Z"
+}

@@ -1,0 +1,462 @@
+[AgentBallHandler] Home_CM2 REJECTED (Angle 156.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.72 | Angle: 151.1° | Forward: (0.05, 0.00, 1.00) | ToBall: (-0.52, 0.00, -0.85)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 151.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.72 | Angle: 151.1° | Forward: (0.05, 0.00, 1.00) | ToBall: (-0.52, 0.00, -0.85)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 151.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.67 | Angle: 146.2° | Forward: (0.03, 0.00, 1.00) | ToBall: (-0.58, 0.00, -0.81)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 146.2° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.70 | Angle: 142.3° | Forward: (0.02, 0.00, 1.00) | ToBall: (-0.63, 0.00, -0.78)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 142.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.75 | Angle: 139.1° | Forward: (0.01, 0.00, 1.00) | ToBall: (-0.66, 0.00, -0.75)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 139.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.78 | Angle: 136.1° | Forward: (0.00, 0.00, 1.00) | ToBall: (-0.69, 0.00, -0.72)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 136.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.77 | Angle: 133.2° | Forward: (-0.01, 0.00, 1.00) | ToBall: (-0.72, 0.00, -0.69)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 133.2° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.77 | Angle: 129.8° | Forward: (-0.03, 0.00, 1.00) | ToBall: (-0.75, 0.00, -0.66)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 129.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.79 | Angle: 127.3° | Forward: (-0.04, 0.00, 1.00) | ToBall: (-0.77, 0.00, -0.64)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 127.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.85 | Angle: 125.3° | Forward: (-0.05, 0.00, 1.00) | ToBall: (-0.78, 0.00, -0.62)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.85 | Angle: 125.3° | Forward: (-0.05, 0.00, 1.00) | ToBall: (-0.78, 0.00, -0.62)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.79 | Angle: 123.1° | Forward: (-0.06, 0.00, 1.00) | ToBall: (-0.80, 0.00, -0.60)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 123.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.82 | Angle: 121.4° | Forward: (-0.07, 0.00, 1.00) | ToBall: (-0.82, 0.00, -0.58)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 121.4° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.86 | Angle: 119.9° | Forward: (-0.07, 0.00, 1.00) | ToBall: (-0.83, 0.00, -0.56)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 119.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.89 | Angle: 118.6° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.84, 0.00, -0.55)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 118.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.89 | Angle: 118.6° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.84, 0.00, -0.55)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 118.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.82 | Angle: 117.4° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.85, 0.00, -0.53)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 117.4° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.86 | Angle: 116.7° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.85, 0.00, -0.52)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 116.7° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.90 | Angle: 116.1° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.86, 0.00, -0.51)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 116.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.90 | Angle: 116.1° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.86, 0.00, -0.51)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 116.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.84 | Angle: 115.3° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.87, 0.00, -0.50)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 115.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.87 | Angle: 115.1° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.87, 0.00, -0.49)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 115.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.91 | Angle: 114.9° | Forward: (-0.07, 0.00, 1.00) | ToBall: (-0.87, 0.00, -0.49)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 114.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.91 | Angle: 114.9° | Forward: (-0.07, 0.00, 1.00) | ToBall: (-0.87, 0.00, -0.49)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 114.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.85 | Angle: 114.8° | Forward: (-0.07, 0.00, 1.00) | ToBall: (-0.88, 0.00, -0.48)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 114.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.88 | Angle: 114.9° | Forward: (-0.06, 0.00, 1.00) | ToBall: (-0.88, 0.00, -0.48)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 114.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.92 | Angle: 115.2° | Forward: (-0.06, 0.00, 1.00) | ToBall: (-0.88, 0.00, -0.48)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 115.2° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.95 | Angle: 115.7° | Forward: (-0.05, 0.00, 1.00) | ToBall: (-0.88, 0.00, -0.48)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 115.7° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.95 | Angle: 115.7° | Forward: (-0.05, 0.00, 1.00) | ToBall: (-0.88, 0.00, -0.48)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 115.7° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.87 | Angle: 116.1° | Forward: (-0.04, 0.00, 1.00) | ToBall: (-0.88, 0.00, -0.47)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 116.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.90 | Angle: 116.6° | Forward: (-0.02, 0.00, 1.00) | ToBall: (-0.88, 0.00, -0.47)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 116.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.96 | Angle: 116.7° | Forward: (-0.01, 0.00, 1.00) | ToBall: (-0.89, 0.00, -0.46)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 116.7° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.95 | Angle: 117.9° | Forward: (0.02, 0.00, 1.00) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 117.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.95 | Angle: 117.9° | Forward: (0.02, 0.00, 1.00) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 117.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.87 | Angle: 118.6° | Forward: (0.03, 0.00, 1.00) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 118.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.89 | Angle: 119.3° | Forward: (0.04, 0.00, 1.00) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 119.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.93 | Angle: 120.1° | Forward: (0.06, 0.00, 1.00) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 120.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.93 | Angle: 120.1° | Forward: (0.06, 0.00, 1.00) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 120.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.87 | Angle: 121.1° | Forward: (0.08, 0.00, 1.00) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 121.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.90 | Angle: 122.1° | Forward: (0.09, 0.00, 1.00) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 122.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 123.1° | Forward: (0.11, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 123.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 123.1° | Forward: (0.11, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 123.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.88 | Angle: 123.9° | Forward: (0.12, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 123.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.90 | Angle: 124.6° | Forward: (0.13, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.46)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 124.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.95 | Angle: 125.3° | Forward: (0.14, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.46)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.95 | Angle: 125.3° | Forward: (0.14, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.46)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.88 | Angle: 125.6° | Forward: (0.15, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.46)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.90 | Angle: 125.8° | Forward: (0.15, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.46)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.93 | Angle: 126.1° | Forward: (0.16, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 126.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 126.4° | Forward: (0.16, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 126.4° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.97 | Angle: 126.5° | Forward: (0.17, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 126.5° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.97 | Angle: 126.5° | Forward: (0.17, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 126.5° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.89 | Angle: 126.5° | Forward: (0.17, 0.00, 0.99) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 126.5° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.90 | Angle: 126.5° | Forward: (0.17, 0.00, 0.98) | ToBall: (-0.89, 0.00, -0.45)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 126.5° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 126.3° | Forward: (0.17, 0.00, 0.98) | ToBall: (-0.90, 0.00, -0.44)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 126.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.96 | Angle: 126.0° | Forward: (0.17, 0.00, 0.98) | ToBall: (-0.90, 0.00, -0.44)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 126.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 125.6° | Forward: (0.17, 0.00, 0.98) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 125.3° | Forward: (0.17, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 125.0° | Forward: (0.16, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 125.0° | Forward: (0.16, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 125.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.88 | Angle: 124.8° | Forward: (0.16, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 124.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.90 | Angle: 124.4° | Forward: (0.15, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 124.4° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 123.9° | Forward: (0.15, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 123.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.94 | Angle: 123.9° | Forward: (0.15, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 123.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.87 | Angle: 123.3° | Forward: (0.14, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 123.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.89 | Angle: 122.7° | Forward: (0.13, 0.00, 0.99) | ToBall: (-0.91, 0.00, -0.42)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 122.7° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.93 | Angle: 122.3° | Forward: (0.13, 0.00, 0.99) | ToBall: (-0.91, 0.00, -0.42)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 122.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.93 | Angle: 122.3° | Forward: (0.13, 0.00, 0.99) | ToBall: (-0.91, 0.00, -0.42)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 122.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.86 | Angle: 122.1° | Forward: (0.12, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 122.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.88 | Angle: 121.8° | Forward: (0.11, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 121.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.92 | Angle: 121.6° | Forward: (0.11, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 121.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.92 | Angle: 121.6° | Forward: (0.11, 0.00, 0.99) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 121.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.87 | Angle: 121.3° | Forward: (0.10, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 121.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.88 | Angle: 120.9° | Forward: (0.09, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 120.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.92 | Angle: 120.5° | Forward: (0.08, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 120.5° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.92 | Angle: 120.5° | Forward: (0.08, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 120.5° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.84 | Angle: 119.8° | Forward: (0.07, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 119.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.86 | Angle: 119.0° | Forward: (0.06, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 119.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.89 | Angle: 118.3° | Forward: (0.05, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 118.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.89 | Angle: 118.3° | Forward: (0.05, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 118.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.83 | Angle: 117.7° | Forward: (0.04, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 117.7° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.84 | Angle: 117.2° | Forward: (0.03, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 117.2° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.86 | Angle: 116.8° | Forward: (0.02, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 116.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.86 | Angle: 115.3° | Forward: (-0.01, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 115.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.86 | Angle: 115.3° | Forward: (-0.01, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 115.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.76 | Angle: 114.7° | Forward: (-0.02, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 114.7° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.77 | Angle: 114.0° | Forward: (-0.03, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 114.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.78 | Angle: 113.1° | Forward: (-0.04, 0.00, 1.00) | ToBall: (-0.90, 0.00, -0.43)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 113.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.79 | Angle: 112.4° | Forward: (-0.05, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.42)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 112.4° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.80 | Angle: 111.6° | Forward: (-0.06, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.42)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 111.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.81 | Angle: 111.0° | Forward: (-0.06, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.42)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 111.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.81 | Angle: 111.0° | Forward: (-0.06, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.42)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 111.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.70 | Angle: 110.4° | Forward: (-0.07, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.41)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 110.4° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.73 | Angle: 109.9° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.41)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 109.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.74 | Angle: 109.7° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.41)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 109.7° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.73 | Angle: 109.6° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.41)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 109.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.74 | Angle: 109.5° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.40)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 109.5° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.74 | Angle: 109.4° | Forward: (-0.08, 0.00, 1.00) | ToBall: (-0.92, 0.00, -0.40)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 109.4° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.75 | Angle: 109.6° | Forward: (-0.07, 0.00, 1.00) | ToBall: (-0.92, 0.00, -0.40)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 109.6° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.75 | Angle: 110.0° | Forward: (-0.07, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.40)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 110.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.75 | Angle: 110.3° | Forward: (-0.06, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.41)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 110.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.75 | Angle: 110.3° | Forward: (-0.06, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.41)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 110.3° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.63 | Angle: 111.2° | Forward: (-0.05, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.41)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 111.2° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.65 | Angle: 112.1° | Forward: (-0.05, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.42)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 112.1° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.66 | Angle: 113.0° | Forward: (-0.04, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.42)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 113.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.73 | Angle: 113.8° | Forward: (-0.01, 0.00, 1.00) | ToBall: (-0.91, 0.00, -0.41)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 113.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.83 | Angle: 113.9° | Forward: (0.01, 0.00, 1.00) | ToBall: (-0.92, 0.00, -0.40)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 113.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 0.96 | Angle: 114.2° | Forward: (0.02, 0.00, 1.00) | ToBall: (-0.92, 0.00, -0.39)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 114.2° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 1.06 | Angle: 114.9° | Forward: (0.04, 0.00, 1.00) | ToBall: (-0.92, 0.00, -0.39)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 114.9° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 1.17 | Angle: 115.8° | Forward: (0.06, 0.00, 1.00) | ToBall: (-0.92, 0.00, -0.38)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 115.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 1.27 | Angle: 116.7° | Forward: (0.07, 0.00, 1.00) | ToBall: (-0.92, 0.00, -0.38)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 116.7° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 1.38 | Angle: 117.8° | Forward: (0.10, 0.00, 1.00) | ToBall: (-0.93, 0.00, -0.38)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 117.8° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 1.47 | Angle: 119.0° | Forward: (0.12, 0.00, 0.99) | ToBall: (-0.93, 0.00, -0.38)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 119.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 1.47 | Angle: 119.0° | Forward: (0.12, 0.00, 0.99) | ToBall: (-0.93, 0.00, -0.38)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 119.0° > 45°)
+
+[POSSESSION CHECK] Home_CM2 | Dist: 1.45 | Angle: 120.3° | Forward: (0.14, 0.00, 0.99) | ToBall: (-0.92, 0.00, -0.38)
+
+[AgentBallHandler] Home_CM2 REJECTED (Angle 120.3° > 45°)
+

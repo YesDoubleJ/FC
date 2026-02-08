@@ -1,0 +1,848 @@
+NullReferenceException: Object reference not set to an instance of an object
+UnityEditor.Graphs.Edge.WakeUp () (at <51314c5315e14b379f87e5b419c5c853>:0)
+UnityEditor.Graphs.Graph.DoWakeUpEdges (System.Collections.Generic.List`1[T] inEdges, System.Collections.Generic.List`1[T] ok, System.Collections.Generic.List`1[T] error, System.Boolean inEdgesUsedToBeValid) (at <51314c5315e14b379f87e5b419c5c853>:0)
+UnityEditor.Graphs.Graph.WakeUpEdges (System.Boolean clearSlotEdges) (at <51314c5315e14b379f87e5b419c5c853>:0)
+UnityEditor.Graphs.Graph.WakeUp (System.Boolean force) (at <51314c5315e14b379f87e5b419c5c853>:0)
+UnityEditor.Graphs.Graph.WakeUp () (at <51314c5315e14b379f87e5b419c5c853>:0)
+UnityEditor.Graphs.Graph.OnEnable () (at <51314c5315e14b379f87e5b419c5c853>:0)
+
+The referenced script (Unknown) on this Behaviour is missing!
+
+<color=red><b>HOME-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:Initialize (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:18)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:114)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:19)
+
+<color=red><b>AWAY-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:Initialize (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:18)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:114)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:19)
+
+[MatchManager] HOME KICK OFF!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:434)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:176)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:68)
+
+파란유니폼1-HOME notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:710)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:243)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:183)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:68)
+
+<color=green>[POSSESSION] Set to 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:243)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:183)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:68)
+
+[MatchManager] 파란유니폼1-HOME has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:434)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:243)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:183)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:68)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (3.57, -0.43, -6.81) (Dist: 10.7) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (3.59, -0.43, 10.88) (Dist: 10.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=red><b>빨간유니폼1-AWAY TACKLED 파란유니폼1-HOME!</b></color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:575)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:580)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:687)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:625)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+빨간유니폼1-AWAY notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:710)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 빨간유니폼1-AWAY has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:434)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-5.43, -0.30, -8.31) (Dist: 11.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-5.46, -0.43, -8.77) (Dist: 11.5) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-5.46, -0.43, -8.77) (Dist: 11.3) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=red><b>파란유니폼2 TACKLED 빨간유니폼1-AWAY!</b></color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:575)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:580)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>파란유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:687)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:625)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+파란유니폼2 notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:710)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 파란유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 파란유니폼2 has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:434)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (3.42, -0.38, 9.10) (Dist: 8.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (2.04, -0.43, 6.89) (Dist: 8.5) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.97, -0.43, 7.25) (Dist: 9.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.97, -0.43, 7.25) (Dist: 9.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.97, -0.43, 7.25) (Dist: 9.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.97, -0.43, 7.25) (Dist: 9.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.97, -0.43, 7.25) (Dist: 9.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.97, -0.43, 7.25) (Dist: 9.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.97, -0.43, 7.25) (Dist: 9.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.97, -0.43, 7.25) (Dist: 9.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.97, -0.43, 7.25) (Dist: 9.4) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=red><b>빨간유니폼1-AWAY TACKLED 파란유니폼2!</b></color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:575)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 파란유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:580)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:687)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:625)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+빨간유니폼1-AWAY notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:710)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 빨간유니폼1-AWAY has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:434)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.82, -0.30, -11.47) (Dist: 9.7) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.27, -0.43, -11.80) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.26, -0.43, -11.81) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.26, -0.43, -11.81) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.26, -0.43, -11.81) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.26, -0.43, -11.81) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.26, -0.43, -11.81) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.26, -0.43, -11.81) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.26, -0.43, -11.81) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.26, -0.43, -11.81) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-6.26, -0.43, -11.81) (Dist: 9.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=red><b>파란유니폼2 TACKLED 빨간유니폼1-AWAY!</b></color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:575)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:580)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>파란유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:687)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:625)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+파란유니폼2 notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:710)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 파란유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 파란유니폼2 has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:434)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:230)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (2.64, -0.42, 6.14) (Dist: 9.0) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.16 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (-1.73, -0.44, 4.03) (Dist: 8.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.15 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (0.00, 0.00, 50.00) (Dist: 58.0) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.14 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (0.00, 0.00, 50.00) (Dist: 62.9) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.12 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (0.00, 0.00, 50.00) (Dist: 68.6) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.12 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (0.00, 0.00, 50.00) (Dist: 74.8) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+[MatchManager] MISS / OUT!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:434)
+Game.Scripts.Managers.MatchManager:OnAttackFailed (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:364)
+Game.Scripts.Managers.MatchManager:Update () (at Assets/Game/Scripts/Managers/MatchManager.cs:117)
+
+<color=cyan>MISS / OUT! (Ball Reset)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:OnAttackFailed (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:365)
+Game.Scripts.Managers.MatchManager:Update () (at Assets/Game/Scripts/Managers/MatchManager.cs:117)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.12 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:240)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>  => DRIBBLE towards (0.00, 0.00, 50.00) (Dist: 76.5) OnNavMesh: True</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:317)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:289)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:72)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+

@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8a8a3cc64994f47a0c514eee39d6f2, type: 3}
+  m_Name: AgentBallHandlerSettings
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentBallHandlerSettings
+  claimDistance: 1.1
+  losePossessionDistance: 1.3
+  possessionGraceTime: 2
+  inPocketDistance: 1.2
+  inPocketAngleStationary: 45
+  inPocketAngleMoving: 60
+  stickyDynamicBaseDist: 1.7
+  stickyDynamicSpeedFactor: 0.25
+  dribbleEntryMaxDist: 1.5
+  dribbleEntryMaxBallSpeed: 20
+  dribbleMoveForceMultiplier: 15
+  dribbleMoveDamp: 10
+  dribbleMoveBallOffset: 0.8
+  dribbleStaticForceMultiplier: 8
+  dribbleStaticDamp: 8
+  dribbleStaticBallOffset: 0.5
+  dribbleBaseDist: 0.8
+  dribbleDistSpeedFactor: 0.15
+  dribbleMinDist: 0.8
+  dribbleMaxDist: 1.4
+  correctionGainMin: 2.5
+  correctionGainMax: 5
+  velocityGainMin: 6
+  velocityGainMax: 8
+  maxCorrectionVelocity: 20
+  passPowerBase: 8
+  passPowerDistFactor: 0.5
+  passPowerMin: 5
+  passPowerMax: 30
+  passErrorBaseAngle: 30
+  passAlignTimeout: 2
+  passAlignSweetSpot: 0.45
+  passAlignPullStrengthSimple: 12
+  passAlignPullStrengthHard: 20
+  shootPowerBase: 15
+  shootPowerDistFactor: 0.8
+  shootPowerMin: 10
+  shootPowerMax: 40
+  shootErrorBaseAngle: 10
+  highClearancePower: 25
+  kickMissDistance: 2.5
+  kickCooldown: 0.5
+  canKickAngle: 65
+  canKickDist: 2
+  fieldHalfWidth: 32
+  fieldHalfLength: 48
+  passAlignDamp: 5
+  kickAbortDistance: 1.8
+  dribbleMoveSpeedScale: 1.05
+  kickAlignmentAngle: 45
+  kickAlignmentDist: 0.7
+  stationaryDamp: 5
+  stationaryNudgeForce: 3
+  predictedBallSpeed: 15
+  maxPredictionTime: 1.5

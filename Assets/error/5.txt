@@ -1,0 +1,24 @@
+[MatchManager] HOME KICK OFF!
+
+[MatchManager] Ready...
+
+[MatchManager] PLAY!
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.34
+
+<color=cyan>Home_CM is expecting a PASS at (9.26, 0.08, 8.93)!</color>
+
+[KICK-EXEC] Home_ST Kicked! Force: 17.3, Mode: VelocityChange
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.07, Angle: 9.19
+
+<color=green>Away_CM2 SKILL: TACKLE on Home_ST</color>
+
+<color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[MatchManager] Home_ST has the ball!
+

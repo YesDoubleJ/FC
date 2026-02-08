@@ -1,0 +1,26 @@
+Home_CM: Already on NavMesh at (10.00, -1.00, -5.00)
+
+Home_CB: Already on NavMesh at (6.00, -1.00, -14.00)
+
+Away_CM2: Already on NavMesh at (10.00, -1.00, 16.00)
+
+Away_CB: Already on NavMesh at (-6.00, -1.00, 26.00)
+
+Away_ST: Already on NavMesh at (0.00, -1.00, 12.00)
+
+Away_GK: Already on NavMesh at (0.00, -1.00, 48.00)
+
+Home_ST: Already on NavMesh at (0.00, 0.00, -1.00)
+
+Away_CB2: Already on NavMesh at (6.00, -1.00, 26.00)
+
+Home_CB2: Already on NavMesh at (-6.00, -1.00, -14.00)
+
+Auto-Added ActionLogDisplay to MatchManager
+
+Home_CM2: Already on NavMesh at (-10.00, -1.00, -5.00)
+
+Away_CM: Already on NavMesh at (-10.00, -1.00, 16.00)
+
+Home_GK: Already on NavMesh at (0.00, -1.00, -48.00)
+

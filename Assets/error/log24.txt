@@ -1,0 +1,2486 @@
+[Physics Debug] Home_CB: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+
+[Agent Debug] Home_CB: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+
+[Physics Debug] Away_CB: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+
+[Agent Debug] Away_CB: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+
+[Physics Debug] Home_CM: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+
+[Agent Debug] Home_CM: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+
+[Physics Debug] Away_ST: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+
+[Agent Debug] Away_ST: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+
+[Physics Debug] Away_GK: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+
+[Agent Debug] Away_GK: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+
+<color=red><b>Away_GK</b> entered ATTACKING state</color>
+
+[Physics Debug] Home_ST: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+
+[Agent Debug] Home_ST: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+
+[MatchManager] HOME KICK OFF!
+
+[Physics Debug] Away_CM: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+
+[Agent Debug] Away_CM: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+
+[Physics Debug] Home_GK: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+
+[Agent Debug] Home_GK: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+
+<color=red><b>Home_GK</b> entered ATTACKING state</color>
+
+Home_ST notified of POSSESSION (Grace Period Active)
+
+<color=green>[POSSESSION] Set to Home_ST</color>
+
+[MatchManager] Home_ST has the ball!
+
+<color=cyan>[AI Decision] Home_ST (Ball Owner) 1s Report:
+  My xG: 0.19 (Thresh: 0.5)
+  Best Pass: 0.45 (Target: Home_CM, Type: DIRECT)
+  Fwd Dribble: 0.00
+  Pressure: 0.10
+  Action: Judging...</color>
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-3.52, -0.41, 13.79) (Dist: 10.6) Goal: (0.00, 0.00, 50.00), GoalDir: (0.10, 0.01, 1.00)</color>
+
+<color=red><b>Away_ST TACKLED Home_ST!</b></color>
+
+<color=orange>[POSSESSION] Lost by Home_ST</color>
+
+<color=cyan>COUNTER ATTACK! Away_ST starts dribbling.</color>
+
+Away_ST notified of POSSESSION (Grace Period Active)
+
+<color=green>[POSSESSION] Set to Away_ST</color>
+
+[MatchManager] Away_ST has the ball!
+
+<color=yellow>  => Override Backpass. Space found forward (Score: 0.9)</color>
+
+<color=cyan>[AI Decision] Away_ST (Ball Owner) 1s Report:
+  My xG: 0.18 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None, Type: DIRECT)
+  Fwd Dribble: 0.90
+  Pressure: 0.23
+  Action: Judging...</color>
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-8.58, -0.39, -16.18) (Dist: 10.0) Goal: (0.00, 0.00, -50.00), GoalDir: (0.25, 0.01, -0.97)</color>
+
+<color=yellow>  => EXECUTE FORWARD DRIBBLE (Score: 0.90)</color>
+
+<color=cyan>[AI Decision] Away_CM (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.95 (Target: Away_ST, Type: THROUGH)
+  Fwd Dribble: 0.90
+  Pressure: 0.00
+  Action: Judging...</color>
+
+<color=green>  => EXECUTE THROUGH PASS to Space for Away_ST</color>
+
+<color=blue>Home_ST ACTIVATED DEFENSE BURST! (Speed: 18)</color>
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.46, 0.00, -41.89)
+
+<color=cyan>[AI Decision] Away_CB (Ball Owner) 1s Report:
+  My xG: 0.14 (Thresh: 0.5)
+  Best Pass: 0.93 (Target: Away_CM, Type: THROUGH)
+  Fwd Dribble: 0.90
+  Pressure: 0.00
+  Action: Judging...</color>
+
+<color=green>  => EXECUTE THROUGH PASS to Space for Away_CM</color>
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.46, 0.00, -22.89)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.44, 0.00, -42.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.44, 0.00, -23.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.44, 0.00, -42.10)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.44, 0.00, -23.10)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.43, 0.00, -42.19)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.43, 0.00, -23.19)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.43, 0.00, -42.29)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.43, 0.00, -23.29)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.42, 0.00, -42.53)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.42, 0.00, -23.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.42, 0.00, -42.63)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.42, 0.00, -23.63)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.42, 0.00, -42.72)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.42, 0.00, -23.72)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.41, 0.00, -42.82)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.41, 0.00, -23.82)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.41, 0.00, -42.92)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.41, 0.00, -23.92)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.41, 0.00, -43.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.41, 0.00, -24.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.40, 0.00, -43.07)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.40, 0.00, -24.07)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.40, 0.00, -43.16)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.40, 0.00, -24.16)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.40, 0.00, -43.26)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.40, 0.00, -24.26)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.39, 0.00, -43.39)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.39, 0.00, -24.39)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.39, 0.00, -43.49)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.39, 0.00, -24.49)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.38, 0.00, -43.59)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.38, 0.00, -24.59)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.38, 0.00, -43.68)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.38, 0.00, -24.68)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.37, 0.00, -43.79)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.37, 0.00, -24.79)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.37, 0.00, -43.90)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.37, 0.00, -24.90)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.36, 0.00, -43.97)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.36, 0.00, -24.97)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.36, 0.00, -44.06)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.36, 0.00, -25.06)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.35, 0.00, -44.15)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.35, 0.00, -25.15)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.35, 0.00, -44.24)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.35, 0.00, -25.24)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.34, 0.00, -44.34)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.34, 0.00, -25.34)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.34, 0.00, -44.47)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.34, 0.00, -25.47)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.33, 0.00, -44.60)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.33, 0.00, -25.60)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.32, 0.00, -44.70)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.32, 0.00, -25.70)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -44.78)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -25.78)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -44.84)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -25.84)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -44.90)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -25.90)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.30, 0.00, -44.98)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.30, 0.00, -25.98)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.30, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.30, 0.00, -26.03)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.29, 0.00, -26.08)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.29, 0.00, -26.13)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.29, 0.00, -26.18)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.28, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.28, 0.00, -26.30)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.27, 0.00, -26.36)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.27, 0.00, -26.41)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.27, 0.00, -26.47)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -26.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -26.58)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -26.63)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -26.67)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -26.72)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -26.79)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -26.83)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -26.89)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -26.94)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -26.99)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -27.06)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -27.11)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -27.16)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -27.22)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -27.27)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -27.33)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -27.38)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -27.42)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -27.46)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -27.51)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -27.57)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -27.62)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -27.68)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -27.73)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -27.77)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -27.81)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -27.86)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -27.90)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -27.94)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -27.98)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -28.02)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -28.06)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -28.10)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -28.14)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -28.18)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -28.22)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -28.26)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -28.39)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -28.43)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -28.47)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -28.51)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -28.57)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -28.61)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -28.65)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -28.68)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -28.73)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -28.77)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -28.80)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -28.85)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -28.88)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -28.92)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -28.96)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -29.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -29.04)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -29.08)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.12)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.15)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.19)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.23)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.27)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.33)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.38)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.42)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.47)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -29.50)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.55)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.59)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.63)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.67)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.71)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.75)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.78)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.83)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.86)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.90)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.95)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -29.99)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -30.03)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.06)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.10)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.20)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.25)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.29)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.33)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.37)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.41)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.45)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.49)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.57)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.61)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -30.67)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -30.70)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -30.75)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -30.78)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -30.82)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -30.87)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -30.91)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -30.95)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -30.99)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.03)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.07)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.12)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.16)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.20)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.23)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.28)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.31)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.35)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.40)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.43)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.47)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.51)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.55)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.59)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.63)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.68)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.73)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.77)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.83)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.87)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.91)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -31.96)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.08)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.13)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.16)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.21)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.25)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.29)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.33)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.37)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.41)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.45)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.49)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.56)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.60)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.64)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.69)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.74)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.79)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.86)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.91)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.95)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -32.99)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.03)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.07)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.11)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.15)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.19)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.24)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.29)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.34)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.38)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.43)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.47)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.57)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.61)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.65)
+
+<color=yellow>  => Override Backpass. Space found forward (Score: 0.9)</color>
+
+<color=cyan>[AI Decision] Away_ST (Ball Owner) 1s Report:
+  My xG: 0.18 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None, Type: DIRECT)
+  Fwd Dribble: 0.90
+  Pressure: 0.23
+  Action: Judging...</color>
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-9.11, -0.37, -27.89) (Dist: 13.4) Goal: (0.00, 0.00, -50.00), GoalDir: (0.38, 0.02, -0.92)</color>
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.12, 0.00, -33.70)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -33.73)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -33.77)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -33.81)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -33.91)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -33.95)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -33.99)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -34.03)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -34.07)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -34.11)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -34.15)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -34.19)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -34.23)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -34.28)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -34.32)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.13, 0.00, -34.36)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.40)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.45)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.49)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.57)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.62)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.66)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.70)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.73)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.77)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.81)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.85)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.14, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.14, 0.00, -34.89)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -34.95)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -34.99)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -35.03)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -35.07)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -35.11)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -35.15)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -35.19)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -35.23)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -35.27)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -35.31)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.15, 0.00, -35.36)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -35.39)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -35.44)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -35.49)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -35.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -35.57)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -35.61)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -35.65)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.16, 0.00, -35.69)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -35.79)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -35.83)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -35.87)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -35.91)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -35.94)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -35.98)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -36.04)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -36.09)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -36.12)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.17, 0.00, -36.16)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -36.20)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -36.24)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -36.29)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -36.33)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -36.37)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -36.41)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -36.45)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.18, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.18, 0.00, -36.50)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.54)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.58)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.62)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.66)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.70)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.74)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.77)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.81)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.85)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.19, 0.00, -36.89)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -36.93)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -36.97)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -37.01)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -37.07)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -37.11)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -37.15)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -37.19)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.20, 0.00, -37.22)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -37.26)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -37.30)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -37.34)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -37.38)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -37.42)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -37.47)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -37.51)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.21, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.21, 0.00, -37.55)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -37.65)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -37.69)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -37.73)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -37.77)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -37.81)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -37.85)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.22, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.22, 0.00, -37.89)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -37.93)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -37.97)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -38.01)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -38.05)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -38.09)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -38.13)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -38.17)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.23, 0.00, -38.21)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -38.25)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -38.28)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -38.32)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -38.36)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -38.41)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -38.45)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -38.49)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.24, 0.00, -38.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -38.57)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -38.61)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -38.64)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -38.69)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -38.73)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -38.77)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -38.81)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.25, 0.00, -38.85)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -38.89)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -38.93)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -38.97)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -39.02)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -39.06)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -39.10)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.26, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.26, 0.00, -39.17)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.27, 0.00, -39.20)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.27, 0.00, -39.25)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.27, 0.00, -39.29)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.27, 0.00, -39.33)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.27, 0.00, -39.37)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.27, 0.00, -39.42)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.28, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.28, 0.00, -39.51)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.28, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.28, 0.00, -39.56)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.28, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.28, 0.00, -39.60)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.28, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.28, 0.00, -39.64)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.28, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.28, 0.00, -39.68)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.28, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.28, 0.00, -39.73)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.29, 0.00, -39.79)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.29, 0.00, -39.84)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.29, 0.00, -39.89)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.29, 0.00, -39.93)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.29, 0.00, -39.98)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.29, 0.00, -40.04)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.30, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.30, 0.00, -40.10)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.30, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.30, 0.00, -40.16)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.30, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.30, 0.00, -40.20)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.30, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.30, 0.00, -40.24)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.30, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.30, 0.00, -40.29)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.30, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.30, 0.00, -40.34)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -40.37)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -40.42)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -40.45)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -40.49)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -40.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -40.57)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.31, 0.00, -40.62)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.32, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.32, 0.00, -40.65)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.32, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.32, 0.00, -40.70)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.32, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.32, 0.00, -40.73)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.32, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.32, 0.00, -40.77)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.32, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.32, 0.00, -40.81)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.32, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.32, 0.00, -40.85)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.32, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.32, 0.00, -40.89)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.33, 0.00, -40.93)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.33, 0.00, -40.97)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.33, 0.00, -41.01)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.33, 0.00, -41.05)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.33, 0.00, -41.09)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.33, 0.00, -41.14)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.33, 0.00, -41.18)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.34, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.34, 0.00, -41.22)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.34, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.34, 0.00, -41.27)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.34, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.34, 0.00, -41.37)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.34, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.34, 0.00, -41.42)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.34, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.34, 0.00, -41.48)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.35, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.35, 0.00, -41.52)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.35, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.35, 0.00, -41.56)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.35, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.35, 0.00, -41.60)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.35, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.35, 0.00, -41.64)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.35, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.35, 0.00, -41.68)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.35, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.35, 0.00, -41.72)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.35, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.35, 0.00, -41.76)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.36, 0.00, -41.80)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.36, 0.00, -41.84)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.36, 0.00, -41.88)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.36, 0.00, -41.92)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.36, 0.00, -41.96)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.36, 0.00, -42.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.36, 0.00, -42.04)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.37, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.37, 0.00, -42.08)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.37, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.37, 0.00, -42.12)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.37, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.37, 0.00, -42.16)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.37, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.37, 0.00, -42.21)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.37, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.37, 0.00, -42.24)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.37, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.37, 0.00, -42.29)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.37, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.37, 0.00, -42.33)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.38, 0.00, -42.37)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.38, 0.00, -42.41)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.38, 0.00, -42.45)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.38, 0.00, -42.49)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.38, 0.00, -42.53)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.38, 0.00, -42.57)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.38, 0.00, -42.62)
+
+<color=orange>[POSSESSION] Lost by Away_ST</color>
+
+[HybridAgent] Away_ST lost ball. Dist: 3.84
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.39, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.39, 0.00, -42.67)
+
+Away_ST notified of POSSESSION (Grace Period Active)
+
+<color=green>[POSSESSION] Set to Away_ST</color>
+
+[MatchManager] Away_ST has the ball!
+
+<color=cyan>[AI Decision] Away_ST (Ball Owner) 1s Report:
+  My xG: 0.20 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None, Type: DIRECT)
+  Fwd Dribble: 0.70
+  Pressure: 0.23
+  Action: Judging...</color>
+
+<color=green>  => EXECUTE SHOOT (Close Range 16.2m)</color>
+
+<color=cyan>[AI Decision] Away_CM (Ball Owner) 1s Report:
+  My xG: 0.18 (Thresh: 0.5)
+  Best Pass: 1.00 (Target: Away_ST, Type: THROUGH)
+  Fwd Dribble: 0.90
+  Pressure: 0.00
+  Action: Judging...</color>
+
+<color=green>  => EXECUTE THROUGH PASS to Space for Away_ST</color>
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.66, 0.00, -45.00)
+
+<color=cyan>[AI Decision] Away_CB (Ball Owner) 1s Report:
+  My xG: 0.16 (Thresh: 0.5)
+  Best Pass: 0.87 (Target: Away_CM, Type: THROUGH)
+  Fwd Dribble: 0.90
+  Pressure: 0.00
+  Action: Judging...</color>
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-3.01, -0.40, -12.33) (Dist: 10.0) Goal: (0.00, 0.00, -50.00), GoalDir: (0.08, 0.01, -1.00)</color>
+
+<color=yellow>  => EXECUTE FORWARD DRIBBLE (Score: 0.90)</color>
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.66, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.68, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.68, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.69, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.69, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.70, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.70, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.71, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.71, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.72, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.72, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.73, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.73, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.74, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.74, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.75, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.75, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.75, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.75, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.76, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.76, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.77, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.77, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.78, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.78, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.79, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.79, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.80, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.80, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.81, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.81, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.82, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.82, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.83, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.83, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.84, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.84, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.84, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.84, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.85, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.85, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.86, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.86, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.87, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.87, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.87, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.87, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.88, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.88, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.88, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.88, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.89, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.89, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.90, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.90, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.91, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.91, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.92, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.92, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.92, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.92, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.93, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.93, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.94, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.94, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.94, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.94, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.95, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.95, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.95, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.95, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.96, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.96, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.96, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.96, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.97, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.97, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.97, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.97, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.98, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.98, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.98, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.98, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.99, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.99, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (4.99, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (4.99, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.00, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.00, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.00, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.00, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.00, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.00, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.01, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.01, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.01, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.01, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.02, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.02, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.02, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.02, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.03, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.03, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.03, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.03, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.04, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.04, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.04, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.04, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.06, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.06, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.06, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.06, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.06, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.06, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.07, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.07, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.07, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.07, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.08, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.08, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.08, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.08, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.09, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.09, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.09, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.09, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.20, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.32, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.32, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.39, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.39, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.42, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.42, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.45, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.45, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.48, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.48, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.50, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.50, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.53, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.53, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.56, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.56, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.58, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.58, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.61, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.61, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.64, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.64, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.66, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.66, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.69, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.69, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.71, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.71, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.73, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.73, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.76, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.76, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.78, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.78, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.80, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.80, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.81, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.81, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.83, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.83, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.85, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.85, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.87, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.87, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.89, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.89, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.91, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.91, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.93, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.93, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.95, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.95, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.97, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.97, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (5.99, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (5.99, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.00, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.00, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.02, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.02, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.03, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.03, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.07, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.07, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.08, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.08, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.10, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.10, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.12, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.16, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.19, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.23, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.25, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.29, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.30, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.30, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.34, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.34, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.35, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.35, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.39, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.39, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.40, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.40, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.41, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.41, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.43, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.43, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.46, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.46, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.49, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.49, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.53, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.53, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.57, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.57, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.61, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.61, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.65, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.65, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.68, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.68, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.72, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.72, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.75, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.75, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.78, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.78, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.81, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.81, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.84, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.84, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.87, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.87, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.89, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.89, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.92, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.92, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.95, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.95, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (6.99, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (6.99, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.02, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.02, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.05, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.07, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.07, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.10, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.10, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.13, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.15, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.17, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.24, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.27, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.31, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.33, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.36, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.38, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.40, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.40, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.42, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.42, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.44, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.44, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.46, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.46, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.48, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.48, 0.00, -45.00)
+
+[MatchManager] SAVED by Home_GK!
+
+Home_GK notified of POSSESSION (Grace Period Active)
+
+<color=green>[POSSESSION] Set to Home_GK</color>
+
+[MatchManager] Home_GK has the ball!
+
+[DEFENSE_DEBUG] Home_CB | Pos: CB_Right | IsGK: False | Target: (7.49, 0.00, -45.00)
+
+[DEFENSE_DEBUG] Home_CM | Pos: CM_Right | IsGK: False | Target: (7.49, 0.00, -45.00)
+
+<color=red><b>Home_GK</b> entered ATTACKING state</color>
+
+<color=cyan>[AI Decision] Home_CB (Ball Owner) 1s Report:
+  My xG: 0.12 (Thresh: 0.5)
+  Best Pass: 0.79 (Target: Home_ST, Type: DIRECT)
+  Fwd Dribble: 0.00
+  Pressure: 0.00
+  Action: Judging...</color>
+
+<color=green>  => EXECUTE PASS to Home_ST</color>
+
+<color=cyan>[AI Decision] Home_CM (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.79 (Target: Home_ST, Type: DIRECT)
+  Fwd Dribble: 0.90
+  Pressure: 0.00
+  Action: Judging...</color>
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (5.74, -0.45, -34.16) (Dist: 10.0) Goal: (0.00, 0.00, 50.00), GoalDir: (-0.07, 0.01, 1.00)</color>
+
+<color=yellow>  => EXECUTE FORWARD DRIBBLE (Score: 0.90)</color>
+
+<color=red>GK Home_GK: SAFETY CLEARANCE (Deep 1.5m)</color>
+
+<color=cyan>[AI Decision] Home_ST (Ball Owner) 1s Report:
+  My xG: 0.15 (Thresh: 0.5)
+  Best Pass: 0.41 (Target: Home_GK, Type: DIRECT)
+  Fwd Dribble: 0.00
+  Pressure: 0.11
+  Action: Judging...</color>
+
+<color=green>  => EXECUTE PASS to Home_GK</color>
+
+<color=cyan>[AI Decision] Home_CB (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.92 (Target: Home_ST, Type: THROUGH)
+  Fwd Dribble: 0.00
+  Pressure: 0.00
+  Action: Judging...</color>
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-1.75, 5.88, -31.54) (Dist: 11.7) Goal: (0.00, 0.00, 50.00), GoalDir: (0.02, -0.07, 1.00)</color>
+

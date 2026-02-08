@@ -1,0 +1,746 @@
+Home_CM: Already on NavMesh at (10.00, 0.00, -5.00)
+
+Home_CB: Already on NavMesh at (6.00, 0.00, -14.00)
+
+Away_CM2: Already on NavMesh at (10.00, -1.00, 16.00)
+
+Away_CB: Already on NavMesh at (-6.00, 0.00, 26.00)
+
+Away_ST: Already on NavMesh at (0.00, 0.00, 12.00)
+
+Away_GK: Already on NavMesh at (0.00, 0.00, 48.00)
+
+Home_ST: Already on NavMesh at (0.00, 0.00, -1.00)
+
+Away_CB2: Already on NavMesh at (6.00, 0.00, 26.00)
+
+Home_CB2: Already on NavMesh at (-6.00, 0.00, -14.00)
+
+Auto-Added ActionLogDisplay to MatchManager
+
+Home_CM2: Already on NavMesh at (-10.00, 0.00, -5.00)
+
+Away_CM: Already on NavMesh at (-10.00, -1.00, 16.00)
+
+Home_GK: Already on NavMesh at (0.00, 0.00, -48.00)
+
+<b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+<color=green>[PASS]</color> ShootScore_Close
+
+<color=green>[PASS]</color> ShootScore_Far
+
+<color=green>[PASS]</color> ShootScore_Angle
+
+<b>[Unit Tests] Finished.</b>
+
+[MatchManager] HOME KICK OFF!
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:428)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+Setting angular velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_angularVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:429)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+[MatchManager] SetPlayersActiveState(False) - Agent Count: 9
+
+[MatchManager] Ready...
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-10.00, 0.33, -4.97), Vel=1.379712, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.01, 0.33, 16.02), Vel=1.323622, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.02, 0.30, -44.94), Vel=2.526555, DesVel=3.169402, RemDist=0.1162441
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Away_CM Executing. AgentActive=True
+
+[MatchManager] SetPlayersActiveState(True) - Agent Count: 12
+
+[MatchManager] Enabling Agent: Home_CM
+
+[MatchManager] Enabling Agent: Home_CB
+
+[MatchManager] Enabling Agent: Away_CM2
+
+[MatchManager] Enabling Agent: Away_CB
+
+[MatchManager] Enabling Agent: Away_ST
+
+[MatchManager] Enabling Agent: Away_GK
+
+[MatchManager] Enabling Agent: Home_ST
+
+[MatchManager] Enabling Agent: Away_CB2
+
+[MatchManager] Enabling Agent: Home_CB2
+
+[MatchManager] Enabling Agent: Home_CM2
+
+[MatchManager] Enabling Agent: Away_CM
+
+[MatchManager] Enabling Agent: Home_GK
+
+[MatchManager] PLAY!
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.98, 0.36, -4.98), Vel=0.4544949, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-9.99, 0.36, 16.02), Vel=0.4346562, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.02, 0.29, -44.97), Vel=0.8589602, DesVel=0, RemDist=0
+
+[AgentMover] Home_CM: OnNav=True, Pos=(10.00, 0.36, -5.00), Vel=0.5499066, DesVel=0, RemDist=0
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[AgentMover] Home_CB: OnNav=True, Pos=(6.00, 0.36, -14.00), Vel=0.5499066, DesVel=0, RemDist=0
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(10.00, 0.36, 16.00), Vel=0.5268689, DesVel=0, RemDist=0
+
+[RootState] Away_CM2 Executing. AgentActive=True
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.00, 0.36, 26.00), Vel=0.5268689, DesVel=0, RemDist=0
+
+[RootState] Away_CB Executing. AgentActive=True
+
+[AgentMover] Away_ST: OnNav=True, Pos=(0.00, 0.36, 12.00), Vel=0.5268686, DesVel=0, RemDist=0
+
+[RootState] Away_ST Executing. AgentActive=True
+
+[AgentMover] Away_GK: OnNav=True, Pos=(0.00, 0.29, 48.00), Vel=0.6732649, DesVel=0, RemDist=0
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.00, 0.36, -0.90), Vel=0.5499066, DesVel=0, RemDist=0
+
+<color=green>[POSSESSION] Set to Home_ST</color>
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.91
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(6.00, 0.36, 26.00), Vel=0.5268689, DesVel=0, RemDist=0
+
+[RootState] Away_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-6.00, 0.36, -14.00), Vel=0.5499066, DesVel=0, RemDist=0
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+<color=cyan>PREDICTIVE PASS: Home_ST -> Home_CM2 (Lead: 4.5m)</color>
+
+<color=cyan><b>Home_ST</b> PASS to Home_CM2</color>
+
+<color=cyan>Home_CM2 is expecting a PASS at (-9.72, -0.46, 0.06)!</color>
+
+<color=grey>[POSSESSION] Cleared (Ball in air)</color>
+
+<color=green>[POSSESSION] Set to Home_CM2</color>
+
+[MatchManager] Home_CM2 has the ball!
+
+[AgentBallHandler] Home_CM2 CLAIMED BALL. Dist: 1.43
+
+<color=cyan>PREDICTIVE PASS: Home_CM2 -> Home_ST (Lead: 2.5m)</color>
+
+<color=cyan><b>Home_CM2</b> PASS to Home_ST</color>
+
+<color=cyan>Home_ST is expecting a PASS at (-1.47, 0.69, 2.56)!</color>
+
+<color=grey>[POSSESSION] Cleared (Ball in air)</color>
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-7.53, 0.31, -0.50), Vel=1.234519, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.92, 0.33, 15.58), Vel=6.355486, DesVel=20, RemDist=1.930349
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.74, 0.27, -45.10), Vel=0.6971977, DesVel=1.656851, RemDist=0.02613764
+
+[AgentMover] Home_CM: OnNav=True, Pos=(9.50, 0.34, -3.86), Vel=6.219742, DesVel=20, RemDist=13.43226
+
+[AgentMover] Home_CB: OnNav=True, Pos=(4.92, 0.34, -14.10), Vel=6.200251, DesVel=18.51729, RemDist=15.36556
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(9.06, 0.33, 15.57), Vel=6.185236, DesVel=20, RemDist=1.895248
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.76, 0.33, 25.36), Vel=6.324736, DesVel=20, RemDist=2.534419
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.83, 0.33, 8.38), Vel=5.932855, DesVel=20, RemDist=6.51093
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.68, 0.28, 45.04), Vel=1.968094, DesVel=0, RemDist=0
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-2.06, 0.34, 0.73), Vel=6.571782, DesVel=20, RemDist=22.79295
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.23, 0.33, 25.36), Vel=6.207278, DesVel=20, RemDist=2.519616
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-6.74, 0.34, -14.65), Vel=6.515394, DesVel=20, RemDist=4.422841
+
+<color=green>[POSSESSION] Set to Home_ST</color>
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.41
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-8.81, 0.25, 4.48), Vel=6.082939, DesVel=20, RemDist=8.472418
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-11.02, 0.25, 17.25), Vel=0.7454507, DesVel=0.9841239, RemDist=0.02772085
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.15, 0.25, -45.05), Vel=2.440111, DesVel=20, RemDist=0.1462821
+
+[AgentMover] Home_CM: OnNav=True, Pos=(8.87, 0.25, 1.27), Vel=5.434156, DesVel=20, RemDist=10.29929
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[AgentMover] Home_CB: OnNav=True, Pos=(1.29, 0.25, -13.88), Vel=5.904463, DesVel=17.15258, RemDist=5.458411
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(8.95, 0.25, 17.19), Vel=0.6240115, DesVel=1.030898, RemDist=0.0374776
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-7.04, 0.25, 26.20), Vel=0.5831447, DesVel=0.8232579, RemDist=0.01865138
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.30, 0.25, 6.53), Vel=0.4965052, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.24, 0.26, 45.03), Vel=0.7693369, DesVel=2.0343, RemDist=0.04777472
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.10, 0.25, 1.64), Vel=0.3455371, DesVel=0, RemDist=0
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(4.95, 0.25, 26.18), Vel=0.6274179, DesVel=1.039304, RemDist=0.03792097
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-4.06, 0.25, -15.14), Vel=0.5252269, DesVel=0, RemDist=0
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.05, 0.25, 11.44), Vel=6.229763, DesVel=20, RemDist=1.245438
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.49, 0.25, 15.33), Vel=6.497662, DesVel=20, RemDist=2.84968
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.19, 0.25, -45.01), Vel=2.33352, DesVel=3.627115, RemDist=0.1395369
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.44, 0.25, 8.24), Vel=5.993676, DesVel=19.12677, RemDist=3.351488
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.05, 0.25, -14.72), Vel=4.207656, DesVel=11.97614, RemDist=0.9535229
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(7.95, 0.25, 13.27), Vel=5.423137, DesVel=16.78114, RemDist=4.097943
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-7.10, 0.25, 26.30), Vel=5.717706, DesVel=4.461642, RemDist=0.1734179
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.29, 0.25, 6.51), Vel=0.07163596, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.29, 0.25, 45.02), Vel=3.089704, DesVel=0, RemDist=0
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.13, 0.25, 1.63), Vel=0.101349, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.11, 0.25, 26.39), Vel=2.017606, DesVel=4.153286, RemDist=0.1734245
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.77, 0.25, -15.09), Vel=1.676813, DesVel=3.316316, RemDist=0.134124
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.38, 0.28, 12.71), Vel=4.375945, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.96, 0.28, 17.44), Vel=1.057499, DesVel=20, RemDist=0.06229365
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.33, 0.25, -45.05), Vel=3.967339, DesVel=0, RemDist=0
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.00, 0.28, 11.64), Vel=9.31712, DesVel=0.931272, RemDist=0.0409336
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.47, 0.28, -14.55), Vel=4.32591, DesVel=10.88629, RemDist=0.6013266
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.03, 0.28, 12.76), Vel=1.552375, DesVel=4.417551, RemDist=0.0717138
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.98, 0.28, 26.31), Vel=1.144458, DesVel=2.359883, RemDist=0.05826385
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.28, 0.28, 6.50), Vel=1.112432, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.40, 0.25, 45.02), Vel=0.5811904, DesVel=2.533682, RemDist=0.08720499
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.15, 0.28, 1.63), Vel=1.067739, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.02, 0.28, 26.29), Vel=1.039561, DesVel=2.331635, RemDist=0.08003178
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.89, 0.28, -15.23), Vel=4.008503, DesVel=11.95738, RemDist=0.4044131
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.32, 0.34, 12.68), Vel=1.072417, DesVel=0.9355167, RemDist=0.02668734
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.97, 0.34, 17.33), Vel=1.166565, DesVel=2.110294, RemDist=0.07603543
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.37, 0.25, -45.03), Vel=0.7571486, DesVel=20, RemDist=0.1069909
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.05, 0.34, 11.67), Vel=1.091283, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.69, 0.34, -14.54), Vel=6.015816, DesVel=10.88996, RemDist=0.5183446
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.11, 0.34, 12.91), Vel=1.064841, DesVel=1.962066, RemDist=0.04013371
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.94, 0.34, 26.41), Vel=1.077662, DesVel=0.8422741, RemDist=0.01798935
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.29, 0.34, 6.49), Vel=1.068483, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.15, 0.25, 45.04), Vel=0.7845035, DesVel=20, RemDist=0.119293
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.17, 0.33, 1.64), Vel=0.9596227, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.08, 0.34, 26.43), Vel=1.024591, DesVel=0.8325425, RemDist=0.01744147
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.76, 0.34, -15.34), Vel=5.158901, DesVel=11.96097, RemDist=0.500316
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.29, 0.38, 12.71), Vel=0.5662892, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.92, 0.38, 17.43), Vel=0.5447021, DesVel=0.2649519, RemDist=0.009962947
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.35, 0.25, -44.98), Vel=0.626308, DesVel=1.848635, RemDist=0.07383234
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.07, 0.38, 11.70), Vel=0.5662892, DesVel=0.2926156, RemDist=0.009540668
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.57, 0.38, -14.57), Vel=0.5662892, DesVel=11.95732, RemDist=0.4804501
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.19, 0.38, 12.92), Vel=0.5447021, DesVel=0.3804339, RemDist=0.01278927
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.92, 0.38, 26.44), Vel=0.5447021, DesVel=20, RemDist=0.01859071
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.27, 0.38, 6.49), Vel=0.5447021, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.17, 0.25, 44.96), Vel=0.6515378, DesVel=1.780652, RemDist=0.07991323
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.17, 0.36, 1.63), Vel=0.5662892, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.09, 0.38, 26.43), Vel=0.5447021, DesVel=0.2833994, RemDist=0.006642431
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.63, 0.38, -15.36), Vel=0.5662892, DesVel=10.8867, RemDist=0.5244055
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.27, 0.28, 12.72), Vel=1.399964, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.91, 0.28, 17.44), Vel=1.427319, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.24, 0.25, -45.01), Vel=0.2335992, DesVel=0.1264979, RemDist=0.006720344
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.11, 0.28, 11.74), Vel=5.66495, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.75, 0.28, -14.56), Vel=5.089814, DesVel=11.95922, RemDist=0.4980596
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.08, 0.28, 12.83), Vel=1.380623, DesVel=2.110248, RemDist=0.08923051
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.94, 0.28, 26.47), Vel=5.431358, DesVel=0, RemDist=0
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.28, 0.28, 6.49), Vel=1.346474, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.17, 0.25, 44.98), Vel=10.67547, DesVel=20, RemDist=0.01638043
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.17, 0.28, 1.65), Vel=1.23099, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.09, 0.28, 26.45), Vel=1.303773, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.43, 0.28, -15.30), Vel=5.711898, DesVel=10.88839, RemDist=0.514604
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.25, 0.25, 12.74), Vel=0.1159271, DesVel=0.4251581, RemDist=0.01175432
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-11.01, 0.25, 17.50), Vel=0.4038288, DesVel=2.420217, RemDist=0.09003367
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.24, 0.25, -45.01), Vel=0.2718239, DesVel=0, RemDist=0
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.10, 0.25, 11.73), Vel=0.1158412, DesVel=0.3513121, RemDist=0.007946366
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.93, 0.25, -14.77), Vel=5.415415, DesVel=11.9589, RemDist=0.4929889
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.22, 0.25, 12.92), Vel=0.09364128, DesVel=20, RemDist=0.02363192
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.81, 0.25, 26.38), Vel=0.3909167, DesVel=2.37544, RemDist=0.09182376
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.27, 0.25, 6.46), Vel=0.09854154, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.23, 0.25, 44.99), Vel=0.2556586, DesVel=1.586157, RemDist=0.0290278
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.21, 0.25, 1.64), Vel=0.07062796, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.10, 0.25, 26.42), Vel=0.1042145, DesVel=19.90434, RemDist=0.02843991
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.20, 0.25, -15.09), Vel=4.83153, DesVel=14.54477, RemDist=0.5057638
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.10, 0.26, 12.81), Vel=0.5726712, DesVel=5.497206, RemDist=0.07162442
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.88, 0.26, 17.28), Vel=0.5842106, DesVel=5.626193, RemDist=0.06262766
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.24, 0.27, -45.02), Vel=0.7677639, DesVel=0.4777074, RemDist=0.01288421
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.10, 0.26, 11.72), Vel=6.422285, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.93, 0.26, -14.89), Vel=6.524654, DesVel=13.49972, RemDist=0.4782517
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.26, 0.26, 12.91), Vel=0.9108073, DesVel=0.8602729, RemDist=0.05520875
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.90, 0.26, 26.45), Vel=6.247965, DesVel=0, RemDist=0
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.27, 0.26, 6.47), Vel=0.5627414, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.24, 0.27, 44.97), Vel=0.9490093, DesVel=20, RemDist=0.06009991
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.20, 0.26, 1.65), Vel=0.6287139, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.10, 0.26, 26.45), Vel=6.480132, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.16, 0.26, -15.12), Vel=5.165598, DesVel=11.96371, RemDist=0.5574125
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.19, 0.29, 12.75), Vel=1.298887, DesVel=2.731599, RemDist=0.02709167
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.94, 0.29, 17.58), Vel=3.780513, DesVel=20, RemDist=0.1977753
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.29, 0.29, -44.98), Vel=0.8586934, DesVel=2.534321, RemDist=0.01030638
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.10, 0.29, 11.77), Vel=1.350559, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.99, 0.29, -14.94), Vel=3.77796, DesVel=11.95634, RemDist=0.5171137
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.21, 0.29, 12.90), Vel=10.0499, DesVel=20, RemDist=0.1894622
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.96, 0.29, 26.44), Vel=2.655975, DesVel=3.149606, RemDist=0.1344235
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.27, 0.29, 6.44), Vel=1.243833, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.27, 0.29, 45.01), Vel=9.560831, DesVel=20, RemDist=0.09676158
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.24, 0.29, 1.65), Vel=1.059994, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.05, 0.29, 26.40), Vel=1.241328, DesVel=2.588359, RemDist=0.0302399
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.19, 0.29, -14.97), Vel=3.267478, DesVel=10.88593, RemDist=0.482938
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.27, 0.37, 12.76), Vel=0.8917731, DesVel=0.7711375, RemDist=0.03327803
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.92, 0.37, 17.44), Vel=0.738284, DesVel=0.672066, RemDist=0.01723533
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.24, 0.31, -45.00), Vel=0.6263726, DesVel=0, RemDist=0
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.07, 0.37, 11.71), Vel=0.9155227, DesVel=0.7679999, RemDist=0.03183168
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.96, 0.37, -14.87), Vel=4.083268, DesVel=11.95922, RemDist=0.4923147
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.17, 0.37, 12.88), Vel=9.617689, DesVel=0.9076145, RemDist=0.03542235
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.90, 0.37, 26.47), Vel=0.7387207, DesVel=0.7237262, RemDist=0.02483938
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.26, 0.37, 6.44), Vel=0.7250081, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.29, 0.31, 45.01), Vel=0.6106248, DesVel=0.429377, RemDist=0.01475621
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.25, 0.35, 1.64), Vel=0.6131384, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.09, 0.37, 26.48), Vel=0.7456999, DesVel=0.7614954, RemDist=0.03063975
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.16, 0.37, -14.94), Vel=4.764016, DesVel=10.88828, RemDist=0.5190511
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.26, 0.34, 12.73), Vel=1.016981, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.91, 0.34, 17.44), Vel=0.9846956, DesVel=0.2939341, RemDist=0.01018084
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.38, 0.33, -45.01), Vel=1.422584, DesVel=20, RemDist=0.1327004
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.07, 0.34, 11.72), Vel=2.969671, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.94, 0.34, -14.85), Vel=2.503685, DesVel=5.684276, RemDist=0.4751415
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.22, 0.34, 12.89), Vel=3.885153, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.84, 0.34, 26.42), Vel=5.427024, DesVel=0, RemDist=0
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.27, 0.34, 6.45), Vel=0.979492, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.14, 0.33, 45.00), Vel=1.424823, DesVel=20, RemDist=0.1319909
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.23, 0.33, 1.67), Vel=0.9462206, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.14, 0.34, 26.39), Vel=5.426233, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.14, 0.34, -14.95), Vel=2.006617, DesVel=6.825393, RemDist=0.5246329
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.26, 0.29, 12.73), Vel=1.377451, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.90, 0.29, 17.45), Vel=1.328419, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.24, 0.33, -45.01), Vel=0.2835895, DesVel=0.1616871, RemDist=0.005683282
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.11, 0.29, 11.73), Vel=1.377449, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.96, 0.29, -14.93), Vel=2.756904, DesVel=10.88604, RemDist=0.4964578
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.23, 0.29, 12.98), Vel=1.390792, DesVel=1.726922, RemDist=0.01097164
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.91, 0.29, 26.45), Vel=1.32843, DesVel=0, RemDist=0
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.26, 0.29, 6.43), Vel=1.331213, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.28, 0.33, 45.01), Vel=0.2900397, DesVel=0.1574002, RemDist=0.006186407
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.26, 0.28, 1.66), Vel=1.190207, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.09, 0.29, 26.45), Vel=1.328437, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.17, 0.29, -14.89), Vel=2.392364, DesVel=6.824669, RemDist=0.5033961
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.26, 0.25, 12.73), Vel=0.02550601, DesVel=20, RemDist=0.00298127
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.86, 0.25, 17.49), Vel=9.851097, DesVel=20, RemDist=0.006004747
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.30, 0.34, -45.05), Vel=3.100211, DesVel=3.884557, RemDist=0.142363
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.10, 0.25, 11.72), Vel=0.02688244, DesVel=14.97408, RemDist=0.003896434
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.95, 0.25, -14.98), Vel=4.176989, DesVel=11.9569, RemDist=0.4833675
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.18, 0.25, 12.91), Vel=9.862761, DesVel=20, RemDist=0.0112795
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.94, 0.25, 26.40), Vel=9.850699, DesVel=20, RemDist=0.005066255
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.27, 0.25, 6.43), Vel=0.03607388, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.22, 0.33, 45.04), Vel=3.103309, DesVel=3.886606, RemDist=0.1424211
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.26, 0.25, 1.67), Vel=0.0451724, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.04, 0.25, 26.43), Vel=9.849542, DesVel=20, RemDist=0.005435401
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.16, 0.25, -14.87), Vel=4.707705, DesVel=10.88637, RemDist=0.5204217
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.27, 0.26, 12.73), Vel=9.736834, DesVel=20, RemDist=0.0717691
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.93, 0.26, 17.45), Vel=9.651772, DesVel=20, RemDist=0.08814763
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.23, 0.33, -45.01), Vel=0.2599078, DesVel=20, RemDist=0.01740183
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.09, 0.26, 11.68), Vel=2.098331, DesVel=1.402548, RemDist=0.07851048
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.16, 0.26, -15.01), Vel=2.076776, DesVel=10.88612, RemDist=0.5259381
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.25, 0.26, 12.96), Vel=9.19283, DesVel=19.12677, RemDist=0.1392715
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.90, 0.26, 26.36), Vel=0.6155348, DesVel=20, RemDist=0.08753268
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.25, 0.26, 6.40), Vel=0.4485002, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.31, 0.32, 45.01), Vel=0.3667403, DesVel=20, RemDist=0.03644994
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.31, 0.26, 1.66), Vel=0.4623395, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.13, 0.26, 26.41), Vel=1.952132, DesVel=1.696825, RemDist=0.08456011
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.95, 0.26, -14.85), Vel=4.442589, DesVel=11.95654, RemDist=0.4754987
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.24, 0.33, 12.67), Vel=1.966419, DesVel=1.319227, RemDist=0.05830076
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.84, 0.33, 17.43), Vel=1.933998, DesVel=1.299763, RemDist=0.06084225
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.27, 0.32, -44.89), Vel=2.15661, DesVel=3.189914, RemDist=0.1548045
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.19, 0.33, 11.72), Vel=1.689429, DesVel=2.796033, RemDist=0.06372531
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.18, 0.33, -14.81), Vel=3.184731, DesVel=10.88634, RemDist=0.5099993
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.21, 0.33, 12.94), Vel=5.793053, DesVel=5.962718, RemDist=0.04248868
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.90, 0.33, 26.43), Vel=1.323587, DesVel=0.9557537, RemDist=0.01253979
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.24, 0.33, 6.39), Vel=1.326184, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.22, 0.31, 44.99), Vel=4.549973, DesVel=0, RemDist=0
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.33, 0.32, 1.66), Vel=1.158523, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.04, 0.33, 26.53), Vel=1.663657, DesVel=2.817701, RemDist=0.06616714
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.96, 0.33, -14.98), Vel=3.648337, DesVel=11.9568, RemDist=0.4914781
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.27, 0.35, 12.73), Vel=0.4735417, DesVel=0.381258, RemDist=0.01190351
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.88, 0.34, 17.44), Vel=2.236664, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.28, 0.31, -44.97), Vel=0.7431671, DesVel=2.180037, RemDist=0.02527262
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.11, 0.35, 11.72), Vel=0.4691956, DesVel=0.3854151, RemDist=0.01228926
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.38, 0.35, -14.56), Vel=4.546579, DesVel=11.95643, RemDist=0.5087453
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.19, 0.34, 12.89), Vel=9.934373, DesVel=20, RemDist=0.030448
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.90, 0.34, 26.45), Vel=0.537254, DesVel=0, RemDist=0
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.25, 0.35, 6.40), Vel=0.4861742, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.29, 0.30, 45.01), Vel=0.5519211, DesVel=0.4692222, RemDist=0.01837371
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.31, 0.33, 1.68), Vel=0.5034952, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.10, 0.34, 26.46), Vel=0.454258, DesVel=0.3723705, RemDist=0.01192205
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.81, 0.35, -15.23), Vel=5.003087, DesVel=10.88602, RemDist=0.4920464
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.28, 0.34, 12.82), Vel=1.426162, DesVel=2.24476, RemDist=0.0702929
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.91, 0.34, 17.45), Vel=1.101696, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.31, 0.30, -45.01), Vel=4.773592, DesVel=0, RemDist=0
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.10, 0.34, 11.73), Vel=1.140391, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.35, 0.34, -14.57), Vel=2.7421, DesVel=10.88605, RemDist=0.5341384
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.21, 0.34, 12.88), Vel=1.339476, DesVel=20, RemDist=0.06224972
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.90, 0.34, 26.44), Vel=1.107866, DesVel=0, RemDist=0
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.23, 0.34, 6.37), Vel=1.103615, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.22, 0.29, 45.01), Vel=4.789433, DesVel=0, RemDist=0
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.34, 0.32, 1.66), Vel=1.005382, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.10, 0.34, 26.45), Vel=1.113182, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.82, 0.34, -15.21), Vel=2.27764, DesVel=6.82471, RemDist=0.4701546
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.26, 0.26, 12.73), Vel=1.047146, DesVel=0, RemDist=0
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.90, 0.26, 17.45), Vel=1.009869, DesVel=0, RemDist=0
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.25, 0.28, -45.08), Vel=2.8471, DesVel=0, RemDist=0
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.10, 0.26, 11.72), Vel=1.048308, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.56, 0.26, -14.50), Vel=5.276035, DesVel=10.88847, RemDist=0.5298395
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.23, 0.26, 12.93), Vel=2.003176, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.91, 0.26, 26.44), Vel=1.193554, DesVel=0, RemDist=0
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.24, 0.26, 6.38), Vel=1.010375, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.26, 0.27, 45.04), Vel=0.6006344, DesVel=1.149054, RemDist=0.02009916
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.34, 0.26, 1.68), Vel=0.8265827, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.10, 0.26, 26.45), Vel=1.005856, DesVel=0, RemDist=0
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.64, 0.26, -15.30), Vel=5.801888, DesVel=11.95954, RemDist=0.4833525
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-11.25, 0.25, 12.73), Vel=0.00613636, DesVel=20, RemDist=0.007431191
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.90, 0.25, 17.45), Vel=0.005361454, DesVel=0.02242273, RemDist=0.001072273
+
+[AgentMover] Home_GK: OnNav=True, Pos=(-0.22, 0.26, -44.96), Vel=0.5731254, DesVel=20, RemDist=0.04093808
+
+[AgentMover] Home_CM: OnNav=True, Pos=(7.06, 0.25, 11.65), Vel=9.588791, DesVel=19.90434, RemDist=0.009829776
+
+[AgentMover] Home_CB: OnNav=True, Pos=(-3.80, 0.25, -14.58), Vel=2.744522, DesVel=10.88592, RemDist=0.5125973
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(6.20, 0.25, 12.88), Vel=9.423472, DesVel=20, RemDist=0.009160899
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.91, 0.25, 26.45), Vel=0.005323336, DesVel=20, RemDist=0.001489145
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-3.23, 0.25, 6.35), Vel=0.005456747, DesVel=0, RemDist=0
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.26, 0.26, 45.02), Vel=0.4287529, DesVel=0.5649677, RemDist=0.01968603
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-3.38, 0.25, 1.67), Vel=0.004037604, DesVel=0, RemDist=0
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.17, 0.25, 26.48), Vel=9.682734, DesVel=20, RemDist=0.007661508
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-3.39, 0.25, -15.28), Vel=2.272605, DesVel=11.95633, RemDist=0.4875437
+

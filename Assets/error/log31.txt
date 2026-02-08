@@ -1,0 +1,294 @@
+The referenced script (Unknown) on this Behaviour is missing!
+
+Home_CM: Already on NavMesh at (10.00, 0.00, -5.00)
+
+Home_CB: Already on NavMesh at (6.00, 0.00, -14.00)
+
+Away_CM2: Already on NavMesh at (10.00, -1.00, 16.00)
+
+Away_CB: Already on NavMesh at (-6.00, 0.00, 26.00)
+
+Away_ST: Already on NavMesh at (0.00, 0.00, 12.00)
+
+Away_GK: Already on NavMesh at (0.00, 0.00, 48.00)
+
+Home_ST: Already on NavMesh at (0.00, 0.00, -1.00)
+
+Away_CB2: Already on NavMesh at (6.00, 0.00, 26.00)
+
+Home_CB2: Already on NavMesh at (-6.00, 0.00, -14.00)
+
+Auto-Added ActionLogDisplay to MatchManager
+
+Home_CM2: Already on NavMesh at (-10.00, 0.00, -5.00)
+
+Away_CM: Already on NavMesh at (-10.00, -1.00, 16.00)
+
+Home_GK: Already on NavMesh at (0.00, 0.00, -48.00)
+
+<b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+<color=green>[PASS]</color> ShootScore_Close
+
+<color=green>[PASS]</color> ShootScore_Far
+
+<color=green>[PASS]</color> ShootScore_Angle
+
+<b>[Unit Tests] Finished.</b>
+
+[MatchManager] HOME KICK OFF!
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:428)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+Setting angular velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_angularVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:429)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+[MatchManager] SetPlayersActiveState(False) - Agent Count: 9
+
+[MatchManager] Ready...
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.99, 0.36, -4.99), Vel=1.450571, PathStatus=PathComplete
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.00, 0.34, 16.02), Vel=1.391677, PathStatus=PathComplete
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.06, 0.31, -47.92), Vel=0.8049836, PathStatus=PathComplete
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Away_CM Executing. AgentActive=True
+
+[MatchManager] SetPlayersActiveState(True) - Agent Count: 12
+
+[MatchManager] Enabling Agent: Home_CM
+
+[MatchManager] Enabling Agent: Home_CB
+
+[MatchManager] Enabling Agent: Away_CM2
+
+[MatchManager] Enabling Agent: Away_CB
+
+[MatchManager] Enabling Agent: Away_ST
+
+[MatchManager] Enabling Agent: Away_GK
+
+[MatchManager] Enabling Agent: Home_ST
+
+[MatchManager] Enabling Agent: Away_CB2
+
+[MatchManager] Enabling Agent: Home_CB2
+
+[MatchManager] Enabling Agent: Home_CM2
+
+[MatchManager] Enabling Agent: Away_CM
+
+[MatchManager] Enabling Agent: Home_GK
+
+[MatchManager] PLAY!
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.97, 0.37, -5.00), Vel=0.5178869, PathStatus=PathComplete
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-9.98, 0.36, 16.00), Vel=0.499766, PathStatus=PathComplete
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.10, 0.29, -47.87), Vel=0.7885385, PathStatus=PathComplete
+
+[AgentMover] Home_CM: OnNav=True, Pos=(10.00, 0.37, -5.00), Vel=0.5204403, PathStatus=PathComplete
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[AgentMover] Home_CB: OnNav=True, Pos=(6.00, 0.37, -14.00), Vel=0.5204403, PathStatus=PathComplete
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(10.00, 0.36, 14.00), Vel=0.5022144, PathStatus=PathComplete
+
+[RootState] Away_CM2 Executing. AgentActive=True
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.00, 0.36, 24.00), Vel=0.5022143, PathStatus=PathComplete
+
+[RootState] Away_CB Executing. AgentActive=True
+
+[AgentMover] Away_ST: OnNav=True, Pos=(0.00, 0.36, 10.00), Vel=0.5022144, PathStatus=PathComplete
+
+[RootState] Away_ST Executing. AgentActive=True
+
+[AgentMover] Away_GK: OnNav=True, Pos=(0.00, 0.30, 48.00), Vel=0.7437263, PathStatus=PathComplete
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.00, 0.37, -0.90), Vel=0.5204402, PathStatus=PathComplete
+
+<color=green>[POSSESSION] Set to Home_ST</color>
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.91
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(6.00, 0.36, 24.00), Vel=0.5022144, PathStatus=PathComplete
+
+[RootState] Away_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-6.00, 0.37, -14.00), Vel=0.5204403, PathStatus=PathComplete
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+<color=cyan><b>Home_ST</b> PASS to Home_CM2</color>
+
+<color=cyan>Home_CM2 is expecting a PASS at (-9.97, 0.35, -5.02)!</color>
+
+<color=grey>[POSSESSION] Cleared (Ball in air)</color>
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.99, 0.35, -4.98), Vel=1.420463, PathStatus=PathComplete
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.00, 0.34, 15.93), Vel=1.389103, PathStatus=PathComplete
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.13, 0.27, -47.81), Vel=0.7320476, PathStatus=PathComplete
+
+[AgentMover] Home_CM: OnNav=True, Pos=(9.97, 0.35, -5.07), Vel=1.407344, PathStatus=PathComplete
+
+[AgentMover] Home_CB: OnNav=True, Pos=(5.96, 0.35, -14.08), Vel=1.428616, PathStatus=PathComplete
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(10.00, 0.34, 13.88), Vel=1.330991, PathStatus=PathComplete
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-5.98, 0.34, 23.90), Vel=1.342558, PathStatus=PathComplete
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.03, 0.34, 9.90), Vel=1.357342, PathStatus=PathComplete
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.05, 0.28, 47.97), Vel=0.6820599, PathStatus=PathComplete
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-0.08, 0.35, -0.98), Vel=1.381301, PathStatus=PathComplete
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(6.01, 0.34, 23.89), Vel=1.333279, PathStatus=PathComplete
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-6.00, 0.35, -14.06), Vel=1.442738, PathStatus=PathComplete
+
+<color=green>[POSSESSION] Set to Home_CM2</color>
+
+[MatchManager] Home_CM2 has the ball!
+
+[AgentBallHandler] Home_CM2 CLAIMED BALL. Dist: 1.48
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.96, 0.25, -4.97), Vel=0.9224894, PathStatus=PathComplete
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.01, 0.25, 15.84), Vel=0.8873237, PathStatus=PathComplete
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.14, 0.26, -47.76), Vel=0.5401425, PathStatus=PathComplete
+
+[AgentMover] Home_CM: OnNav=True, Pos=(9.92, 0.26, -5.01), Vel=0.9224894, PathStatus=PathComplete
+
+[AgentMover] Home_CB: OnNav=True, Pos=(5.90, 0.26, -14.11), Vel=0.9224894, PathStatus=PathComplete
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(9.98, 0.25, 13.80), Vel=0.8873238, PathStatus=PathComplete
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.03, 0.25, 23.81), Vel=0.8873239, PathStatus=PathComplete
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.11, 0.25, 9.81), Vel=0.8873239, PathStatus=PathComplete
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.09, 0.26, 47.93), Vel=0.6092615, PathStatus=PathComplete
+
+[AgentMover] Home_ST: OnNav=True, Pos=(-0.01, 0.26, -0.96), Vel=0.9224896, PathStatus=PathComplete
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.96, 0.25, 23.80), Vel=0.8873238, PathStatus=PathComplete
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-6.03, 0.26, -14.14), Vel=0.9224894, PathStatus=PathComplete
+
+<color=cyan>PREDICTIVE PASS: Home_CM2 -> Home_ST (Lead: 1.0m)</color>
+
+<color=cyan><b>Home_CM2</b> PASS to Home_ST</color>
+
+<color=cyan>Home_ST is expecting a PASS at (0.11, 1.36, -1.06)!</color>
+
+<color=grey>[POSSESSION] Cleared (Ball in air)</color>
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.96, 0.25, -4.94), Vel=0.04490382, PathStatus=PathComplete
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.04, 0.25, 15.80), Vel=0.2025225, PathStatus=PathComplete
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.15, 0.25, -47.72), Vel=0.2566218, PathStatus=PathComplete
+
+[AgentMover] Home_CM: OnNav=True, Pos=(9.82, 0.25, -4.95), Vel=0.1899202, PathStatus=PathComplete
+
+[AgentMover] Home_CB: OnNav=True, Pos=(5.81, 0.25, -14.12), Vel=0.2131821, PathStatus=PathComplete
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(9.95, 0.25, 13.67), Vel=0.0726468, PathStatus=PathComplete
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.05, 0.25, 23.69), Vel=0.03599815, PathStatus=PathComplete
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.16, 0.25, 9.68), Vel=0.03538668, PathStatus=PathComplete
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.12, 0.25, 47.91), Vel=0.3299431, PathStatus=PathComplete
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.06, 0.25, -0.96), Vel=0.2275191, PathStatus=PathComplete
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.91, 0.25, 23.68), Vel=0.04824007, PathStatus=PathComplete
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-6.07, 0.25, -14.17), Vel=0.200473, PathStatus=PathComplete
+
+<color=green>[POSSESSION] Set to Home_ST</color>
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.45
+
+<color=cyan><b>Home_ST</b> PASS to Home_CM2</color>
+
+<color=cyan>Home_CM2 is expecting a PASS at (-9.94, 0.38, -4.95)!</color>
+
+<color=grey>[POSSESSION] Cleared (Ball in air)</color>
+
+[AgentMover] Home_CM2: OnNav=True, Pos=(-9.99, 0.28, -4.94), Vel=1.354531, PathStatus=PathComplete
+
+[AgentMover] Away_CM: OnNav=True, Pos=(-10.04, 0.28, 15.71), Vel=1.222992, PathStatus=PathComplete
+
+[AgentMover] Home_GK: OnNav=True, Pos=(0.17, 0.25, -47.68), Vel=0.514462, PathStatus=PathComplete
+
+[AgentMover] Home_CM: OnNav=True, Pos=(9.83, 0.28, -5.04), Vel=1.326697, PathStatus=PathComplete
+
+[AgentMover] Home_CB: OnNav=True, Pos=(5.81, 0.28, -14.21), Vel=1.286448, PathStatus=PathComplete
+
+[AgentMover] Away_CM2: OnNav=True, Pos=(9.95, 0.28, 13.58), Vel=1.364408, PathStatus=PathComplete
+
+[AgentMover] Away_CB: OnNav=True, Pos=(-6.04, 0.28, 23.59), Vel=1.368016, PathStatus=PathComplete
+
+[AgentMover] Away_ST: OnNav=True, Pos=(-0.17, 0.28, 9.59), Vel=1.350042, PathStatus=PathComplete
+
+[AgentMover] Away_GK: OnNav=True, Pos=(-0.15, 0.25, 47.88), Vel=0.523893, PathStatus=PathComplete
+
+[AgentMover] Home_ST: OnNav=True, Pos=(0.07, 0.28, -0.98), Vel=1.410767, PathStatus=PathComplete
+
+[AgentMover] Away_CB2: OnNav=True, Pos=(5.91, 0.28, 23.58), Vel=1.372288, PathStatus=PathComplete
+
+[AgentMover] Home_CB2: OnNav=True, Pos=(-6.06, 0.28, -14.26), Vel=1.280375, PathStatus=PathComplete
+
+<color=green>[POSSESSION] Set to Home_CM2</color>
+
+[MatchManager] Home_CM2 has the ball!
+
+[AgentBallHandler] Home_CM2 CLAIMED BALL. Dist: 1.49
+
+[RootState] Home_CM2 Executing. AgentActive=True
+
+[RootState] Home_CM Executing. AgentActive=True
+
+[RootState] Home_CB Executing. AgentActive=True
+
+[RootState] Home_ST Executing. AgentActive=True
+
+[RootState] Home_CB2 Executing. AgentActive=True
+

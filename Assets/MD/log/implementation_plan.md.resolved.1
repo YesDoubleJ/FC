@@ -1,0 +1,45 @@
+# Implement Phase 2: Hybrid Navigation System
+
+## Goal Description
+Implement the "Hybrid Navigation" system described in Section 2.2 of the architecture document.
+This system combines **NavMeshAgent** (for pathfinding/intelligence) with **Rigidbody** (for physics/collisions).
+
+- **Brain**: NavMeshAgent calculates the path but does NOT move the transform directly.
+- **Body**: Rigidbody moves the character using physics forces towards the agent's next steer target.
+
+## User Review Required
+> [!NOTE]
+> I will use `linearVelocity`, `linearDamping`, and `angularDamping` as per your recent fixes (Unity 6 / 2023.3+ API naming).
+
+## Proposed Changes
+
+### Assets/Game/Scripts/AI
+#### [NEW] [HybridAgentController.cs](file:///d:/unity/workspace/로또축구단/Assets/Game/Scripts/AI/HybridAgentController.cs)
+- **Components**: Requires `NavMeshAgent` and `Rigidbody`.
+- **Logic**:
+    - Disable Agent's auto-update: `agent.updatePosition = false`, `agent.updateRotation = false`.
+    - `SetDestination(Vector3 target)`: Wrapper for agent.SetDestination.
+    - [FixedUpdate()](file:///d:/unity/workspace/%EB%A1%9C%EB%98%90%EC%B6%95%EA%B5%AC%EB%8B%A8/Assets/Game/Scripts/Physics/BallAerodynamics.cs#23-27):
+        1. Calculate direction to `agent.nextPosition`.
+        2. Apply force/velocity to Rigidbody to move towards it.
+        3. Rotate Rigidbody to face movement direction.
+        4. Sync Agent position: `agent.nextPosition = transform.position` (loosely coupled) to keep pathfinding valid.
+
+### Assets/Game/Prefabs
+#### [NEW] [Player.prefab](file:///d:/unity/workspace/로또축구단/Assets/Game/Prefabs/Player.prefab)
+- **CapsuleCollider**: Height 1.8m.
+- **Rigidbody**: Mass 75kg, `linearDamping` 1.0, `angularDamping` 1.0, Constraints: Freeze Rotation X/Z.
+- **NavMeshAgent**: Speed 5-8 (variable), Acceleration 8.
+- **HybridAgentController**: Attached.
+
+## Verification Plan
+
+### Manual Verification
+1.  **Scene Setup**: Use `PhysicsTest` scene.
+2.  **Bake NavMesh**: Add a `NavMeshSurface` (or standard Bake) to the Plane so the agent can walk.
+3.  **Click to Move**:
+    - Add a temporary script `ClickToMove.cs` that sets the agent's destination to where the user clicks.
+4.  **Collision Test**:
+    - Place a heavy obstacle (Rigidbody cube).
+    - Command the player to walk into it.
+    - **Expected**: The player should physically push against it or slide around it, rather than clipping through or stopping instantly like a standard NavMeshAgent.

@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_WALKTHROUGH",
+  "summary": "Walkthrough for Phase 1: 3D Physics Framework.\nDetails the changes made (Ball Physics, Magnus Effect) and instructions on how to verify them in Unity Editor.",
+  "updatedAt": "2026-01-24T11:37:46.601973700Z"
+}

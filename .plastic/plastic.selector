@@ -1,0 +1,4 @@
+repository "FC 2026-01-27_01-41-07/FC@14569627321999@cloud"
+  path "/"
+    br "/main"
+    co "/main"

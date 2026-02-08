@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286dfbc2b13bc8a499964c7a92eecb7a, type: 3}
+  m_Name: GoalkeeperSettings
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.GoalkeeperSettings
+  goalLineZ: 47
+  positioningFarDist: 5
+  positioningMidDist: 12
+  positioningCloseDist: 3
+  dangerousShotSpeedThreshold: 8
+  dangerousShotTimeThreshold: 2.5
+  saveReactionSpeed: 7.5
+  saveReactionAccel: 45
+  normalPositionSpeed: 4.5
+  normalPositionAccel: 10

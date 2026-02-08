@@ -1,0 +1,60 @@
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,13): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 'if'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,44): error CS8124: 튜플에는 요소가 두 개 이상 있어야 합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,44): error CS1026: )가 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,70): error CS8124: 튜플에는 요소가 두 개 이상 있어야 합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,70): error CS1026: )가 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,70): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '+'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,82): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 ','이(가) 있습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,92): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 ','이(가) 있습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,116): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '('이(가) 있습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,117): error CS1031: 형식이 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,117): error CS8124: 튜플에는 요소가 두 개 이상 있어야 합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,117): error CS1026: )가 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(162,117): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '"Default"'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,22): error CS1031: 형식이 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,22): error CS8124: 튜플에는 요소가 두 개 이상 있어야 합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,22): error CS1026: )가 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,22): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '!'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,59): error CS1001: 식별자가 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,69): error CS1001: 식별자가 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,71): error CS1031: 형식이 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,71): error CS1001: 식별자가 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,71): error CS1003: 구문 오류입니다. ','이(가) 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,75): error CS1002: ;이 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(166,75): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 ')'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(168,27): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '*='이(가) 있습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(173,13): error CS8803: 최상위 문은 네임스페이스 및 형식 선언 앞에 와야 합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(244,9): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(246,9): error CS0106: 이 항목의 'private' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(265,5): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+
+Assets\Game\Scripts\AI\States\RootState_Attacking.cs(266,1): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+

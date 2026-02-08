@@ -1,0 +1,776 @@
+<color=#ffaa00>warn:</color> [04:26:41:7870] <color=#B4FF32>[AI]</color> <color=#85C1E2><b>BufferedFileLogStorage</b></color> Flush called but already disposed, ignored.
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.Unity.MCP.BufferedFileLogStorage:Flush () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Unity/Logs/BufferedFileLogStorage.cs:52)
+com.IvanMurzak.Unity.MCP.FileLogStorage:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Unity/Logs/FileLogStorage.cs:455)
+com.IvanMurzak.Unity.MCP.UnityLogCollector:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Unity/Logs/UnityLogCollector.cs:121)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:DisposeLogCollector () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/UnityMcpPlugin.cs:95)
+com.IvanMurzak.Unity.MCP.Editor.Startup:TryDisconnectAndCleanup (string,bool) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Editor/Scripts/Startup.Editor.cs:84)
+com.IvanMurzak.Unity.MCP.Editor.Startup:OnBeforeAssemblyReload () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Editor/Scripts/Startup.Editor.cs:35)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+<color=#ffaa00>warn:</color> [04:26:42:3781] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> DisconnectImmediate called on disposed object. Ignoring.
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.BaseHubConnector:DisconnectImmediate ()
+com.IvanMurzak.McpPlugin.McpPlugin:Dispose ()
+com.IvanMurzak.McpPlugin.McpPlugin:Finalize ()
+
+<color=#ffaa00>warn:</color> [04:26:55:1663] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[10fc4e55-7bf2-4328-9b83-e66d03e6dd3c] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3> (com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3&)
+com.IvanMurzak.McpPlugin.ConnectionManager:EnsureConnection (System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>> (com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>&)
+com.IvanMurzak.McpPlugin.ConnectionManager:InvokeAsync<com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData> (string,com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedTools (com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedTools (com.IvanMurzak.McpPlugin.Common.Model.RequestToolsUpdated)
+com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_4>d:MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_4>d> (com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_4>d&)
+com.IvanMurzak.McpPlugin.McpPlugin:<.ctor>b__25_4 (R3.Unit)
+R3.AnonymousObserver`1<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.ThrottleFirst`1/_ThrottleFirst<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.Subject`1<R3.Unit>:OnNext (R3.Unit)
+com.IvanMurzak.McpPlugin.McpToolManager:SetToolEnabled (string,bool)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:ApplyConfigToMcpPlugin (com.IvanMurzak.McpPlugin.IMcpPlugin) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/UnityMcpPlugin.Build.cs:143)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:BuildMcpPluginIfNeeded () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/UnityMcpPlugin.Build.cs:74)
+com.IvanMurzak.Unity.MCP.Editor.Startup:.cctor () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Editor/Scripts/Startup.cs:28)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+<color=#ffaa00>warn:</color> [04:26:55:1774] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[10fc4e55-7bf2-4328-9b83-e66d03e6dd3c] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3> (com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3&)
+com.IvanMurzak.McpPlugin.ConnectionManager:EnsureConnection (System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>> (com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>&)
+com.IvanMurzak.McpPlugin.ConnectionManager:InvokeAsync<com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData> (string,com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedPrompts (com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedPrompts (com.IvanMurzak.McpPlugin.Common.Model.RequestPromptsUpdated)
+com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_5>d:MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_5>d> (com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_5>d&)
+com.IvanMurzak.McpPlugin.McpPlugin:<.ctor>b__25_5 (R3.Unit)
+R3.AnonymousObserver`1<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.ThrottleFirst`1/_ThrottleFirst<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.Subject`1<R3.Unit>:OnNext (R3.Unit)
+com.IvanMurzak.McpPlugin.McpPromptManager:SetPromptEnabled (string,bool)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:ApplyConfigToMcpPlugin (com.IvanMurzak.McpPlugin.IMcpPlugin) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/UnityMcpPlugin.Build.cs:157)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:BuildMcpPluginIfNeeded () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/UnityMcpPlugin.Build.cs:74)
+com.IvanMurzak.Unity.MCP.Editor.Startup:.cctor () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Editor/Scripts/Startup.cs:28)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+<color=#ffaa00>warn:</color> [04:26:55:1797] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[10fc4e55-7bf2-4328-9b83-e66d03e6dd3c] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3> (com.IvanMurzak.McpPlugin.ConnectionManager/<EnsureConnection>d__3&)
+com.IvanMurzak.McpPlugin.ConnectionManager:EnsureConnection (System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<com.IvanMurzak.McpPlugin.Common.Model.ResponseData>:Start<com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>> (com.IvanMurzak.McpPlugin.ConnectionManager/<InvokeAsync>d__39`2<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData>&)
+com.IvanMurzak.McpPlugin.ConnectionManager:InvokeAsync<com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated, com.IvanMurzak.McpPlugin.Common.Model.ResponseData> (string,com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedResources (com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated,System.Threading.CancellationToken)
+com.IvanMurzak.McpPlugin.McpManagerClientHub:NotifyAboutUpdatedResources (com.IvanMurzak.McpPlugin.Common.Model.RequestResourcesUpdated)
+com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_6>d:MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_6>d> (com.IvanMurzak.McpPlugin.McpPlugin/<<-ctor>b__25_6>d&)
+com.IvanMurzak.McpPlugin.McpPlugin:<.ctor>b__25_6 (R3.Unit)
+R3.AnonymousObserver`1<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.ThrottleFirst`1/_ThrottleFirst<R3.Unit>:OnNextCore (R3.Unit)
+R3.Observer`1<R3.Unit>:OnNext (R3.Unit)
+R3.Subject`1<R3.Unit>:OnNext (R3.Unit)
+com.IvanMurzak.McpPlugin.McpResourceManager:SetResourceEnabled (string,bool)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:ApplyConfigToMcpPlugin (com.IvanMurzak.McpPlugin.IMcpPlugin) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/UnityMcpPlugin.Build.cs:171)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:BuildMcpPluginIfNeeded () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/UnityMcpPlugin.Build.cs:74)
+com.IvanMurzak.Unity.MCP.Editor.Startup:.cctor () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Editor/Scripts/Startup.cs:28)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+The referenced script (Unknown) on this Behaviour is missing!
+
+[Physics Debug] 파란유니폼2: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:115)
+
+[Agent Debug] 파란유니폼2: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:116)
+
+[Physics Debug] 빨간유니폼1-AWAY: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:115)
+
+[Agent Debug] 빨간유니폼1-AWAY: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:116)
+
+[Physics Debug] AWAY-GK: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:115)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:19)
+
+[Agent Debug] AWAY-GK: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:116)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:19)
+
+<color=red><b>AWAY-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:37)
+Game.Scripts.AI.HFSM.StateMachine:Initialize (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:18)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:119)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:19)
+
+[Physics Debug] 파란유니폼1-HOME: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:115)
+
+[Agent Debug] 파란유니폼1-HOME: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:116)
+
+[MatchManager] HOME KICK OFF!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:198)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:90)
+
+파란유니폼1-HOME notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:729)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:62)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:262)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:90)
+
+<color=green>[POSSESSION] Set to 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:63)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:262)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:90)
+
+[MatchManager] 파란유니폼1-HOME has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:262)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:90)
+
+[Physics Debug] 빨간유니폼2: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:115)
+
+[Agent Debug] 빨간유니폼2: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:116)
+
+[Physics Debug] HOME-GK: Mass=70, Drag=1, AngDrag=0.5, Kinematic=False, Constraints=80
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:115)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:19)
+
+[Agent Debug] HOME-GK: Speed=9, Accel=18, Stopped=False, UpdatePos=False
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:116)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:19)
+
+<color=red><b>HOME-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:37)
+Game.Scripts.AI.HFSM.StateMachine:Initialize (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:18)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:119)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:19)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-2.94, -0.42, 6.41) (Dist: 8.0) Goal: (0.00, 0.00, 50.00), GoalDir: (-0.10, 0.01, 1.00)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 빨간유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (3.82, -0.42, -9.91) (Dist: 12.5) Goal: (0.00, 0.00, -50.00), GoalDir: (-0.09, 0.01, -1.00)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-0.78, -0.42, 6.02) (Dist: 11.4) Goal: (0.00, 0.00, 50.00), GoalDir: (-0.14, 0.01, 0.99)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=orange>[POSSESSION] Lost by 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:71)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:255)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+[HybridAgent] 파란유니폼1-HOME lost ball. Dist: 12.82
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:256)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+빨간유니폼2 notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:729)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:62)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:235)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+<color=green>[POSSESSION] Set to 빨간유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:63)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:235)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+[MatchManager] 빨간유니폼2 has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:235)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+<color=cyan>[AI Decision] 빨간유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.15 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (14.11, -0.42, -10.85) (Dist: 9.8) Goal: (0.00, 0.00, -50.00), GoalDir: (-0.34, 0.01, -0.94)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 빨간유니폼1-AWAY (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (14.13, -0.42, -10.85) (Dist: 25.0) Goal: (0.00, 0.00, -50.00), GoalDir: (-0.34, 0.01, -0.94)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 빨간유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.14 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (20.62, -0.43, -11.53) (Dist: 9.6) Goal: (0.00, 0.00, -50.00), GoalDir: (-0.47, 0.01, -0.88)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 빨간유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (27.92, -0.43, -12.15) (Dist: 9.4) Goal: (0.00, 0.00, -50.00), GoalDir: (-0.59, 0.01, -0.80)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+[MatchManager] MISS / OUT!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:OnAttackFailed (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:406)
+Game.Scripts.Managers.MatchManager:Update () (at Assets/Game/Scripts/Managers/MatchManager.cs:139)
+
+<color=cyan>MISS / OUT! (Ball Reset)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:OnAttackFailed (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:407)
+Game.Scripts.Managers.MatchManager:Update () (at Assets/Game/Scripts/Managers/MatchManager.cs:139)
+
+<color=cyan>[AI Decision] 빨간유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (32.03, -0.44, -5.73) (Dist: 8.6) Goal: (0.00, 0.00, -50.00), GoalDir: (-0.69, 0.01, -0.73)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 빨간유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.16
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (32.03, -0.44, -5.73) (Dist: 8.9) Goal: (0.00, 0.00, -50.00), GoalDir: (-0.69, 0.01, -0.73)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+[MatchManager] AWAY KICK OFF!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:198)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__55:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:422)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+빨간유니폼2 notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:729)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:62)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:262)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__55:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:422)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+<color=green>[POSSESSION] Set to 빨간유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:63)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:262)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__55:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:422)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[MatchManager] 빨간유니폼2 has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:262)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__55:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:422)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+<color=cyan>[AI Decision] 빨간유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-7.07, -0.23, -7.11) (Dist: 10.8) Goal: (0.00, 0.00, -50.00), GoalDir: (0.00, 0.01, -1.00)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 빨간유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-10.34, -0.42, -8.96) (Dist: 14.4) Goal: (0.00, 0.00, -50.00), GoalDir: (0.08, 0.01, -1.00)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:71)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:255)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+[HybridAgent] 빨간유니폼2 lost ball. Dist: 12.07
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:256)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+파란유니폼1-HOME notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:729)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:62)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:235)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+<color=green>[POSSESSION] Set to 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:63)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:235)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+[MatchManager] 파란유니폼1-HOME has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:235)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.14 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.23
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-17.62, -0.44, 2.28) (Dist: 9.5) Goal: (0.00, 0.00, 50.00), GoalDir: (0.35, 0.01, 0.94)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 파란유니폼2 (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.23
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-17.63, -0.44, 2.28) (Dist: 15.7) Goal: (0.00, 0.00, 50.00), GoalDir: (0.35, 0.01, 0.94)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.23
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-22.76, -0.44, 2.54) (Dist: 10.3) Goal: (0.00, 0.00, 50.00), GoalDir: (0.43, 0.01, 0.90)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.23
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-28.22, -0.44, 6.99) (Dist: 10.5) Goal: (0.00, 0.00, 50.00), GoalDir: (0.55, 0.01, 0.84)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.23
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-32.93, -0.44, 12.46) (Dist: 10.3) Goal: (0.00, 0.00, 50.00), GoalDir: (0.66, 0.01, 0.75)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+[MatchManager] MISS / OUT!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:OnAttackFailed (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:406)
+Game.Scripts.Managers.MatchManager:Update () (at Assets/Game/Scripts/Managers/MatchManager.cs:139)
+
+<color=cyan>MISS / OUT! (Ball Reset)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:OnAttackFailed (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:407)
+Game.Scripts.Managers.MatchManager:Update () (at Assets/Game/Scripts/Managers/MatchManager.cs:139)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.13
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-34.97, -0.44, 14.77) (Dist: 9.1) Goal: (0.00, 0.00, 50.00), GoalDir: (0.70, 0.01, 0.71)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.13 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.12
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-34.97, -0.44, 14.77) (Dist: 9.1) Goal: (0.00, 0.00, 50.00), GoalDir: (0.70, 0.01, 0.71)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+[MatchManager] HOME KICK OFF!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:198)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__55:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:422)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+파란유니폼1-HOME notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:729)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:62)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:262)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__55:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:422)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+<color=green>[POSSESSION] Set to 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:63)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:262)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__55:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:422)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[MatchManager] 파란유니폼1-HOME has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:479)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:262)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:205)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__55:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:422)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-8.49, -0.42, 7.90) (Dist: 12.3) Goal: (0.00, 0.00, 50.00), GoalDir: (0.03, 0.01, 1.00)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=cyan>[AI Decision] 파란유니폼1-HOME (Ball Owner) 1s Report:
+  My xG: 0.17 (Thresh: 0.5)
+  Best Pass: 0.00 (Target: None)
+  Pressure: 0.00
+  Action: Judging...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:283)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=yellow>  => DRIBBLE (ADVANCE) towards (-7.32, -0.42, 12.93) (Dist: 15.7) Goal: (0.00, 0.00, 50.00), GoalDir: (0.19, 0.01, 0.98)</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:ExecuteDribble (UnityEngine.Vector3,bool,single) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:388)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:357)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:105)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:151)
+
+<color=orange>[POSSESSION] Lost by 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:71)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:255)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+[HybridAgent] 파란유니폼1-HOME lost ball. Dist: 13.37
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:256)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:154)
+
+<color=#ffaa00>warn:</color> [04:27:20:3927] <color=#B4FF32>[AI]</color> <color=#85C1E2><b>BufferedFileLogStorage</b></color> Flush called but already disposed, ignored.
+UnityEngine.Debug:LogWarning (object)
+com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Logger/UnityLogger.cs:125)
+Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
+Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
+Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
+com.IvanMurzak.Unity.MCP.BufferedFileLogStorage:Flush () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Unity/Logs/BufferedFileLogStorage.cs:52)
+com.IvanMurzak.Unity.MCP.FileLogStorage:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Unity/Logs/FileLogStorage.cs:455)
+com.IvanMurzak.Unity.MCP.UnityLogCollector:Dispose () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/Unity/Logs/UnityLogCollector.cs:121)
+com.IvanMurzak.Unity.MCP.UnityMcpPlugin:DisposeLogCollector () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Runtime/UnityMcpPlugin.cs:95)
+com.IvanMurzak.Unity.MCP.Editor.Startup:TryDisconnectAndCleanup (string,bool) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Editor/Scripts/Startup.Editor.cs:84)
+com.IvanMurzak.Unity.MCP.Editor.Startup:OnApplicationQuitting () (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@a4e2ecf99a77/Editor/Scripts/Startup.Editor.cs:34)
+UnityEngine.Application:Internal_ApplicationQuit ()
+

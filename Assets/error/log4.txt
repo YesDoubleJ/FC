@@ -1,0 +1,1874 @@
+The referenced script (Unknown) on this Behaviour is missing!
+
+<color=red><b>AWAY-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:Initialize (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:18)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:114)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:20)
+
+[MatchManager] HOME KICK OFF!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:161)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:382)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:165)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+
+Setting angular velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_angularVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:383)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:165)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+
+파란유니폼1-HOME notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:228)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:168)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+
+<color=green>[POSSESSION] Set to 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:228)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:168)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+
+[MatchManager] 파란유니폼1-HOME has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:228)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:168)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:64)
+
+<color=red><b>HOME-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:Initialize (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:18)
+Game.Scripts.AI.HybridAgentController:Start () (at Assets/Game/Scripts/AI/HybridAgentController.cs:114)
+Game.Scripts.AI.GoalkeeperController:Start () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:20)
+
+<color=blue>파란유니폼1-HOME Decision: Dribble Forward</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:322)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=blue>빨간유니폼1-AWAY Decision: Dribble Forward</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:322)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>파란유니폼1-HOME Decision: BLOCKED! Side Dribbling...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:274)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>파란유니폼1-HOME Decision: BLOCKED! Side Dribbling...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:274)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=magenta>GK SAVE Decision: Real: -33.1, Error: 0.24</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HFSM.States.GKState_Saving:ProcessSaveDecision () (at Assets/Game/Scripts/AI/HFSM/States/GKState_Saving.cs:83)
+Game.Scripts.AI.HFSM.States.GKState_Saving:Execute () (at Assets/Game/Scripts/AI/HFSM/States/GKState_Saving.cs:49)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow>파란유니폼1-HOME Decision: BLOCKED! Side Dribbling...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:274)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>파란유니폼1-HOME Decision: BLOCKED! Side Dribbling...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:274)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:240)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[HybridAgent] 파란유니폼1-HOME lost ball. Dist: 3.05
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:241)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼2 notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 빨간유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 빨간유니폼2 has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=yellow>파란유니폼1-HOME Decision: BLOCKED! Side Dribbling...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:274)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>파란유니폼1-HOME Decision: BLOCKED! Side Dribbling...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:274)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=magenta>GK SAVE Decision: Real: 5.2, Error: 0.20</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HFSM.States.GKState_Saving:ProcessSaveDecision () (at Assets/Game/Scripts/AI/HFSM/States/GKState_Saving.cs:83)
+Game.Scripts.AI.HFSM.States.GKState_Saving:Execute () (at Assets/Game/Scripts/AI/HFSM/States/GKState_Saving.cs:49)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=green>빨간유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+파란유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=red><b>AWAY-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼1-HOME exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=blue><b>HOME-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:240)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[HybridAgent] 빨간유니폼2 lost ball. Dist: 13.21
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:241)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+AWAY-GK exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>AWAY-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼1-HOME exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+AWAY-GK notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=green>[POSSESSION] Set to AWAY-GK</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+[MatchManager] AWAY-GK has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=red><b>AWAY-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼1-HOME exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=blue><b>HOME-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=blue>AWAY-GK Decision: Dribble Forward</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:322)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+[MatchManager] GOAL! HOME SCORES!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:OnGoalScored (bool) (at Assets/Game/Scripts/Managers/MatchManager.cs:283)
+Game.Scripts.Gameplay.GoalTrigger:OnTriggerEnter (UnityEngine.Collider) (at Assets/Game/Scripts/Gameplay/GoalTrigger.cs:21)
+
+<color=yellow>SCORE: HOME 1 : 0 AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:OnGoalScored (bool) (at Assets/Game/Scripts/Managers/MatchManager.cs:297)
+Game.Scripts.Gameplay.GoalTrigger:OnTriggerEnter (UnityEngine.Collider) (at Assets/Game/Scripts/Gameplay/GoalTrigger.cs:21)
+
+<color=red><b>파란유니폼1-HOME TACKLED AWAY-GK!</b></color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:515)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by AWAY-GK</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:520)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>파란유니폼1-HOME KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:565)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:631)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:565)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+Setting angular velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_angularVelocity (UnityEngine.Vector3)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:632)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:565)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+[MatchManager] AWAY KICK OFF!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:161)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__41:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:365)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:382)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:165)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__41:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:365)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+Setting angular velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_angularVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:383)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:165)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__41:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:365)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+빨간유니폼1-AWAY notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:228)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:168)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__41:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:365)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+<color=green>[POSSESSION] Set to 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:228)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:168)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__41:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:365)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[MatchManager] 빨간유니폼1-AWAY has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.Managers.MatchManager:ResetPlayerPositions () (at Assets/Game/Scripts/Managers/MatchManager.cs:228)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:168)
+Game.Scripts.Managers.MatchManager/<GoalResetRoutine>d__41:MoveNext () (at Assets/Game/Scripts/Managers/MatchManager.cs:365)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:240)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[HybridAgent] 빨간유니폼1-AWAY lost ball. Dist: 6.56
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:241)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+파란유니폼2 exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼1-HOME exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+빨간유니폼1-AWAY notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 빨간유니폼1-AWAY has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼1-AWAY exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼1-HOME exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=blue><b>HOME-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=yellow>빨간유니폼1-AWAY Decision: BLOCKED! Side Dribbling...</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:274)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:240)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[HybridAgent] 빨간유니폼1-AWAY lost ball. Dist: 3.19
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:241)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼1-AWAY exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼1-HOME exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>AWAY-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼1-HOME notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 파란유니폼1-HOME has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+파란유니폼1-HOME exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=red><b>HOME-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=blue><b>AWAY-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=red><b>빨간유니폼1-AWAY TACKLED 파란유니폼1-HOME!</b></color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:515)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:520)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:565)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+빨간유니폼1-AWAY exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>AWAY-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 빨간유니폼1-AWAY has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼1-AWAY exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=blue><b>HOME-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=red><b>AWAY-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:240)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[HybridAgent] 빨간유니폼1-AWAY lost ball. Dist: 10.66
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:241)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼1-AWAY exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>AWAY-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 빨간유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 빨간유니폼2 has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=blue><b>HOME-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=red><b>AWAY-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=green>빨간유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:240)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[HybridAgent] 빨간유니폼2 lost ball. Dist: 10.76
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:241)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>AWAY-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼2 exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼1-HOME exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼2 notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 빨간유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 빨간유니폼2 has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=blue><b>HOME-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=red><b>AWAY-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼1-HOME exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=blue>빨간유니폼2 Decision: Dribble Forward</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:322)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=red><b>파란유니폼2 TACKLED 빨간유니폼2!</b></color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:515)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:520)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>파란유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:565)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+파란유니폼2 exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>AWAY-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼1-HOME exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼2 notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 파란유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 파란유니폼2 has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+파란유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=red><b>HOME-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=blue><b>AWAY-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼1-HOME exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=green>파란유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>파란유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 파란유니폼2</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:240)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[HybridAgent] 파란유니폼2 lost ball. Dist: 7.30
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:241)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+파란유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>AWAY-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+파란유니폼1-HOME exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼1-HOME notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 파란유니폼1-HOME has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+파란유니폼1-HOME exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=red><b>HOME-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=blue><b>AWAY-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=green>파란유니폼1-HOME KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>파란유니폼1-HOME KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+빨간유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=red><b>빨간유니폼1-AWAY TACKLED 파란유니폼1-HOME!</b></color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:515)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 파란유니폼1-HOME</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:520)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Tackle () (at Assets/Game/Scripts/AI/HybridAgentController.cs:565)
+Game.Scripts.AI.States.RootState_Defending:Execute () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:64)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+빨간유니폼1-AWAY exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>AWAY-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+빨간유니폼2 exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+빨간유니폼1-AWAY notified of POSSESSION (Grace Period Active)
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:NotifyPossessionGained () (at Assets/Game/Scripts/AI/HybridAgentController.cs:650)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:40)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+<color=green>[POSSESSION] Set to 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:41)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[MatchManager] 빨간유니폼1-AWAY has the ball!
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:logToUI (string) (at Assets/Game/Scripts/Managers/MatchManager.cs:419)
+Game.Scripts.Managers.MatchManager:SetBallOwner (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:42)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:226)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼1-AWAY exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=blue><b>HOME-GK</b> entered DEFENDING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Enter () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=red><b>AWAY-GK</b> entered ATTACKING state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Enter () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:33)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+빨간유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:183)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼2 exited TRANSITION state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Exit () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:70)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:191)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=green>빨간유니폼1-AWAY KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+<color=orange>[POSSESSION] Lost by 빨간유니폼1-AWAY</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.Managers.MatchManager:LosePossession (Game.Scripts.AI.HybridAgentController) (at Assets/Game/Scripts/Managers/MatchManager.cs:49)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:240)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+[HybridAgent] 빨간유니폼1-AWAY lost ball. Dist: 8.55
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:UpdatePossessionLogic () (at Assets/Game/Scripts/AI/HybridAgentController.cs:241)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:149)
+
+빨간유니폼1-AWAY exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+HOME-GK exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>HOME-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+AWAY-GK exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=yellow><b>AWAY-GK</b> entered TRANSITION state</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Transition:Enter () (at Assets/Game/Scripts/AI/States/RootState_Transition.cs:14)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:32)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:32)
+
+<color=green>빨간유니폼2 KICK EXECUTED!</color>
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.HybridAgentController:ExecutePendingKick () (at Assets/Game/Scripts/AI/HybridAgentController.cs:627)
+Game.Scripts.AI.HybridAgentController:Shoot (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/HybridAgentController.cs:493)
+Game.Scripts.AI.States.RootState_Attacking:MakeDecision (UnityEngine.Vector3) (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:232)
+Game.Scripts.AI.States.RootState_Attacking:Execute () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:62)
+Game.Scripts.AI.HFSM.StateMachine:Update () (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:42)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:146)
+
+빨간유니폼2 exited ATTACKING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Attacking:Exit () (at Assets/Game/Scripts/AI/States/RootState_Attacking.cs:368)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+
+파란유니폼2 exited DEFENDING state
+UnityEngine.Debug:Log (object)
+Game.Scripts.AI.States.RootState_Defending:Exit () (at Assets/Game/Scripts/AI/States/RootState_Defending.cs:104)
+Game.Scripts.AI.HFSM.StateMachine:ChangeState (Game.Scripts.AI.HFSM.State) (at Assets/Game/Scripts/AI/HFSM/StateMachine.cs:28)
+Game.Scripts.AI.HybridAgentController:UpdateStateBasedOnPossession () (at Assets/Game/Scripts/AI/HybridAgentController.cs:173)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:152)
+

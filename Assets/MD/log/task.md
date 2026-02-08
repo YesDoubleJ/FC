@@ -1,0 +1,94 @@
+# Task List
+
+- [/] Analyze `MD` folder contents <!-- id: 0 -->
+- [x] Determine project status and requirements <!-- id: 1 -->
+- [x] Propose initial steps to the user <!-- id: 2 -->
+- [/] Implement Phase 1: 3D Physics Framework <!-- id: 3 -->
+    - [x] Create `BallAerodynamics.cs` <!-- id: 4 -->
+    - [x] Create Physics Materials (`SoccerBall`, `Grass`) <!-- id: 5 -->
+    - [x] Create `Ball` prefab (via Editor script or instructions) <!-- id: 6 -->
+- [/] Verify Phase 1 Implementation <!-- id: 7 -->
+    - [x] Run `Tools/LottoSoccer/Create Ball Prefab` <!-- id: 8 -->
+    - [x] Create test scene and verify physics <!-- id: 9 -->
+- [/] Implement Phase 2: Hybrid Navigation System <!-- id: 10 -->
+    - [x] Create `HybridAgentController.cs` (NavMesh + Rigidbody) <!-- id: 11 -->
+    - [x] Implement `MoveTo(Vector3 target)` functionality <!-- id: 12 -->
+    - [x] Create `Player` prefab with CapsuleCollider and Agent <!-- id: 13 -->
+- [x] Verify Phase 2 Implementation <!-- id: 14 -->
+    - [x] Run `Tools/LottoSoccer/Create Player Prefab` <!-- id: 15 -->
+    - [x] Create test scene with NavMesh and try to move agent <!-- id: 16 -->
+- [x] Implement Phase 3: AI Architecture (HFSM) <!-- id: 17 -->
+    - [x] Create HFSM Framework Base Classes (`State`, `StateMachine`) <!-- id: 18 -->
+    - [x] Implement Root States (`Attacking`, `Defending`, `Transition`) <!-- id: 19 -->
+    - [x] Integrate HFSM with `HybridAgentController` <!-- id: 20 -->
+- [x] Verify Phase 3 Implementation <!-- id: 21 -->
+    - [x] Play scene and check "Entered ATTACKING state" log <!-- id: 22 -->
+    - [x] Press 'D' to switch to Defending <!-- id: 23 -->
+    - [x] Press 'S' to switch to Transition <!-- id: 24 -->
+- [x] Implement Phase 4: Core Mechanics & Utility AI <!-- id: 25 -->
+    - [x] Create `PlayerStats.cs` (Data container) <!-- id: 26 -->
+    - [x] Create `UtilityScorer.cs` (Decision logic) <!-- id: 27 -->
+    - [x] Implement `Shoot` and `Pass` mechanics (Physics & Error Cone) <!-- id: 28 -->
+    - [x] Integrate Scoring into `RootState_Attacking` <!-- id: 29 -->
+- [x] Verify Phase 4 Implementation <!-- id: 30 -->
+    - [x] Assign stats in Inspector and run scene <!-- id: 31 -->
+    - [x] Check "Decision: SHOOT" log when near goal <!-- id: 32 -->
+    - [x] Verify ball trajectory changes with stats (Low/High Shooting) <!-- id: 33 -->
+- [x] Implement Phase 5: Tactics & Formation <!-- id: 34 -->
+    - [x] Create `FormationSystem.cs` (Spatial anchors) <!-- id: 35 -->
+    - [x] Create `TacticalRole.cs` (Base class for roles) <!-- id: 36 -->
+    - [x] Implement specific roles (e.g., `InvertedWingback`, `DeepLyingPlaymaker`) <!-- id: 37 -->
+    - [x] Integrate Formation with `HybridAgentController` <!-- id: 38 -->
+- [x] Verify Phase 5 Implementation <!-- id: 39 -->
+    - [x] Create `FormationManager` object in scene <!-- id: 40 -->
+    - [x] Set Agent's position to `LB` (Left Back) <!-- id: 41 -->
+    - [x] Press 'D' (Defend) and verify Agent moves to Left Back position <!-- id: 42 -->
+    - [x] Move Ball (or fake ball) and verify Agent shifts position <!-- id: 43 -->
+- [x] Implement Phase 6: Visuals & Animation Sync <!-- id: 44 -->
+    - [x] Create `AnimationController.cs` (Animator Wrapper) <!-- id: 45 -->
+    - [x] Implement Animation Events for `Shoot` (Sync physics with foot impact) <!-- id: 46 -->
+    - [x] Create `MatchViewController` (UI/Camera logic) <!-- id: 47 -->
+    - [x] Integrate Animation with `HybridAgentController` <!-- id: 48 -->
+- [x] Verify Phase 6 Implementation <!-- id: 49 -->
+    - [x] Add `AgentAnimationController` to Player (child with Animator) <!-- id: 50 -->
+    - [x] **Important**: Add Animation Event `OnHitBall` to Kick Clip <!-- id: 51 -->
+    - [x] Play and verify: Animation plays -> Short delay -> Ball moves <!-- id: 52 -->
+- [x] Implement Phase 7: Goalkeeper (GK) AI <!-- id: 53 -->
+    - [x] Create `GoalkeeperController.cs` (Inherit or Separate) <!-- id: 54 -->
+    - [x] Implement `TrajectoryPredictor.cs` (Math for intercept point) <!-- id: 55 -->
+    - [x] Implement GK States (`GK_Idle`, `GK_Saving`) <!-- id: 56 -->
+    - [x] Basic Dive/Jump logic (Move to prediction) <!-- id: 57 -->
+- [x] Verify Phase 7 Implementation <!-- id: 58 -->
+    - [x] Create `GK` object with `GoalkeeperController` <!-- id: 59 -->
+    - [x] Set `GoalLineZ` (e.g., -25) <!-- id: 60 -->
+    - [x] Shoot ball towards goal and verify DEBUG line touches ball path <!-- id: 61 -->
+    - [x] Verify GK moves to intercept point <!-- id: 62 -->
+- [x] Implement Phase 8: Match Loop & Game Logic <!-- id: 63 -->
+    - [x] Create `MatchManager.cs` (Score, Timer, Game States) <!-- id: 64 -->
+    - [x] Implement `GoalTrigger` (Detect scoring) <!-- id: 65 -->
+    - [x] Implement `KickOff` logic (Reset positions) <!-- id: 66 -->
+    - [x] Simple UI update (Scoreboard) <!-- id: 67 -->
+- [x] Verify Phase 8 Implementation <!-- id: 68 -->
+    - [x] Add `MatchManager` to scene (as Singleton) <!-- id: 69 -->
+    - [x] Add `GoalTrigger` script to the Net (Trigger Collider) <!-- id: 70 -->
+    - [x] Set `IsHomeGoal` appropriately (e.g., if Player shoots here, it is Away Goal?) <!-- id: 71 -->
+    - [x] Score a goal and verify Score update & Ball reset <!-- id: 72 -->
+- [x] Phase 9: Refinements (AI & Logic) <!-- id: 73 -->
+    - [x] Req 1: AI Shoots to corners to avoid GK <!-- id: 74 -->
+    - [x] Req 2: AI returns to position when ball is dead (Score/Out) <!-- id: 75 -->
+    - [x] Req 3: Fix Ball spawn overlap (Move players away on reset) <!-- id: 76 -->
+    - [x] Req 4: Add Dribble-to-Shoot delay (Stability) <!-- id: 77 -->
+- [/] Phase 10: Gameplay Balance & Polish <!-- id: 78 -->
+    - [ ] Req 1: Fix Attacker ignoring ball at start (Force path update) <!-- id: 79 -->
+    - [ ] Req 2: More 'Careful' Attacker (Aim time / Dribble closer) <!-- id: 80 -->
+    - [x] Req 3: Nerf GK Reaction Speed (Add delay/human error) <!-- id: 81 -->
+    - [x] Req 4: Precision Corner Shots (Target actual post positions) <!-- id: 82 -->
+- [/] Phase 11: Advanced Shooting (Variety) <!-- id: 83 -->
+    - [x] Req 1: Implement High/Low Shot assortment (Vertical Targeting) <!-- id: 84 -->
+    - [x] Req 2: Improve Corner Targeting logic for 3D Goal (Top Bins) <!-- id: 85 -->
+- [/] Phase 12: Advanced GK (Sweeper Keeper) <!-- id: 86 -->
+    - [x] Req 1: Implement GK Sweeping State (Move to ball if close) <!-- id: 87 -->
+    - [x] Req 2: Transition from Positioning to Sweeping <!-- id: 88 -->
+- [/] Phase 13: Camera Improvements <!-- id: 89 -->
+    - [x] Req 1: Camera follows Ball smoothly <!-- id: 90 -->
+    - [ ] Req 2: Fix Camera Y-Jitter (Ignore Ball Height) <!-- id: 91 -->

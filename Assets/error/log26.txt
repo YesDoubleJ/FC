@@ -1,0 +1,140 @@
+Auto-Added ActionLogDisplay to MatchManager
+
+<b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+<color=green>[PASS]</color> ShootScore_Close
+
+<color=green>[PASS]</color> ShootScore_Far
+
+<color=green>[PASS]</color> ShootScore_Angle
+
+<b>[Unit Tests] Finished.</b>
+
+[MatchManager] HOME KICK OFF!
+
+Setting linear velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_linearVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:427)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+Setting angular velocity of a kinematic body is not supported.
+UnityEngine.Rigidbody:set_angularVelocity (UnityEngine.Vector3)
+Game.Scripts.Managers.MatchManager:ResetBall () (at Assets/Game/Scripts/Managers/MatchManager.cs:428)
+Game.Scripts.Managers.MatchManager:StartKickOff () (at Assets/Game/Scripts/Managers/MatchManager.cs:225)
+Game.Scripts.Managers.MatchManager:Start () (at Assets/Game/Scripts/Managers/MatchManager.cs:151)
+
+[MatchManager] SetPlayersActiveState(False) - Agent Count: 9
+
+Home_CM Dribble State RESET
+
+Home_CB Dribble State RESET
+
+Away_CM2 Dribble State RESET
+
+Away_CB Dribble State RESET
+
+Away_ST Dribble State RESET
+
+Away_GK Dribble State RESET
+
+Home_ST Dribble State RESET
+
+Away_CB2 Dribble State RESET
+
+Home_CB2 Dribble State RESET
+
+[MatchManager] Ready...
+
+[MatchManager] SetPlayersActiveState(True) - Agent Count: 12
+
+[MatchManager] Enabling Agent: Home_CM
+
+[MatchManager] Enabling Agent: Home_CB
+
+[MatchManager] Enabling Agent: Away_CM2
+
+[MatchManager] Enabling Agent: Away_CB
+
+[MatchManager] Enabling Agent: Away_ST
+
+[MatchManager] Enabling Agent: Away_GK
+
+[MatchManager] Enabling Agent: Home_ST
+
+[MatchManager] Enabling Agent: Away_CB2
+
+[MatchManager] Enabling Agent: Home_CB2
+
+[MatchManager] Enabling Agent: Home_CM2
+
+[MatchManager] Enabling Agent: Away_CM
+
+[MatchManager] Enabling Agent: Home_GK
+
+[MatchManager] PLAY!
+
+Home_ST notified of POSSESSION (Grace Period Active)
+
+<color=green>[POSSESSION] Set to Home_ST</color>
+
+[MatchManager] Home_ST has the ball!
+
+[HybridAgent] Home_ST CLAIMED BALL. Dist: 0.90
+
+<color=green>Home_ST DRIBBLE BURST! (Instant Turn & Speed)</color>
+
+[AI] Home_ST: Turn to Ball (Ang:41)
+
+[AI] Home_ST: Turn to Ball (Ang:34)
+
+[AI] Home_ST: Turn to Ball (Ang:34)
+
+[AI] Home_ST: Turn to Ball (Ang:43)
+
+[AI] Home_ST: Turn to Ball (Ang:31)
+
+[AI] Home_ST: Turn to Ball (Ang:31)
+
+[AI] Home_ST: Turn to Ball (Ang:30)
+
+[AI] Home_ST: Turn to Ball (Ang:39)
+
+[AI] Home_ST: Turn to Ball (Ang:34)
+
+[AI] Home_ST: Turn to Ball (Ang:32)
+
+[AI] Home_ST: Turn to Ball (Ang:30)
+
+[AI] Home_ST: Turn to Ball (Ang:31)
+
+[AI] Home_ST: Turn to Ball (Ang:31)
+
+[AI] Home_ST: Turn to Ball (Ang:41)
+
+[AI] Home_ST: Turn to Ball (Ang:33)
+
+[AI] Home_ST: Turn to Ball (Ang:31)
+
+[AI] Home_ST: Turn to Ball (Ang:40)
+
+<color=yellow>Home_ST BREAKTHROUGH! Charging forward!</color>
+
+<color=orange>[POSSESSION] Lost by Home_ST</color>
+
+[HybridAgent] Home_ST lost ball. Dist: 3.61
+
+Away_ST notified of POSSESSION (Grace Period Active)
+
+<color=green>[POSSESSION] Set to Away_ST</color>
+
+[MatchManager] Away_ST has the ball!
+
+[HybridAgent] Away_ST CLAIMED BALL. Dist: 1.48
+
+<color=yellow>Away_ST BREAKTHROUGH! Charging forward!</color>
+
+<color=cyan>Away_CM2 is expecting a PASS at (9.91, -0.75, 16.45)!</color>
+
+<color=red>Away_ST Missed Kick! Ball too far (1.72m)</color>
+

@@ -1,0 +1,108 @@
+[MatchManager] PLAY!
+
+[MatchManager] Home_ST has the ball!
+
+[AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 11.14
+
+<color=cyan>Home_CM is expecting a PASS at (9.72, 0.08, 8.27)!</color>
+
+[KICK-EXEC] Home_ST Kicked! Force: 17.2, Mode: VelocityChange
+
+[MatchManager] Away_CM2 has the ball!
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.08, Angle: 9.47
+
+<color=green>Home_CM SKILL: TACKLE on Away_CM2</color>
+
+<color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[MatchManager] Away_CM2 has the ball!
+
+[CONSTRAINT] Rescued ball from behind! Sign: 1
+
+<color=green>Home_ST SKILL: TACKLE on Away_CM2</color>
+
+<color=green>Home_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[MatchManager] Away_CM2 has the ball!
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.07, Angle: 9.00
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+<color=green>Home_CM SKILL: TACKLE on Away_CM2</color>
+
+<color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.04, Angle: 10.98
+
+[MatchManager] Away_CM2 has the ball!
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.08, Angle: 8.92
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+<color=green>Home_CM SKILL: TACKLE on Away_CM2</color>
+
+<color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.83, Angle: 13.69
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.08, Angle: 11.22
+
+[MatchManager] Away_CM2 has the ball!
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+<color=green>Home_CM SKILL: TACKLE on Away_CM2</color>
+
+<color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.84, Angle: 18.82
+
+[MatchManager] Away_CM2 has the ball!
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.07, Angle: 16.47
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[AgentBallHandler] Away_CM2 lost ball. Dist: 1.32
+
+[MatchManager] Away_CM2 has the ball!
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.08, Angle: 10.84
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+[CONSTRAINT] Rescued ball from behind! Sign: -1
+
+<color=green>Home_CM SKILL: TACKLE on Away_CM2</color>
+
+<color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.86, Angle: 20.58
+
+[AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.08, Angle: 19.20
+
+[MatchManager] Home_CM has the ball!
+
+[AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.07, Angle: 42.92
+
+[CONSTRAINT] Rescued ball from behind! Sign: 1
+

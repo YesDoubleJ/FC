@@ -1,0 +1,85 @@
+Assets\Game\Scripts\AI\AgentMover.cs(312,18): error CS8641: 'else'로 문을 시작할 수 없습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(312,18): error CS1003: 구문 오류입니다. '('이(가) 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(312,18): error CS1525: 잘못된 식의 항 'else'입니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(312,18): error CS1026: )가 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(312,18): error CS1002: ;이 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(350,24): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '='이(가) 있습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(351,39): error CS8124: 튜플에는 요소가 두 개 이상 있어야 합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(351,39): error CS1026: )가 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(351,39): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '>'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(357,17): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 'if'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(357,29): error CS8124: 튜플에는 요소가 두 개 이상 있어야 합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(357,29): error CS1026: )가 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(357,29): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '&&'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(357,45): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 ')'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(363,21): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 'if'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(363,36): error CS8124: 튜플에는 요소가 두 개 이상 있어야 합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(363,36): error CS1026: )가 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(363,36): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '>'이(가) 있습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(363,57): error CS1519: 클래스, 레코드, 구조체 또는 인터페이스 멤버 선언에 잘못된 토큰 '*='이(가) 있습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(365,17): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(365,33): error CS8124: 튜플에는 요소가 두 개 이상 있어야 합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(365,49): error CS1002: ;이 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(365,49): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(368,21): error CS0116: 네임스페이스는 필드, 메서드 또는 문과 같은 멤버를 직접 포함할 수 없습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(368,30): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(368,43): error CS0116: 네임스페이스는 필드, 메서드 또는 문과 같은 멤버를 직접 포함할 수 없습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(368,107): error CS1026: )가 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(368,107): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(368,108): error CS0116: 네임스페이스는 필드, 메서드 또는 문과 같은 멤버를 직접 포함할 수 없습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(368,117): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(370,9): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(372,9): error CS8803: 최상위 문은 네임스페이스 및 형식 선언 앞에 와야 합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(372,9): error CS0106: 이 항목의 'private' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(381,9): error CS0106: 이 항목의 'private' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(418,9): error CS0106: 이 항목의 'private' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(436,9): error CS0106: 이 항목의 'public' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(451,9): error CS0106: 이 항목의 'public' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(458,9): error CS0106: 이 항목의 'public' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(468,9): error CS0106: 이 항목의 'public' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(475,9): error CS0106: 이 항목의 'public' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(482,9): error CS0106: 이 항목의 'public' 한정자가 유효하지 않습니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(487,5): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
+
+Assets\Game\Scripts\AI\AgentMover.cs(488,1): error CS1022: 형식이나 네임스페이스 정의 또는 파일 끝(EOF)이 필요합니다.
