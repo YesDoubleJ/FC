@@ -1,0 +1,64 @@
+[0.00] [MatchManager] HOME KICK OFF!
+
+[0.00] [MatchManager] Ready...
+
+[2.00] [MatchManager] PLAY!
+
+[2.01] [MatchManager] Home_ST has the ball!
+
+[2.01] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.69
+
+[2.01] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.21] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[2.42] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.88m | Mode: CONTROL (Constraint: ON)
+
+[2.62] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.88m | Mode: CONTROL (Constraint: ON)
+
+[2.80] <color=cyan>Home_CM is expecting a PASS at (9.91, 0.08, 0.25)!</color>
+
+[2.82] [KICK-EXEC] Home_ST Kicked! Force: 15.5, Mode: VelocityChange
+
+[2.82] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[11.36] [MatchManager] Home_CM has the ball!
+
+[11.36] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.07, Angle: 9.00
+
+[11.36] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.07m | Mode: CONTROL (Constraint: ON)
+
+[11.41] [DRIBBLE] Home_CM Kicked ball forward! (Force: 6)
+
+[11.57] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 2.40m | Mode: CONTROL (Constraint: ON)
+
+[11.77] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 4.62m | Mode: CONTROL (Constraint: ON)
+
+[11.98] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 5.01m | Mode: CONTROL (Constraint: ON)
+
+[12.19] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 3.04m | Mode: CONTROL (Constraint: ON)
+
+[12.39] [ON-BALL] Home_CM | Speed: 12.6 | BallDist: 1.36m | Mode: RUNNING (Constraint: OFF)
+
+[12.59] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.66m | Mode: CONTROL (Constraint: ON)
+
+[12.80] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.39m | Mode: CONTROL (Constraint: ON)
+
+[13.00] [ON-BALL] Home_CM | Speed: 0.8 | BallDist: 1.64m | Mode: CONTROL (Constraint: ON)
+
+[13.21] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.82m | Mode: CONTROL (Constraint: ON)
+
+[13.42] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.80m | Mode: CONTROL (Constraint: ON)
+
+[13.45] [DRIBBLE] Home_CM Kicked ball forward! (Force: 6)
+
+[13.62] [ON-BALL] Home_CM | Speed: 0.7 | BallDist: 1.90m | Mode: CONTROL (Constraint: ON)
+
+[13.82] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 4.01m | Mode: CONTROL (Constraint: ON)
+
+[13.92] <color=green>Away_CM2 SKILL: TACKLE on Home_CM</color>
+
+[13.92] <color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[13.92] [TACKLE-IMPACT] Home_CM fumbled ball! Stunned for 1.5s. Power: 10
+

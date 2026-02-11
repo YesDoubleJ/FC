@@ -1,6 +1,8 @@
 ﻿<Solution>
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="com.IvanMurzak.Unity.MCP.Installer.Tests.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="com.IvanMurzak.Unity.MCP.Installer.csproj" />
   <Project Path="com.IvanMurzak.Unity.MCP.Animation.Installer.csproj" />
   <Project Path="com.IvanMurzak.Unity.MCP.Animation.Installer.Tests.csproj" />
   <Project Path="MeshyAssembly.csproj" />

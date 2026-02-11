@@ -1,0 +1,74 @@
+[0.00] [MatchManager] HOME KICK OFF!
+
+[0.00] [MatchManager] Ready...
+
+[2.00] [MatchManager] PLAY!
+
+[2.01] [MatchManager] Home_ST has the ball!
+
+[2.01] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.91
+
+[2.78] <color=cyan>Home_CM is expecting a PASS at (9.93, 0.08, 0.09)!</color>
+
+[2.80] [KICK-EXEC] Home_ST Kicked! Force: 15.5, Mode: VelocityChange
+
+[9.52] [MatchManager] Home_CM has the ball!
+
+[9.52] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.08, Angle: 8.99
+
+[11.58] [AgentBallHandler] Home_CM lost ball. Dist: 1.97
+
+[12.32] [MatchManager] Home_CM has the ball!
+
+[12.32] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.07, Angle: 9.02
+
+[14.32] [AgentBallHandler] Home_CM lost ball. Dist: 1.67
+
+[14.83] [MatchManager] Home_CM has the ball!
+
+[14.83] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.10, Angle: 11.30
+
+[16.83] [AgentBallHandler] Home_CM lost ball. Dist: 1.67
+
+[16.96] [MatchManager] Home_CM has the ball!
+
+[16.96] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.07, Angle: 26.56
+
+[18.60] <color=green>Away_CM2 SKILL: TACKLE on Home_CM</color>
+
+[18.60] <color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[18.60] [TACKLE-IMPACT] Home_CM fumbled ball! Stunned for 1.5s. Power: 10
+
+[18.61] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.84, Angle: 11.43
+
+[21.14] [MatchManager] Home_CM has the ball!
+
+[21.14] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.98, Angle: 43.55
+
+[23.92] [AgentBallHandler] Home_CM lost ball. Dist: 1.31
+
+[23.92] [MatchManager] Away_CM2 has the ball!
+
+[23.92] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.82, Angle: 11.82
+
+[23.92] <color=green>Home_ST SKILL: DEFENSE BURST</color>
+
+[23.93] <color=green>Home_CM2 SKILL: DEFENSE BURST</color>
+
+[23.93] <color=green>Home_CM SKILL: TACKLE on Away_CM2</color>
+
+[23.93] <color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[23.93] [TACKLE-IMPACT] Away_CM2 fumbled ball! Stunned for 1.5s. Power: 10
+
+[23.96] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.86, Angle: 22.70
+
+[24.44] [MatchManager] Home_CM has the ball!
+
+[24.44] <color=green>Away_CM2 SKILL: TACKLE on Home_CM</color>
+
+[24.44] <color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[24.44] [TACKLE-IMPACT] Home_CM fumbled ball! Stunned for 1.5s. Power: 10
+

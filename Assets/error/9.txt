@@ -1,0 +1,76 @@
+[0.00] [MatchManager] HOME KICK OFF!
+
+[0.00] [MatchManager] Ready...
+
+[2.01] [MatchManager] PLAY!
+
+[2.01] [MatchManager] Home_ST has the ball!
+
+[2.01] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.87
+
+[3.70] <color=cyan>Home_CM is expecting a PASS at (9.81, 0.08, 2.60)!</color>
+
+[3.72] [KICK-EXEC] Home_ST Kicked! Force: 15.7, Mode: VelocityChange
+
+[4.52] [MatchManager] Away_ST has the ball!
+
+[4.52] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 1.08, Angle: 9.21
+
+[4.52] <color=green>Home_ST SKILL: TACKLE on Away_ST</color>
+
+[4.52] <color=green>Home_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[4.52] [TACKLE-IMPACT] Away_ST fumbled ball! Stunned for 1.5s. Power: 10
+
+[5.96] [MatchManager] Away_CM2 has the ball!
+
+[5.96] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.07, Angle: 9.58
+
+[6.46] <color=green>Home_CM SKILL: TACKLE on Away_CM2</color>
+
+[6.46] <color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[6.46] [TACKLE-IMPACT] Away_CM2 fumbled ball! Stunned for 1.5s. Power: 10
+
+[6.47] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.88, Angle: 24.63
+
+[7.97] [MatchManager] Away_CM2 has the ball!
+
+[7.97] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.01, Angle: 9.57
+
+[10.42] [AgentBallHandler] Away_CM2 lost ball. Dist: 1.54
+
+[10.57] [MatchManager] Away_CM2 has the ball!
+
+[10.57] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.06, Angle: 43.17
+
+[11.48] <color=green>Home_CM SKILL: TACKLE on Away_CM2</color>
+
+[11.48] <color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[11.48] [TACKLE-IMPACT] Away_CM2 fumbled ball! Stunned for 1.5s. Power: 10
+
+[11.49] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.83, Angle: 15.50
+
+[13.17] [MatchManager] Away_CM2 has the ball!
+
+[13.17] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.05, Angle: 17.25
+
+[15.17] [AgentBallHandler] Away_CM2 lost ball. Dist: 1.45
+
+[15.25] [MatchManager] Away_CM2 has the ball!
+
+[15.25] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.02, Angle: 35.96
+
+[18.14] [AgentBallHandler] Away_CM2 lost ball. Dist: 1.39
+
+[18.33] [MatchManager] Away_CM2 has the ball!
+
+[18.33] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.00, Angle: 44.92
+
+[21.18] [AgentBallHandler] Away_CM2 lost ball. Dist: 1.52
+
+[21.40] [MatchManager] Away_CM2 has the ball!
+
+[21.40] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.09, Angle: 21.79
+

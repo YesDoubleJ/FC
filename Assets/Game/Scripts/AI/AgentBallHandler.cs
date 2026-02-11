@@ -59,6 +59,11 @@ namespace Game.Scripts.AI
         public bool HasPendingKick => _pendingKicks.Count > 0;
         public bool IsInPocket { get; private set; } // Exposed state for RootState decision
 
+
+
+        private float _lastDribbleTime;
+        private float _lastDebugLogTime;
+
         public void Initialize(HybridAgentController controller)
         {
             _controller = controller;
@@ -76,28 +81,8 @@ namespace Game.Scripts.AI
                 }
             }
         }
-
-        public void Tick()
-        {
-            UpdatePossessionLogic();
-            UpdateOrbitLock(); // Orbit Lock (Moved from AgentMover)
-            
-            // Skill Cooldowns? No, handled by SkillSystem.
-        }
-
-        private void Start()
-        {
-            if (_controller == null)
-            {
-                _controller = GetComponent<HybridAgentController>();
-                Initialize(_controller); // 강제 초기화
-            }
-        }
-
-        private void LateUpdate()
-        {
-            ApplyDribbleConstraint();
-        }
+        
+        // ... (Skipping to ApplyDribbleConstraint replacement) ...
 
         private void ApplyDribbleConstraint()
         {
@@ -108,53 +93,166 @@ namespace Game.Scripts.AI
             // 쿨타임 및 예외 상황 체크
             if (Time.time < _ignoreBallInteractionUntil) return;
             if (HasPendingKick) return;
-            if (_cachedBallRb.linearVelocity.magnitude > 5.0f) return;
+            
+            // [FIX] Relax constraints during movement for natural physics dribble
+            // (Only skip if moving REALLY fast, otherwise we need Soft Guide)
+            bool isMovingFast = (_mover != null && _mover.NavAgent != null && _mover.NavAgent.velocity.magnitude > 3.0f);
+            if (isMovingFast) return; 
+
+            // High Velocity Escape (Shooting/Passing)
+            if (_cachedBallRb.linearVelocity.magnitude > 8.0f) return;
 
             Vector3 toBall = _cachedBallRb.position - transform.position;
             toBall.y = 0; 
+            float distToBall = toBall.magnitude;
 
-            // 1. [구출 로직] 공이 등 뒤(내적 < 0)에 있는가?
-            if (Vector3.Dot(transform.forward, toBall) < 0)
+            // 1. [FAIL-SAFE] Hard Reset Conditions
+            // - Ball is Behind (Dot < 0)
+            // - Ball is Too Far (Dist > maxTetherRadius)
+            bool isBehind = Vector3.Dot(transform.forward, toBall) < 0;
+            bool isTooFar = distToBall > settings.maxTetherRadius;
+
+            if (isBehind || isTooFar)
             {
-                // [핵심 수정 1] 설정값을 가져오되, 최소 0.7m는 무조건 확보 (설정값이 0이어도 작동하게 함)
+                // FORCE TELEPORT (Emergency Recovery)
                 float configDist = (_controller.config) ? _controller.config.DribbleSweetSpotDist : 0.65f;
-                float safeDist = Mathf.Max(configDist, 0.7f); // 최소 0.7m 강제!
-
-                // [핵심 수정 2] 옆으로 빼지 말고 '정면 중앙'으로 텔레포트 (충돌 방지)
-                Vector3 rescuePos = transform.position + (transform.forward * safeDist);
+                float safeDist = Mathf.Max(configDist, 0.7f);
                 
-                // 높이 보정 (땅에 박히지 않게)
+                Vector3 rescuePos = transform.position + (transform.forward * safeDist);
                 rescuePos.y = Mathf.Max(_cachedBallRb.position.y, transform.position.y + 0.15f);
                 
                 _cachedBallRb.position = rescuePos;
-                
-                // 물리력 초기화
                 _cachedBallRb.linearVelocity = Vector3.zero; 
                 _cachedBallRb.angularVelocity = Vector3.zero;
                 
-                Debug.Log($"[{Time.time:F2}] [CONSTRAINT] Rescued ball to Front-Center (Dist: {safeDist:F2})");
-                return; 
+                // Debug.Log($"[{Time.time:F2}] [CONSTRAINT] Hard Reset (Behind/Far)");
+                return;
             }
 
-            // 2. 45도 제한 구역 (기존 유지)
-            float angle = Vector3.Angle(transform.forward, toBall);
-            float limit = 45f;
+            // 2. [SOFT GUIDE] Physics Correction
+            // Pull ball towards Sweet Spot without killing momentum
+            float sweetDist = (_controller.config) ? _controller.config.DribbleSweetSpotDist : 0.65f;
+            Vector3 sweetSpot = transform.position + (transform.forward * sweetDist);
+            sweetSpot.y = _cachedBallRb.position.y;
 
-            if (angle > limit)
+            Vector3 errorVec = sweetSpot - _cachedBallRb.position;
+            
+            // Apply Spring Force
+            // F = k * x (Hooke's Law approximation)
+            _cachedBallRb.AddForce(errorVec * settings.softGuideStrength, ForceMode.Acceleration);
+            
+            // Optional: Mild Damping to prevent oscillation (only perpendicular to motion?)
+            // For now, let's trust friction.
+        }
+
+
+        public void Tick()
+        {
+             // [USER REQUEST] Unified Update Loop Order
+             UpdatePossessionLogic();
+             
+             if (_isPreparingKick)
+             {
+                 UpdateKickLogic();
+             }
+             
+             // New Dribble Logic (Kick & Run)
+             UpdateDribbleLogic();
+
+             // Constraint Logic (skipped if moving fast)
+             ApplyDribbleConstraint();
+             
+             UpdateOrbitLock(); 
+             
+             DebugOnBallBehavior();
+        }
+
+        private void Start()
+        {
+            if (_controller == null)
             {
-                Vector3 localPos = transform.InverseTransformPoint(_cachedBallRb.position);
-                float sign = (localPos.x > 0) ? 1f : -1f;
-
-                Vector3 limitDir = Quaternion.Euler(0, limit * sign, 0) * transform.forward;
-                float currentDist = Mathf.Max(toBall.magnitude, 0.5f);
-                
-                Vector3 newPos = transform.position + (limitDir.normalized * currentDist);
-                newPos.y = _cachedBallRb.position.y;
-                
-                _cachedBallRb.position = newPos;
-                _cachedBallRb.linearVelocity = Vector3.zero;
+                _controller = GetComponent<HybridAgentController>();
+                Initialize(_controller); 
             }
         }
+
+        private void LateUpdate()
+        {
+            // [Moved to Tick as requested]
+        }
+
+         // [NEW] Dribble Kick Logic
+        private void UpdateDribbleLogic()
+        {
+            var matchMgr = MatchManager.Instance;
+            if (matchMgr == null || matchMgr.CurrentBallOwner != _controller) return;
+            if (_cachedBallRb == null) return;
+
+            // 1. Basic Checks
+            if (MatchManager.Instance.CurrentBallOwner != _controller) return;
+            if (Time.time < _lastDribbleTime + settings.dribbleInterval) return;
+            if (_isPreparingKick) return; // Don't dribble if kicking
+
+            // 2. Get Speed
+            float currentSpeed = (_mover != null && _mover.NavAgent != null) ? _mover.NavAgent.velocity.magnitude : 0f;
+            
+            // Allow dribble even at low speeds (Physics Dribble)
+            if (currentSpeed < 0.1f) return;
+
+            // 3. Check Sweet Spot (Front Cone)
+            Vector3 toBall = _cachedBallRb.position - transform.position;
+            float angle = Vector3.Angle(transform.forward, toBall);
+            float dist = toBall.magnitude;
+
+            // [TUNING] Anti-Collision: Kick earlier (1.3m derived from experimentation)
+            // Sweet Spot: Distance < 1.3m, Angle < 45 deg
+            if (angle > 45f || dist > 1.3f) return; 
+
+            // 4. Calculate Variable Force
+            // Scale force with speed ratio
+            float baseSpeed = (_controller.config != null) ? _controller.config.BaseMoveSpeed : 3.5f;
+            float speedRatio = Mathf.Clamp01(currentSpeed / baseSpeed);
+            
+            // Base Force Calculation
+            float baseForce = Mathf.Lerp(settings.dribbleMinForce, settings.dribbleMaxForce, speedRatio);
+            
+            // Apply Global Scale
+            float targetForce = baseForce * settings.DribbleForceScale;
+
+            // [DRIBBLE-DEBUG] Detailed Calculation Log
+            // Filter log to avoid spam (show every 1.0s or on significant change?) -> For now show all for debugging as requested
+            // Format: [DRIBBLE-DEBUG] Speed: 9.0 | Formula: (Base:1.0 + SpeedFactor:8.0) * Scale:1.0 = 9.0 | DribbleInterval: 0.2s
+            Debug.Log($"[DRIBBLE-DEBUG] Speed: {currentSpeed:F1} | Formula: (Lerp({settings.dribbleMinForce:F1}~{settings.dribbleMaxForce:F1}, {speedRatio:F2})={baseForce:F1}) * Scale:{settings.DribbleForceScale:F1} = {targetForce:F1} | Interval: {settings.dribbleInterval:F2}s");
+
+            // 5. Execute Dribble (Kick & Loss)
+            _lastDribbleTime = Time.time;
+            
+            _cachedBallRb.isKinematic = false;
+            // Inherit velocity to keep momentum natural
+            if (_mover != null) _cachedBallRb.linearVelocity = _mover.NavAgent.velocity; 
+            
+            _cachedBallRb.AddForce(transform.forward * targetForce, ForceMode.Impulse);
+            
+            // [DRIBBLE-EXEC] Execution Log
+            Debug.Log($"[DRIBBLE-EXEC] Force: {targetForce:F1} | BallDist: {dist:F2}m");
+
+            // [CRITICAL] Release Possession
+            // Ball leaves foot -> Loss of Control -> Physics takes over
+            MatchManager.Instance.LosePossession(_controller);
+            _ignoreBallInteractionUntil = Time.time + 0.15f; 
+        }
+
+        public void FixedTick()
+        {
+            if (_executePendingKickInFixedUpdate)
+            {
+                _executePendingKickInFixedUpdate = false;
+                ExecuteKickPhysics();
+            }
+            // Logic moved to Tick()
+        }
+
+
         
         // =========================================================
         // ORBIT LOCK (Moved from AgentMover)
@@ -194,23 +292,7 @@ namespace Game.Scripts.AI
             }
         }
 
-        public void FixedTick()
-        {
-            if (_executePendingKickInFixedUpdate)
-            {
-                _executePendingKickInFixedUpdate = false;
-                ExecuteKickPhysics();
-            }
 
-            if (_isPreparingKick)
-            {
-                UpdateKickLogic();
-            }
-            else
-            {
-                DribbleAssist();
-            }
-        }
 
         // =========================================================
         // POSSESSION LOGIC
@@ -632,28 +714,26 @@ namespace Game.Scripts.AI
             Vector3 finalDirection = errorRot * direction;
             
             float dist = Vector3.Distance(transform.position, targetPos);
-            float power = Mathf.Clamp(settings.passPowerBase + (dist * settings.passPowerDistFactor) + (passingStat * 0.05f), settings.passPowerMin, settings.passPowerMax);
-            Vector3 force = finalDirection * power;
+            float basePower = settings.passPowerBase + (dist * settings.passPowerDistFactor) + (passingStat * 0.05f);
+            float clampedPower = Mathf.Clamp(basePower, settings.passPowerMin, settings.passPowerMax);
+            float finalPower = clampedPower * settings.globalKickPowerScale;
+            
+            // [KICK-DEBUG] Pass Force Breakdown
+            // Format: [KICK-DEBUG] PASS | Dist: 10.5m | Formula: (Base:8 + Dist:10.5*0.5 + Stat:2) * Scale:1.0 = 15.25
+            Debug.Log($"[KICK-DEBUG] PASS | Dist: {dist:F1}m | Formula: ({settings.passPowerBase:F1} + {dist:F1}*{settings.passPowerDistFactor:F1} + {passingStat}*0.05) [Clamp: {clampedPower:F1}] * Scale:{settings.globalKickPowerScale:F1} = {finalPower:F1}");
+
+            Vector3 force = finalDirection * finalPower;
 
             // [FIX] Lift ball slightly to avoid friction on grass/feet
             if (isKickOff) force += Vector3.up * 0.5f;
 
-            // 2. Determine Look Direction
-            Vector3 lookDir = new Vector3(direction.x, 0, direction.z).normalized;
-            if (lookDir == Vector3.zero) lookDir = transform.forward;
-            
-            // 3. Start Rotation & Kick Sequence
-            // First, rotate to target.
-            _mover.RotateToAction(lookDir, () => 
-            {
-                // Once Rotated, Initiate Kick Preparation State
-                _isPreparingKick = true;
-                _preparingKickTimer = 0f;
-                _kickTargetForce = force;
-                _kickTargetPos = targetPos;
-                _kickRecipient = recipient;
-                _isDribbleActive = false; // Stop Dribbling
-            });
+            // 3. Start Kick Sequence (Non-blocking)
+            _isPreparingKick = true;
+            _preparingKickTimer = 0f;
+            _kickTargetForce = force;
+            _kickTargetPos = targetPos;
+            _kickRecipient = recipient;
+            _isDribbleActive = false;
         }
 
         public void Shoot(Vector3 targetPos)
@@ -673,24 +753,22 @@ namespace Game.Scripts.AI
             float dist = Vector3.Distance(transform.position, targetPos);
             
             // Power Calculation
-            float power = Mathf.Clamp(settings.shootPowerBase + (dist * settings.shootPowerDistFactor) + (shootingStat * 0.1f), settings.shootPowerMin, settings.shootPowerMax);
-            Vector3 force = finalDirection * power;
+            float basePower = settings.shootPowerBase + (dist * settings.shootPowerDistFactor) + (shootingStat * 0.1f);
+            float clampedPower = Mathf.Clamp(basePower, settings.shootPowerMin, settings.shootPowerMax);
+            float finalPower = clampedPower * settings.globalKickPowerScale;
 
-            // 2. Determine Look Direction
-            Vector3 lookDir = new Vector3(direction.x, 0, direction.z).normalized;
-            if (lookDir == Vector3.zero) lookDir = transform.forward;
-            
-            // 3. Start Rotation & Kick Sequence
-            _mover.RotateToAction(lookDir, () => 
-            {
-                // Kick Preparation
-                _isPreparingKick = true;
-                _preparingKickTimer = 0f;
-                _kickTargetForce = force;
-                _kickTargetPos = targetPos;
-                _kickRecipient = null; // Shooting has no recipient
-                _isDribbleActive = false;
-            });
+            // [KICK-DEBUG] Shoot Force Breakdown
+            Debug.Log($"[KICK-DEBUG] SHOOT | Dist: {dist:F1}m | Formula: ({settings.shootPowerBase:F1} + {dist:F1}*{settings.shootPowerDistFactor:F1} + {shootingStat}*0.1) [Clamp: {clampedPower:F1}] * Scale:{settings.globalKickPowerScale:F1} = {finalPower:F1}");
+
+            Vector3 force = finalDirection * finalPower;
+
+            // 2. Start Kick Sequence (Non-blocking)
+            _isPreparingKick = true;
+            _preparingKickTimer = 0f;
+            _kickTargetForce = force;
+            _kickTargetPos = targetPos;
+            _kickRecipient = null; 
+            _isDribbleActive = false;
         }
 
         private void UpdateKickLogic()
@@ -699,6 +777,26 @@ namespace Game.Scripts.AI
             {
                 _isPreparingKick = false;
                 return;
+            }
+
+            // [NEW] Active Rotation towards Target (High Speed)
+            if (_mover != null)
+            {
+                 _mover.SetTargetRotation(_kickTargetPos, 2.0f);
+            }
+
+            // [NEW] Tangential Force for Rotation (Help ball follow turn)
+            if (_mover != null && _mover.LastRotationDelta != Quaternion.identity)
+            {
+                Vector3 cross = Vector3.Cross(transform.forward, _mover.LastRotationDelta * transform.forward);
+                float turnDir = (cross.y > 0) ? 1f : -1f;
+                float turnMag = Quaternion.Angle(Quaternion.identity, _mover.LastRotationDelta);
+                
+                if (turnMag > 0.5f)
+                {
+                     Vector3 tanForce = transform.right * turnDir * (turnMag * 0.5f); 
+                     _cachedBallRb.AddForce(tanForce, ForceMode.Acceleration);
+                }
             }
 
             float timeout = settings.passAlignTimeout;
@@ -758,15 +856,16 @@ namespace Game.Scripts.AI
             Vector3 sweetSpot = transform.position + transform.forward * settings.passAlignSweetSpot;
             sweetSpot.y = _cachedBallRb.position.y;
             
-            Vector3 errorVec = sweetSpot - _cachedBallRb.position;
+            // [FIX] Sync Velocity with Agent (Prevent Heavy Feeling)
+            Vector3 agentVel = (_mover != null && _mover.NavAgent != null) ? _mover.NavAgent.velocity : Vector3.zero;
             
-            // Strong Spring Force to snap ball to front
-            float strength = (angleToBall > 90f) ? settings.passAlignPullStrengthHard : settings.passAlignPullStrengthSimple;
-            
-            Vector3 damp = -_cachedBallRb.linearVelocity * settings.passAlignDamp;
-            
-            _cachedBallRb.AddForce((errorVec * strength) + damp, ForceMode.Acceleration);
-            
+            // maintain slight pull towards sweet spot
+            Vector3 diff = sweetSpot - _cachedBallRb.position;
+            Vector3 pullVel = diff * 5.0f; 
+
+            _cachedBallRb.linearVelocity = agentVel + pullVel;
+            _cachedBallRb.angularVelocity = Vector3.zero;
+
             _preparingKickTimer += Time.fixedDeltaTime;
         }
 
@@ -858,13 +957,27 @@ namespace Game.Scripts.AI
                      kick.rb.angularVelocity = Vector3.zero;
                      
                      // [디버그]
-                     Debug.Log($"[KICK-EXEC] {name} Kicked! Force: {kick.force.magnitude:F1}, Mode: VelocityChange");
+                     Debug.Log($"[KICK-EXEC] {name} Kicked! Force: {kick.force.magnitude:F1}, Mode: VelocityChange | Scale: {settings.globalKickPowerScale:F1}");
                      
                      kick.rb.AddForce(kick.force, ForceMode.VelocityChange); // 속도 모드 사용
                      if (kick.torque != Vector3.zero) kick.rb.AddTorque(kick.torque, ForceMode.VelocityChange);
                      
                      // 4. 마무리
+                     // 4. 마무리 (Possession Release)
+                     // [핵심 추가] 킥을 했으면 더 이상 내 공이 아님!
+                     
+                     // 1. 소유권 해제 알림
+                     MatchManager.Instance.LosePossession(_controller);
+                     
+                     // 2. 드리블 모드 해제
+                     _isDribbleActive = false;
+                     
+                     // 3. 재소유 쿨타임 (공이 발을 떠나는 동안 다시 잡지 않도록)
+                     // (settings.kickCooldown is 0.5f by default)
                      _ignoreBallInteractionUntil = Time.time + settings.kickCooldown; 
+
+                     // 4. 로그 명시
+                     Debug.Log($"[KICK-EXEC] {name} Kicked! Relinquishing Possession.");
                      
                      BallAerodynamics aero = kick.rb.GetComponent<BallAerodynamics>();
                      if (aero != null) aero.ResetAerodynamics(); 
@@ -873,8 +986,6 @@ namespace Game.Scripts.AI
                      {
                          MatchManager.Instance.IsKickOffFirstPass = false;
                      }
-                     
-                     MatchManager.Instance.ClearBallOwner();
                  }
              }
         }
@@ -912,21 +1023,29 @@ namespace Game.Scripts.AI
             return true;
         }
         
-        public void HandleTackleImpact(Vector3 tacklerPos)
+        public void OnTackled(Vector3 tacklerPos, float power)
         {
             if (_cachedBallRb == null) return;
 
-            // 1. 소유권 즉시 포기
+            // 1. Lose Possession Immediately
+            var matchMgr = MatchManager.Instance;
+            if (matchMgr != null) matchMgr.LosePossession(_controller);
+            
             _isDribbleActive = false;
-            _ignoreBallInteractionUntil = Time.time + 1.0f; // 1초간 공 못 잡음 (중요!)
+            
+            // 2. Stun: 1.5s Look Lockout
+            _ignoreBallInteractionUntil = Time.time + 1.5f; 
 
-            // 2. 공을 반대 방향으로 튕겨냄 (Fumble)
-            Vector3 fumbleDir = (transform.position - tacklerPos).normalized + Vector3.up; // 살짝 띄움
+            // 3. Fumble Physics (Pop Up & Away)
+            Vector3 fumbleDir = (transform.position - tacklerPos).normalized;
+            fumbleDir += Vector3.up * 0.4f; // Lift it up
+            fumbleDir.Normalize();
+
             _cachedBallRb.isKinematic = false;
-            _cachedBallRb.linearVelocity = Vector3.zero; // 기존 속도 제거
-            _cachedBallRb.AddForce(fumbleDir * 8.0f, ForceMode.Impulse); // 뻥 차냄
+            _cachedBallRb.linearVelocity = Vector3.zero; // Reset velocity
+            _cachedBallRb.AddForce(fumbleDir * power, ForceMode.Impulse); 
 
-            Debug.Log($"[TACKLE-IMPACT] Ball fumbled away from {name}");
+            Debug.Log($"[TACKLE-IMPACT] {name} fumbled ball! Stunned for 1.5s. Power: {power}");
         }
 
         public void ResetState()
@@ -965,6 +1084,33 @@ namespace Game.Scripts.AI
                 Gizmos.DrawLine(transform.position, _cachedBallRb.position);
                 Gizmos.DrawWireSphere(_cachedBallRb.position, 0.3f); // 공 위치에도 표시
             }
+        }
+
+        private void DebugOnBallBehavior()
+        {
+             // 1. Check Owner
+             var matchMgr = MatchManager.Instance;
+             if (matchMgr == null || matchMgr.CurrentBallOwner != _controller) return;
+             if (_cachedBallRb == null) return;
+
+             // 2. Throttle (0.2s)
+             if (Time.time < _lastDebugLogTime + 0.2f) return;
+             _lastDebugLogTime = Time.time;
+
+             // 3. Gather Data
+             float speed = (_mover != null && _mover.NavAgent != null) ? _mover.NavAgent.velocity.magnitude : 0f;
+             float ballDist = Vector3.Distance(transform.position, _cachedBallRb.position);
+             bool isMovingFast = speed > 2.0f;
+             
+             // Constraint Active Condition (Inverse of Relax Condition)
+             bool constraintActive = !isMovingFast && !HasPendingKick && Time.time >= _ignoreBallInteractionUntil;
+             
+             string modeStr = isMovingFast ? "RUNNING (Constraint: OFF)" : "CONTROL (Constraint: ON)";
+             if (HasPendingKick) modeStr = "KICKING (Constraint: OFF)";
+             else if (Time.time < _ignoreBallInteractionUntil) modeStr = "STUN/COOLDOWN (Constraint: OFF)";
+
+             // 4. Log
+             Debug.Log($"[ON-BALL] {name} | Speed: {speed:F1} | BallDist: {ballDist:F2}m | Mode: {modeStr}");
         }
     }
 }

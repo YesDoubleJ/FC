@@ -1,0 +1,48 @@
+[0.00] [MatchManager] HOME KICK OFF!
+
+[0.00] [MatchManager] Ready...
+
+[2.00] [MatchManager] PLAY!
+
+[2.01] [MatchManager] Home_ST has the ball!
+
+[2.01] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.51
+
+[2.01] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[10.00] [MatchManager] Home_CM has the ball!
+
+[10.00] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.08, Angle: 9.96
+
+[10.00] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.08m | Mode: CONTROL (Constraint: ON)
+
+[10.18] [MatchManager] Home_CM has the ball!
+
+[10.21] [ON-BALL] Home_CM | Speed: 8.9 | BallDist: 0.75m | Mode: RUNNING (Constraint: OFF)
+
+[10.53] [MatchManager] OUT OF BOUNDS
+
+[13.54] [MatchManager] AWAY KICK OFF!
+
+[13.54] [MatchManager] Ready...
+
+[15.55] [MatchManager] PLAY!
+
+[15.55] [MatchManager] Away_ST has the ball!
+
+[15.55] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.90, Angle: 12.28
+
+[15.55] [ON-BALL] Away_ST | Speed: 0.0 | BallDist: 0.90m | Mode: CONTROL (Constraint: ON)
+
+[15.72] [MatchManager] Away_ST has the ball!
+
+[15.76] [ON-BALL] Away_ST | Speed: 0.3 | BallDist: 1.15m | Mode: CONTROL (Constraint: ON)
+
+[19.10] [MatchManager] Away_ST has the ball!
+
+[19.10] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 1.10, Angle: 9.26
+
+[19.10] [ON-BALL] Away_ST | Speed: 0.5 | BallDist: 1.10m | Mode: CONTROL (Constraint: ON)
+
+[20.47] [MatchManager] OUT OF BOUNDS
+

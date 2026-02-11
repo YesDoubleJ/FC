@@ -51,6 +51,7 @@ namespace Game.Scripts.AI
         private System.Action _pendingDelayedAction;
 
         public float Speed => (_agent != null) ? _agent.speed : 0f;
+        public UnityEngine.AI.NavMeshAgent NavAgent => _agent; // [Exposed for AgentBallHandler]
         public bool IsBusy => _isRotatingForAction; // Partial Busy check (Coordinator will combine)
         public Quaternion LastRotationDelta { get; private set; } = Quaternion.identity;
 
@@ -262,6 +263,18 @@ namespace Game.Scripts.AI
              _rb.AddForce(forceDir * acceleration * Time.deltaTime, ForceMode.VelocityChange);
         }
 
+        // Manual Rotation Override
+        private bool _isManualRotationActive;
+        private Vector3 _manualRotationTarget;
+        private float _manualRotationSpeedMult;
+
+        public void SetTargetRotation(Vector3 target, float speedMultiplier = 1.0f)
+        {
+            _isManualRotationActive = true;
+            _manualRotationTarget = target;
+            _manualRotationSpeedMult = speedMultiplier;
+        }
+
         private void RotateCharacter()
         {
             // 1. Identify Context
@@ -277,9 +290,18 @@ namespace Game.Scripts.AI
             // 2. Determine Target Direction
             Vector3 lookDir = transform.forward; 
             bool foundTarget = false;
+            float speedMult = 1.0f;
 
+            // PRIORITY 0: Manual Rotation Override (e.g. Kick/Pass alignment)
+            if (_isManualRotationActive)
+            {
+                lookDir = _manualRotationTarget - transform.position;
+                foundTarget = true;
+                speedMult = _manualRotationSpeedMult;
+                _isManualRotationActive = false; // Reset for next frame
+            }
             // PRIORITY 1: Trap/Recovery (Always face ball)
-            if (IsRecoveringBall && ballExists)
+            else if (IsRecoveringBall && ballExists)
             {
                 lookDir = ballPos - transform.position;
                 foundTarget = true;
@@ -298,13 +320,13 @@ namespace Game.Scripts.AI
                     foundTarget = true;
                 }
             }
+
             // PRIORITY 3: Moving
             else
             {
                 if (hasBall)
                 {
                     // ON-BALL LOGIC: Look at Ball (User Req)
-                    // If ball is extremely close/under, look at movement
                     Vector3 toBall = ballPos - transform.position;
                     if (toBall.sqrMagnitude > 0.01f)
                     {
@@ -359,8 +381,9 @@ namespace Game.Scripts.AI
             if (lookDir.sqrMagnitude > 0.001f)
             {
                 // Calculate Speed (Degrees/Sec)
+                // Calculate Speed (Degrees/Sec)
                 float rotationSpeed = (_controller.config) ? _controller.config.RotationSpeed : 360f;
-                // float rotationSpeed = rotSpeedVal * 60f; // [REMOVED] Use direct value 
+                rotationSpeed *= speedMult; // Apply Manual Multiplier
 
                 // Tuning Modifiers
                 if (hasBall && !isStationary) 
@@ -369,7 +392,9 @@ namespace Game.Scripts.AI
                     float angleError = Vector3.Angle(transform.forward, lookDir);
                     if (angleError > 20f) rotationSpeed *= 1.5f; 
                 }
-                if (isStationary) rotationSpeed *= 0.8f; // Idle turn
+                
+                // Apply Idle Penalty only if NO manual override
+                if (isStationary && speedMult <= 1.0f) rotationSpeed *= 0.8f; // Idle turn
 
                 Quaternion targetRotation = Quaternion.LookRotation(lookDir);
                 Quaternion previousRotation = _rb.rotation;

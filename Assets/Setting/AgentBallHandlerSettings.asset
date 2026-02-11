@@ -37,6 +37,12 @@ MonoBehaviour:
   velocityGainMin: 6
   velocityGainMax: 8
   maxCorrectionVelocity: 20
+  dribbleInterval: 0.2
+  dribbleMinForce: 1
+  dribbleMaxForce: 4
+  DribbleForceScale: 1
+  softGuideStrength: 5
+  maxTetherRadius: 1.5
   passPowerBase: 8
   passPowerDistFactor: 0.5
   passPowerMin: 5
@@ -51,6 +57,7 @@ MonoBehaviour:
   shootPowerMin: 10
   shootPowerMax: 40
   shootErrorBaseAngle: 10
+  globalKickPowerScale: 1
   highClearancePower: 25
   kickMissDistance: 2.5
   kickCooldown: 0.5

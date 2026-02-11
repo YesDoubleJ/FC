@@ -242,24 +242,16 @@ namespace Game.Scripts.AI
             // SUCCESSFUL TACKLE (Ball Steal / Dislodge)
             LogSkill("<color=cyan>TACKLE SUCCESS!</color>");
             
-            // 1. Force Lose Possession
+            // 1. Trigger Loose Ball (Fumble & Stun)
             var targetHandler = target.GetComponent<AgentBallHandler>();
-            if (targetHandler != null) targetHandler.ResetState(); // ResetState clears dribble/kick
-            MatchManager.Instance.LosePossession(target); // Ensure MatchManager knows
-
-            // 2. Loose Ball Physics (Knock Away)
-            Rigidbody ballRb = MatchManager.Instance?.Ball?.GetComponent<Rigidbody>();
-            if (ballRb != null)
+            if (targetHandler != null) 
             {
-                // Knock Direction: Away from Tackler (Loose Ball)
-                Vector3 knockDir = (ballRb.position - transform.position).normalized;
-                knockDir.y = 0.2f; // Slight Lift
-
-                ballRb.isKinematic = false; 
-                ballRb.linearVelocity = Vector3.zero; // Reset current velocity for clean impact
-                
-                float force = 4.0f; // Soft Knock
-                ballRb.AddForce(knockDir * force, ForceMode.Impulse);
+                targetHandler.OnTackled(transform.position, 10.0f);
+            }
+            else
+            {
+                // Fallback
+                MatchManager.Instance.LosePossession(target);
             }
 
             // 3. No Possession Grace Period

@@ -1,0 +1,306 @@
+[0.00] [MatchManager] HOME KICK OFF!
+
+[0.00] [MatchManager] Ready...
+
+[2.00] [MatchManager] PLAY!
+
+[2.01] [MatchManager] Home_ST has the ball!
+
+[2.01] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.42
+
+[2.01] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.21] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.42] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.62] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.82] [ON-BALL] Home_ST | Speed: 0.5 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[3.02] [ON-BALL] Home_ST | Speed: 0.3 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[3.23] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[3.43] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[3.64] [ON-BALL] Home_ST | Speed: 0.2 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[3.84] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.95m | Mode: CONTROL (Constraint: ON)
+
+[3.92] Home_ST Kick Preparation TIMEOUT. Forcing Kick despite existing alignment error.
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogWarning (object)
+Game.Scripts.AI.AgentBallHandler:UpdateKickLogic () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:770)
+Game.Scripts.AI.AgentBallHandler:Tick () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:93)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:133)
+
+[3.92] <color=cyan>Home_CM is expecting a PASS at (9.82, 0.08, 2.82)!</color>
+
+[3.92] [KICK-EXEC] Home_ST Kicked! Force: 15.8, Mode: VelocityChange
+
+[9.21] [MatchManager] OUT OF BOUNDS
+
+[12.21] [MatchManager] AWAY KICK OFF!
+
+[12.21] [MatchManager] Ready...
+
+[14.22] [MatchManager] PLAY!
+
+[14.22] [MatchManager] Away_ST has the ball!
+
+[14.22] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.92, Angle: 13.21
+
+[14.22] [ON-BALL] Away_ST | Speed: 0.0 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[14.43] [ON-BALL] Away_ST | Speed: 0.0 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[14.63] [ON-BALL] Away_ST | Speed: 0.4 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[14.83] [ON-BALL] Away_ST | Speed: 10.7 | BallDist: 0.85m | Mode: RUNNING (Constraint: OFF)
+
+[15.04] [ON-BALL] Away_ST | Speed: 6.1 | BallDist: 1.84m | Mode: RUNNING (Constraint: OFF)
+
+[15.24] [ON-BALL] Away_ST | Speed: 9.0 | BallDist: 2.70m | Mode: RUNNING (Constraint: OFF)
+
+[15.41] <color=green>Home_ST SKILL: TACKLE on Away_ST</color>
+
+[15.41] <color=green>Home_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[15.41] [TACKLE-IMPACT] Away_ST fumbled ball! Stunned for 1.5s. Power: 10
+
+[22.17] [MatchManager] Away_CB2 has the ball!
+
+[22.17] [AgentBallHandler] Away_CB2 CLAIMED BALL. Dist: 1.06, Angle: 9.22
+
+[22.17] [ON-BALL] Away_CB2 | Speed: 0.4 | BallDist: 1.06m | Mode: CONTROL (Constraint: ON)
+
+[22.19] [DRIBBLE] Away_CB2 Kicked ball forward! (Force: 6)
+
+[22.37] [ON-BALL] Away_CB2 | Speed: 0.6 | BallDist: 2.61m | Mode: CONTROL (Constraint: ON)
+
+[22.57] [ON-BALL] Away_CB2 | Speed: 0.1 | BallDist: 4.73m | Mode: CONTROL (Constraint: ON)
+
+[22.77] [ON-BALL] Away_CB2 | Speed: 0.3 | BallDist: 5.63m | Mode: CONTROL (Constraint: ON)
+
+[22.98] [ON-BALL] Away_CB2 | Speed: 0.1 | BallDist: 5.83m | Mode: CONTROL (Constraint: ON)
+
+[23.18] [ON-BALL] Away_CB2 | Speed: 0.1 | BallDist: 6.84m | Mode: CONTROL (Constraint: ON)
+
+[23.39] [ON-BALL] Away_CB2 | Speed: 0.0 | BallDist: 8.09m | Mode: CONTROL (Constraint: ON)
+
+[23.59] [ON-BALL] Away_CB2 | Speed: 0.0 | BallDist: 9.70m | Mode: CONTROL (Constraint: ON)
+
+[23.79] [ON-BALL] Away_CB2 | Speed: 0.1 | BallDist: 10.45m | Mode: CONTROL (Constraint: ON)
+
+[23.99] [ON-BALL] Away_CB2 | Speed: 0.3 | BallDist: 10.20m | Mode: CONTROL (Constraint: ON)
+
+[24.20] [ON-BALL] Away_CB2 | Speed: 0.5 | BallDist: 9.41m | Mode: CONTROL (Constraint: ON)
+
+[24.40] [ON-BALL] Away_CB2 | Speed: 0.7 | BallDist: 8.27m | Mode: CONTROL (Constraint: ON)
+
+[24.60] [ON-BALL] Away_CB2 | Speed: 0.4 | BallDist: 7.23m | Mode: CONTROL (Constraint: ON)
+
+[24.80] [ON-BALL] Away_CB2 | Speed: 0.5 | BallDist: 6.33m | Mode: CONTROL (Constraint: ON)
+
+[25.01] [ON-BALL] Away_CB2 | Speed: 0.4 | BallDist: 6.31m | Mode: CONTROL (Constraint: ON)
+
+[25.21] [ON-BALL] Away_CB2 | Speed: 0.0 | BallDist: 6.67m | Mode: CONTROL (Constraint: ON)
+
+[25.42] [ON-BALL] Away_CB2 | Speed: 0.5 | BallDist: 7.38m | Mode: CONTROL (Constraint: ON)
+
+[25.62] [ON-BALL] Away_CB2 | Speed: 0.5 | BallDist: 8.29m | Mode: CONTROL (Constraint: ON)
+
+[25.72] [AgentBallHandler] Away_CB2 lost ball. Dist: 8.37
+
+[28.18] [MatchManager] Away_CB has the ball!
+
+[28.18] [AgentBallHandler] Away_CB CLAIMED BALL. Dist: 1.06, Angle: 9.09
+
+[28.18] [ON-BALL] Away_CB | Speed: 0.7 | BallDist: 1.06m | Mode: CONTROL (Constraint: ON)
+
+[28.21] [DRIBBLE] Away_CB Kicked ball forward! (Force: 6)
+
+[28.34] [MatchManager] OUT OF BOUNDS
+
+[28.38] [ON-BALL] Away_CB | Speed: 0.3 | BallDist: 2.68m | Mode: CONTROL (Constraint: ON)
+
+[28.59] [ON-BALL] Away_CB | Speed: 0.4 | BallDist: 4.78m | Mode: CONTROL (Constraint: ON)
+
+[28.79] [ON-BALL] Away_CB | Speed: 0.5 | BallDist: 5.65m | Mode: CONTROL (Constraint: ON)
+
+[28.99] [ON-BALL] Away_CB | Speed: 0.0 | BallDist: 6.05m | Mode: CONTROL (Constraint: ON)
+
+[29.20] [ON-BALL] Away_CB | Speed: 0.4 | BallDist: 7.02m | Mode: CONTROL (Constraint: ON)
+
+[29.40] [ON-BALL] Away_CB | Speed: 0.1 | BallDist: 8.57m | Mode: CONTROL (Constraint: ON)
+
+[29.61] [ON-BALL] Away_CB | Speed: 0.2 | BallDist: 10.18m | Mode: CONTROL (Constraint: ON)
+
+[29.82] [ON-BALL] Away_CB | Speed: 0.2 | BallDist: 10.82m | Mode: CONTROL (Constraint: ON)
+
+[30.03] [ON-BALL] Away_CB | Speed: 0.0 | BallDist: 10.22m | Mode: CONTROL (Constraint: ON)
+
+[30.24] [ON-BALL] Away_CB | Speed: 0.2 | BallDist: 9.16m | Mode: CONTROL (Constraint: ON)
+
+[30.44] [ON-BALL] Away_CB | Speed: 0.2 | BallDist: 7.86m | Mode: CONTROL (Constraint: ON)
+
+[30.65] [ON-BALL] Away_CB | Speed: 0.0 | BallDist: 6.97m | Mode: CONTROL (Constraint: ON)
+
+[30.85] [ON-BALL] Away_CB | Speed: 0.0 | BallDist: 6.71m | Mode: CONTROL (Constraint: ON)
+
+[31.05] [ON-BALL] Away_CB | Speed: 0.2 | BallDist: 6.93m | Mode: CONTROL (Constraint: ON)
+
+[31.25] [ON-BALL] Away_CB | Speed: 0.0 | BallDist: 7.48m | Mode: CONTROL (Constraint: ON)
+
+[31.35] [MatchManager] HOME KICK OFF!
+
+[31.35] [MatchManager] Ready...
+
+[33.35] [MatchManager] PLAY!
+
+[33.36] [MatchManager] Home_ST has the ball!
+
+[33.36] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.92, Angle: 10.56
+
+[33.36] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[33.56] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[33.76] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[33.97] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[34.17] [ON-BALL] Home_ST | Speed: 0.4 | BallDist: 0.87m | Mode: CONTROL (Constraint: ON)
+
+[34.38] [ON-BALL] Home_ST | Speed: 0.1 | BallDist: 0.87m | Mode: CONTROL (Constraint: ON)
+
+[34.58] [ON-BALL] Home_ST | Speed: 0.1 | BallDist: 0.87m | Mode: CONTROL (Constraint: ON)
+
+[34.79] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.87m | Mode: CONTROL (Constraint: ON)
+
+[34.99] [ON-BALL] Home_ST | Speed: 0.1 | BallDist: 0.81m | Mode: CONTROL (Constraint: ON)
+
+[35.12] Home_ST Kick Preparation TIMEOUT. Forcing Kick despite existing alignment error.
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogWarning (object)
+Game.Scripts.AI.AgentBallHandler:UpdateKickLogic () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:770)
+Game.Scripts.AI.AgentBallHandler:Tick () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:93)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:133)
+
+[35.12] <color=cyan>Home_CM is expecting a PASS at (9.82, 0.08, 8.94)!</color>
+
+[35.12] [KICK-EXEC] Home_ST Kicked! Force: 17.5, Mode: VelocityChange
+
+[44.62] [MatchManager] Away_CM2 has the ball!
+
+[44.62] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.08, Angle: 8.90
+
+[44.62] [ON-BALL] Away_CM2 | Speed: 0.5 | BallDist: 1.08m | Mode: CONTROL (Constraint: ON)
+
+[44.65] [DRIBBLE] Away_CM2 Kicked ball forward! (Force: 6)
+
+[44.82] [ON-BALL] Away_CM2 | Speed: 0.0 | BallDist: 2.48m | Mode: CONTROL (Constraint: ON)
+
+[45.03] [ON-BALL] Away_CM2 | Speed: 0.4 | BallDist: 4.39m | Mode: CONTROL (Constraint: ON)
+
+[45.23] [ON-BALL] Away_CM2 | Speed: 0.0 | BallDist: 5.17m | Mode: CONTROL (Constraint: ON)
+
+[45.43] [ON-BALL] Away_CM2 | Speed: 0.2 | BallDist: 6.01m | Mode: CONTROL (Constraint: ON)
+
+[45.64] [ON-BALL] Away_CM2 | Speed: 0.2 | BallDist: 7.41m | Mode: CONTROL (Constraint: ON)
+
+[45.84] [ON-BALL] Away_CM2 | Speed: 0.5 | BallDist: 9.03m | Mode: CONTROL (Constraint: ON)
+
+[46.04] [ON-BALL] Away_CM2 | Speed: 0.5 | BallDist: 10.65m | Mode: CONTROL (Constraint: ON)
+
+[46.24] [ON-BALL] Away_CM2 | Speed: 0.4 | BallDist: 12.27m | Mode: CONTROL (Constraint: ON)
+
+[46.45] [ON-BALL] Away_CM2 | Speed: 0.1 | BallDist: 13.60m | Mode: CONTROL (Constraint: ON)
+
+[46.65] [ON-BALL] Away_CM2 | Speed: 0.4 | BallDist: 15.02m | Mode: CONTROL (Constraint: ON)
+
+[46.71] [MatchManager] OUT OF BOUNDS
+
+[46.86] [ON-BALL] Away_CM2 | Speed: 0.4 | BallDist: 16.32m | Mode: CONTROL (Constraint: ON)
+
+[47.06] [ON-BALL] Away_CM2 | Speed: 0.6 | BallDist: 17.46m | Mode: CONTROL (Constraint: ON)
+
+[47.27] [ON-BALL] Away_CM2 | Speed: 0.1 | BallDist: 18.07m | Mode: CONTROL (Constraint: ON)
+
+[47.47] [ON-BALL] Away_CM2 | Speed: 0.0 | BallDist: 18.38m | Mode: CONTROL (Constraint: ON)
+
+[47.68] [ON-BALL] Away_CM2 | Speed: 0.1 | BallDist: 18.51m | Mode: CONTROL (Constraint: ON)
+
+[47.82] [AgentBallHandler] Away_CM2 lost ball. Dist: 18.17
+
+[49.72] [MatchManager] AWAY KICK OFF!
+
+[49.72] [MatchManager] Ready...
+
+[51.72] [MatchManager] PLAY!
+
+[51.72] [MatchManager] Away_ST has the ball!
+
+[51.72] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.91, Angle: 10.68
+
+[51.72] [ON-BALL] Away_ST | Speed: 0.0 | BallDist: 0.91m | Mode: CONTROL (Constraint: ON)
+
+[51.93] [ON-BALL] Away_ST | Speed: 0.4 | BallDist: 0.91m | Mode: CONTROL (Constraint: ON)
+
+[52.13] [ON-BALL] Away_ST | Speed: 0.0 | BallDist: 0.91m | Mode: CONTROL (Constraint: ON)
+
+[52.34] [ON-BALL] Away_ST | Speed: 4.9 | BallDist: 0.84m | Mode: RUNNING (Constraint: OFF)
+
+[52.54] [ON-BALL] Away_ST | Speed: 8.4 | BallDist: 1.84m | Mode: RUNNING (Constraint: OFF)
+
+[52.74] [ON-BALL] Away_ST | Speed: 7.0 | BallDist: 2.74m | Mode: RUNNING (Constraint: OFF)
+
+[52.94] [ON-BALL] Away_ST | Speed: 5.2 | BallDist: 3.27m | Mode: RUNNING (Constraint: OFF)
+
+[53.02] [53.02] [CONSTRAINT] Rescued ball to Front-Center (Dist: 0.80)
+
+[53.14] <color=cyan>Away_CM2 is expecting a PASS at (2.86, -0.65, 7.18)!</color>
+
+[53.14] [ON-BALL] Away_ST | Speed: 0.2 | BallDist: 0.70m | Mode: KICKING (Constraint: OFF)
+
+[53.16] [KICK-EXEC] Away_ST Kicked! Force: 14.7, Mode: VelocityChange
+
+[58.26] [MatchManager] Away_CM2 has the ball!
+
+[58.26] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.05, Angle: 9.33
+
+[58.26] [ON-BALL] Away_CM2 | Speed: 0.4 | BallDist: 1.05m | Mode: CONTROL (Constraint: ON)
+
+[58.29] [DRIBBLE] Away_CM2 Kicked ball forward! (Force: 6)
+
+[58.46] [ON-BALL] Away_CM2 | Speed: 0.6 | BallDist: 2.75m | Mode: CONTROL (Constraint: ON)
+
+[58.67] [ON-BALL] Away_CM2 | Speed: 0.1 | BallDist: 5.44m | Mode: CONTROL (Constraint: ON)
+
+[58.87] [ON-BALL] Away_CM2 | Speed: 0.0 | BallDist: 7.15m | Mode: CONTROL (Constraint: ON)
+
+[59.07] [ON-BALL] Away_CM2 | Speed: 0.1 | BallDist: 7.81m | Mode: CONTROL (Constraint: ON)
+
+[59.28] [ON-BALL] Away_CM2 | Speed: 0.1 | BallDist: 9.12m | Mode: CONTROL (Constraint: ON)
+
+[59.48] [ON-BALL] Away_CM2 | Speed: 0.2 | BallDist: 10.98m | Mode: CONTROL (Constraint: ON)
+
+[59.69] [ON-BALL] Away_CM2 | Speed: 0.4 | BallDist: 12.81m | Mode: CONTROL (Constraint: ON)
+
+[59.89] [ON-BALL] Away_CM2 | Speed: 0.1 | BallDist: 14.29m | Mode: CONTROL (Constraint: ON)
+
+[59.97] <color=green>Home_CM SKILL: DEFENSE BURST</color>
+
+[59.98] <color=green>Home_ST SKILL: DEFENSE BURST</color>
+
+[60.10] [ON-BALL] Away_CM2 | Speed: 0.3 | BallDist: 15.02m | Mode: CONTROL (Constraint: ON)
+
+[60.30] [ON-BALL] Away_CM2 | Speed: 0.5 | BallDist: 15.21m | Mode: CONTROL (Constraint: ON)
+
+[60.32] <color=green>Home_CM2 SKILL: DEFENSE BURST</color>
+
+[60.50] [ON-BALL] Away_CM2 | Speed: 0.7 | BallDist: 15.04m | Mode: CONTROL (Constraint: ON)
+

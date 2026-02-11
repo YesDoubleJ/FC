@@ -47,6 +47,17 @@ namespace Game.Scripts.AI
         public float velocityGainMax = 25.0f;
         public float maxCorrectionVelocity = 10.0f;
 
+        [Header("Dribble Kick")]
+        public float dribbleInterval = 0.2f;
+        public float dribbleMinForce = 1.0f;
+        public float dribbleMaxForce = 8.0f;
+        [Tooltip("Global multiplier for dribble kick force")]
+        public float DribbleForceScale = 1.0f;
+        
+        [Header("Soft Guide")]
+        public float softGuideStrength = 5.0f;
+        public float maxTetherRadius = 1.5f;
+
         [Header("Passing")]
         public float passPowerBase = 8.0f;
         public float passPowerDistFactor = 0.5f;
@@ -66,6 +77,8 @@ namespace Game.Scripts.AI
         public float shootErrorBaseAngle = 10.0f; // More precise than pass
 
         [Header("Kicking")]
+        [Range(0.1f, 2.0f)]
+        public float globalKickPowerScale = 1.0f;
         public float highClearancePower = 25.0f;
         public float kickMissDistance = 2.5f;
         public float kickCooldown = 0.5f;
