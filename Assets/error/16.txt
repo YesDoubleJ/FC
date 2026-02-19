@@ -1,0 +1,228 @@
+Home_CM: Already on NavMesh at (10.00, 0.00, -5.00)
+
+Home_CB: Already on NavMesh at (6.00, 0.00, -14.00)
+
+Away_CM2: Already on NavMesh at (10.00, 0.00, 16.00)
+
+Away_CB: Already on NavMesh at (-6.00, 0.00, 26.00)
+
+Away_ST: Already on NavMesh at (0.00, 0.00, 12.00)
+
+Away_GK: Already on NavMesh at (0.00, 0.00, 48.00)
+
+Home_ST: Already on NavMesh at (0.00, 0.00, -1.00)
+
+Away_CB2: Already on NavMesh at (6.00, 0.00, 26.00)
+
+Home_CB2: Already on NavMesh at (-6.00, 0.00, -14.00)
+
+[0.00] Home_CM2: Already on NavMesh at (-10.00, 0.00, -5.00)
+
+[0.00] Away_CM: Already on NavMesh at (-10.00, 0.00, 16.00)
+
+[0.00] Home_GK: Already on NavMesh at (0.00, 0.00, -48.00)
+
+[0.00] <b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+[0.00] <color=green>[PASS]</color> ShootScore_Close
+
+[0.00] <color=green>[PASS]</color> ShootScore_Far
+
+[0.00] <color=green>[PASS]</color> ShootScore_Angle
+
+[0.00] <b>[Unit Tests] Finished.</b>
+
+[0.00] [MatchManager] HOME KICK OFF!
+
+[0.00] [MatchManager] Ready...
+
+[2.00] [MatchManager] PLAY!
+
+[2.01] [MatchManager] Home_ST has the ball!
+
+[2.01] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.55
+
+[2.01] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.03] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[2.03] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.94m | BallSpeed: 0.0/2.6
+
+[2.87] [MatchManager] Home_ST has the ball!
+
+[2.87] [DRIBBLE-DEBUG] Speed: 9.9 | Formula: (Lerp(0.5~2.0, 0.99)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[2.87] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.86m | BallSpeed: 5.0/13.9
+
+[3.36] [MatchManager] Home_CM has the ball!
+
+[3.36] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.09, Angle: 13.35
+
+[3.36] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[3.36] [DRIBBLE-SKIP] Speed Limit Reached: 4.9 > 2.7
+
+[6.72] [MatchManager] Away_ST has the ball!
+
+[6.72] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 1.06, Angle: 9.01
+
+[6.72] [ON-BALL] Away_ST | Speed: 0.1 | BallDist: 1.06m | Mode: CONTROL (Constraint: ON)
+
+[6.73] [DRIBBLE-DEBUG] Speed: 9.9 | Formula: (Lerp(0.5~2.0, 0.99)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[6.73] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.94m | BallSpeed: 4.4/13.9
+
+[10.38] [MatchManager] Away_ST has the ball!
+
+[10.38] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 1.10, Angle: 8.80
+
+[10.38] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[10.38] [DRIBBLE-SKIP] Speed Limit Reached: 4.5 > 2.4
+
+[10.52] [MatchManager] OUT OF BOUNDS
+
+[10.54] [MatchManager] Away_ST has the ball!
+
+[10.54] [ON-BALL] Away_ST | Speed: 0.1 | BallDist: 0.84m | Mode: CONTROL (Constraint: ON)
+
+[10.58] [DRIBBLE-DEBUG] Speed: 1.5 | Formula: (Lerp(0.5~2.0, 0.15)=0.7) * Scale:1.0 = 0.7 | Interval: 0.20s
+
+[10.58] [DRIBBLE-SKIP] Speed Limit Reached: 4.3 > 3.8
+
+[10.74] [MatchManager] Away_ST has the ball!
+
+[10.74] [ON-BALL] Away_ST | Speed: 9.9 | BallDist: 0.90m | Mode: RUNNING (Constraint: OFF)
+
+[10.79] [DRIBBLE-DEBUG] Speed: 11.0 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[10.79] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.64m | BallSpeed: 4.0/15.2
+
+[13.53] [MatchManager] AWAY KICK OFF!
+
+[13.53] [MatchManager] Ready...
+
+[15.53] [MatchManager] PLAY!
+
+[15.54] [MatchManager] Away_ST has the ball!
+
+[15.54] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.90, Angle: 13.47
+
+[15.54] [ON-BALL] Away_ST | Speed: 0.0 | BallDist: 0.90m | Mode: CONTROL (Constraint: ON)
+
+[15.55] [DRIBBLE-DEBUG] Speed: 0.7 | Formula: (Lerp(0.5~2.0, 0.07)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[15.55] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.90m | BallSpeed: 0.0/2.9
+
+[15.70] [MatchManager] Away_ST has the ball!
+
+[15.74] [ON-BALL] Away_ST | Speed: 0.4 | BallDist: 0.93m | Mode: CONTROL (Constraint: ON)
+
+[15.75] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[15.75] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.93m | BallSpeed: 0.4/2.3
+
+[15.92] [MatchManager] Away_ST has the ball!
+
+[15.94] [ON-BALL] Away_ST | Speed: 0.5 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[16.01] [DRIBBLE-DEBUG] Speed: 9.1 | Formula: (Lerp(0.5~2.0, 0.91)=1.9) * Scale:1.0 = 1.9 | Interval: 0.20s
+
+[16.01] [DRIBBLE-EXEC] Force: 1.9 (VelocityChange) | BallDist: 0.82m | BallSpeed: 0.0/13.0
+
+[24.80] [MatchManager] Away_ST has the ball!
+
+[24.80] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 1.07, Angle: 9.10
+
+[24.80] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[24.80] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.07m | BallSpeed: 2.1/2.5
+
+[24.95] [MatchManager] Away_ST has the ball!
+
+[24.95] [ON-BALL] Away_ST | Speed: 0.1 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[25.00] [DRIBBLE-DEBUG] Speed: 2.1 | Formula: (Lerp(0.5~2.0, 0.21)=0.8) * Scale:1.0 = 0.8 | Interval: 0.20s
+
+[25.00] [DRIBBLE-SKIP] Speed Limit Reached: 10.9 > 4.5
+
+[28.17] [MatchManager] Away_ST has the ball!
+
+[28.17] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 1.09, Angle: 8.81
+
+[28.17] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[28.17] [DRIBBLE-SKIP] Speed Limit Reached: 4.8 > 2.6
+
+[28.32] [MatchManager] Away_ST has the ball!
+
+[28.32] [ON-BALL] Away_ST | Speed: 0.3 | BallDist: 0.81m | Mode: CONTROL (Constraint: ON)
+
+[28.37] [DRIBBLE-DEBUG] Speed: 1.7 | Formula: (Lerp(0.5~2.0, 0.17)=0.8) * Scale:1.0 = 0.8 | Interval: 0.20s
+
+[28.37] [DRIBBLE-SKIP] Speed Limit Reached: 4.5 > 4.1
+
+[28.53] [MatchManager] Away_ST has the ball!
+
+[28.53] [ON-BALL] Away_ST | Speed: 9.4 | BallDist: 0.86m | Mode: RUNNING (Constraint: OFF)
+
+[28.57] [DRIBBLE-DEBUG] Speed: 11.0 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[28.57] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.59m | BallSpeed: 4.3/15.2
+
+[28.70] [MatchManager] OUT OF BOUNDS
+
+[31.70] [MatchManager] HOME KICK OFF!
+
+[31.70] [MatchManager] Ready...
+
+[33.70] [MatchManager] PLAY!
+
+[33.71] [MatchManager] Home_ST has the ball!
+
+[33.71] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.93, Angle: 10.68
+
+[33.71] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.93m | Mode: CONTROL (Constraint: ON)
+
+[33.91] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.90m | Mode: CONTROL (Constraint: ON)
+
+[34.11] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.85m | Mode: CONTROL (Constraint: ON)
+
+[34.31] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.82m | Mode: CONTROL (Constraint: ON)
+
+[34.33] [KICK-DEBUG] PASS | Dist: 10.0m | Formula: (8.0 + 10.0*0.5 + 50*0.05) [Clamp: 15.5] * Scale:1.0 = 15.5
+
+[34.42] <color=cyan>Home_CM is expecting a PASS at (9.90, 0.08, 0.13)!</color>
+
+[34.42] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[34.42] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.68m | BallSpeed: 1.4/2.6
+
+[34.44] [KICK-EXEC] Home_ST Kicked! Force: 15.5, Mode: VelocityChange | Scale: 1.0
+
+[34.44] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[41.86] [MatchManager] Home_ST has the ball!
+
+[41.86] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.10, Angle: 8.81
+
+[41.86] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[41.86] [DRIBBLE-SKIP] Speed Limit Reached: 3.5 > 2.5
+
+[42.02] [MatchManager] Home_ST has the ball!
+
+[42.02] [ON-BALL] Home_ST | Speed: 0.6 | BallDist: 0.81m | Mode: CONTROL (Constraint: ON)
+
+[42.07] [DRIBBLE-DEBUG] Speed: 1.0 | Formula: (Lerp(0.5~2.0, 0.10)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[42.07] [DRIBBLE-SKIP] Speed Limit Reached: 3.3 > 3.2
+
+[42.22] [MatchManager] Home_ST has the ball!
+
+[42.22] [ON-BALL] Home_ST | Speed: 8.8 | BallDist: 0.80m | Mode: RUNNING (Constraint: OFF)
+
+[42.27] [DRIBBLE-DEBUG] Speed: 11.0 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[42.27] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.87m | BallSpeed: 10.3/15.2
+

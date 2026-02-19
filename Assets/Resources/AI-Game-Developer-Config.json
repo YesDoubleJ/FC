@@ -1,7 +1,7 @@
 {
   "logLevel": 3,
-  "keepServerRunning": true,
-  "transportMethod": 2,
+  "keepServerRunning": false,
+  "transportMethod": 1,
   "tools": [
     {
       "name": "assets-copy",
@@ -406,5 +406,6 @@
   ],
   "host": "http://localhost:52406",
   "timeoutMs": 10000,
-  "keepConnected": true
+  "keepConnected": true,
+  "token": null
 }

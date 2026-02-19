@@ -38,8 +38,8 @@ MonoBehaviour:
   velocityGainMax: 8
   maxCorrectionVelocity: 20
   dribbleInterval: 0.2
-  dribbleMinForce: 1
-  dribbleMaxForce: 4
+  dribbleMinForce: 0.5
+  dribbleMaxForce: 2
   DribbleForceScale: 1
   softGuideStrength: 5
   maxTetherRadius: 1.5

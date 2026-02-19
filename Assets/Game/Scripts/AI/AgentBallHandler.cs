@@ -57,6 +57,7 @@ namespace Game.Scripts.AI
         private static float _lastBallSearchTime = 0f;
 
         public bool HasPendingKick => _pendingKicks.Count > 0;
+        public bool IsPreparingKick => _isPreparingKick; // [NEW] Exposed for RootState
         public bool IsInPocket { get; private set; } // Exposed state for RootState decision
 
 
@@ -228,14 +229,25 @@ namespace Game.Scripts.AI
             _lastDribbleTime = Time.time;
             
             _cachedBallRb.isKinematic = false;
-            // Inherit velocity to keep momentum natural
-            if (_mover != null) _cachedBallRb.linearVelocity = _mover.NavAgent.velocity; 
             
-            _cachedBallRb.AddForce(transform.forward * targetForce, ForceMode.Impulse);
-            
-            // [DRIBBLE-EXEC] Execution Log
-            Debug.Log($"[DRIBBLE-EXEC] Force: {targetForce:F1} | BallDist: {dist:F2}m");
+            // [CHANGED] Remove artificial velocity sync to allow natural physics
+            // if (_mover != null) _cachedBallRb.linearVelocity = _mover.NavAgent.velocity; 
 
+            // [NEW] Speed Limit Check (Prevent ball from flying away)
+            float maxDribbleSpeed = (currentSpeed * 1.2f) + 2.0f;
+            if (_cachedBallRb.linearVelocity.magnitude < maxDribbleSpeed)
+            {
+                // [CHANGED] Use VelocityChange for instant acceleration without mass dependency
+                _cachedBallRb.AddForce(transform.forward * targetForce, ForceMode.VelocityChange);
+                
+                 // [DRIBBLE-EXEC] Execution Log
+                Debug.Log($"[DRIBBLE-EXEC] Force: {targetForce:F1} (VelocityChange) | BallDist: {dist:F2}m | BallSpeed: {_cachedBallRb.linearVelocity.magnitude:F1}/{maxDribbleSpeed:F1}");
+            }
+            else
+            {
+                 Debug.Log($"[DRIBBLE-SKIP] Speed Limit Reached: {_cachedBallRb.linearVelocity.magnitude:F1} > {maxDribbleSpeed:F1}");
+            }
+            
             // [CRITICAL] Release Possession
             // Ball leaves foot -> Loss of Control -> Physics takes over
             MatchManager.Instance.LosePossession(_controller);

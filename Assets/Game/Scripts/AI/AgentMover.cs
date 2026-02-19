@@ -55,6 +55,11 @@ namespace Game.Scripts.AI
         public bool IsBusy => _isRotatingForAction; // Partial Busy check (Coordinator will combine)
         public Quaternion LastRotationDelta { get; private set; } = Quaternion.identity;
 
+        // [NEW] Skill & Status Flags
+        public bool IsSpeedLocked { get; set; } = false; // If true, MoveTo/SprintTo won't change speed
+        private float _stunTimer = 0f;
+        public bool IsStunned => _stunTimer > 0f;
+
         // Debugging
         private float _debugTimer = 0f;
 
@@ -178,6 +183,12 @@ namespace Game.Scripts.AI
         // =========================================================
         private void MoveCharacter()
         {
+            if (_stunTimer > 0)
+            {
+                _stunTimer -= Time.fixedDeltaTime;
+                return; // Disable movement logic while stunned
+            }
+
             if (_agent == null || !_agent.isOnNavMesh) return;
 
             // RECOVERY STATE LOGIC (Trap & Turn)
@@ -248,12 +259,14 @@ namespace Game.Scripts.AI
                      float turnThreshold = (_controller.config) ? _controller.config.DribbleTurnAngleThreshold : 30f;
                      if (angleToTarget > turnThreshold)
                      {
-                         // Brake lateral movement (turn in place)
-                         float brakeForce = (_controller.config) ? _controller.config.DribbleBrakeForce : 4.0f;
-                         Vector3 brakeVec = -currentVelocity * brakeForce;
-                         brakeVec.y = 0;
-                         _rb.AddForce(brakeVec, ForceMode.Acceleration);
-                         return; // Wait for alignment
+                         // [MODIFIED] Soft Turn Logic
+                         // Instead of braking completely, just dampen the velocity to allow "drifting" turn
+                         // preserve 50% of momentum (or config value)
+                         float dampFactor = 0.95f; // Slight damping per frame
+                         _rb.linearVelocity *= dampFactor;
+                         
+                         // DO NOT RETURN! Allow ForceMode.VelocityChange to apply new direction steering
+                         // result: Agent arcs instead of stops.
                      }
                  }
             }
@@ -496,12 +509,19 @@ namespace Game.Scripts.AI
             _rb.linearVelocity = Vector3.zero;
         }
 
+        public void ApplyStun(float duration)
+        {
+            _stunTimer = duration;
+            if (_agent.isOnNavMesh) _agent.ResetPath();
+            // _rb.linearVelocity remains active (knockback physics)
+        }
+
         public void MoveTo(Vector3 dest)
         {
             if (_agent.isOnNavMesh) 
             {
                 // Inspect-driven Speed Control
-                _agent.speed = BaseMoveSpeed;
+                if (!IsSpeedLocked) _agent.speed = BaseMoveSpeed;
                 _agent.SetDestination(dest);
             }
         }
@@ -510,8 +530,11 @@ namespace Game.Scripts.AI
         {
             MoveTo(target);
             // Sprint is 1.4x the base speed
-            float sprintMult = (_controller.config) ? _controller.config.SprintMultiplier : 1.4f;
-            if (_agent != null) _agent.speed = BaseMoveSpeed * sprintMult; 
+            if (!IsSpeedLocked && _agent != null)
+            {
+                float sprintMult = (_controller.config) ? _controller.config.SprintMultiplier : 1.4f;
+                _agent.speed = BaseMoveSpeed * sprintMult; 
+            }
         }
 
         public void EnterTrapMode(Vector3 pendingDest)

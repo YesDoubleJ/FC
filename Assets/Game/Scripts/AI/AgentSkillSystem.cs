@@ -106,6 +106,9 @@ namespace Game.Scripts.AI
             
             float cooldown = (_controller.config) ? _controller.config.CooldownDefenseBurst : 5.0f;
             _defenseBurstCooldownTimer = cooldown; 
+            
+            // [SKILL LOG]
+            Debug.Log($"[SKILL] {name} activated DEFENSE BURST (Cooldown: {cooldown:F1}s)");
             LogSkill("DEFENSE BURST");
             
             // Physics Boost (Instant Stop & Face Ball)
@@ -126,6 +129,9 @@ namespace Game.Scripts.AI
         {
             float cooldown = (_controller.config) ? _controller.config.CooldownAttackBurst : 5.0f;
             _attackBurstCooldownTimer = cooldown;
+            
+            // [SKILL LOG]
+            Debug.Log($"[SKILL] {name} activated ATTACK BURST (Cooldown: {cooldown:F1}s)");
             LogSkill("ATTACK BURST");
 
             if (_agent.isOnNavMesh)
@@ -134,6 +140,9 @@ namespace Game.Scripts.AI
                 _preSkillSpeed = _agent.speed;
                 _preSkillAccel = _agent.acceleration;
                 
+                // [FIX] LOCK SPREED to prevent AgentMover from resetting it
+                if (_mover) _mover.IsSpeedLocked = true;
+
                 // Pure Speed Boost
                 float multiplier = (_controller.config) ? _controller.config.BurstSpeedMultiplier : 1.6f;
                 _agent.speed = _preSkillSpeed * multiplier;
@@ -144,6 +153,8 @@ namespace Game.Scripts.AI
                 // Restore
                 _agent.speed = _preSkillSpeed;
                 _agent.acceleration = _preSkillAccel;
+                
+                if (_mover) _mover.IsSpeedLocked = false;
                 
                 _preSkillSpeed = -1f;
             }
@@ -176,6 +187,10 @@ namespace Game.Scripts.AI
                     {
                         float pushForce = (_controller.config) ? _controller.config.BreakthroughPushForce : 10f;
                         opponentRb.AddForce(pushDir * pushForce, ForceMode.Impulse);
+                        
+                        // [FIX] Apply Stun to pushed opponents
+                        var oppMover = opponent.GetComponent<AgentMover>();
+                        if (oppMover) oppMover.ApplyStun(0.5f);
                     }
                 }
             }
@@ -195,6 +210,9 @@ namespace Game.Scripts.AI
                 _preSkillSpeed = _agent.speed;
                 _preSkillAccel = _agent.acceleration;
                 
+                // [FIX] LOCK SPEED
+                if (_mover) _mover.IsSpeedLocked = true;
+                
                 // Boost speed
                 float multiplier = (_controller.config) ? _controller.config.BreakthroughSpeedMultiplier : 1.5f;
                 _agent.speed = _preSkillSpeed * multiplier;
@@ -208,6 +226,8 @@ namespace Game.Scripts.AI
                 float impulse = (_controller.config) ? _controller.config.BreakthroughImpulseForce : 15f;
                 _rb.AddForce(chargeDir * impulse, ForceMode.Impulse);
                 
+                // [SKILL LOG]
+                Debug.Log($"[SKILL] {name} activated BREAKTHROUGH! (Cooldown: {cooldown:F1}s)");
                 LogSkill("BREAKTHROUGH!");
                 
                 yield return new WaitForSeconds(1.0f);
@@ -215,6 +235,8 @@ namespace Game.Scripts.AI
                 // Restore
                 _agent.speed = _preSkillSpeed;
                 _agent.acceleration = _preSkillAccel;
+                
+                if (_mover) _mover.IsSpeedLocked = false;
                 _preSkillSpeed = -1f;
             }
             
@@ -242,6 +264,10 @@ namespace Game.Scripts.AI
             // SUCCESSFUL TACKLE (Ball Steal / Dislodge)
             LogSkill("<color=cyan>TACKLE SUCCESS!</color>");
             
+            // [FIX] Lunge Forward (Visual/Physical)
+            Vector3 lungeDir = (target.transform.position - transform.position).normalized;
+            _rb.AddForce(lungeDir * 8.0f, ForceMode.Impulse);
+            
             // 1. Trigger Loose Ball (Fumble & Stun)
             var targetHandler = target.GetComponent<AgentBallHandler>();
             if (targetHandler != null) 
@@ -260,6 +286,10 @@ namespace Game.Scripts.AI
             // 2. Physical Impact (Disorient Opponent)
             float impact = (_controller.config) ? _controller.config.TackleImpactForce : 5f;
             target.VelocityRb.AddForce((target.transform.position - transform.position).normalized * impact, ForceMode.Impulse);
+            
+            // [FIX] Apply Stun/Knockback state to Target
+            var targetMover = target.GetComponent<AgentMover>();
+            if (targetMover != null) targetMover.ApplyStun(1.0f);
         }
 
         public void AttemptBodyCheck(HybridAgentController target)
@@ -295,6 +325,47 @@ namespace Game.Scripts.AI
              if (Game.Scripts.UI.MatchViewController.Instance != null)
                 Game.Scripts.UI.MatchViewController.Instance.LogSkill($"{name} {skillName}", _controller.TeamID);
              Debug.Log($"<color=green>{name} SKILL: {skillName}</color>");
+        }
+
+        public enum SkillType
+        {
+            AttackBurst,
+            DefenseBurst,
+            Breakthrough,
+            Tackle,
+            BodyCheck
+        }
+
+        public bool TryActivateSkill(SkillType type, float probability = 1.0f)
+        {
+            // PROBABILITY CHECK
+            if (probability < 1.0f && Random.value > probability) return false;
+
+            switch (type)
+            {
+                case SkillType.AttackBurst:
+                    if (CanUseAttackBurst)
+                    {
+                        ActivateAttackBurst();
+                        return true;
+                    }
+                    break;
+                case SkillType.DefenseBurst:
+                    if (CanUseDefenseBurst)
+                    {
+                        ActivateDefenseBurst();
+                        return true;
+                    }
+                    break;
+                case SkillType.Breakthrough:
+                    if (CanUseBreakthrough)
+                    {
+                        ActivateBreakthrough();
+                        return true;
+                    }
+                    break;
+            }
+            return false;
         }
     }
 }

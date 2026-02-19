@@ -1,6 +1,7 @@
 using UnityEngine;
 using Game.Scripts.Data;
 using Game.Scripts.Tactics;
+using Game.Scripts.Managers;
 
 namespace Game.Scripts.AI.Tactics
 {
@@ -23,6 +24,24 @@ namespace Game.Scripts.AI.Tactics
         public Vector3 GetSupportPosition(HybridAgentController agent, Vector3 ballPos)
         {
             Vector3 targetPos = GetGeometricSupportSpot(agent, ballPos);
+
+            // [NEW] OPEN SPACE FINDING (Raycast Check)
+            // If the direct line from Ball to TargetPos is blocked by an enemy, shift laterally.
+            Vector3 toTarget = targetPos - ballPos;
+            if (UnityEngine.Physics.Raycast(ballPos + Vector3.up * 0.5f, toTarget.normalized, out RaycastHit hit, toTarget.magnitude, LayerMask.GetMask("Player")))
+            {
+                 var blocker = hit.collider.GetComponent<HybridAgentController>();
+                 if (blocker != null && blocker.TeamID != agent.TeamID)
+                 {
+                     // BLOCKED! Shift position.
+                     // Try moving 3m Left or Right relative to the passing lane
+                     Vector3 right = Vector3.Cross(Vector3.up, toTarget.normalized);
+                     
+                     // Heuristic: Shift towards open field (or just try random side)
+                     // Simple: Shift 3m Right
+                     targetPos += right * 3.0f;
+                 }
+            }
 
             // [추가된 로직] 공(동료)과의 최소 안전 거리 확보 (Personal Space)
             targetPos = ApplySeparation(agent, targetPos, ballPos);
@@ -74,11 +93,20 @@ namespace Game.Scripts.AI.Tactics
         {
             Vector3 safePos = ClampToFieldBounds(pos, agent);
             
+            // [NEW] DEADZONE CHECK (Prevent Jitter)
+            // If already at destination (within 1.5m), do nothing
+            float dist = Vector3.Distance(agent.transform.position, safePos);
+            if (dist < 1.5f)
+            {
+                agent.Mover.Stop();
+                agent.Mover.RotateToAction((MatchManager.Instance.Ball.transform.position - agent.transform.position), null);
+                return;
+            }
+
             // SMART SPRINT LOGIC (Attack Support)
             // If we are far from position (> 8m), SPRINT to get there.
             // If close, use normal move for precision.
             float threshold = (agent.config) ? agent.config.SupportSprintThreshold : 8.0f;
-            float dist = Vector3.Distance(agent.transform.position, safePos);
             
             if (dist > threshold)
             {

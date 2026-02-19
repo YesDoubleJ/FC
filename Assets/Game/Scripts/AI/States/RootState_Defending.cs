@@ -208,16 +208,36 @@ namespace Game.Scripts.AI.States
              {
                  // Move to Position
                  SetSafeDestination(interceptPos);
+                 
+                 // [NEW] Use Skills while Chasing
+                 if (distToBall > 3.0f && distToBall < 15.0f)
+                 {
+                     // 10% chance per frame to use burst if behind
+                     agent.SkillSystem.TryActivateSkill(AgentSkillSystem.SkillType.DefenseBurst, 0.05f); 
+                 }
              }
 
-             // Opportunistic Tackle (Even if moving)
+             // [NEW] AUTO-TACKLE LOGIC
+             // If I am very close, facing ball, and not on cooldown -> TACKLE
              if (distToBall < TackleRange)
              {
                  var owner = matchMgr.CurrentBallOwner;
                  if (owner != null && owner != agent) 
                  {
-                     agent.SkillSystem.AttemptTackle(owner);
-                     tackleCooldown = 2.0f;
+                     // Angle check: Am I facing the target?
+                     Vector3 toOwner = (owner.transform.position - agent.transform.position).normalized;
+                     float angle = Vector3.Angle(agent.transform.forward, toOwner);
+                     
+                     if (angle < 45f)
+                     {
+                         // COMMIT TO TACKLE
+                         agent.SkillSystem.AttemptTackle(owner);
+                         
+                         // [ACTION LOG]
+                         Debug.Log($"[ACTION] {agent.name} is attempting TACKLE on {owner.name} (Dist: {distToBall:F2})");
+                         
+                         tackleCooldown = 2.0f;
+                     }
                  }
              }
         }
