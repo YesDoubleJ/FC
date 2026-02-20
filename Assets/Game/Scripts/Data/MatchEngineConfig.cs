@@ -18,8 +18,8 @@ namespace Game.Scripts.Data
         [Tooltip("Minimum score required to attempt a shot.")]
         [Range(0f, 1f)] public float ShootThreshold = 0.5f;
 
-        [Tooltip("Minimum score required to attempt a pass.")]
-        [Range(0f, 1f)] public float PassThreshold = 0.6f;
+        [Tooltip("Minimum score required to attempt a pass.\n후방 동료에게도 패스하려면 0.25 이하 권장 (EV 계산 기준: pPass × posValue)")]
+        [Range(0f, 1f)] public float PassThreshold = 0.25f;
 
         [Tooltip("Minimum score required to attempt a dribble.")]
         [Range(0f, 1f)] public float DribbleThreshold = 0.3f;
@@ -171,5 +171,64 @@ namespace Game.Scripts.Data
         // Debugging
         [Header("Debugging")]
         public float DebugColorLerpSpeed = 10f;
+
+        // =================================================================================================
+        // 6. PHYSICS CONSTANTS — 지침서 부록 핵심 물리 상수 테이블
+        // =================================================================================================
+        [Header("Physics Constants — §부록")]
+        [Tooltip("공기 밀도 (kg/m³). 표준 대기압 1.225. 날씨/고도에 따라 변동 가능")]
+        public float AirDensity = 1.225f;
+
+        [Tooltip("공 질량 (kg). FIFA 공인구 표준 0.43kg")]
+        public float BallMass = 0.43f;
+
+        [Tooltip("마그누스 계수 (양력 계수). 회전에 따른 커브 강도")]
+        public float MagnusCoeff = 0.0004f;
+
+        [Tooltip("공기 저항 계수. 구체 기준 0.2")]
+        public float DragCoeffAir = 0.2f;
+
+        [Tooltip("마른 잔디 마찰 계수. 공이 덜 구름")]
+        public float GroundFrictionDry = 0.8f;
+
+        [Tooltip("젖은 잔디 마찰 계수. 스키드 현상")]
+        public float GroundFrictionWet = 0.4f;
+
+        [Tooltip("현재 경기장 상태")]
+        public GroundCondition CurrentGroundCondition = GroundCondition.Dry;
+
+        /// <summary>현재 환경에 따른 지면 마찰 계수 반환</summary>
+        public float CurrentGroundFriction =>
+            CurrentGroundCondition == GroundCondition.Wet ? GroundFrictionWet : GroundFrictionDry;
+
+        // =================================================================================================
+        // 7. AI TIMING — 지침서 §5.3 의사결정 주기
+        // =================================================================================================
+        [Header("AI Timing — §5.3")]
+        [Tooltip("AI 판단 주기 기본값 (초). Mental 스탯에 따라 가감")]
+        public float BaseDecisionTick = 0.2f;
+
+        [Tooltip("피치 컨트롤 모델 인지 반응 속도 상수 (초)")]
+        public float ReactionTimeHuman = 0.7f;
+
+        // =================================================================================================
+        // 8. PLAYER PHYSICS — 지침서 §부록
+        // =================================================================================================
+        [Header("Player Physics — §부록")]
+        [Tooltip("Speed 99 기준 최대 스프린트 속도 (m/s). 약 35km/h")]
+        public float MaxSprintSpeed = 9.8f;
+
+        [Tooltip("슈팅 오차 범위 (도). Finishing 최하 기준 ±15도")]
+        public float ShotErrorNoise = 15f;
+
+        [Tooltip("패스 오차 범위 (도). Passing 최하 기준")]
+        public float PassErrorNoise = 10f;
+    }
+
+    /// <summary>경기장 환경 상태</summary>
+    public enum GroundCondition
+    {
+        Dry,
+        Wet
     }
 }

@@ -4,11 +4,34 @@ using Game.Scripts.Managers;
 
 namespace Game.Scripts.Tactics
 {
+    /// <summary>
+    /// 포메이션 매니저 — 지침서 §6.2 동적 포메이션 테더링 추가
+    /// Anchor Point: 공 위치에 따라 포메이션 전체 이동
+    /// Tether: 선수가 Anchor에서 일정 거리 이상 벗어나면 복귀 Steering Force
+    /// Line Height: Low Block(25m), Mid Block(40m), High Line(하프라인)
+    /// </summary>
     public class FormationManager : MonoBehaviour
     {
         [Header("Managers")]
         [SerializeField] private HomeFormationManager homeManager;
         [SerializeField] private AwayFormationManager awayManager;
+
+        // =========================================================
+        // §6.2 테더링 설정
+        // =========================================================
+        [Header("Tethering — §6.2")]
+        [Tooltip("선수가 앵커에서 이 거리 이상 벗어나면 복귀력 발생 (미터)")]
+        public float TetherRadius = 15f;
+
+        [Tooltip("테더 복귀력 최대 강도")]
+        public float TetherForceMax = 3.0f;
+
+        [Tooltip("테더 작동 시작 거리 (TetherRadius의 배수 초과 시 강제 복귀)")]
+        public float TetherHardLimit = 2.0f;
+
+        [Header("Line Height — §6.2")]
+        [Tooltip("현재 수비 라인 높이")]
+        public LineHeight CurrentLineHeight = LineHeight.MidBlock;
 
         private Transform ballTransform;
 
@@ -80,6 +103,9 @@ namespace Game.Scripts.Tactics
                 gkLimit = (FieldManager.Instance.Length / 2f) - 0.5f; // 49.5
             }
             
+            // §6.2: Line Height에 따른 앵커 Z 클램프 범위 조정
+            float lineHeightOffset = GetLineHeightValue();
+
             // Anchor Logic:
             float teamCenterZ = Mathf.Clamp(ballZ, -30f, 30f);
             
@@ -183,15 +209,6 @@ namespace Game.Scripts.Tactics
             
             if (attackingTeam == Game.Scripts.Data.Team.Home)
             {
-                // Home attacking. Creating line based on AWAY defenders (Lowest Z)
-                // Goal is at +50. Defenders are trying to stop us.
-                // We want the Defender with the LOWEST Z (closest to our side... wait)
-                // Offside line is the defender closest to THEIR goal.
-                // i.e. The defender with the LARGEST Z is closest to +50? No.
-                // The "Second Last Defender" rule.
-                // Usually GK is near +50.
-                // We want the field player who is closest to +50 (Largest Z).
-                
                 List<float> defenderZs = new List<float>();
                 
                 foreach (var agent in agents)
@@ -202,25 +219,16 @@ namespace Game.Scripts.Tactics
                     }
                 }
                 
-                defenderZs.Sort(); // Ascending (-40 ... +40)
-                // Closest to Goal (+50) are at the END of the list.
-                // GK is usually last (e.g. 48).
-                // Last Defender is second to last.
+                defenderZs.Sort();
                 
                 if (defenderZs.Count >= 2)
                 {
-                    // GK is Max. Defender is Max-1.
-                    // Return the Z of the second deepest player
                     return defenderZs[defenderZs.Count - 2]; 
                 }
                 return 50f;
             }
             else
             {
-                // Away attacking. Creating line based on HOME defenders.
-                // Goal is at -50.
-                // We want defender closest to -50. (Smallest Z).
-                
                 List<float> defenderZs = new List<float>();
                 foreach (var agent in agents)
                 {
@@ -230,10 +238,7 @@ namespace Game.Scripts.Tactics
                     }
                 }
                 
-                defenderZs.Sort(); // Ascending (-50 ... 50)
-                // Closest to Goal (-50) are at START of list.
-                // GK is usually first (e.g. -48).
-                // Last defender is second.
+                defenderZs.Sort();
                 
                 if (defenderZs.Count >= 2)
                 {
@@ -242,5 +247,78 @@ namespace Game.Scripts.Tactics
                 return -50f;
             }
         }
+
+        // =========================================================
+        // §6.2 테더링 시스템
+        // =========================================================
+
+        /// <summary>
+        /// 선수가 포메이션 앵커에서 벗어난 정도에 따른 복귀 Steering Force를 반환합니다.
+        /// AI 이동 로직에서 이 값을 현재 이동 방향에 더해서 사용합니다.
+        /// </summary>
+        /// <param name="playerPos">현재 선수 위치</param>
+        /// <param name="formationPos">해당 선수의 포메이션 포지션</param>
+        /// <param name="team">소속 팀</param>
+        /// <returns>복귀 방향 * 강도 (Vector3). 테더 범위 내이면 Vector3.zero</returns>
+        public Vector3 GetTetherForce(Vector3 playerPos, FormationPosition formationPos, Game.Scripts.Data.Team team)
+        {
+            Vector3 anchor = GetAnchorPosition(formationPos, team);
+            Vector3 toAnchor = anchor - playerPos;
+            toAnchor.y = 0f; // 수평면만
+
+            float distance = toAnchor.magnitude;
+
+            // 테더 범위 내: 복귀력 없음
+            if (distance <= TetherRadius)
+                return Vector3.zero;
+
+            // 테더 범위 초과: 거리에 비례한 복귀력
+            float overExtension = (distance - TetherRadius) / (TetherRadius * (TetherHardLimit - 1f));
+            float forceRatio = Mathf.Clamp01(overExtension);
+
+            // Ease-in 곡선: 부드러운 시작 → 강한 끌어당김
+            float force = TetherForceMax * (forceRatio * forceRatio);
+
+            return toAnchor.normalized * force;
+        }
+
+        /// <summary>
+        /// 현재 Line Height 설정에 따른 Z축 오프셋 반환.
+        /// Low Block: 수비수가 25m 라인까지만 전진
+        /// Mid Block: 40m 라인
+        /// High Line: 하프라인(0m)까지 전진
+        /// </summary>
+        public float GetLineHeightValue()
+        {
+            switch (CurrentLineHeight)
+            {
+                case LineHeight.LowBlock:  return 25f;
+                case LineHeight.MidBlock:  return 40f;
+                case LineHeight.HighLine:  return 50f;
+                default: return 40f;
+            }
+        }
+
+        /// <summary>
+        /// 수비 라인 높이를 동적으로 변경합니다.
+        /// 예: 리드 시 Low Block, 추격 시 High Line.
+        /// </summary>
+        public void SetLineHeight(LineHeight height)
+        {
+            CurrentLineHeight = height;
+        }
+    }
+
+    /// <summary>수비 라인 높이 — §6.2</summary>
+    public enum LineHeight
+    {
+        /// <summary>낮은 수비: 25m 라인. 페널티 박스 근처 밀집 수비</summary>
+        LowBlock,
+
+        /// <summary>중간 수비: 40m 라인. 일반적 수비</summary>
+        MidBlock,
+
+        /// <summary>높은 수비: 하프라인. 오프사이드 트랩, 전방 압박</summary>
+        HighLine
     }
 }

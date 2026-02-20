@@ -57,8 +57,48 @@ namespace Game.Scripts.AI
         private float _lastActionGlobalTime = -999f;
         public bool IsBusy => Mover.IsBusy || BallHandler.HasPendingKick || (Time.time < _lastActionGlobalTime + (config ? config.ActionLockoutTime : 0.5f));
 
+        // =========================================================
+        // §5.3 의사결정 주기 — Mental 스탯 기반 가변 주기
+        // ThinkTick = BaseTick × (1 - Mental/200)
+        // Mental 높을수록 빈도 높음 (빠른 판단)
+        // =========================================================
+        private float _decisionTimer;
+
+        /// <summary>
+        /// 이 선수의 현재 의사결정 간격 (초).
+        /// LOD 레벨에 따라 추가 조정됨.
+        /// </summary>
+        public float GetDecisionInterval()
+        {
+            float baseTick = config ? config.BaseDecisionTick : 0.2f;
+            float mental = Stats != null ? Stats.GetEffectiveStat(StatType.Mental) : 50f;
+
+            // §5.3: ThinkTick = BaseTick × (1 - Mental/200)
+            float thinkTick = baseTick * (1f - mental / 200f);
+
+            // LOD 보정: LOD 1 = ×1.5, LOD 2 = ×3.0
+            float lodMultiplier = 1f;
+            switch (CurrentLOD)
+            {
+                case 1: lodMultiplier = 1.5f; break;
+                case 2: lodMultiplier = 3.0f; break;
+            }
+
+            return Mathf.Clamp(thinkTick * lodMultiplier, 0.05f, 1.0f);
+        }
+
+        // =========================================================
+        // §2.3 LOD AI — AILODManager가 설정
+        // =========================================================
+        /// <summary>현재 LOD 레벨 (0=최상, 1=중간, 2=최소)</summary>
+        public int CurrentLOD { get; set; } = 0;
+
         // Teammate Cache
         public System.Collections.Generic.List<HybridAgentController> Teammates { get; private set; } = new System.Collections.Generic.List<HybridAgentController>();
+
+        // [FIX] 최근 패스 수신자 추적 (짧은 거리 패스 루프 방지)
+        public GameObject LastPassRecipient { get; set; } = null;
+        public float LastPassTime { get; set; } = -999f;
 
         // Pass Reception
         public bool IsReceiver { get; private set; }
@@ -232,7 +272,15 @@ namespace Game.Scripts.AI
             }
         }
         
-        public System.Collections.Generic.List<HybridAgentController> GetTeammates() => Teammates;
+        public System.Collections.Generic.List<HybridAgentController> GetTeammates()
+        {
+            // [FIX] Start() 순서 경쟁 조건 해결:
+            // CacheTeammates()가 Start()에서 호출될 때 다른 에이전트들이 아직 MatchManager에 등록되지 않아
+            // Teammates 리스트가 비어있는 문제. 비어있으면 매번 재캐시.
+            if (Teammates.Count == 0)
+                CacheTeammates();
+            return Teammates;
+        }
 
         // =========================================================
         // MOVEMENT FACADE

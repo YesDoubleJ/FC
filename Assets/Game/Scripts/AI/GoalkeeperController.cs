@@ -1,8 +1,15 @@
 using UnityEngine;
 using Game.Scripts.AI.HFSM;
+using Game.Scripts.Data;
 
 namespace Game.Scripts.AI
 {
+    /// <summary>
+    /// 골키퍼 컨트롤러 — 지침서 §7.1 고도화
+    /// - Angle Bisector 위치 선정 (공-골대 중심 연결선 상 포지셔닝)
+    /// - Sweeper Keeper 모드 (수비 뒷공간 커버)
+    /// - Reachable Zone (세이브 판정: GKPosition + Reach × Direction)
+    /// </summary>
     public class GoalkeeperController : HybridAgentController
     {
         [Header("Goalkeeper Settings")]
@@ -11,6 +18,26 @@ namespace Game.Scripts.AI
         
         // Runtime Cache
         public float CurrentGoalLineZ { get; private set; }
+
+        // =========================================================
+        // §7.1 Sweeper Keeper 설정
+        // =========================================================
+        [Header("Sweeper Keeper — §7.1")]
+        [Tooltip("스위퍼 키퍼 모드 활성화")]
+        public bool SweeperKeeperEnabled = false;
+
+        [Tooltip("스위퍼 활동 최대 전진 거리 (골라인에서)")]
+        public float SweeperMaxAdvance = 20f;
+
+        [Tooltip("스위퍼 활성화 조건: 공이 이 거리 이내일 때")]
+        public float SweeperActivationRange = 35f;
+
+        [Header("Reachable Zone — §7.1")]
+        [Tooltip("GK 팔 리치 (미터)")]
+        public float ReachDistance = 2.5f;
+
+        [Tooltip("다이빙 속도 배율 (Goalkeeping 스탯 기반)")]
+        public float DiveSpeedMultiplier = 1.5f;
 
         // [수정 1] Backing Field 추가 (실제 데이터를 담을 변수)
         private State _gkStateGuarding;
@@ -46,10 +73,7 @@ namespace Game.Scripts.AI
 
             // TEAM MIRROR FIX:
             float baseZ = gkSettings ? gkSettings.goalLineZ : 47f;
-            CurrentGoalLineZ = (TeamID == Game.Scripts.Data.Team.Away) ? baseZ : -baseZ;
-            
-            // [참고] Start에서는 별도로 초기화 코드를 넣지 않아도 됩니다.
-            // 위 프로퍼티(GKState_Guarding)를 사용하는 순간 자동으로 생성되기 때문입니다.
+            CurrentGoalLineZ = (TeamID == Team.Away) ? baseZ : -baseZ;
         }
 
         protected override void Update()
@@ -85,9 +109,6 @@ namespace Game.Scripts.AI
             else
             {
                 // No Ball or Opponent Has Ball -> GUARD GOAL
-                
-                // [수정 3] null 체크 및 상태 변경
-                // 프로퍼티 접근(GKState_Guarding) 시점에 자동으로 객체가 생성됩니다.
                 if (GKState_Guarding != null && StateMachine.CurrentState != GKState_Guarding)
                 {
                     StateMachine.ChangeState(GKState_Guarding);
@@ -106,7 +127,95 @@ namespace Game.Scripts.AI
                 }
             }
         }
+
+        // =========================================================
+        // §7.1 ReachableZone — 세이브 가능 범위 판정
+        // =========================================================
+
+        /// <summary>
+        /// 특정 방향의 슈팅이 세이브 가능한지 판정합니다.
+        /// ReachableZone = GKPosition + Reach × Direction
+        /// </summary>
+        /// <param name="shotTargetPos">슈팅 목표 지점 (골대 내)</param>
+        /// <param name="timeToArrive">공이 도달하기까지 남은 시간 (초)</param>
+        /// <returns>세이브 가능 여부</returns>
+        public bool IsInReachableZone(Vector3 shotTargetPos, float timeToArrive)
+        {
+            // GK의 Goalkeeping 스탯으로 리치와 반응 보정
+            float gkStat = Stats != null ? Stats.GetEffectiveStat(StatType.Goalkeeping) : 50f;
+            float effectiveReach = ReachDistance * (0.8f + 0.4f * gkStat / 100f); // 80%~120%
+
+            // GK가 다이빙으로 도달할 수 있는 거리
+            float diveSpeed = DiveSpeedMultiplier * (gkStat / 100f) * 10f; // ~15m/s at 100
+            float maxDiveDistance = effectiveReach + diveSpeed * Mathf.Min(timeToArrive, 0.5f);
+
+            // 목표 지점까지의 거리
+            float distToTarget = Vector3.Distance(transform.position, shotTargetPos);
+
+            return distToTarget <= maxDiveDistance;
+        }
+
+        /// <summary>
+        /// 스위퍼 키퍼 모드의 전진 위치를 계산합니다.
+        /// 수비 뒷공간에 공이 떨어질 때 빠르게 수비합니다.
+        /// </summary>
+        public Vector3 GetSweeperPosition(Vector3 ballPos)
+        {
+            if (!SweeperKeeperEnabled) return transform.position;
+
+            float distToBall = Vector3.Distance(transform.position, ballPos);
+            if (distToBall > SweeperActivationRange) return transform.position;
+
+            // 골라인에서 공 방향으로 전진
+            Vector3 goalPos = goalCenter != null ? goalCenter.position : new Vector3(0, 0, CurrentGoalLineZ);
+            Vector3 goalToBall = (ballPos - goalPos);
+            goalToBall.y = 0;
+
+            float advanceDist = Mathf.Min(goalToBall.magnitude * 0.5f, SweeperMaxAdvance);
+            Vector3 sweeperPos = goalPos + goalToBall.normalized * advanceDist;
+
+            return sweeperPos;
+        }
+
+        /// <summary>
+        /// Angle Bisector 기반 포지셔닝 좌표를 계산합니다.
+        /// 양 골포스트와 공이 이루는 각도의 이등분선 위에 위치.
+        /// </summary>
+        public Vector3 CalculateAngleBisectorPosition(Vector3 ballPos, float standOutDist)
+        {
+            Vector3 goalPos = goalCenter != null ? goalCenter.position : new Vector3(0, 0, CurrentGoalLineZ);
+
+            // 골포스트 위치 (대략 ±3.66m = 7.32m / 2)
+            float postWidth = 3.66f;
+            Vector3 leftPost = goalPos + Vector3.left * postWidth;
+            Vector3 rightPost = goalPos + Vector3.right * postWidth;
+
+            // 공에서 양 포스트로의 방향
+            Vector3 toLeft = (leftPost - ballPos).normalized;
+            Vector3 toRight = (rightPost - ballPos).normalized;
+
+            // 이등분선 = 두 방향의 평균
+            Vector3 bisector = (toLeft + toRight).normalized;
+
+            // 골 중심에서 이등분선 방향으로 전진
+            Vector3 goalToBall = (ballPos - goalPos).normalized;
+            Vector3 targetPos = goalPos + goalToBall * standOutDist;
+
+            // Near-Post Bias 보정
+            float angleFactor = Mathf.Abs(goalToBall.x);
+            if (angleFactor > 0.4f)
+            {
+                float shift = Mathf.Sign(ballPos.x) * 1.5f;
+                targetPos.x += shift;
+            }
+
+            // X 클램프 (골대 폭 내)
+            targetPos.x = Mathf.Clamp(targetPos.x, -7.0f, 7.0f);
+
+            return targetPos;
+        }
     }
+
 
     // --- Custom State Classes ---
 

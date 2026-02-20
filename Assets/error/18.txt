@@ -1,0 +1,2126 @@
+[2.00] [MatchManager] PLAY!
+
+[2.01] [MatchManager] Home_ST has the ball!
+
+[2.01] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.24
+
+[2.01] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.02] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[2.02] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.94m | BallSpeed: 0.0/2.6
+
+[2.04] [Home_ST] DECISION: DRIBBLE (0.31) - [EV] Shoot:0.04 | Pass:0.27 | Dribble:0.31
+
+[2.08] [HOLD-DIAG] Home_ST ActionLockout remaining=0.46s → Hold
+
+[2.11] [SKILL] Away_ST activated DEFENSE BURST (Cooldown: 10.0s)
+
+[2.11] <color=green>Away_ST SKILL: DEFENSE BURST</color>
+
+[2.11] [HOLD-DIAG] Home_ST ActionLockout remaining=0.43s → Hold
+
+[2.14] [HOLD-DIAG] Home_ST ActionLockout remaining=0.40s → Hold
+
+[2.17] [HOLD-DIAG] Home_ST ActionLockout remaining=0.36s → Hold
+
+[2.21] [HOLD-DIAG] Home_ST ActionLockout remaining=0.33s → Hold
+
+[2.21] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.85m | Mode: CONTROL (Constraint: ON)
+
+[2.23] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[2.23] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.86m | BallSpeed: 0.5/2.8
+
+[2.24] [HOLD-DIAG] Home_ST ActionLockout remaining=0.30s → Hold
+
+[2.27] [HOLD-DIAG] Home_ST ActionLockout remaining=0.27s → Hold
+
+[2.30] [HOLD-DIAG] Home_ST ActionLockout remaining=0.24s → Hold
+
+[2.33] [HOLD-DIAG] Home_ST ActionLockout remaining=0.21s → Hold
+
+[2.36] [HOLD-DIAG] Home_ST ActionLockout remaining=0.18s → Hold
+
+[2.39] [HOLD-DIAG] Home_ST ActionLockout remaining=0.15s → Hold
+
+[2.41] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.95m | Mode: CONTROL (Constraint: ON)
+
+[2.42] [HOLD-DIAG] Home_ST ActionLockout remaining=0.12s → Hold
+
+[2.43] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[2.43] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.96m | BallSpeed: 1.0/2.3
+
+[2.45] [HOLD-DIAG] Home_ST ActionLockout remaining=0.09s → Hold
+
+[2.48] [HOLD-DIAG] Home_ST ActionLockout remaining=0.06s → Hold
+
+[2.51] [HOLD-DIAG] Home_ST ActionLockout remaining=0.03s → Hold
+
+[2.53] [HOLD-DIAG] Home_ST ActionLockout remaining=0.01s → Hold
+
+[2.56] [KICK-DEBUG] PASS | Dist: 12.9m | Formula: (8.0 + 12.9*0.5 + 50*0.05) [Clamp: 17.0] * Scale:1.0 = 17.0
+
+[2.61] [ON-BALL] Home_ST | Speed: 0.5 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.73] <color=cyan>Home_CM is expecting a PASS at (9.64, 0.96, 7.51)!</color>
+
+[2.73] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[2.73] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.64m | BallSpeed: 2.5/2.6
+
+[2.74] [KICK-EXEC] Home_ST Kicked! Force: 17.0, Mode: VelocityChange | Scale: 1.0
+
+[2.74] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[3.24] [MatchManager] Home_ST has the ball!
+
+[3.24] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.05, Angle: 10.11
+
+[3.24] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[3.24] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.05m | BallSpeed: 2.3/2.5
+
+[3.24] [ON-BALL] Home_ST | Speed: 0.4 | BallDist: 1.05m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[3.24] [Home_ST] DECISION: PASS (0.36) - [EV] Shoot:0.04 | Pass:0.36 | Dribble:0.26
+
+[3.24] [KICK-DEBUG] PASS | Dist: 2.9m | Formula: (8.0 + 2.9*0.5 + 50*0.05) [Clamp: 11.9] * Scale:1.0 = 11.9
+
+[3.25] [Home_CM] Waiting for Incoming Pass...
+
+[3.30] <color=cyan>Home_CM is expecting a PASS at (4.06, 0.29, 2.50)!</color>
+
+[3.30] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[3.32] [KICK-FIX] Ball clipped inside player. Teleported to (2.34, 0.25, 1.73)
+
+[3.32] [KICK-EXEC] Home_ST Kicked! Force: 11.9, Mode: VelocityChange | Scale: 1.0
+
+[3.32] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[3.98] [MatchManager] Away_ST has the ball!
+
+[3.98] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 1.09, Angle: 15.49
+
+[3.98] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[3.98] [DRIBBLE-SKIP] Speed Limit Reached: 4.8 > 2.8
+
+[3.98] [ON-BALL] Away_ST | Speed: 0.6 | BallDist: 1.09m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[3.99] <color=green>Home_CM SKILL: TACKLE on Away_ST</color>
+
+[3.99] <color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[3.99] [TACKLE-IMPACT] Away_ST fumbled ball! Stunned for 1.5s. Power: 10
+
+[3.99] [ACTION] Home_CM is attempting TACKLE on Away_ST (Dist: 1.00)
+
+[5.22] [MatchManager] Home_CM has the ball!
+
+[5.22] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 0.73, Angle: 27.27
+
+[5.22] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[5.22] [DRIBBLE-SKIP] Speed Limit Reached: 4.9 > 2.2
+
+[5.22] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 0.73m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[5.23] [Home_CM] DECISION: DRIBBLE (0.25) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.25
+
+[5.26] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[5.27] [SKILL] Away_CM2 activated DEFENSE BURST (Cooldown: 10.0s)
+
+[5.27] <color=green>Away_CM2 SKILL: DEFENSE BURST</color>
+
+[5.29] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[5.32] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[5.34] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[5.37] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[5.40] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[5.42] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 0.82m | Mode: CONTROL (Constraint: ON)
+
+[5.42] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[5.43] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[5.43] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.82m | BallSpeed: 0.0/2.2
+
+[5.45] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[5.48] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[5.52] [HOLD-DIAG] Home_CM ActionLockout remaining=0.22s → Hold
+
+[5.54] [HOLD-DIAG] Home_CM ActionLockout remaining=0.19s → Hold
+
+[5.57] [HOLD-DIAG] Home_CM ActionLockout remaining=0.16s → Hold
+
+[5.60] [HOLD-DIAG] Home_CM ActionLockout remaining=0.14s → Hold
+
+[5.62] [HOLD-DIAG] Home_CM ActionLockout remaining=0.11s → Hold
+
+[5.63] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.89m | Mode: CONTROL (Constraint: ON)
+
+[5.63] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[5.63] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.89m | BallSpeed: 0.3/2.3
+
+[5.65] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[5.68] [HOLD-DIAG] Home_CM ActionLockout remaining=0.06s → Hold
+
+[5.70] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[5.73] [HOLD-DIAG] Home_CM ActionLockout remaining=0.00s → Hold
+
+[5.78] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[5.81] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[5.83] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.68m | Mode: CONTROL (Constraint: ON)
+
+[5.83] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[5.84] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[5.84] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.69m | BallSpeed: 0.9/2.5
+
+[5.86] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[5.89] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[5.92] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[5.95] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[5.97] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[6.00] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[6.02] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[6.03] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.88m | Mode: CONTROL (Constraint: ON)
+
+[6.05] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[6.05] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.90m | BallSpeed: 1.1/2.2
+
+[6.05] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[6.08] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[6.11] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[6.13] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[6.16] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[6.18] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[6.21] [HOLD-DIAG] Home_CM ActionLockout remaining=0.05s → Hold
+
+[6.23] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.12m | Mode: CONTROL (Constraint: ON)
+
+[6.24] [HOLD-DIAG] Home_CM ActionLockout remaining=0.01s → Hold
+
+[6.25] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[6.25] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.14m | BallSpeed: 1.3/2.3
+
+[6.27] [Home_CM] DECISION: DRIBBLE (0.25) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.25
+
+[6.31] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[6.34] [HOLD-DIAG] Home_CM ActionLockout remaining=0.43s → Hold
+
+[6.37] [HOLD-DIAG] Home_CM ActionLockout remaining=0.40s → Hold
+
+[6.39] [HOLD-DIAG] Home_CM ActionLockout remaining=0.38s → Hold
+
+[6.42] [HOLD-DIAG] Home_CM ActionLockout remaining=0.35s → Hold
+
+[6.43] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.04m | Mode: CONTROL (Constraint: ON)
+
+[6.45] [HOLD-DIAG] Home_CM ActionLockout remaining=0.32s → Hold
+
+[6.46] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[6.46] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.08m | BallSpeed: 1.3/2.6
+
+[6.48] [HOLD-DIAG] Home_CM ActionLockout remaining=0.29s → Hold
+
+[6.50] [HOLD-DIAG] Home_CM ActionLockout remaining=0.27s → Hold
+
+[6.53] [HOLD-DIAG] Home_CM ActionLockout remaining=0.24s → Hold
+
+[6.56] [HOLD-DIAG] Home_CM ActionLockout remaining=0.21s → Hold
+
+[6.58] [HOLD-DIAG] Home_CM ActionLockout remaining=0.19s → Hold
+
+[6.61] [HOLD-DIAG] Home_CM ActionLockout remaining=0.16s → Hold
+
+[6.64] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.29m | Mode: CONTROL (Constraint: ON)
+
+[6.64] [HOLD-DIAG] Home_CM ActionLockout remaining=0.14s → Hold
+
+[6.66] [HOLD-DIAG] Home_CM ActionLockout remaining=0.11s → Hold
+
+[6.69] [HOLD-DIAG] Home_CM ActionLockout remaining=0.08s → Hold
+
+[6.72] [HOLD-DIAG] Home_CM ActionLockout remaining=0.06s → Hold
+
+[6.74] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[6.77] [HOLD-DIAG] Home_CM ActionLockout remaining=0.00s → Hold
+
+[6.82] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[6.82] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.14m | BallSpeed: 1.9/2.4
+
+[6.83] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[6.84] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.13m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[6.85] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[6.88] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[6.91] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[6.94] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[6.96] [HOLD-DIAG] Home_CM ActionLockout remaining=0.33s → Hold
+
+[6.99] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[7.02] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[7.03] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[7.03] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.05m | BallSpeed: 1.8/2.5
+
+[7.04] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.05m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.04] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[7.07] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[7.09] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[7.12] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[7.15] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[7.17] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[7.20] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[7.22] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[7.23] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[7.23] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.06m | BallSpeed: 1.7/2.1
+
+[7.25] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.07m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.25] [HOLD-DIAG] Home_CM ActionLockout remaining=0.05s → Hold
+
+[7.28] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[7.30] [Home_CM] DECISION: DRIBBLE (0.25) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.25
+
+[7.33] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[7.36] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[7.38] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[7.41] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[7.43] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[7.43] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.99m | BallSpeed: 1.5/2.2
+
+[7.43] [HOLD-DIAG] Home_CM ActionLockout remaining=0.37s → Hold
+
+[7.45] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.01m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.46] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[7.49] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[7.52] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[7.54] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[7.57] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[7.60] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[7.62] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[7.64] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[7.64] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.22m | BallSpeed: 1.2/2.3
+
+[7.65] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.24m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.65] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[7.68] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[7.70] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[7.73] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[7.76] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[7.78] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[7.79] [AgentBallHandler] Home_CM lost ball. Dist: 1.41
+
+[7.88] [MatchManager] Home_CM has the ball!
+
+[7.88] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.06, Angle: 27.33
+
+[7.88] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[7.88] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.06m | BallSpeed: 1.2/2.6
+
+[7.88] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.06m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.92] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[7.94] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[7.97] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[8.00] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[8.02] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[8.05] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[8.08] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[8.09] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.99m | Mode: CONTROL (Constraint: ON)
+
+[8.09] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[8.09] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.99m | BallSpeed: 1.3/2.4
+
+[8.10] [HOLD-DIAG] Home_CM ActionLockout remaining=0.29s → Hold
+
+[8.13] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[8.16] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[8.18] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[8.21] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[8.24] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[8.26] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[8.29] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.28m | Mode: CONTROL (Constraint: ON)
+
+[8.29] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[8.29] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.28m | BallSpeed: 1.2/2.5
+
+[8.29] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[8.32] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[8.35] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[8.38] [HOLD-DIAG] Home_CM ActionLockout remaining=0.01s → Hold
+
+[8.40] [Home_CM] DECISION: DRIBBLE (0.24) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.24
+
+[8.43] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[8.46] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[8.48] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[8.49] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.36m | Mode: CONTROL (Constraint: ON)
+
+[8.51] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[8.54] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[8.57] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[8.59] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[8.62] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[8.64] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[8.66] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[8.66] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.28m | BallSpeed: 2.4/2.7
+
+[8.67] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[8.69] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 1.26m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[8.70] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[8.73] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[8.75] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[8.78] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[8.80] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[8.83] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[8.86] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[8.87] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[8.87] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.14m | BallSpeed: 2.2/2.5
+
+[8.89] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[8.89] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.14m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[8.94] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[8.97] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[8.99] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[9.02] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[9.05] [HOLD-DIAG] Home_CM ActionLockout remaining=0.37s → Hold
+
+[9.07] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[9.08] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[9.08] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.83m | BallSpeed: 1.7/2.6
+
+[9.09] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.83m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[9.10] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[9.13] [HOLD-DIAG] Home_CM ActionLockout remaining=0.29s → Hold
+
+[9.15] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[9.18] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[9.21] [HOLD-DIAG] Home_CM ActionLockout remaining=0.21s → Hold
+
+[9.23] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[9.26] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[9.28] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[9.28] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.07m | BallSpeed: 1.2/2.7
+
+[9.28] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[9.30] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.07m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[9.31] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[9.34] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[9.37] [HOLD-DIAG] Home_CM ActionLockout remaining=0.05s → Hold
+
+[9.39] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[9.42] [Home_CM] DECISION: DRIBBLE (0.25) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.25
+
+[9.45] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[9.47] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[9.50] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.31m | Mode: CONTROL (Constraint: ON)
+
+[9.50] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[9.53] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[9.55] [HOLD-DIAG] Home_CM ActionLockout remaining=0.37s → Hold
+
+[9.58] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[9.61] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[9.63] [HOLD-DIAG] Home_CM ActionLockout remaining=0.29s → Hold
+
+[9.66] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[9.69] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[9.70] [ON-BALL] Home_CM | Speed: 0.6 | BallDist: 1.08m | Mode: CONTROL (Constraint: ON)
+
+[9.71] [HOLD-DIAG] Home_CM ActionLockout remaining=0.21s → Hold
+
+[9.74] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[9.77] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[9.79] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[9.82] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[9.85] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[9.86] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[9.86] [DRIBBLE-SKIP] Speed Limit Reached: 3.6 > 2.2
+
+[9.87] [HOLD-DIAG] Home_CM ActionLockout remaining=0.05s → Hold
+
+[9.90] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[9.90] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.71m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[9.95] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[9.98] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[10.00] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[10.03] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[10.06] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[10.07] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[10.07] [DRIBBLE-SKIP] Speed Limit Reached: 2.6 > 2.3
+
+[10.09] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[10.11] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.90m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[10.12] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[10.14] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[10.17] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[10.20] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[10.22] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[10.25] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[10.27] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[10.27] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.20m | BallSpeed: 1.9/2.6
+
+[10.27] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[10.30] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[10.31] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.28m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[10.33] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[10.36] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[10.38] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[10.41] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[10.43] [AgentBallHandler] Home_CM lost ball. Dist: 1.51
+
+[10.54] [MatchManager] Home_CM has the ball!
+
+[10.54] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.07, Angle: 18.14
+
+[10.54] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.07m | Mode: CONTROL (Constraint: ON)
+
+[10.55] [DRIBBLE-DEBUG] Speed: 9.0 | Formula: (Lerp(0.5~2.0, 0.90)=1.8) * Scale:1.0 = 1.8 | Interval: 0.20s
+
+[10.55] [DRIBBLE-EXEC] Force: 1.8 (VelocityChange) | BallDist: 1.07m | BallSpeed: 1.8/12.8
+
+[10.55] [Home_CM] DECISION: DRIBBLE (0.24) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.24
+
+[10.57] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[10.60] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[10.63] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[10.66] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[10.68] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[10.71] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[10.74] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[10.74] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.44m | Mode: CONTROL (Constraint: ON)
+
+[10.77] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[10.80] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[10.81] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[10.81] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.82m | BallSpeed: 0.0/2.2
+
+[10.82] [HOLD-DIAG] Home_CM ActionLockout remaining=0.22s → Hold
+
+[10.85] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[10.88] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[10.90] [HOLD-DIAG] Home_CM ActionLockout remaining=0.14s → Hold
+
+[10.93] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[10.94] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 0.87m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[10.96] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[10.99] [HOLD-DIAG] Home_CM ActionLockout remaining=0.06s → Hold
+
+[11.01] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[11.01] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.89m | BallSpeed: 0.3/2.3
+
+[11.02] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[11.09] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[11.11] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[11.14] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[11.14] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.81m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[11.18] [HOLD-DIAG] Home_CM ActionLockout remaining=0.38s → Hold
+
+[11.22] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[11.22] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.84m | BallSpeed: 0.7/2.1
+
+[11.22] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[11.26] [HOLD-DIAG] Home_CM ActionLockout remaining=0.30s → Hold
+
+[11.29] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[11.32] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[11.35] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.98m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[11.35] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[11.39] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[11.42] [HOLD-DIAG] Home_CM ActionLockout remaining=0.14s → Hold
+
+[11.43] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[11.43] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.04m | BallSpeed: 0.9/2.3
+
+[11.45] [HOLD-DIAG] Home_CM ActionLockout remaining=0.11s → Hold
+
+[11.47] [HOLD-DIAG] Home_CM ActionLockout remaining=0.08s → Hold
+
+[11.50] [HOLD-DIAG] Home_CM ActionLockout remaining=0.06s → Hold
+
+[11.53] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[11.55] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.16m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[11.56] [Home_CM] DECISION: DRIBBLE (0.24) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.24
+
+[11.58] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[11.61] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[11.63] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[11.63] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.08m | BallSpeed: 1.1/2.6
+
+[11.64] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[11.66] [HOLD-DIAG] Home_CM ActionLockout remaining=0.40s → Hold
+
+[11.69] [HOLD-DIAG] Home_CM ActionLockout remaining=0.37s → Hold
+
+[11.71] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[11.74] [HOLD-DIAG] Home_CM ActionLockout remaining=0.32s → Hold
+
+[11.75] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.21m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[11.77] [HOLD-DIAG] Home_CM ActionLockout remaining=0.29s → Hold
+
+[11.80] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[11.83] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[11.84] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[11.84] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.29m | BallSpeed: 1.2/2.7
+
+[11.86] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[11.88] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[11.91] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[11.94] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[11.96] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.39m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[11.97] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[11.99] [HOLD-DIAG] Home_CM ActionLockout remaining=0.06s → Hold
+
+[12.02] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[12.05] [HOLD-DIAG] Home_CM ActionLockout remaining=0.01s → Hold
+
+[12.10] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[12.10] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.27m | BallSpeed: 1.6/2.5
+
+[12.10] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[12.13] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[12.16] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.27m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[12.16] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[12.18] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[12.21] [HOLD-DIAG] Home_CM ActionLockout remaining=0.37s → Hold
+
+[12.24] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[12.26] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[12.29] [HOLD-DIAG] Home_CM ActionLockout remaining=0.29s → Hold
+
+[12.31] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[12.31] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.26m | BallSpeed: 1.6/2.3
+
+[12.32] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[12.34] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[12.36] [ON-BALL] Home_CM | Speed: 0.8 | BallDist: 1.25m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[12.37] [HOLD-DIAG] Home_CM ActionLockout remaining=0.21s → Hold
+
+[12.40] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[12.42] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[12.45] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[12.48] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[12.50] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[12.52] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[12.52] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.26m | BallSpeed: 1.7/2.4
+
+[12.53] [HOLD-DIAG] Home_CM ActionLockout remaining=0.05s → Hold
+
+[12.56] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[12.56] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.26m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[12.58] [Home_CM] DECISION: DRIBBLE (0.23) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.23
+
+[12.61] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[12.64] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[12.66] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[12.69] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[12.72] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[12.72] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.15m | BallSpeed: 1.7/2.5
+
+[12.72] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[12.75] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[12.76] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.18m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[12.77] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[12.80] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[12.83] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[12.85] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[12.88] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[12.91] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[12.92] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[12.92] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.26m | BallSpeed: 1.6/2.1
+
+[12.93] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[12.96] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[12.97] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.30m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[12.99] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[13.01] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[13.04] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[13.07] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[13.07] [AgentBallHandler] Home_CM lost ball. Dist: 1.38
+
+[13.14] [MatchManager] Home_CM has the ball!
+
+[13.14] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.08, Angle: 9.87
+
+[13.14] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[13.14] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.08m | BallSpeed: 1.4/2.2
+
+[13.17] [ON-BALL] Home_CM | Speed: 11.8 | BallDist: 0.95m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[13.18] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[13.21] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[13.23] [HOLD-DIAG] Home_CM ActionLockout remaining=0.41s → Hold
+
+[13.26] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[13.29] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[13.31] [HOLD-DIAG] Home_CM ActionLockout remaining=0.33s → Hold
+
+[13.36] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[13.36] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.05m | BallSpeed: 1.2/2.5
+
+[13.36] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[13.37] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.05m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[13.42] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[13.48] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[13.50] [HOLD-DIAG] Home_CM ActionLockout remaining=0.14s → Hold
+
+[13.53] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[13.56] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[13.58] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.32m | Mode: CONTROL (Constraint: ON)
+
+[13.59] [HOLD-DIAG] Home_CM ActionLockout remaining=0.05s → Hold
+
+[13.62] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[13.65] [HOLD-DIAG] Home_CM ActionLockout remaining=0.00s → Hold
+
+[13.68] [Home_CM] DECISION: DRIBBLE (0.23) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.23
+
+[13.71] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[13.73] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[13.74] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[13.74] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.28m | BallSpeed: 2.1/2.7
+
+[13.76] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[13.78] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.24m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[13.79] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[13.82] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[13.84] [HOLD-DIAG] Home_CM ActionLockout remaining=0.33s → Hold
+
+[13.87] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[13.90] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[13.92] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[13.94] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[13.94] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.14m | BallSpeed: 2.2/2.4
+
+[13.95] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[13.98] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[13.98] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.13m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[14.01] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[14.03] [HOLD-DIAG] Home_CM ActionLockout remaining=0.14s → Hold
+
+[14.06] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[14.09] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[14.12] [HOLD-DIAG] Home_CM ActionLockout remaining=0.06s → Hold
+
+[14.14] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[14.14] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.11m | BallSpeed: 2.1/2.2
+
+[14.14] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[14.17] [HOLD-DIAG] Home_CM ActionLockout remaining=0.01s → Hold
+
+[14.18] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.12m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[14.23] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[14.25] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[14.28] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[14.31] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[14.33] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[14.35] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[14.35] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.04m | BallSpeed: 1.8/2.7
+
+[14.36] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[14.39] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.08m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[14.39] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[14.41] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[14.44] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[14.47] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[14.49] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[14.52] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[14.54] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[14.55] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[14.55] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.26m | BallSpeed: 1.3/2.5
+
+[14.57] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[14.59] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.31m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[14.60] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[14.62] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[14.65] [HOLD-DIAG] Home_CM ActionLockout remaining=0.05s → Hold
+
+[14.68] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[14.70] [Home_CM] DECISION: DRIBBLE (0.23) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.23
+
+[14.73] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[14.76] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[14.78] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[14.79] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.34m | Mode: CONTROL (Constraint: ON)
+
+[14.81] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[14.84] [HOLD-DIAG] Home_CM ActionLockout remaining=0.37s → Hold
+
+[14.86] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[14.89] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[14.92] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[14.95] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[14.97] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[14.99] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.04m | Mode: CONTROL (Constraint: ON)
+
+[15.00] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[15.03] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[15.05] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[15.08] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[15.11] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[15.14] [HOLD-DIAG] Home_CM ActionLockout remaining=0.06s → Hold
+
+[15.17] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[15.19] [HOLD-DIAG] Home_CM ActionLockout remaining=0.01s → Hold
+
+[15.20] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.69m | Mode: CONTROL (Constraint: ON)
+
+[15.22] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[15.22] [DRIBBLE-SKIP] Speed Limit Reached: 3.4 > 2.3
+
+[15.25] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[15.27] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[15.30] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[15.33] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[15.36] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[15.38] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[15.40] [ON-BALL] Home_CM | Speed: 0.6 | BallDist: 0.92m | Mode: CONTROL (Constraint: ON)
+
+[15.41] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[15.42] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[15.42] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.95m | BallSpeed: 2.4/2.6
+
+[15.44] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[15.46] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[15.49] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[15.51] [HOLD-DIAG] Home_CM ActionLockout remaining=0.21s → Hold
+
+[15.54] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[15.57] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[15.60] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[15.60] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.29m | Mode: CONTROL (Constraint: ON)
+
+[15.62] [AgentBallHandler] Home_CM lost ball. Dist: 1.33
+
+[15.72] [MatchManager] Home_CM has the ball!
+
+[15.72] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.06, Angle: 9.03
+
+[15.72] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[15.72] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.06m | BallSpeed: 1.8/2.5
+
+[15.73] [Home_CM] DECISION: DRIBBLE (0.24) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.24
+
+[15.77] [HOLD-DIAG] Home_CM ActionLockout remaining=0.46s → Hold
+
+[15.80] [HOLD-DIAG] Home_CM ActionLockout remaining=0.43s → Hold
+
+[15.81] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.91m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[15.83] [HOLD-DIAG] Home_CM ActionLockout remaining=0.40s → Hold
+
+[15.86] [HOLD-DIAG] Home_CM ActionLockout remaining=0.37s → Hold
+
+[15.90] [HOLD-DIAG] Home_CM ActionLockout remaining=0.33s → Hold
+
+[15.92] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[15.92] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.13m | BallSpeed: 1.7/2.6
+
+[15.92] [HOLD-DIAG] Home_CM ActionLockout remaining=0.30s → Hold
+
+[15.95] [HOLD-DIAG] Home_CM ActionLockout remaining=0.27s → Hold
+
+[15.98] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[16.01] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.29m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[16.01] [HOLD-DIAG] Home_CM ActionLockout remaining=0.22s → Hold
+
+[16.04] [HOLD-DIAG] Home_CM ActionLockout remaining=0.19s → Hold
+
+[16.07] [HOLD-DIAG] Home_CM ActionLockout remaining=0.16s → Hold
+
+[16.10] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[16.13] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[16.16] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[16.16] <color=green>Away_CM2 SKILL: TACKLE on Home_CM</color>
+
+[16.16] <color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[16.16] [TACKLE-IMPACT] Home_CM fumbled ball! Stunned for 1.5s. Power: 10
+
+[17.64] [MatchManager] Away_CM2 has the ball!
+
+[17.64] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.04, Angle: 13.24
+
+[17.64] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[17.64] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.04m | BallSpeed: 0.8/2.5
+
+[17.64] [ON-BALL] Away_CM2 | Speed: 0.4 | BallDist: 1.04m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[17.64] [SKILL] Home_ST activated DEFENSE BURST (Cooldown: 10.0s)
+
+[17.64] <color=green>Home_ST SKILL: DEFENSE BURST</color>
+
+[17.65] [Away_CM2] DECISION: DRIBBLE (0.32) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.32
+
+[17.68] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.47s → Hold
+
+[17.70] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.44s → Hold
+
+[17.73] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.42s → Hold
+
+[17.76] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.39s → Hold
+
+[17.78] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.37s → Hold
+
+[17.81] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.34s → Hold
+
+[17.83] [SKILL] Home_CB activated DEFENSE BURST (Cooldown: 10.0s)
+
+[17.83] <color=green>Home_CB SKILL: DEFENSE BURST</color>
+
+[17.84] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.31s → Hold
+
+[17.85] [ON-BALL] Away_CM2 | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[17.85] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[17.85] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.94m | BallSpeed: 1.1/2.6
+
+[17.87] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.28s → Hold
+
+[17.90] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.25s → Hold
+
+[17.92] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.23s → Hold
+
+[17.95] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.20s → Hold
+
+[17.98] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.17s → Hold
+
+[18.01] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.14s → Hold
+
+[18.03] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.12s → Hold
+
+[18.04] [SKILL] Home_CM2 activated DEFENSE BURST (Cooldown: 10.0s)
+
+[18.04] <color=green>Home_CM2 SKILL: DEFENSE BURST</color>
+
+[18.05] [ON-BALL] Away_CM2 | Speed: 0.7 | BallDist: 1.20m | Mode: CONTROL (Constraint: ON)
+
+[18.06] [DRIBBLE-DEBUG] Speed: 0.7 | Formula: (Lerp(0.5~2.0, 0.07)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[18.06] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.20m | BallSpeed: 1.1/2.9
+
+[18.06] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.09s → Hold
+
+[18.09] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.06s → Hold
+
+[18.12] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.03s → Hold
+
+[18.14] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.01s → Hold
+
+[18.20] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.47s → Hold
+
+[18.23] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.45s → Hold
+
+[18.25] [ON-BALL] Away_CM2 | Speed: 0.4 | BallDist: 1.12m | Mode: CONTROL (Constraint: ON)
+
+[18.25] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.42s → Hold
+
+[18.26] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[18.26] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.14m | BallSpeed: 1.2/2.5
+
+[18.28] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.39s → Hold
+
+[18.31] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.36s → Hold
+
+[18.34] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.34s → Hold
+
+[18.36] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.31s → Hold
+
+[18.39] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.28s → Hold
+
+[18.42] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.25s → Hold
+
+[18.45] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.22s → Hold
+
+[18.46] [ON-BALL] Away_CM2 | Speed: 0.5 | BallDist: 1.36m | Mode: CONTROL (Constraint: ON)
+
+[18.47] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.20s → Hold
+
+[18.50] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.17s → Hold
+
+[18.53] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.14s → Hold
+
+[18.56] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.12s → Hold
+
+[18.59] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.09s → Hold
+
+[18.61] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.06s → Hold
+
+[18.64] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.03s → Hold
+
+[18.65] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[18.65] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.28m | BallSpeed: 2.3/2.6
+
+[18.66] [ON-BALL] Away_CM2 | Speed: 0.5 | BallDist: 1.28m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[18.67] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.01s → Hold
+
+[18.69] [Away_CM2] DECISION: DRIBBLE (0.32) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.32
+
+[18.72] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.47s → Hold
+
+[18.75] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.45s → Hold
+
+[18.77] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.42s → Hold
+
+[18.80] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.39s → Hold
+
+[18.83] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.37s → Hold
+
+[18.86] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[18.86] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.79m | BallSpeed: 2.1/2.4
+
+[18.86] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.34s → Hold
+
+[18.86] [ON-BALL] Away_CM2 | Speed: 0.0 | BallDist: 0.79m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[18.88] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.31s → Hold
+
+[18.91] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.28s → Hold
+
+[18.94] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.25s → Hold
+
+[18.97] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.22s → Hold
+
+[19.00] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.19s → Hold
+
+[19.03] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.16s → Hold
+
+[19.06] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[19.06] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.90m | BallSpeed: 1.8/2.5
+
+[19.06] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.14s → Hold
+
+[19.06] [ON-BALL] Away_CM2 | Speed: 0.0 | BallDist: 0.93m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[19.08] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.11s → Hold
+
+[19.11] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.08s → Hold
+
+[19.14] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.06s → Hold
+
+[19.16] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.03s → Hold
+
+[19.19] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.00s → Hold
+
+[19.24] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.47s → Hold
+
+[19.26] [ON-BALL] Away_CM2 | Speed: 0.1 | BallDist: 1.03m | Mode: CONTROL (Constraint: ON)
+
+[19.27] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.45s → Hold
+
+[19.30] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.42s → Hold
+
+[19.33] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.39s → Hold
+
+[19.35] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.36s → Hold
+
+[19.38] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.34s → Hold
+
+[19.41] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.31s → Hold
+
+[19.44] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.28s → Hold
+
+[19.46] [ON-BALL] Away_CM2 | Speed: 0.2 | BallDist: 1.02m | Mode: CONTROL (Constraint: ON)
+
+[19.46] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.25s → Hold
+
+[19.49] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.23s → Hold
+
+[19.52] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.20s → Hold
+
+[19.54] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.17s → Hold
+
+[19.57] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.15s → Hold
+
+[19.60] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.12s → Hold
+
+[19.62] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.09s → Hold
+
+[19.65] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.06s → Hold
+
+[19.66] [SKILL] Home_CM activated DEFENSE BURST (Cooldown: 10.0s)
+
+[19.66] <color=green>Home_CM SKILL: DEFENSE BURST</color>
+
+[19.67] [ON-BALL] Away_CM2 | Speed: 0.0 | BallDist: 0.72m | Mode: CONTROL (Constraint: ON)
+
+[19.68] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[19.68] [DRIBBLE-SKIP] Speed Limit Reached: 3.8 > 2.5
+
+[19.68] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.04s → Hold
+
+[19.71] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.01s → Hold
+
+[19.73] [Away_CM2] DECISION: DRIBBLE (0.25) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.25
+
+[19.76] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.47s → Hold
+
+[19.79] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.44s → Hold
+
+[19.82] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.42s → Hold
+
+[19.85] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.39s → Hold
+
+[19.87] [ON-BALL] Away_CM2 | Speed: 0.0 | BallDist: 1.17m | Mode: CONTROL (Constraint: ON)
+
+[19.87] [HOLD-DIAG] Away_CM2 ActionLockout remaining=0.36s → Hold
+
+[19.88] <color=green>Home_CM2 SKILL: TACKLE on Away_CM2</color>
+
+[19.88] <color=green>Home_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[19.88] [TACKLE-IMPACT] Away_CM2 fumbled ball! Stunned for 1.5s. Power: 10
+
+[20.64] [MatchManager] Home_ST has the ball!
+
+[20.64] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.84, Angle: 43.28
+
+[20.64] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[20.64] [DRIBBLE-SKIP] Speed Limit Reached: 4.8 > 2.2
+
+[20.64] [ON-BALL] Home_ST | Speed: 0.1 | BallDist: 0.84m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[20.65] [Home_ST] DECISION: PASS (0.35) - [EV] Shoot:0.04 | Pass:0.35 | Dribble:0.25
+
+[20.65] [KICK-DEBUG] PASS | Dist: 1.3m | Formula: (8.0 + 1.3*0.5 + 50*0.05) [Clamp: 11.2] * Scale:1.0 = 11.2
+
+[20.84] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.90m | Mode: CONTROL (Constraint: ON)
+
+[20.98] [Home_CM] Waiting for Incoming Pass...
+
+[21.05] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 1.06m | Mode: CONTROL (Constraint: ON)
+
+[21.13] Home_ST Kick Preparation TIMEOUT. Forcing Kick despite existing alignment error.
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogWarning (object)
+Game.Scripts.AI.AgentBallHandler:UpdateKickLogic () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:843)
+Game.Scripts.AI.AgentBallHandler:Tick () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:157)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:169)
+
+[21.13] <color=cyan>Home_CM is expecting a PASS at (0.75, 0.08, -7.52)!</color>
+
+[21.13] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[21.14] [KICK-EXEC] Home_ST Kicked! Force: 11.2, Mode: VelocityChange | Scale: 1.0
+
+[21.14] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[21.44] [MatchManager] Away_CM2 has the ball!
+
+[21.44] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 0.78, Angle: 43.50
+
+[21.44] [DRIBBLE-DEBUG] Speed: 8.7 | Formula: (Lerp(0.5~2.0, 0.87)=1.8) * Scale:1.0 = 1.8 | Interval: 0.20s
+
+[21.44] [DRIBBLE-EXEC] Force: 1.8 (VelocityChange) | BallDist: 0.78m | BallSpeed: 4.3/12.4
+
+[21.44] [ON-BALL] Away_CM2 | Speed: 8.7 | BallDist: 0.78m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[21.45] [HOLD-DIAG] Away_CM2 IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[21.48] [HOLD-DIAG] Away_CM2 IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[21.51] [HOLD-DIAG] Away_CM2 IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[21.54] [HOLD-DIAG] Away_CM2 IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[21.57] <color=green>Home_CM SKILL: TACKLE on Away_CM2</color>
+
+[21.57] <color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[21.57] [TACKLE-IMPACT] Away_CM2 fumbled ball! Stunned for 1.5s. Power: 10
+
+[21.57] [ACTION] Home_CM is attempting TACKLE on Away_CM2 (Dist: 1.99)
+
+[22.70] [MatchManager] Home_ST has the ball!
+
+[22.70] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.69, Angle: 14.35
+
+[22.70] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[22.70] [DRIBBLE-SKIP] Speed Limit Reached: 4.9 > 2.5
+
+[22.70] [ON-BALL] Home_ST | Speed: 0.4 | BallDist: 0.69m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[22.71] [Home_ST] DECISION: PASS (0.30) - [EV] Shoot:0.03 | Pass:0.30 | Dribble:0.20
+
+[22.71] [KICK-DEBUG] PASS | Dist: 7.6m | Formula: (8.0 + 7.6*0.5 + 50*0.05) [Clamp: 14.3] * Scale:1.0 = 14.3
+
+[22.72] <color=cyan>Home_CM is expecting a PASS at (2.38, 0.08, -7.20)!</color>
+
+[22.72] [KICK-EXEC] Home_ST Kicked! Force: 14.3, Mode: VelocityChange | Scale: 1.0
+
+[22.72] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[23.36] [MatchManager] Away_CM2 has the ball!
+
+[23.36] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.07, Angle: 13.47
+
+[23.36] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[23.36] [DRIBBLE-SKIP] Speed Limit Reached: 3.5 > 2.3
+
+[23.36] [ON-BALL] Away_CM2 | Speed: 0.3 | BallDist: 1.07m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[23.37] <color=green>Home_ST SKILL: TACKLE on Away_CM2</color>
+
+[23.37] <color=green>Home_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[23.37] [TACKLE-IMPACT] Away_CM2 fumbled ball! Stunned for 1.5s. Power: 10
+
+[23.37] [ACTION] Home_ST is attempting TACKLE on Away_CM2 (Dist: 1.05)
+
+[24.38] [MatchManager] Home_ST has the ball!
+
+[24.38] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.07, Angle: 38.76
+
+[24.38] [DRIBBLE-DEBUG] Speed: 0.8 | Formula: (Lerp(0.5~2.0, 0.08)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[24.38] [DRIBBLE-SKIP] Speed Limit Reached: 3.6 > 2.9
+
+[24.38] [ON-BALL] Home_ST | Speed: 0.8 | BallDist: 1.07m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[24.40] [Home_ST] DECISION: PASS (0.26) - [EV] Shoot:0.03 | Pass:0.26 | Dribble:0.22
+
+[24.40] [KICK-DEBUG] PASS | Dist: 3.2m | Formula: (8.0 + 3.2*0.5 + 50*0.05) [Clamp: 12.1] * Scale:1.0 = 12.1
+
+[24.45] [Home_CM] Waiting for Incoming Pass...
+
+[24.58] [ON-BALL] Home_ST | Speed: 0.4 | BallDist: 0.75m | Mode: CONTROL (Constraint: ON)
+
+[24.78] [ON-BALL] Home_ST | Speed: 0.5 | BallDist: 0.89m | Mode: CONTROL (Constraint: ON)
+
+[24.85] Home_ST Kick Preparation TIMEOUT. Forcing Kick despite existing alignment error.
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogWarning (object)
+Game.Scripts.AI.AgentBallHandler:UpdateKickLogic () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:843)
+Game.Scripts.AI.AgentBallHandler:Tick () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:157)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:169)
+
+[24.85] <color=cyan>Home_CM is expecting a PASS at (3.98, 0.35, -8.43)!</color>
+
+[24.85] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[24.86] [KICK-EXEC] Home_ST Kicked! Force: 12.1, Mode: VelocityChange | Scale: 1.0
+
+[24.86] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[25.12] [MatchManager] Home_CM has the ball!
+
+[25.12] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.04, Angle: 44.94
+
+[25.12] [DRIBBLE-DEBUG] Speed: 4.8 | Formula: (Lerp(0.5~2.0, 0.48)=1.2) * Scale:1.0 = 1.2 | Interval: 0.20s
+
+[25.12] [DRIBBLE-EXEC] Force: 1.2 (VelocityChange) | BallDist: 1.04m | BallSpeed: 4.5/7.8
+
+[25.12] [ON-BALL] Home_CM | Speed: 4.8 | BallDist: 1.04m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[25.14] [HOLD-DIAG] Home_CM IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[25.16] [HOLD-DIAG] Home_CM IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[25.19] [HOLD-DIAG] Home_CM IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[25.22] [HOLD-DIAG] Home_CM IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[25.24] [HOLD-DIAG] Home_CM IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[25.30] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[25.32] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[25.32] [DRIBBLE-SKIP] Speed Limit Reached: 6.6 > 2.5
+
+[25.32] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 0.86m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[25.33] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[25.35] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[25.38] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[25.41] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[25.44] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[25.46] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[25.49] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[25.52] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[25.52] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.82m | Mode: CONTROL (Constraint: ON)
+
+[25.53] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[25.53] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.82m | BallSpeed: 0.4/2.7
+
+[25.55] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[25.57] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[25.60] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[25.63] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[25.65] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[25.68] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[25.71] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[25.73] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.90m | Mode: CONTROL (Constraint: ON)
+
+[25.74] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[25.76] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[25.76] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.90m | BallSpeed: 0.4/2.7
+
+[25.77] [HOLD-DIAG] Home_CM ActionLockout remaining=0.00s → Hold
+
+[25.80] [Home_CM] DECISION: DRIBBLE (0.22) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.22
+
+[25.83] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[25.85] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[25.88] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[25.91] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[25.93] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 0.87m | Mode: CONTROL (Constraint: ON)
+
+[25.94] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[25.96] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[25.96] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.88m | BallSpeed: 0.7/2.5
+
+[25.96] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[25.99] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[26.02] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[26.04] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[26.07] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[26.10] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[26.12] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[26.13] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.05m | Mode: CONTROL (Constraint: ON)
+
+[26.15] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[26.16] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[26.16] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.07m | BallSpeed: 1.0/2.7
+
+[26.18] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[26.20] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[26.23] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[26.26] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[26.28] [HOLD-DIAG] Home_CM ActionLockout remaining=0.02s → Hold
+
+[26.34] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.05m | Mode: CONTROL (Constraint: ON)
+
+[26.34] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[26.36] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[26.38] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[26.38] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.90m | BallSpeed: 1.2/2.4
+
+[26.39] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[26.42] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[26.45] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[26.47] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[26.50] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[26.53] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[26.54] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.07m | Mode: CONTROL (Constraint: ON)
+
+[26.56] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[26.58] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[26.58] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.13m | BallSpeed: 1.4/2.5
+
+[26.58] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[26.61] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[26.63] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[26.66] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[26.69] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[26.71] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[26.74] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.29m | Mode: CONTROL (Constraint: ON)
+
+[26.74] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[26.77] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[26.80] [HOLD-DIAG] Home_CM ActionLockout remaining=0.01s → Hold
+
+[26.82] [Home_CM] DECISION: DRIBBLE (0.21) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.21
+
+[26.84] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[26.84] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.18m | BallSpeed: 1.4/2.6
+
+[26.85] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[26.88] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[26.90] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[26.93] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[26.94] [ON-BALL] Home_CM | Speed: 0.8 | BallDist: 1.23m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[26.96] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[26.99] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[27.01] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[27.04] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[27.05] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[27.05] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.27m | BallSpeed: 1.4/2.2
+
+[27.07] [HOLD-DIAG] Home_CM ActionLockout remaining=0.26s → Hold
+
+[27.09] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[27.12] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[27.14] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.31m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[27.15] [HOLD-DIAG] Home_CM ActionLockout remaining=0.18s → Hold
+
+[27.17] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[27.20] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[27.20] [AgentBallHandler] Home_CM lost ball. Dist: 1.34
+
+[27.26] [MatchManager] Home_CM has the ball!
+
+[27.26] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.05, Angle: 11.25
+
+[27.26] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[27.26] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.05m | BallSpeed: 1.4/2.3
+
+[27.27] [HOLD-DIAG] Home_CM ActionLockout remaining=0.05s → Hold
+
+[27.30] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[27.32] [HOLD-DIAG] Home_CM ActionLockout remaining=0.00s → Hold
+
+[27.34] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.13m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[27.38] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[27.42] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[27.44] [HOLD-DIAG] Home_CM ActionLockout remaining=0.41s → Hold
+
+[27.46] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[27.46] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.94m | BallSpeed: 1.4/2.6
+
+[27.47] [HOLD-DIAG] Home_CM ActionLockout remaining=0.38s → Hold
+
+[27.50] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[27.52] [HOLD-DIAG] Home_CM ActionLockout remaining=0.33s → Hold
+
+[27.55] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.06m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[27.55] [HOLD-DIAG] Home_CM ActionLockout remaining=0.30s → Hold
+
+[27.58] [HOLD-DIAG] Home_CM ActionLockout remaining=0.27s → Hold
+
+[27.61] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[27.64] [HOLD-DIAG] Home_CM ActionLockout remaining=0.22s → Hold
+
+[27.66] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[27.66] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.22m | BallSpeed: 1.1/2.7
+
+[27.66] [HOLD-DIAG] Home_CM ActionLockout remaining=0.19s → Hold
+
+[27.69] [HOLD-DIAG] Home_CM ActionLockout remaining=0.16s → Hold
+
+[27.72] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[27.75] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.34m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[27.76] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[27.78] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[27.80] [SKILL] Away_CM2 activated DEFENSE BURST (Cooldown: 10.0s)
+
+[27.80] <color=green>Away_CM2 SKILL: DEFENSE BURST</color>
+
+[27.81] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[27.84] [HOLD-DIAG] Home_CM ActionLockout remaining=0.01s → Hold
+
+[27.87] [Home_CM] DECISION: DRIBBLE (0.21) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.21
+
+[27.89] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[27.92] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[27.95] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.32m | Mode: CONTROL (Constraint: ON)
+
+[27.95] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[27.98] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[28.00] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[28.00] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.29m | BallSpeed: 1.4/2.6
+
+[28.01] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[28.03] [HOLD-DIAG] Home_CM ActionLockout remaining=0.33s → Hold
+
+[28.06] [HOLD-DIAG] Home_CM ActionLockout remaining=0.30s → Hold
+
+[28.09] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[28.12] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[28.14] [HOLD-DIAG] Home_CM ActionLockout remaining=0.22s → Hold
+
+[28.15] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.25m | Mode: CONTROL (Constraint: ON)
+
+[28.17] [HOLD-DIAG] Home_CM ActionLockout remaining=0.19s → Hold
+
+[28.20] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[28.21] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[28.21] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.22m | BallSpeed: 1.7/2.3
+
+[28.23] [HOLD-DIAG] Home_CM ActionLockout remaining=0.14s → Hold
+
+[28.25] [HOLD-DIAG] Home_CM ActionLockout remaining=0.11s → Hold
+
+[28.28] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[28.31] [HOLD-DIAG] Home_CM ActionLockout remaining=0.06s → Hold
+
+[28.33] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[28.35] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.19m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[28.36] [HOLD-DIAG] Home_CM ActionLockout remaining=0.00s → Hold
+
+[28.41] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[28.41] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.02m | BallSpeed: 1.8/2.3
+
+[28.42] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[28.45] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[28.48] [HOLD-DIAG] Home_CM ActionLockout remaining=0.41s → Hold
+
+[28.50] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[28.53] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[28.55] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 0.89m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[28.56] [HOLD-DIAG] Home_CM ActionLockout remaining=0.33s → Hold
+
+[28.59] [HOLD-DIAG] Home_CM ActionLockout remaining=0.30s → Hold
+
+[28.62] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[28.62] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.92m | BallSpeed: 1.5/2.6
+
+[28.62] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[28.64] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[28.67] [HOLD-DIAG] Home_CM ActionLockout remaining=0.22s → Hold
+
+[28.70] [HOLD-DIAG] Home_CM ActionLockout remaining=0.19s → Hold
+
+[28.73] [HOLD-DIAG] Home_CM ActionLockout remaining=0.16s → Hold
+
+[28.75] [HOLD-DIAG] Home_CM ActionLockout remaining=0.14s → Hold
+
+[28.76] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.05m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[28.78] [HOLD-DIAG] Home_CM ActionLockout remaining=0.11s → Hold
+
+[28.81] [HOLD-DIAG] Home_CM ActionLockout remaining=0.08s → Hold
+
+[28.82] [DRIBBLE-DEBUG] Speed: 0.8 | Formula: (Lerp(0.5~2.0, 0.08)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[28.82] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.11m | BallSpeed: 1.2/2.9
+
+[28.84] [HOLD-DIAG] Home_CM ActionLockout remaining=0.05s → Hold
+
+[28.86] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[28.89] [Home_CM] DECISION: DRIBBLE (0.21) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.21
+
+[28.92] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[28.94] [HOLD-DIAG] Home_CM ActionLockout remaining=0.45s → Hold
+
+[28.96] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 0.95m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[28.97] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[29.00] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[29.02] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[29.02] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.03m | BallSpeed: 1.0/2.5
+
+[29.03] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[29.05] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[29.08] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[29.11] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[29.14] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[29.16] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 1.21m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[29.17] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[29.19] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[29.22] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[29.23] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[29.23] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.27m | BallSpeed: 1.0/2.6
+
+[29.24] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[29.27] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[29.30] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[29.32] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[29.35] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[29.36] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.40m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[29.38] [AgentBallHandler] Home_CM lost ball. Dist: 1.41
+
+[29.46] [MatchManager] Home_CM has the ball!
+
+[29.46] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.07, Angle: 23.75
+
+[29.46] [DRIBBLE-DEBUG] Speed: 0.8 | Formula: (Lerp(0.5~2.0, 0.08)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[29.46] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.07m | BallSpeed: 1.2/2.9
+
+[29.50] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[29.53] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[29.56] [HOLD-DIAG] Home_CM ActionLockout remaining=0.42s → Hold
+
+[29.57] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.91m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[29.59] [HOLD-DIAG] Home_CM ActionLockout remaining=0.39s → Hold
+
+[29.61] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[29.64] [HOLD-DIAG] Home_CM ActionLockout remaining=0.34s → Hold
+
+[29.67] [HOLD-DIAG] Home_CM ActionLockout remaining=0.31s → Hold
+
+[29.68] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[29.68] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.03m | BallSpeed: 1.4/2.5
+
+[29.69] [HOLD-DIAG] Home_CM ActionLockout remaining=0.28s → Hold
+
+[29.72] [HOLD-DIAG] Home_CM ActionLockout remaining=0.25s → Hold
+
+[29.75] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[29.77] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.16m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[29.78] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[29.80] [HOLD-DIAG] Home_CM ActionLockout remaining=0.17s → Hold
+
+[29.83] [HOLD-DIAG] Home_CM ActionLockout remaining=0.15s → Hold
+
+[29.86] [HOLD-DIAG] Home_CM ActionLockout remaining=0.12s → Hold
+
+[29.88] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[29.88] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.28m | BallSpeed: 1.5/2.6
+
+[29.88] [HOLD-DIAG] Home_CM ActionLockout remaining=0.09s → Hold
+
+[29.91] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[29.94] [HOLD-DIAG] Home_CM ActionLockout remaining=0.03s → Hold
+
+[29.97] [ON-BALL] Home_CM | Speed: 0.6 | BallDist: 1.40m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[29.98] [Home_CM] DECISION: DRIBBLE (0.21) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.21
+
+[30.02] [HOLD-DIAG] Home_CM ActionLockout remaining=0.46s → Hold
+
+[30.05] [HOLD-DIAG] Home_CM ActionLockout remaining=0.43s → Hold
+
+[30.08] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[30.08] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.18m | BallSpeed: 1.5/2.7
+
+[30.09] [HOLD-DIAG] Home_CM ActionLockout remaining=0.40s → Hold
+
+[30.12] [HOLD-DIAG] Home_CM ActionLockout remaining=0.36s → Hold
+
+[30.15] [HOLD-DIAG] Home_CM ActionLockout remaining=0.33s → Hold
+
+[30.18] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.31m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[30.18] [HOLD-DIAG] Home_CM ActionLockout remaining=0.30s → Hold
+
+[30.21] [HOLD-DIAG] Home_CM ActionLockout remaining=0.27s → Hold
+
+[30.25] [HOLD-DIAG] Home_CM ActionLockout remaining=0.23s → Hold
+
+[30.28] [HOLD-DIAG] Home_CM ActionLockout remaining=0.20s → Hold
+
+[30.32] [HOLD-DIAG] Home_CM ActionLockout remaining=0.16s → Hold
+
+[30.35] [HOLD-DIAG] Home_CM ActionLockout remaining=0.13s → Hold
+
+[30.38] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.46m | Mode: CONTROL (Constraint: ON)
+
+[30.38] [HOLD-DIAG] Home_CM ActionLockout remaining=0.10s → Hold
+
+[30.41] [HOLD-DIAG] Home_CM ActionLockout remaining=0.07s → Hold
+
+[30.44] [HOLD-DIAG] Home_CM ActionLockout remaining=0.04s → Hold
+
+[30.48] [HOLD-DIAG] Home_CM ActionLockout remaining=0.00s → Hold
+
+[30.52] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[30.52] [DRIBBLE-SKIP] Speed Limit Reached: 2.6 > 2.6
+
+[30.54] [HOLD-DIAG] Home_CM ActionLockout remaining=0.47s → Hold
+
+[30.57] [HOLD-DIAG] Home_CM ActionLockout remaining=0.44s → Hold
+
+[30.58] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 0.88m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[30.60] [HOLD-DIAG] Home_CM ActionLockout remaining=0.41s → Hold
+
+[30.63] [HOLD-DIAG] Home_CM ActionLockout remaining=0.38s → Hold
+
+[30.66] [HOLD-DIAG] Home_CM ActionLockout remaining=0.35s → Hold
+
+[30.69] [HOLD-DIAG] Home_CM ActionLockout remaining=0.32s → Hold
+
+[30.71] [HOLD-DIAG] Home_CM ActionLockout remaining=0.30s → Hold
+

@@ -48,10 +48,14 @@ namespace Game.Scripts.AI
         public float maxCorrectionVelocity = 10.0f;
 
         [Header("Dribble Kick")]
+        [Tooltip("Kick interval in seconds. Lower = more frequent taps (smoother but more CPU).")]
         public float dribbleInterval = 0.2f;
-        public float dribbleMinForce = 1.0f;
-        public float dribbleMaxForce = 8.0f;
-        [Tooltip("Global multiplier for dribble kick force")]
+        [Tooltip("Kick force (VelocityChange) at 0 speed. Formula: Lerp(Min,Max, speed/BaseMoveSpeed) * Scale")]
+        public float dribbleMinForce = 0.5f;
+        [Tooltip("Kick force (VelocityChange) at max speed. Keep ≤ player speed to avoid ball running away. " +
+                 "Player speed 10 → recommend 2.5~4.0")]
+        public float dribbleMaxForce = 3.5f;
+        [Tooltip("Final multiplier applied after Lerp. Adjust this for quick tuning without changing Min/Max.")]
         public float DribbleForceScale = 1.0f;
         
         [Header("Soft Guide")]

@@ -1,0 +1,1744 @@
+[2.00] [MatchManager] PLAY!
+
+[2.01] [MatchManager] Home_ST has the ball!
+
+[2.01] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.55
+
+[2.01] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.01] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.01] [PASS-TARGET] Home_ST→Home_CB | pPass:0.83 posVal:0.35 ev:0.29
+
+[2.01] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.01] [Home_ST] DECISION: DRIBBLE (0.31) - [EV] Shoot:0.04 | Pass:0.30 | Dribble:0.31
+
+[2.02] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[2.02] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.94m | BallSpeed: 0.0/2.6
+
+[2.05] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.05] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.05] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.08] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.08] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.08] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.10] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.10] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.10] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.13] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.13] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.13] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.16] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.16] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.16] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.19] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.19] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.19] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.21] [ON-BALL] Home_ST | Speed: 13.7 | BallDist: 0.68m | Mode: RUNNING (Constraint: OFF)
+
+[2.21] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.21] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.21] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.23] [DRIBBLE-DEBUG] Speed: 13.0 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[2.23] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.69m | BallSpeed: 9.6/17.6
+
+[2.24] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.24] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.24] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.27] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.27] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.27] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.30] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.30] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.30] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.33] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.33] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.33] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.34] [SKILL] Away_ST activated DEFENSE BURST (Cooldown: 10.0s)
+
+[2.34] <color=green>Away_ST SKILL: DEFENSE BURST</color>
+
+[2.36] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.36] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.36] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.39] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.39] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.39] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.41] [ON-BALL] Home_ST | Speed: 12.3 | BallDist: 0.72m | Mode: RUNNING (Constraint: OFF)
+
+[2.41] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.41] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.41] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.43] [DRIBBLE-DEBUG] Speed: 13.0 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[2.43] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.72m | BallSpeed: 9.1/17.6
+
+[2.44] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.44] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.44] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.47] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.36 ev:0.30
+
+[2.47] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.47] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.36 ev:0.30
+
+[2.47] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.36 ev:0.30
+
+[2.47] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.47] [KICK-DEBUG] PASS | Dist: 12.8m | Formula: (8.0 + 12.8*0.5 + 50*0.05) [Clamp: 16.9] * Scale:1.0 = 16.9
+
+[2.53] [Home_CM] Waiting for Incoming Pass...
+
+[2.54] <color=cyan>Home_CM is expecting a PASS at (9.50, 0.08, -1.39)!</color>
+
+[2.55] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[2.56] [KICK-EXEC] Home_ST Kicked! Force: 16.9, Mode: VelocityChange | Scale: 1.0
+
+[2.56] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[3.06] [MatchManager] Home_ST has the ball!
+
+[3.06] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.73, Angle: 31.56
+
+[3.06] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[3.06] [DRIBBLE-SKIP] Speed Limit Reached: 3.9 > 2.5
+
+[3.06] [ON-BALL] Home_ST | Speed: 0.4 | BallDist: 0.73m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[3.06] [PASS-TARGET] Home_ST→Home_CM | pPass:0.87 posVal:0.39 ev:0.34
+
+[3.06] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[3.06] [PASS-DIAG] Home_ST → Home_CM | pPass:0.87 posVal:0.39 ev:0.34
+
+[3.06] [PASS-TARGET] Home_ST→Home_CM | pPass:0.87 posVal:0.39 ev:0.34
+
+[3.06] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[3.06] [Home_ST] DECISION: PASS (0.34) - [EV] Shoot:0.04 | Pass:0.34 | Dribble:0.26
+
+[3.06] [KICK-DEBUG] PASS | Dist: 4.3m | Formula: (8.0 + 4.3*0.5 + 50*0.05) [Clamp: 12.7] * Scale:1.0 = 12.7
+
+[3.08] <color=cyan>Home_CM is expecting a PASS at (3.44, 0.08, 1.40)!</color>
+
+[3.09] [SKILL] Away_CM2 activated DEFENSE BURST (Cooldown: 10.0s)
+
+[3.09] <color=green>Away_CM2 SKILL: DEFENSE BURST</color>
+
+[3.10] [KICK-EXEC] Home_ST Kicked! Force: 12.7, Mode: VelocityChange | Scale: 1.0
+
+[3.10] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[3.60] [MatchManager] Home_ST has the ball!
+
+[3.60] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[3.60] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.69m | BallSpeed: 2.5/2.7
+
+[3.60] [ON-BALL] Home_ST | Speed: 0.5 | BallDist: 0.69m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[3.61] [Home_CM] Waiting for Incoming Pass...
+
+[3.62] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.43 ev:0.37
+
+[3.62] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[3.62] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.43 ev:0.37
+
+[3.62] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.43 ev:0.37
+
+[3.62] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[3.62] [KICK-DEBUG] PASS | Dist: 4.0m | Formula: (8.0 + 4.0*0.5 + 50*0.05) [Clamp: 12.5] * Scale:1.0 = 12.5
+
+[3.63] <color=cyan>Home_CM is expecting a PASS at (5.67, 0.08, 1.01)!</color>
+
+[3.64] [KICK-EXEC] Home_ST Kicked! Force: 12.5, Mode: VelocityChange | Scale: 1.0
+
+[3.64] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession.
+
+[3.92] [MatchManager] Home_CM has the ball!
+
+[3.92] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.07, Angle: 13.24
+
+[3.92] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[3.92] [DRIBBLE-SKIP] Speed Limit Reached: 3.4 > 2.6
+
+[3.92] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.07m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[3.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[3.96] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[3.99] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[4.01] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[4.04] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[4.07] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[4.10] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[4.11] <color=green>Away_ST SKILL: TACKLE on Home_CM</color>
+
+[4.11] <color=green>Away_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[4.11] [TACKLE-IMPACT] Home_CM fumbled ball! Stunned for 1.5s. Power: 10
+
+[5.54] [MatchManager] Away_ST has the ball!
+
+[5.54] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.68, Angle: 14.20
+
+[5.54] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[5.54] [DRIBBLE-SKIP] Speed Limit Reached: 4.9 > 2.1
+
+[5.54] [ON-BALL] Away_ST | Speed: 0.1 | BallDist: 0.68m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[5.54] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.77 posVal:0.41 ev:0.31
+
+[5.54] [PASS-TARGET] Away_ST→Away_CB | pPass:0.66 posVal:0.35 ev:0.23
+
+[5.54] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.77 posVal:0.41 ev:0.31
+
+[5.54] [Away_ST] DECISION: DRIBBLE (0.32) - [EV] Shoot:0.03 | Pass:0.31 | Dribble:0.32
+
+[5.54] <color=green>Home_ST SKILL: TACKLE on Away_ST</color>
+
+[5.54] <color=green>Home_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[5.54] [TACKLE-IMPACT] Away_ST fumbled ball! Stunned for 1.5s. Power: 10
+
+[5.54] [ACTION] Home_ST is attempting TACKLE on Away_ST (Dist: 1.91)
+
+[6.98] [MatchManager] Home_CM has the ball!
+
+[6.98] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.04, Angle: 9.36
+
+[6.98] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[6.98] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.04m | BallSpeed: 1.4/2.3
+
+[6.98] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 1.04m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.00] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.00] [Home_CM] DECISION: DRIBBLE (0.21) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.21
+
+[7.03] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.06] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.09] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.12] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.15] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.18] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[7.18] [DRIBBLE-SKIP] Speed Limit Reached: 8.1 > 2.6
+
+[7.18] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.70m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.21] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.23] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.26] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.29] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.32] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.35] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.38] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.39] [DRIBBLE-DEBUG] Speed: 12.5 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[7.39] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.67m | BallSpeed: 8.5/16.9
+
+[7.39] [ON-BALL] Home_CM | Speed: 12.5 | BallDist: 0.67m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.41] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.44] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.46] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.49] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.52] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.55] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.58] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.59] [DRIBBLE-DEBUG] Speed: 12.6 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[7.59] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.67m | BallSpeed: 8.8/17.1
+
+[7.59] [ON-BALL] Home_CM | Speed: 12.6 | BallDist: 0.67m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.63] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.66] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.69] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.72] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.75] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.77] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.79] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[7.79] [DRIBBLE-SKIP] Speed Limit Reached: 7.8 > 2.7
+
+[7.79] [ON-BALL] Home_CM | Speed: 0.6 | BallDist: 0.67m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.80] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.83] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.86] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.91] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.94] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.97] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[7.99] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[7.99] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.01] [DRIBBLE-DEBUG] Speed: 12.6 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[8.01] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.67m | BallSpeed: 9.1/17.1
+
+[8.02] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.02] [Home_CM] DECISION: DRIBBLE (0.17) - [EV] Shoot:0.02 | Pass:0.00 | Dribble:0.17
+
+[8.05] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.08] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.11] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.13] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.16] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.19] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.20] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[8.22] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[8.22] [DRIBBLE-SKIP] Speed Limit Reached: 8.3 > 2.5
+
+[8.22] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.24] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.27] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.30] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.33] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.35] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.38] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.40] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[8.41] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.42] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[8.42] [DRIBBLE-SKIP] Speed Limit Reached: 7.8 > 2.7
+
+[8.44] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.46] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.49] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.52] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.55] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.58] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.60] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[8.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.63] [DRIBBLE-DEBUG] Speed: 12.6 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[8.63] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.67m | BallSpeed: 9.1/17.1
+
+[8.63] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.66] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.69] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.72] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.75] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.78] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.80] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[8.80] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.83] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[8.83] [DRIBBLE-SKIP] Speed Limit Reached: 8.3 > 2.4
+
+[8.83] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.86] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.91] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.94] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[8.97] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.00] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.01] [ON-BALL] Home_CM | Speed: 12.2 | BallDist: 0.67m | Mode: RUNNING (Constraint: OFF)
+
+[9.02] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.02] [Home_CM] DECISION: DRIBBLE (0.13) - [EV] Shoot:0.01 | Pass:0.00 | Dribble:0.13
+
+[9.03] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[9.03] [DRIBBLE-SKIP] Speed Limit Reached: 7.8 > 2.2
+
+[9.05] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.08] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.11] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.13] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.16] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.19] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.21] [ON-BALL] Home_CM | Speed: 0.7 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[9.22] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.24] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[9.24] [DRIBBLE-SKIP] Speed Limit Reached: 9.3 > 2.2
+
+[9.25] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.28] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.30] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.33] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.36] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.39] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.41] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[9.41] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.44] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[9.44] [DRIBBLE-SKIP] Speed Limit Reached: 8.0 > 2.3
+
+[9.44] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.47] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.49] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.52] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.55] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.58] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.61] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[9.63] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.64] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[9.64] [DRIBBLE-SKIP] Speed Limit Reached: 7.9 > 2.6
+
+[9.66] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.69] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.71] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.74] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.77] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.80] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.82] [ON-BALL] Home_CM | Speed: 0.8 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[9.82] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.85] [DRIBBLE-DEBUG] Speed: 12.6 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[9.85] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.67m | BallSpeed: 9.3/17.1
+
+[9.85] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.91] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.96] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[9.99] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.02] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.02] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[10.04] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.04] [Home_CM] DECISION: DRIBBLE (0.09) - [EV] Shoot:0.01 | Pass:0.00 | Dribble:0.09
+
+[10.05] [DRIBBLE-DEBUG] Speed: 12.0 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[10.05] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.67m | BallSpeed: 8.0/16.4
+
+[10.07] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.10] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.12] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.15] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.20] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.22] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[10.23] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.25] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[10.25] [DRIBBLE-SKIP] Speed Limit Reached: 8.5 > 2.6
+
+[10.26] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.29] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.31] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.34] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.37] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.39] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.42] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.42] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[10.45] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.45] [DRIBBLE-DEBUG] Speed: 0.8 | Formula: (Lerp(0.5~2.0, 0.08)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[10.45] [DRIBBLE-SKIP] Speed Limit Reached: 9.1 > 2.9
+
+[10.47] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.50] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.53] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.56] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.58] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.62] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[10.64] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.65] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[10.65] [DRIBBLE-SKIP] Speed Limit Reached: 7.8 > 2.5
+
+[10.67] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.69] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.72] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.75] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.77] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.80] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.83] [ON-BALL] Home_CM | Speed: 12.6 | BallDist: 0.67m | Mode: RUNNING (Constraint: OFF)
+
+[10.83] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.85] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[10.85] [DRIBBLE-SKIP] Speed Limit Reached: 8.8 > 2.6
+
+[10.85] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.91] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.96] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[10.98] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.01] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.03] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[11.04] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.06] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[11.06] [DRIBBLE-SKIP] Speed Limit Reached: 8.8 > 2.6
+
+[11.07] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.07] [Home_CM] DECISION: DRIBBLE (0.07) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.07
+
+[11.09] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.12] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.15] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.21] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.23] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[11.24] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.26] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[11.26] [DRIBBLE-SKIP] Speed Limit Reached: 7.8 > 2.4
+
+[11.26] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.29] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.32] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.35] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.37] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.40] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.43] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.43] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[11.45] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.46] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[11.46] [DRIBBLE-SKIP] Speed Limit Reached: 9.2 > 2.5
+
+[11.48] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.51] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.53] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.56] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.59] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.64] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[11.64] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.66] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[11.66] [DRIBBLE-SKIP] Speed Limit Reached: 8.5 > 2.1
+
+[11.66] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.69] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.71] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.74] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.77] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.79] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.82] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.84] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.67m | Mode: CONTROL (Constraint: ON)
+
+[11.84] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.86] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[11.86] [DRIBBLE-SKIP] Speed Limit Reached: 8.1 > 2.2
+
+[11.87] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.89] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.92] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.95] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[11.97] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.00] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.02] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.04] [AgentBallHandler] Home_CM lost ball. Dist: 1.37
+
+[12.34] [MatchManager] Home_CM has the ball!
+
+[12.34] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.08, Angle: 9.34
+
+[12.34] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[12.34] [DRIBBLE-SKIP] Speed Limit Reached: 3.2 > 2.6
+
+[12.34] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.08m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[12.36] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.36] [Home_CM] DECISION: DRIBBLE (0.05) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.05
+
+[12.39] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.41] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.44] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.46] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.49] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.51] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.54] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.54] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[12.54] [DRIBBLE-SKIP] Speed Limit Reached: 7.8 > 2.2
+
+[12.54] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 0.69m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[12.57] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.59] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.62] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.65] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.68] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.70] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.73] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.74] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[12.74] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.82m | BallSpeed: 0.0/2.5
+
+[12.74] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.82m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[12.76] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.78] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.81] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.83] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.86] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.91] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.95] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.89m | Mode: CONTROL (Constraint: ON)
+
+[12.95] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[12.95] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.89m | BallSpeed: 0.3/2.6
+
+[12.96] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[12.99] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.01] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.04] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.06] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.09] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.11] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.13] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.15] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.03m | Mode: CONTROL (Constraint: ON)
+
+[13.15] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[13.15] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.03m | BallSpeed: 0.6/2.4
+
+[13.16] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.21] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.23] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.26] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.28] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.31] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.33] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.35] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.19m | Mode: CONTROL (Constraint: ON)
+
+[13.35] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[13.35] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.19m | BallSpeed: 0.7/2.5
+
+[13.36] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.38] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.38] [Home_CM] DECISION: HOLD (All EVs < 0.05) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.05
+
+[13.41] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.43] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.46] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.48] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.50] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.53] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.55] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.35m | Mode: CONTROL (Constraint: ON)
+
+[13.55] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.58] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.63] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.65] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.68] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.70] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.71] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[13.71] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.25m | BallSpeed: 2.1/2.5
+
+[13.73] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.75] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 1.20m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[13.75] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.78] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.80] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.83] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.85] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.90] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.91] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[13.91] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.06m | BallSpeed: 1.9/2.5
+
+[13.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.95] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[13.95] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.04m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[13.97] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.00] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.02] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.05] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.07] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.10] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.12] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[14.12] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.00m | BallSpeed: 1.6/2.7
+
+[14.12] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.15] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.16] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.02m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[14.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.20] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.22] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.24] [SKILL] Away_CM2 activated DEFENSE BURST (Cooldown: 10.0s)
+
+[14.24] <color=green>Away_CM2 SKILL: DEFENSE BURST</color>
+
+[14.25] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.27] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.30] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.32] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.35] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[14.35] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.13m | BallSpeed: 0.6/2.7
+
+[14.35] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.36] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.13m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[14.37] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.40] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.40] [Home_CM] DECISION: HOLD (All EVs < 0.05) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.05
+
+[14.42] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.45] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.45] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.51] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.56] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.24m | Mode: CONTROL (Constraint: ON)
+
+[14.56] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.66] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.71] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.75] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.76] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.09m | Mode: CONTROL (Constraint: ON)
+
+[14.80] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.85] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.92] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[14.97] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.66m | Mode: CONTROL (Constraint: ON)
+
+[14.98] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.03] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[15.03] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.83m | BallSpeed: 0.3/2.2
+
+[15.03] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.07] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.12] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.17] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.89m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[15.17] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.22] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.24] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[15.24] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 0.93m | BallSpeed: 0.4/2.3
+
+[15.27] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.32] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.37] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.02m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[15.37] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.44] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.44] [Home_CM] DECISION: HOLD (All EVs < 0.05) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.05
+
+[15.45] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[15.45] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.07m | BallSpeed: 0.7/2.4
+
+[15.47] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.50] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.52] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.55] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.58] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.19m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[15.58] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.60] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.63] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.65] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[15.65] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.25m | BallSpeed: 0.8/2.2
+
+[15.65] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.68] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.71] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.73] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.76] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.78] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.36m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[15.78] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.81] [AgentBallHandler] Home_CM lost ball. Dist: 1.40
+
+[15.88] [MatchManager] Home_CM has the ball!
+
+[15.88] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.03, Angle: 11.78
+
+[15.88] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[15.88] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.03m | BallSpeed: 1.0/2.5
+
+[15.90] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.95] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[15.98] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.02m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[15.98] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.00] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.03] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.05] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.08] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.09] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[16.09] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.15m | BallSpeed: 1.0/2.1
+
+[16.11] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.13] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.15] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.18] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.26m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[16.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.21] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.23] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.26] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.28] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.31] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.33] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.36] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.38] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.36m | Mode: CONTROL (Constraint: ON)
+
+[16.38] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.41] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.43] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.46] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.46] [Home_CM] DECISION: HOLD (All EVs < 0.05) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.04
+
+[16.47] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[16.47] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.28m | BallSpeed: 1.7/2.5
+
+[16.48] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.51] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.53] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.55] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.58] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.59] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.17m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[16.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.63] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.66] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.67] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[16.67] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.10m | BallSpeed: 1.8/2.7
+
+[16.68] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.71] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.73] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.76] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.78] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.79] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.04m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[16.81] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.83] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.86] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.88] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[16.88] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.01m | BallSpeed: 1.7/2.4
+
+[16.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.91] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.96] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.99] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.00m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[16.99] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[16.99] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.02] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.04] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.07] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.08] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[17.08] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.73m | BallSpeed: 1.3/2.5
+
+[17.10] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.13] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.15] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.19] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 0.84m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[17.20] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.23] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.25] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.28] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.29] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[17.29] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.94m | BallSpeed: 0.9/2.7
+
+[17.30] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.33] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.35] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.38] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.39] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.05m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[17.40] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.43] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.45] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.48] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.48] [Home_CM] DECISION: HOLD (All EVs < 0.05) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.04
+
+[17.50] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.53] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.55] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.58] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.60] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.14m | Mode: CONTROL (Constraint: ON)
+
+[17.60] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.63] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.65] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.68] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.70] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.73] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.75] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.78] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.80] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 0.80m | Mode: CONTROL (Constraint: ON)
+
+[17.80] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.83] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.85] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.89] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[17.89] [DRIBBLE-SKIP] Speed Limit Reached: 3.8 > 2.2
+
+[17.90] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.95] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[17.98] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.00] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 0.77m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[18.00] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.03] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.05] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.08] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.09] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[18.09] [DRIBBLE-SKIP] Speed Limit Reached: 2.8 > 2.2
+
+[18.10] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.13] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.15] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.20] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 1.18m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[18.20] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.23] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.25] [AgentBallHandler] Home_CM lost ball. Dist: 1.31
+
+[18.34] [MatchManager] Home_CM has the ball!
+
+[18.34] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.06, Angle: 14.23
+
+[18.34] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[18.34] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.06m | BallSpeed: 2.1/2.4
+
+[18.35] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.37] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.40] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.40] [ON-BALL] Home_CM | Speed: 0.2 | BallDist: 1.20m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[18.42] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.45] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.47] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.50] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.50] [Home_CM] DECISION: HOLD (All EVs < 0.05) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.05
+
+[18.52] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.55] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.57] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.59] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[18.59] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.82m | BallSpeed: 0.0/2.6
+
+[18.60] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.61] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.83m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[18.62] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.65] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.67] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.70] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.72] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.75] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.78] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.79] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[18.79] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.90m | BallSpeed: 0.4/2.7
+
+[18.80] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.81] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 0.91m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[18.83] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.85] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.90] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.95] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.98] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[18.99] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[18.99] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.04m | BallSpeed: 0.6/2.5
+
+[19.00] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.00] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.01] [ON-BALL] Home_CM | Speed: 0.3 | BallDist: 1.06m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[19.03] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.05] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.08] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.10] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.13] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.15] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.20] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[19.20] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.03m | BallSpeed: 0.7/2.7
+
+[19.21] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.21] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.05m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[19.23] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.25] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.28] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.31] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.33] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.36] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.38] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.41] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.41] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[19.41] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.24m | BallSpeed: 0.7/2.7
+
+[19.41] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.24m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[19.43] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.46] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.48] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.51] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.51] [Home_CM] DECISION: HOLD (All EVs < 0.05) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.05
+
+[19.53] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.56] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.58] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.62] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.40m | Mode: CONTROL (Constraint: ON)
+
+[19.63] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.66] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.68] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.71] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.73] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.76] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.77] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[19.77] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.27m | BallSpeed: 2.5/2.6
+
+[19.78] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.81] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.82] [ON-BALL] Home_CM | Speed: 0.6 | BallDist: 1.22m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[19.83] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.86] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.88] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.91] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.93] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.96] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[19.97] [DRIBBLE-DEBUG] Speed: 0.8 | Formula: (Lerp(0.5~2.0, 0.08)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[19.97] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.06m | BallSpeed: 2.3/2.9
+
+[19.98] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.01] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.02] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.02m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[20.03] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.06] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.08] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.11] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.13] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.15] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.18] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[20.18] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.01m | BallSpeed: 2.2/2.5
+
+[20.18] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.21] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.22] [ON-BALL] Home_CM | Speed: 0.4 | BallDist: 1.03m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[20.23] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.26] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.28] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.31] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.33] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.36] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.38] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[20.38] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.14m | BallSpeed: 1.7/2.6
+
+[20.39] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.41] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.43] [ON-BALL] Home_CM | Speed: 0.0 | BallDist: 1.19m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[20.43] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.46] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.49] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.51] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.51] [Home_CM] DECISION: HOLD (All EVs < 0.05) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.05
+
+[20.53] [AgentBallHandler] Home_CM lost ball. Dist: 1.32
+
+[20.58] [MatchManager] Home_CM has the ball!
+
+[20.58] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.08, Angle: 27.58
+
+[20.58] [DRIBBLE-DEBUG] Speed: 0.8 | Formula: (Lerp(0.5~2.0, 0.08)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[20.58] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.08m | BallSpeed: 1.7/2.9
+
+[20.59] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.61] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.63] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.15m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[20.64] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.66] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.69] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.72] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.74] [PASS-DIAG] Home_CM FindBestPassTarget=null (teammates=0)
+
+[20.75] <color=green>Away_CM2 SKILL: TACKLE on Home_CM</color>
+
+[20.75] <color=green>Away_CM2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[20.75] [TACKLE-IMPACT] Home_CM fumbled ball! Stunned for 1.5s. Power: 10
+
+[22.28] [MatchManager] Away_CM2 has the ball!
+
+[22.28] [AgentBallHandler] Away_CM2 CLAIMED BALL. Dist: 1.03, Angle: 14.79
+
+[22.28] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[22.28] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 1.03m | BallSpeed: 0.7/2.5
+
+[22.28] [ON-BALL] Away_CM2 | Speed: 0.5 | BallDist: 1.03m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[22.29] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.29] [Away_CM2] DECISION: DRIBBLE (0.10) - [EV] Shoot:0.00 | Pass:0.00 | Dribble:0.10
+
+[22.32] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.36] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.38] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.41] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.43] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.44] [SKILL] Home_CM activated DEFENSE BURST (Cooldown: 10.0s)
+
+[22.44] <color=green>Home_CM SKILL: DEFENSE BURST</color>
+
+[22.46] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.48] [DRIBBLE-DEBUG] Speed: 0.7 | Formula: (Lerp(0.5~2.0, 0.07)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[22.48] [DRIBBLE-SKIP] Speed Limit Reached: 9.1 > 2.9
+
+[22.48] [ON-BALL] Away_CM2 | Speed: 0.7 | BallDist: 0.71m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[22.48] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.51] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.54] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.57] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.60] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.63] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.66] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.69] [DRIBBLE-DEBUG] Speed: 11.8 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[22.69] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.68m | BallSpeed: 7.9/16.1
+
+[22.69] [ON-BALL] Away_CM2 | Speed: 11.8 | BallDist: 0.68m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[22.69] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.71] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+
+[22.74] [PASS-DIAG] Away_CM2 FindBestPassTarget=null (teammates=0)
+

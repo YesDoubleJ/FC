@@ -15,7 +15,7 @@ MonoBehaviour:
   DecisionInterval: 0.1
   ActionLockoutTime: 0.5
   ShootThreshold: 0.5
-  PassThreshold: 0.6
+  PassThreshold: 0.25
   DribbleThreshold: 0.3
   BaseDribbleScore: 0.4
   ReceiverTimeout: 3

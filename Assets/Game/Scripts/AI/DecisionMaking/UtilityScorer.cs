@@ -72,22 +72,31 @@ namespace Game.Scripts.AI.DecisionMaking
             if (teammate == null) return 0f;
 
             // 1. 거리 확률
+            // [FIX] 너무 가까워도 패널티 없음 — 짧은 패스는 당연히 성공률 높음
             float distance = Vector3.Distance(agent.transform.position, teammate.transform.position);
             float pDistance;
             if (distance < MinPassDist)
-                pDistance = 0.5f;    // 너무 가까우면 정확도 하락
+                pDistance = 0.85f;   // 짧은 패스: 충분히 높음
             else if (distance > MaxPassDist)
-                pDistance = 0.1f;    // 사정거리 초과
+                pDistance = 0.15f;   // 사정거리 초과
             else
-                pDistance = Mathf.Lerp(1.0f, 0.4f, Mathf.Clamp01((distance - MinPassDist) / (MaxPassDist - MinPassDist)));
+                pDistance = Mathf.Lerp(0.95f, 0.35f, Mathf.Clamp01((distance - MinPassDist) / (MaxPassDist - MinPassDist)));
 
-            // 2. 패스 경로 인터셉트 위험 감산
-            float pLane = 1.0f - CalculateInterceptionRisk(agent.transform.position, teammate.transform.position, 20f, opponents);
+            // 2. 패스 경로 인터셉트 위험
+            // [FIX] 이전: pLane = 1.0 - risk → risk=0.8이면 pLane=0.2로 폭락
+            //       수정: 리스크를 소프트하게 적용 (최대 0.5까지만 감산)
+            float interceptRisk = CalculateInterceptionRisk(agent.transform.position, teammate.transform.position, 20f, opponents);
+            float pLane = Mathf.Lerp(1.0f, 0.5f, interceptRisk); // 위험해도 최소 0.5 유지
 
             // 3. 패스 스탯 확률
-            float pStat = (stats != null) ? Mathf.Clamp01(stats.GetStat(StatType.Passing) / 100f) : 0.5f;
+            float pStat = (stats != null) ? Mathf.Clamp01(0.4f + stats.GetStat(StatType.Passing) / 100f * 0.6f) : 0.5f;
+            // [FIX] 스탯 10이면 0.46, 스탯 70이면 0.82, 스탯 99면 0.99
+            // 이전: GetStat/100 → 스탯 50 = 0.5, 3개 곱하면 너무 낮음
 
-            return Mathf.Clamp01(pDistance * pLane * pStat);
+            // [FIX] 가중 평균 방식: 세 값 곱셈 대신 가중 평균으로 완만하게
+            // 거리(40%) × 레인(30%) × 스탯(30%)
+            float pPass = pDistance * 0.4f + pLane * 0.3f + pStat * 0.3f;
+            return Mathf.Clamp01(pPass);
         }
 
         // =========================================================

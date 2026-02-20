@@ -1,0 +1,1343 @@
+Home_CM: Already on NavMesh at (10.00, 0.00, -5.00)
+
+Home_CB: Already on NavMesh at (6.00, 0.00, -14.00)
+
+Away_CM2: Already on NavMesh at (10.00, 0.00, 16.00)
+
+Away_CB: Already on NavMesh at (-6.00, 0.00, 26.00)
+
+Away_ST: Already on NavMesh at (0.00, 0.00, 12.00)
+
+Away_GK: Already on NavMesh at (0.00, 0.00, 48.00)
+
+Home_ST: Already on NavMesh at (0.00, 0.00, -1.00)
+
+Away_CB2: Already on NavMesh at (6.00, 0.00, 26.00)
+
+Home_CB2: Already on NavMesh at (-6.00, 0.00, -14.00)
+
+[0.00] Home_CM2: Already on NavMesh at (-10.00, 0.00, -5.00)
+
+[0.00] Away_CM: Already on NavMesh at (-10.00, 0.00, 16.00)
+
+[0.00] Home_GK: Already on NavMesh at (0.00, 0.00, -48.00)
+
+[0.00] <b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+[0.00] <color=red>[FAIL]</color> ShootScore_Close: Expected > 0.8, Got 0.50
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogError (object)
+Game.Scripts.Test.UtilityScorerTestRunner:Assert (string,bool,string) (at Assets/Game/Scripts/Test/UtilityScorerTestRunner.cs:97)
+Game.Scripts.Test.UtilityScorerTestRunner:RunTest_ShootScore_Close () (at Assets/Game/Scripts/Test/UtilityScorerTestRunner.cs:62)
+Game.Scripts.Test.UtilityScorerTestRunner:Start () (at Assets/Game/Scripts/Test/UtilityScorerTestRunner.cs:31)
+
+[0.00] <color=green>[PASS]</color> ShootScore_Far
+
+[0.00] <color=green>[PASS]</color> ShootScore_Angle
+
+[0.00] <b>[Unit Tests] Finished.</b>
+
+[0.00] [MatchManager] HOME KICK OFF!
+
+[0.00] [MatchManager] Ready...
+
+[2.00] [MatchManager] PLAY!
+
+[2.01] [MatchManager] Home_ST has the ball!
+
+[2.01] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.94, Angle: 10.26
+
+[2.01] [ON-BALL] Home_ST | Speed: 0.0 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[2.02] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[2.02] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.94m | BallSpeed: 0.0/2.6
+
+[2.02] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.02] [PASS-TARGET] Home_ST→Home_CB | pPass:0.83 posVal:0.35 ev:0.29
+
+[2.02] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.02] [Home_ST] DECISION: DRIBBLE (0.31) - [EV] Shoot:0.04 | Pass:0.30 | Dribble:0.31
+
+[2.06] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.06] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.06] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.08] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.08] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.08] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.11] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.11] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.11] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.14] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.14] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.14] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.16] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.16] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.16] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.18] [SKILL] Away_ST activated DEFENSE BURST (Cooldown: 10.0s)
+
+[2.18] <color=green>Away_ST SKILL: DEFENSE BURST</color>
+
+[2.19] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.19] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[2.19] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[2.21] [ON-BALL] Home_ST | Speed: 0.6 | BallDist: 0.68m | Mode: CONTROL (Constraint: ON)
+
+[2.22] [DRIBBLE-DEBUG] Speed: 0.8 | Formula: (Lerp(0.5~2.0, 0.08)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[2.22] [DRIBBLE-SKIP] Speed Limit Reached: 10.1 > 2.9
+
+[2.22] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.22] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.22] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.25] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.25] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.25] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.28] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.28] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.28] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.30] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.30] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.30] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.33] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.33] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.33] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.36] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.36] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[2.36] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.38] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.38] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.38] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.41] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.41] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.41] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.29
+
+[2.42] [ON-BALL] Home_ST | Speed: 0.4 | BallDist: 0.75m | Mode: CONTROL (Constraint: ON)
+
+[2.43] [DRIBBLE-DEBUG] Speed: 13.0 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[2.43] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.71m | BallSpeed: 7.4/17.6
+
+[2.44] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.44] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.44] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.35 ev:0.30
+
+[2.47] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.36 ev:0.30
+
+[2.47] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.47] [PASS-DIAG] Home_ST → Home_CM | pPass:0.84 posVal:0.36 ev:0.30
+
+[2.47] [PASS-TARGET] Home_ST→Home_CM | pPass:0.84 posVal:0.36 ev:0.30
+
+[2.47] [PASS-TARGET] Home_ST→Home_CB | pPass:0.80 posVal:0.35 ev:0.28
+
+[2.47] [KICK-DEBUG] PASS | Dist: 12.7m | Formula: (8.0 + 12.7*0.5 + 50*0.05) [Clamp: 16.9] * Scale:1.0 = 16.9
+
+[2.53] [Home_CM] Waiting for Incoming Pass...
+
+[2.54] <color=cyan>Home_CM is expecting a PASS at (9.52, 0.08, -1.42)!</color>
+
+[2.55] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[2.56] [KICK-EXEC] Home_ST Kicked! Force: 16.9, Mode: VelocityChange | Scale: 1.0
+
+[2.56] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[3.06] [MatchManager] Home_ST has the ball!
+
+[3.06] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.73, Angle: 31.84
+
+[3.06] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[3.06] [DRIBBLE-SKIP] Speed Limit Reached: 3.9 > 2.5
+
+[3.06] [ON-BALL] Home_ST | Speed: 0.4 | BallDist: 0.73m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[3.07] [PASS-TARGET] Home_ST→Home_CM | pPass:0.87 posVal:0.39 ev:0.34
+
+[3.07] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[3.07] [PASS-DIAG] Home_ST → Home_CM | pPass:0.87 posVal:0.39 ev:0.34
+
+[3.07] [PASS-TARGET] Home_ST→Home_CM | pPass:0.87 posVal:0.39 ev:0.34
+
+[3.07] [PASS-TARGET] Home_ST→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[3.07] [Home_ST] DECISION: PASS (0.34) - [EV] Shoot:0.04 | Pass:0.34 | Dribble:0.26
+
+[3.07] [KICK-DEBUG] PASS | Dist: 8.5m | Formula: (8.0 + 8.5*0.5 + 50*0.05) [Clamp: 14.8] * Scale:1.0 = 14.8
+
+[3.10] <color=cyan>Home_CM is expecting a PASS at (7.44, 0.08, -0.25)!</color>
+
+[3.11] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[3.12] [KICK-EXEC] Home_ST Kicked! Force: 14.8, Mode: VelocityChange | Scale: 1.0
+
+[3.12] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[3.62] [MatchManager] Home_ST has the ball!
+
+[3.62] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[3.62] [DRIBBLE-SKIP] Speed Limit Reached: 2.4 > 2.2
+
+[3.62] [ON-BALL] Home_ST | Speed: 0.2 | BallDist: 1.01m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[3.63] [Home_CM] Waiting for Incoming Pass...
+
+[3.64] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.42 ev:0.35
+
+[3.64] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[3.64] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.42 ev:0.35
+
+[3.64] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.42 ev:0.35
+
+[3.64] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[3.64] [KICK-DEBUG] PASS | Dist: 4.5m | Formula: (8.0 + 4.5*0.5 + 50*0.05) [Clamp: 12.8] * Scale:1.0 = 12.8
+
+[3.70] <color=cyan>Home_CM is expecting a PASS at (5.92, 0.08, -0.15)!</color>
+
+[3.72] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[3.72] [KICK-EXEC] Home_ST Kicked! Force: 12.8, Mode: VelocityChange | Scale: 1.0
+
+[3.72] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[4.08] [MatchManager] Home_CM has the ball!
+
+[4.08] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.04, Angle: 15.72
+
+[4.08] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[4.08] [DRIBBLE-SKIP] Speed Limit Reached: 3.1 > 2.6
+
+[4.08] [ON-BALL] Home_CM | Speed: 0.5 | BallDist: 1.04m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[4.10] [PASS-TARGET] Home_CM→Home_CB | pPass:0.88 posVal:0.35 ev:0.31
+
+[4.10] [PASS-TARGET] Home_CM→Home_ST | pPass:0.90 posVal:0.47 ev:0.43
+
+[4.10] [PASS-TARGET] Home_CM→Home_CB2 | pPass:0.86 posVal:0.35 ev:0.30
+
+[4.10] [PASS-TARGET] Home_CM→Home_CM2 | pPass:0.87 posVal:0.35 ev:0.30
+
+[4.10] [PASS-TARGET] Home_CM→Home_GK | pPass:0.62 posVal:0.35 ev:0.22
+
+[4.10] [PASS-DIAG] Home_CM → Home_ST | pPass:0.90 posVal:0.47 ev:0.43
+
+[4.10] [PASS-TARGET] Home_CM→Home_CB | pPass:0.88 posVal:0.35 ev:0.31
+
+[4.10] [PASS-TARGET] Home_CM→Home_ST | pPass:0.90 posVal:0.47 ev:0.43
+
+[4.10] [PASS-TARGET] Home_CM→Home_CB2 | pPass:0.86 posVal:0.35 ev:0.30
+
+[4.10] [PASS-TARGET] Home_CM→Home_CM2 | pPass:0.87 posVal:0.35 ev:0.30
+
+[4.10] [PASS-TARGET] Home_CM→Home_GK | pPass:0.62 posVal:0.35 ev:0.22
+
+[4.10] [KICK-DEBUG] PASS | Dist: 5.3m | Formula: (8.0 + 5.3*0.5 + 80*0.05) [Clamp: 14.7] * Scale:1.0 = 14.7
+
+[4.15] [Home_ST] Waiting for Incoming Pass...
+
+[4.18] <color=cyan>Home_ST is expecting a PASS at (0.21, 0.17, 0.92)!</color>
+
+[4.18] [HOLD-DIAG] Home_CM IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[4.20] [KICK-EXEC] Home_CM Kicked! Force: 14.7, Mode: VelocityChange | Scale: 1.0
+
+[4.20] [KICK-EXEC] Home_CM Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[4.40] [MatchManager] Home_ST has the ball!
+
+[4.40] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 1.04, Angle: 40.78
+
+[4.40] [DRIBBLE-DEBUG] Speed: 4.4 | Formula: (Lerp(0.5~2.0, 0.44)=1.2) * Scale:1.0 = 1.2 | Interval: 0.20s
+
+[4.40] [DRIBBLE-EXEC] Force: 1.2 (VelocityChange) | BallDist: 1.04m | BallSpeed: 4.7/7.3
+
+[4.40] [ON-BALL] Home_ST | Speed: 4.4 | BallDist: 1.04m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[4.41] <color=green>Away_ST SKILL: TACKLE on Home_ST</color>
+
+[4.41] <color=green>Away_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[4.41] [TACKLE-IMPACT] Home_ST fumbled ball! Stunned for 1.5s. Power: 10
+
+[5.91] [MatchManager] Home_ST has the ball!
+
+[5.91] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.68, Angle: 15.51
+
+[5.91] [DRIBBLE-DEBUG] Speed: 8.9 | Formula: (Lerp(0.5~2.0, 0.89)=1.8) * Scale:1.0 = 1.8 | Interval: 0.20s
+
+[5.91] [DRIBBLE-EXEC] Force: 1.8 (VelocityChange) | BallDist: 0.68m | BallSpeed: 4.3/12.6
+
+[5.91] [ON-BALL] Home_ST | Speed: 8.9 | BallDist: 0.68m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[5.93] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[5.93] [PASS-TARGET] Home_ST→Home_CB | pPass:0.83 posVal:0.35 ev:0.29
+
+[5.93] [PASS-DIAG] Home_ST → Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[5.93] [PASS-TARGET] Home_ST→Home_CM | pPass:0.85 posVal:0.35 ev:0.30
+
+[5.93] [PASS-TARGET] Home_ST→Home_CB | pPass:0.83 posVal:0.35 ev:0.29
+
+[5.93] [Home_ST] DECISION: PASS (0.30) - [EV] Shoot:0.04 | Pass:0.30 | Dribble:0.22
+
+[5.93] [KICK-DEBUG] PASS | Dist: 10.4m | Formula: (8.0 + 10.4*0.5 + 50*0.05) [Clamp: 15.7] * Scale:1.0 = 15.7
+
+[5.94] [Home_CM] Waiting for Incoming Pass...
+
+[5.94] <color=cyan>Home_CM is expecting a PASS at (8.07, 0.08, -6.52)!</color>
+
+[5.96] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[5.96] [KICK-FIX] Ball clipped inside player. Teleported to (-2.02, 0.25, -10.55)
+
+[5.96] [KICK-EXEC] Home_ST Kicked! Force: 15.7, Mode: VelocityChange | Scale: 1.0
+
+[5.96] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[6.46] [MatchManager] Home_ST has the ball!
+
+[6.46] [DRIBBLE-DEBUG] Speed: 0.5 | Formula: (Lerp(0.5~2.0, 0.05)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[6.46] [DRIBBLE-SKIP] Speed Limit Reached: 4.6 > 2.6
+
+[6.46] [ON-BALL] Home_ST | Speed: 0.5 | BallDist: 0.72m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[6.48] [PASS-TARGET] Home_ST→Home_CM | pPass:0.80 posVal:0.36 ev:0.29
+
+[6.48] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[6.48] [PASS-DIAG] Home_ST → Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[6.48] [PASS-TARGET] Home_ST→Home_CM | pPass:0.80 posVal:0.36 ev:0.29
+
+[6.48] [PASS-TARGET] Home_ST→Home_CB | pPass:0.82 posVal:0.35 ev:0.29
+
+[6.48] [KICK-DEBUG] PASS | Dist: 14.8m | Formula: (8.0 + 14.8*0.5 + 50*0.05) [Clamp: 17.9] * Scale:1.0 = 17.9
+
+[6.50] <color=cyan>Home_CB is expecting a PASS at (6.13, -1.13, -23.05)!</color>
+
+[6.50] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[6.52] [KICK-EXEC] Home_ST Kicked! Force: 17.9, Mode: VelocityChange | Scale: 1.0
+
+[6.52] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[7.14] [MatchManager] Home_ST has the ball!
+
+[7.14] [AgentBallHandler] Home_ST CLAIMED BALL. Dist: 0.68, Angle: 17.04
+
+[7.14] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[7.14] [DRIBBLE-SKIP] Speed Limit Reached: 4.9 > 2.2
+
+[7.14] [ON-BALL] Home_ST | Speed: 0.2 | BallDist: 0.68m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.15] [Home_CB] Waiting for Incoming Pass...
+
+[7.15] [PASS-TARGET] Home_ST→Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[7.15] [PASS-TARGET] Home_ST→Home_CB | pPass:0.86 posVal:0.35 ev:0.30
+
+[7.15] [PASS-DIAG] Home_ST → Home_CB | pPass:0.86 posVal:0.35 ev:0.30
+
+[7.15] [PASS-TARGET] Home_ST→Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[7.15] [PASS-TARGET] Home_ST→Home_CB | pPass:0.86 posVal:0.35 ev:0.30
+
+[7.15] [Home_ST] DECISION: PASS (0.30) - [EV] Shoot:0.03 | Pass:0.30 | Dribble:0.23
+
+[7.15] [KICK-DEBUG] PASS | Dist: 9.0m | Formula: (8.0 + 9.0*0.5 + 50*0.05) [Clamp: 15.0] * Scale:1.0 = 15.0
+
+[7.16] <color=cyan>Home_CB is expecting a PASS at (5.44, 0.08, -20.72)!</color>
+
+[7.16] [KICK-EXEC] Home_ST Kicked! Force: 15.0, Mode: VelocityChange | Scale: 1.0
+
+[7.16] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[7.66] [MatchManager] Home_ST has the ball!
+
+[7.66] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[7.66] [DRIBBLE-SKIP] Speed Limit Reached: 2.8 > 2.5
+
+[7.66] [ON-BALL] Home_ST | Speed: 0.4 | BallDist: 0.83m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[7.68] [PASS-TARGET] Home_ST→Home_CM | pPass:0.71 posVal:0.35 ev:0.25
+
+[7.68] [PASS-TARGET] Home_ST→Home_CB | pPass:0.85 posVal:0.35 ev:0.30
+
+[7.68] [PASS-DIAG] Home_ST → Home_CB | pPass:0.85 posVal:0.35 ev:0.30
+
+[7.68] [PASS-TARGET] Home_ST→Home_CM | pPass:0.71 posVal:0.35 ev:0.25
+
+[7.68] [PASS-TARGET] Home_ST→Home_CB | pPass:0.85 posVal:0.35 ev:0.30
+
+[7.68] [KICK-DEBUG] PASS | Dist: 4.9m | Formula: (8.0 + 4.9*0.5 + 50*0.05) [Clamp: 13.0] * Scale:1.0 = 13.0
+
+[7.69] [Home_CM] Waiting for Incoming Pass...
+
+[7.70] <color=cyan>Home_CB is expecting a PASS at (5.28, 0.08, -19.19)!</color>
+
+[7.71] [HOLD-DIAG] Home_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[7.72] [KICK-EXEC] Home_ST Kicked! Force: 13.0, Mode: VelocityChange | Scale: 1.0
+
+[7.72] [KICK-EXEC] Home_ST Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[8.24] [MatchManager] Home_CB has the ball!
+
+[8.24] [AgentBallHandler] Home_CB CLAIMED BALL. Dist: 1.07, Angle: 24.70
+
+[8.24] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[8.24] [DRIBBLE-SKIP] Speed Limit Reached: 2.6 > 2.5
+
+[8.24] [ON-BALL] Home_CB | Speed: 0.4 | BallDist: 1.07m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[8.26] [PASS-TARGET] Home_CB→Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[8.26] [PASS-DIAG] Home_CB → Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[8.26] [PASS-TARGET] Home_CB→Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[8.26] [Home_CB] DECISION: PASS (0.26) - [EV] Shoot:0.01 | Pass:0.26 | Dribble:0.14
+
+[8.26] [KICK-DEBUG] PASS | Dist: 5.9m | Formula: (8.0 + 5.9*0.5 + 50*0.05) [Clamp: 13.4] * Scale:1.0 = 13.4
+
+[8.34] <color=cyan>Home_CM is expecting a PASS at (5.36, 0.08, -12.95)!</color>
+
+[8.35] [HOLD-DIAG] Home_CB IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[8.36] [KICK-EXEC] Home_CB Kicked! Force: 13.4, Mode: VelocityChange | Scale: 1.0
+
+[8.36] [KICK-EXEC] Home_CB Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[8.44] [MatchManager] Away_ST has the ball!
+
+[8.44] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.67, Angle: 31.47
+
+[8.44] [DRIBBLE-DEBUG] Speed: 2.4 | Formula: (Lerp(0.5~2.0, 0.24)=0.9) * Scale:1.0 = 0.9 | Interval: 0.20s
+
+[8.44] [DRIBBLE-EXEC] Force: 0.9 (VelocityChange) | BallDist: 0.67m | BallSpeed: 2.6/4.8
+
+[8.44] [ON-BALL] Away_ST | Speed: 2.4 | BallDist: 0.67m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[8.44] [HOLD-DIAG] Away_ST IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[8.45] <color=green>Home_CB SKILL: TACKLE on Away_ST</color>
+
+[8.45] <color=green>Home_CB SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[8.45] [TACKLE-IMPACT] Away_ST fumbled ball! Stunned for 1.5s. Power: 10
+
+[9.38] [MatchManager] Home_CB has the ball!
+
+[9.38] [AgentBallHandler] Home_CB CLAIMED BALL. Dist: 1.10, Angle: 20.71
+
+[9.38] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[9.38] [DRIBBLE-SKIP] Speed Limit Reached: 3.5 > 2.4
+
+[9.38] [ON-BALL] Home_CB | Speed: 0.3 | BallDist: 1.10m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[9.38] [PASS-TARGET] Home_CB→Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[9.38] [PASS-DIAG] Home_CB → Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[9.38] [PASS-TARGET] Home_CB→Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[9.38] [Home_CB] DECISION: PASS (0.26) - [EV] Shoot:0.01 | Pass:0.26 | Dribble:0.15
+
+[9.38] [KICK-DEBUG] PASS | Dist: 2.3m | Formula: (8.0 + 2.3*0.5 + 50*0.05) [Clamp: 11.7] * Scale:1.0 = 11.7
+
+[9.51] [Home_CM] Waiting for Incoming Pass...
+
+[9.58] [ON-BALL] Home_CB | Speed: 0.5 | BallDist: 0.82m | Mode: CONTROL (Constraint: ON)
+
+[9.79] [ON-BALL] Home_CB | Speed: 0.0 | BallDist: 0.82m | Mode: CONTROL (Constraint: ON)
+
+[9.86] Home_CB Kick Preparation TIMEOUT. Forcing Kick despite existing alignment error.
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogWarning (object)
+Game.Scripts.AI.AgentBallHandler:UpdateKickLogic () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:847)
+Game.Scripts.AI.AgentBallHandler:Tick () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:161)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:169)
+
+[9.86] <color=cyan>Home_CM is expecting a PASS at (5.61, 0.08, -16.20)!</color>
+
+[9.86] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[9.86] [DRIBBLE-SKIP] Speed Limit Reached: 2.5 > 2.2
+
+[9.86] [HOLD-DIAG] Home_CB IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[9.86] [KICK-EXEC] Home_CB Kicked! Force: 11.7, Mode: VelocityChange | Scale: 1.0
+
+[9.86] [KICK-EXEC] Home_CB Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[10.30] [MatchManager] Away_ST has the ball!
+
+[10.30] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.72, Angle: 35.12
+
+[10.30] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[10.30] [DRIBBLE-SKIP] Speed Limit Reached: 4.8 > 2.2
+
+[10.30] [ON-BALL] Away_ST | Speed: 0.1 | BallDist: 0.72m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[10.30] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.67 posVal:0.35 ev:0.23
+
+[10.30] [PASS-TARGET] Away_ST→Away_CB | pPass:0.67 posVal:0.36 ev:0.24
+
+[10.30] [PASS-DIAG] Away_ST → Away_CB | pPass:0.67 posVal:0.36 ev:0.24
+
+[10.30] [Away_ST] DECISION: DRIBBLE (0.37) - [EV] Shoot:0.05 | Pass:0.24 | Dribble:0.37
+
+[10.33] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.67 posVal:0.35 ev:0.24
+
+[10.33] [PASS-TARGET] Away_ST→Away_CB | pPass:0.67 posVal:0.35 ev:0.24
+
+[10.33] [PASS-DIAG] Away_ST → Away_CB | pPass:0.67 posVal:0.35 ev:0.24
+
+[10.36] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.66 posVal:0.36 ev:0.24
+
+[10.36] [PASS-TARGET] Away_ST→Away_CB | pPass:0.68 posVal:0.35 ev:0.24
+
+[10.36] [PASS-DIAG] Away_ST → Away_CB | pPass:0.68 posVal:0.35 ev:0.24
+
+[10.39] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.66 posVal:0.36 ev:0.24
+
+[10.39] [PASS-TARGET] Away_ST→Away_CB | pPass:0.69 posVal:0.35 ev:0.24
+
+[10.39] [PASS-DIAG] Away_ST → Away_CB | pPass:0.69 posVal:0.35 ev:0.24
+
+[10.41] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.66 posVal:0.36 ev:0.24
+
+[10.41] [PASS-TARGET] Away_ST→Away_CB | pPass:0.74 posVal:0.35 ev:0.26
+
+[10.41] [PASS-DIAG] Away_ST → Away_CB | pPass:0.74 posVal:0.35 ev:0.26
+
+[10.44] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.66 posVal:0.36 ev:0.24
+
+[10.44] [PASS-TARGET] Away_ST→Away_CB | pPass:0.70 posVal:0.35 ev:0.25
+
+[10.44] [PASS-DIAG] Away_ST → Away_CB | pPass:0.70 posVal:0.35 ev:0.25
+
+[10.47] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.66 posVal:0.36 ev:0.24
+
+[10.47] [PASS-TARGET] Away_ST→Away_CB | pPass:0.73 posVal:0.35 ev:0.26
+
+[10.47] [PASS-DIAG] Away_ST → Away_CB | pPass:0.73 posVal:0.35 ev:0.26
+
+[10.50] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.67 posVal:0.37 ev:0.24
+
+[10.50] [PASS-TARGET] Away_ST→Away_CB | pPass:0.73 posVal:0.35 ev:0.26
+
+[10.50] [PASS-DIAG] Away_ST → Away_CB | pPass:0.73 posVal:0.35 ev:0.26
+
+[10.51] [DRIBBLE-DEBUG] Speed: 13.8 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[10.51] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.67m | BallSpeed: 10.6/18.6
+
+[10.51] [ON-BALL] Away_ST | Speed: 13.8 | BallDist: 0.67m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[10.53] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.67 posVal:0.37 ev:0.25
+
+[10.53] [PASS-TARGET] Away_ST→Away_CB | pPass:0.73 posVal:0.35 ev:0.26
+
+[10.53] [PASS-DIAG] Away_ST → Away_CB | pPass:0.73 posVal:0.35 ev:0.26
+
+[10.55] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.67 posVal:0.37 ev:0.25
+
+[10.55] [PASS-TARGET] Away_ST→Away_CB | pPass:0.73 posVal:0.35 ev:0.25
+
+[10.55] [PASS-DIAG] Away_ST → Away_CB | pPass:0.73 posVal:0.35 ev:0.25
+
+[10.58] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.67 posVal:0.38 ev:0.25
+
+[10.58] [PASS-TARGET] Away_ST→Away_CB | pPass:0.68 posVal:0.35 ev:0.24
+
+[10.58] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.67 posVal:0.38 ev:0.25
+
+[10.61] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.67 posVal:0.38 ev:0.26
+
+[10.61] [PASS-TARGET] Away_ST→Away_CB | pPass:0.67 posVal:0.35 ev:0.23
+
+[10.61] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.67 posVal:0.38 ev:0.26
+
+[10.64] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.68 posVal:0.39 ev:0.26
+
+[10.64] [PASS-TARGET] Away_ST→Away_CB | pPass:0.66 posVal:0.35 ev:0.23
+
+[10.64] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.68 posVal:0.39 ev:0.26
+
+[10.65] [SKILL] Home_ST activated DEFENSE BURST (Cooldown: 10.0s)
+
+[10.65] <color=green>Home_ST SKILL: DEFENSE BURST</color>
+
+[10.66] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.68 posVal:0.39 ev:0.26
+
+[10.66] [PASS-TARGET] Away_ST→Away_CB | pPass:0.65 posVal:0.35 ev:0.23
+
+[10.66] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.68 posVal:0.39 ev:0.26
+
+[10.69] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.68 posVal:0.39 ev:0.27
+
+[10.69] [PASS-TARGET] Away_ST→Away_CB | pPass:0.64 posVal:0.36 ev:0.23
+
+[10.69] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.68 posVal:0.39 ev:0.27
+
+[10.71] [DRIBBLE-DEBUG] Speed: 13.3 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[10.71] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.67m | BallSpeed: 9.3/17.9
+
+[10.71] [ON-BALL] Away_ST | Speed: 13.3 | BallDist: 0.67m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[10.72] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.68 posVal:0.40 ev:0.27
+
+[10.72] [PASS-TARGET] Away_ST→Away_CB | pPass:0.64 posVal:0.36 ev:0.23
+
+[10.72] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.68 posVal:0.40 ev:0.27
+
+[10.74] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.69 posVal:0.40 ev:0.28
+
+[10.74] [PASS-TARGET] Away_ST→Away_CB | pPass:0.62 posVal:0.36 ev:0.23
+
+[10.74] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.69 posVal:0.40 ev:0.28
+
+[10.77] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.69 posVal:0.40 ev:0.28
+
+[10.77] [PASS-TARGET] Away_ST→Away_CB | pPass:0.62 posVal:0.37 ev:0.23
+
+[10.77] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.69 posVal:0.40 ev:0.28
+
+[10.79] [SKILL] Home_CB2 activated DEFENSE BURST (Cooldown: 10.0s)
+
+[10.79] <color=green>Home_CB2 SKILL: DEFENSE BURST</color>
+
+[10.80] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.69 posVal:0.41 ev:0.28
+
+[10.80] [PASS-TARGET] Away_ST→Away_CB | pPass:0.61 posVal:0.37 ev:0.23
+
+[10.80] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.69 posVal:0.41 ev:0.28
+
+[10.83] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.41 ev:0.29
+
+[10.83] [PASS-TARGET] Away_ST→Away_CB | pPass:0.60 posVal:0.38 ev:0.23
+
+[10.83] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.41 ev:0.29
+
+[10.85] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.41 ev:0.29
+
+[10.85] [PASS-TARGET] Away_ST→Away_CB | pPass:0.60 posVal:0.38 ev:0.23
+
+[10.85] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.41 ev:0.29
+
+[10.88] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.42 ev:0.29
+
+[10.88] [PASS-TARGET] Away_ST→Away_CB | pPass:0.59 posVal:0.39 ev:0.23
+
+[10.88] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.42 ev:0.29
+
+[10.91] [DRIBBLE-DEBUG] Speed: 13.5 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[10.91] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.67m | BallSpeed: 9.5/18.2
+
+[10.91] [ON-BALL] Away_ST | Speed: 13.5 | BallDist: 0.67m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[10.91] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.42 ev:0.30
+
+[10.91] [PASS-TARGET] Away_ST→Away_CB | pPass:0.59 posVal:0.39 ev:0.23
+
+[10.91] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.42 ev:0.30
+
+[10.94] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.42 ev:0.30
+
+[10.94] [PASS-TARGET] Away_ST→Away_CB | pPass:0.59 posVal:0.39 ev:0.23
+
+[10.94] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.42 ev:0.30
+
+[10.96] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.43 ev:0.30
+
+[10.96] [PASS-TARGET] Away_ST→Away_CB | pPass:0.58 posVal:0.40 ev:0.23
+
+[10.96] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.43 ev:0.30
+
+[10.99] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.43 ev:0.30
+
+[10.99] [PASS-TARGET] Away_ST→Away_CB | pPass:0.58 posVal:0.40 ev:0.23
+
+[10.99] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.43 ev:0.30
+
+[11.02] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.43 ev:0.30
+
+[11.02] [PASS-TARGET] Away_ST→Away_CB | pPass:0.58 posVal:0.40 ev:0.23
+
+[11.02] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.43 ev:0.30
+
+[11.05] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.44 ev:0.31
+
+[11.05] [PASS-TARGET] Away_ST→Away_CB | pPass:0.58 posVal:0.41 ev:0.24
+
+[11.05] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.44 ev:0.31
+
+[11.07] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.70 posVal:0.44 ev:0.31
+
+[11.07] [PASS-TARGET] Away_ST→Away_CB | pPass:0.59 posVal:0.41 ev:0.24
+
+[11.07] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.70 posVal:0.44 ev:0.31
+
+[11.07] [KICK-DEBUG] SHOOT | Dist: 27.5m | Formula: (15.0 + 27.5*0.8 + 75*0.1) [Clamp: 40.0] * Scale:1.0 = 40.0
+
+[11.10] [KICK-EXEC] Away_ST Kicked! Force: 40.0, Mode: VelocityChange | Scale: 1.0
+
+[11.10] [KICK-EXEC] Away_ST Kicked! Relinquishing Possession. Cooldown:1.0s
+
+[12.20] [MatchManager] Away_ST has the ball!
+
+[12.20] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.69, Angle: 14.35
+
+[12.20] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[12.20] [DRIBBLE-SKIP] Speed Limit Reached: 4.8 > 2.2
+
+[12.20] [ON-BALL] Away_ST | Speed: 0.1 | BallDist: 0.69m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[12.20] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.63 posVal:0.45 ev:0.28
+
+[12.20] [PASS-TARGET] Away_ST→Away_CB | pPass:0.58 posVal:0.43 ev:0.25
+
+[12.20] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.63 posVal:0.45 ev:0.28
+
+[12.20] [KICK-DEBUG] SHOOT | Dist: 20.9m | Formula: (15.0 + 20.9*0.8 + 75*0.1) [Clamp: 39.2] * Scale:1.0 = 39.2
+
+[12.20] [Away_ST] SHOOT at (3.16, 0.00, -50.00)
+
+[12.21] [SKILL] Home_CM activated DEFENSE BURST (Cooldown: 10.0s)
+
+[12.21] <color=green>Home_CM SKILL: DEFENSE BURST</color>
+
+[12.22] [KICK-EXEC] Away_ST Kicked! Force: 39.2, Mode: VelocityChange | Scale: 1.0
+
+[12.22] [KICK-EXEC] Away_ST Kicked! Relinquishing Possession. Cooldown:1.0s
+
+[13.48] [MatchManager] Away_ST has the ball!
+
+[13.48] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.68, Angle: 14.31
+
+[13.48] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[13.48] [DRIBBLE-SKIP] Speed Limit Reached: 4.9 > 2.7
+
+[13.48] [ON-BALL] Away_ST | Speed: 0.6 | BallDist: 0.68m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[13.49] [SKILL] Home_CB activated DEFENSE BURST (Cooldown: 10.0s)
+
+[13.49] <color=green>Home_CB SKILL: DEFENSE BURST</color>
+
+[13.50] [SKILL] Home_CM2 activated DEFENSE BURST (Cooldown: 10.0s)
+
+[13.50] <color=green>Home_CM2 SKILL: DEFENSE BURST</color>
+
+[13.50] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.67 posVal:0.46 ev:0.31
+
+[13.50] [PASS-TARGET] Away_ST→Away_CB | pPass:0.57 posVal:0.45 ev:0.26
+
+[13.50] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.67 posVal:0.46 ev:0.31
+
+[13.50] [KICK-DEBUG] SHOOT | Dist: 14.5m | Formula: (15.0 + 14.5*0.8 + 75*0.1) [Clamp: 34.1] * Scale:1.0 = 34.1
+
+[13.50] [Away_ST] SHOOT at (-3.16, 0.00, -50.00)
+
+[13.52] [KICK-EXEC] Away_ST Kicked! Force: 34.1, Mode: VelocityChange | Scale: 1.0
+
+[13.52] [KICK-EXEC] Away_ST Kicked! Relinquishing Possession. Cooldown:1.0s
+
+[14.52] [MatchManager] Away_ST has the ball!
+
+[14.52] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.73, Angle: 13.32
+
+[14.52] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[14.52] [DRIBBLE-SKIP] Speed Limit Reached: 4.4 > 2.4
+
+[14.52] [ON-BALL] Away_ST | Speed: 0.3 | BallDist: 0.73m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[14.53] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.62 posVal:0.46 ev:0.28
+
+[14.53] [PASS-TARGET] Away_ST→Away_CB | pPass:0.54 posVal:0.45 ev:0.24
+
+[14.53] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.62 posVal:0.46 ev:0.28
+
+[14.53] [KICK-DEBUG] SHOOT | Dist: 8.3m | Formula: (15.0 + 8.3*0.8 + 75*0.1) [Clamp: 29.1] * Scale:1.0 = 29.1
+
+[14.53] [Away_ST] SHOOT at (3.16, 0.00, -50.00)
+
+[14.56] [KICK-FIX] Ball clipped inside player. Teleported to (0.02, 0.25, -43.04)
+
+[14.56] [KICK-EXEC] Away_ST Kicked! Force: 29.1, Mode: VelocityChange | Scale: 1.0
+
+[14.56] [KICK-EXEC] Away_ST Kicked! Relinquishing Possession. Cooldown:1.0s
+
+[14.80] [MatchManager] Home_GK has the ball!
+
+[14.80] [AgentBallHandler] Home_GK CLAIMED BALL. Dist: 0.96, Angle: 10.13
+
+[14.80] [DRIBBLE-DEBUG] Speed: 0.7 | Formula: (Lerp(0.5~2.0, 0.07)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[14.80] [DRIBBLE-SKIP] Speed Limit Reached: 4.7 > 2.9
+
+[14.80] [ON-BALL] Home_GK | Speed: 0.7 | BallDist: 0.96m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[14.81] [PASS-TARGET] Home_GK→Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[14.81] [PASS-TARGET] Home_GK→Home_CB | pPass:0.74 posVal:0.35 ev:0.26
+
+[14.81] [PASS-TARGET] Home_GK→Home_ST | pPass:0.73 posVal:0.35 ev:0.25
+
+[14.81] [PASS-TARGET] Home_GK→Home_CB2 | pPass:0.88 posVal:0.35 ev:0.31
+
+[14.81] [PASS-TARGET] Home_GK→Home_CM2 | pPass:0.77 posVal:0.35 ev:0.27
+
+[14.81] [PASS-DIAG] Home_GK → Home_CB2 | pPass:0.88 posVal:0.35 ev:0.31
+
+[14.81] [PASS-TARGET] Home_GK→Home_CM | pPass:0.74 posVal:0.35 ev:0.26
+
+[14.81] [PASS-TARGET] Home_GK→Home_CB | pPass:0.74 posVal:0.35 ev:0.26
+
+[14.81] [PASS-TARGET] Home_GK→Home_ST | pPass:0.73 posVal:0.35 ev:0.25
+
+[14.81] [PASS-TARGET] Home_GK→Home_CB2 | pPass:0.88 posVal:0.35 ev:0.31
+
+[14.81] [PASS-TARGET] Home_GK→Home_CM2 | pPass:0.77 posVal:0.35 ev:0.27
+
+[14.81] [Home_GK] DECISION: PASS (0.31) - [EV] Shoot:0.02 | Pass:0.31 | Dribble:0.13
+
+[14.81] [KICK-DEBUG] PASS | Dist: 7.1m | Formula: (8.0 + 7.1*0.5 + 50*0.05) [Clamp: 14.1] * Scale:1.0 = 14.1
+
+[15.01] [ON-BALL] Home_GK | Speed: 9.0 | BallDist: 0.69m | Mode: RUNNING (Constraint: OFF)
+
+[15.10] <color=cyan>Home_CB2 is expecting a PASS at (-6.00, 0.08, -44.51)!</color>
+
+[15.10] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[15.10] [DRIBBLE-SKIP] Speed Limit Reached: 2.8 > 2.4
+
+[15.12] [HOLD-DIAG] Home_GK IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[15.12] [KICK-EXEC] Home_GK Kicked! Force: 14.1, Mode: VelocityChange | Scale: 1.0
+
+[15.12] [KICK-EXEC] Home_GK Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[15.56] [MatchManager] Away_ST has the ball!
+
+[15.56] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.63, Angle: 17.33
+
+[15.56] [DRIBBLE-DEBUG] Speed: 10.8 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[15.56] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 0.63m | BallSpeed: 2.7/14.9
+
+[15.56] [ON-BALL] Away_ST | Speed: 10.8 | BallDist: 0.63m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[15.58] [HOLD-DIAG] Away_ST IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[15.61] [HOLD-DIAG] Away_ST IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[15.64] [HOLD-DIAG] Away_ST IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[15.67] [HOLD-DIAG] Away_ST IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[15.69] [HOLD-DIAG] Away_ST IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[15.72] [HOLD-DIAG] Away_ST IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[15.75] [HOLD-DIAG] Away_ST IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[15.77] [ON-BALL] Away_ST | Speed: 0.0 | BallDist: 1.47m | Mode: CONTROL (Constraint: ON)
+
+[15.78] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.57 posVal:0.49 ev:0.28
+
+[15.78] [PASS-TARGET] Away_ST→Away_CB | pPass:0.60 posVal:0.46 ev:0.28
+
+[15.78] [PASS-DIAG] Away_ST → Away_CB | pPass:0.60 posVal:0.46 ev:0.28
+
+[15.78] [KICK-DEBUG] SHOOT | Dist: 6.4m | Formula: (15.0 + 6.4*0.8 + 75*0.1) [Clamp: 27.6] * Scale:1.0 = 27.6
+
+[15.78] [Away_ST] SHOOT at (3.16, 0.00, -50.00)
+
+[15.79] <color=green>Home_CB2 SKILL: TACKLE on Away_ST</color>
+
+[15.79] <color=green>Home_CB2 SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[15.79] [TACKLE-IMPACT] Away_ST fumbled ball! Stunned for 1.5s. Power: 10
+
+[15.79] [ACTION] Home_CB2 is attempting TACKLE on Away_ST (Dist: 1.97)
+
+[15.81] [AgentBallHandler] Home_GK CLAIMED BALL. Dist: 0.84, Angle: 41.04
+
+[16.23] Away_ST Kick Preparation TIMEOUT. Forcing Kick despite existing alignment error.
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogWarning (object)
+Game.Scripts.AI.AgentBallHandler:UpdateKickLogic () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:847)
+Game.Scripts.AI.AgentBallHandler:Tick () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:161)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:169)
+
+[16.24] [KICK-EXEC] Away_ST Kicked! Force: 27.6, Mode: VelocityChange | Scale: 1.0
+
+[16.24] [KICK-EXEC] Away_ST Kicked! Relinquishing Possession. Cooldown:1.0s
+
+[16.46] [MatchManager] Home_GK has the ball!
+
+[16.46] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[16.46] [DRIBBLE-SKIP] Speed Limit Reached: 5.0 > 2.5
+
+[16.46] [ON-BALL] Home_GK | Speed: 0.4 | BallDist: 0.83m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[16.47] [PASS-TARGET] Home_GK→Home_CM | pPass:0.82 posVal:0.35 ev:0.29
+
+[16.47] [PASS-TARGET] Home_GK→Home_CB | pPass:0.79 posVal:0.35 ev:0.28
+
+[16.47] [PASS-TARGET] Home_GK→Home_ST | pPass:0.74 posVal:0.35 ev:0.26
+
+[16.47] [PASS-TARGET] Home_GK→Home_CB2 | pPass:0.78 posVal:0.35 ev:0.27
+
+[16.47] [PASS-TARGET] Home_GK→Home_CM2 | pPass:0.69 posVal:0.35 ev:0.24
+
+[16.47] [PASS-DIAG] Home_GK → Home_CM | pPass:0.82 posVal:0.35 ev:0.29
+
+[16.47] [PASS-TARGET] Home_GK→Home_CM | pPass:0.82 posVal:0.35 ev:0.29
+
+[16.47] [PASS-TARGET] Home_GK→Home_CB | pPass:0.79 posVal:0.35 ev:0.28
+
+[16.47] [PASS-TARGET] Home_GK→Home_ST | pPass:0.74 posVal:0.35 ev:0.26
+
+[16.47] [PASS-TARGET] Home_GK→Home_CB2 | pPass:0.78 posVal:0.35 ev:0.27
+
+[16.47] [PASS-TARGET] Home_GK→Home_CM2 | pPass:0.69 posVal:0.35 ev:0.24
+
+[16.47] [Home_GK] DECISION: PASS (0.29) - [EV] Shoot:0.02 | Pass:0.29 | Dribble:0.15
+
+[16.47] [KICK-DEBUG] PASS | Dist: 15.3m | Formula: (8.0 + 15.3*0.5 + 50*0.05) [Clamp: 18.2] * Scale:1.0 = 18.2
+
+[16.48] [Home_CB2] Waiting for Incoming Pass...
+
+[16.66] [ON-BALL] Home_GK | Speed: 0.2 | BallDist: 1.05m | Mode: CONTROL (Constraint: ON)
+
+[16.87] [ON-BALL] Home_GK | Speed: 0.0 | BallDist: 1.12m | Mode: CONTROL (Constraint: ON)
+
+[16.93] Home_GK Kick Preparation TIMEOUT. Forcing Kick despite existing alignment error.
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogWarning (object)
+Game.Scripts.AI.AgentBallHandler:UpdateKickLogic () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:847)
+Game.Scripts.AI.AgentBallHandler:Tick () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:161)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:169)
+Game.Scripts.AI.GoalkeeperController:Update () (at Assets/Game/Scripts/AI/GoalkeeperController.cs:81)
+
+[16.93] <color=cyan>Home_CM is expecting a PASS at (10.00, 0.08, -35.00)!</color>
+
+[16.93] [HOLD-DIAG] Home_GK IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[16.94] [KICK-EXEC] Home_GK Kicked! Force: 18.2, Mode: VelocityChange | Scale: 1.0
+
+[16.94] [KICK-EXEC] Home_GK Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[17.49] [MatchManager] Home_CB has the ball!
+
+[17.49] [AgentBallHandler] Home_CB CLAIMED BALL. Dist: 1.09, Angle: 10.44
+
+[17.49] [DRIBBLE-DEBUG] Speed: 10.5 | Formula: (Lerp(0.5~2.0, 1.00)=2.0) * Scale:1.0 = 2.0 | Interval: 0.20s
+
+[17.49] [DRIBBLE-EXEC] Force: 2.0 (VelocityChange) | BallDist: 1.09m | BallSpeed: 1.8/14.6
+
+[17.49] [ON-BALL] Home_CB | Speed: 10.5 | BallDist: 1.09m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[17.49] [HOLD-DIAG] Home_CB IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[17.50] [Home_CM] Waiting for Incoming Pass...
+
+[17.52] [HOLD-DIAG] Home_CB IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[17.55] [HOLD-DIAG] Home_CB IsBusy=True PendingKick=False MoverBusy=True → Hold
+
+[17.58] [PASS-TARGET] Home_CB→Home_CM | pPass:0.87 posVal:0.35 ev:0.31
+
+[17.58] [PASS-DIAG] Home_CB → Home_CM | pPass:0.87 posVal:0.35 ev:0.31
+
+[17.58] [PASS-TARGET] Home_CB→Home_CM | pPass:0.87 posVal:0.35 ev:0.31
+
+[17.58] [Home_CB] DECISION: PASS (0.31) - [EV] Shoot:0.01 | Pass:0.31 | Dribble:0.13
+
+[17.58] [KICK-DEBUG] PASS | Dist: 7.6m | Formula: (8.0 + 7.6*0.5 + 50*0.05) [Clamp: 14.3] * Scale:1.0 = 14.3
+
+[17.69] [ON-BALL] Home_CB | Speed: 0.4 | BallDist: 0.94m | Mode: CONTROL (Constraint: ON)
+
+[17.89] [ON-BALL] Home_CB | Speed: 0.1 | BallDist: 0.70m | Mode: CONTROL (Constraint: ON)
+
+[17.97] [SKILL] Away_ST activated DEFENSE BURST (Cooldown: 10.0s)
+
+[17.97] <color=green>Away_ST SKILL: DEFENSE BURST</color>
+
+[18.05] Home_CB Kick Preparation TIMEOUT. Forcing Kick despite existing alignment error.
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogWarning (object)
+Game.Scripts.AI.AgentBallHandler:UpdateKickLogic () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:847)
+Game.Scripts.AI.AgentBallHandler:Tick () (at Assets/Game/Scripts/AI/AgentBallHandler.cs:161)
+Game.Scripts.AI.HybridAgentController:Update () (at Assets/Game/Scripts/AI/HybridAgentController.cs:169)
+
+[18.05] <color=cyan>Home_CM is expecting a PASS at (9.46, 0.08, -38.38)!</color>
+
+[18.05] [HOLD-DIAG] Home_CB IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[18.06] [DRIBBLE-DEBUG] Speed: 0.8 | Formula: (Lerp(0.5~2.0, 0.08)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[18.06] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.72m | BallSpeed: 1.4/2.9
+
+[18.06] [KICK-EXEC] Home_CB Kicked! Force: 14.3, Mode: VelocityChange | Scale: 1.0
+
+[18.06] [KICK-EXEC] Home_CB Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[18.56] [MatchManager] Home_CB has the ball!
+
+[18.56] [AgentBallHandler] Home_CB CLAIMED BALL. Dist: 0.69, Angle: 30.91
+
+[18.56] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[18.56] [DRIBBLE-SKIP] Speed Limit Reached: 4.7 > 2.7
+
+[18.56] [ON-BALL] Home_CB | Speed: 0.6 | BallDist: 0.69m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[18.57] [Home_CM] Waiting for Incoming Pass...
+
+[18.57] [PASS-TARGET] Home_CB→Home_CM | pPass:0.88 posVal:0.35 ev:0.31
+
+[18.57] [PASS-DIAG] Home_CB → Home_CM | pPass:0.88 posVal:0.35 ev:0.31
+
+[18.57] [PASS-TARGET] Home_CB→Home_CM | pPass:0.88 posVal:0.35 ev:0.31
+
+[18.57] [KICK-DEBUG] PASS | Dist: 5.7m | Formula: (8.0 + 5.7*0.5 + 50*0.05) [Clamp: 13.4] * Scale:1.0 = 13.4
+
+[18.58] <color=cyan>Home_CM is expecting a PASS at (10.47, 0.08, -38.67)!</color>
+
+[18.58] [KICK-EXEC] Home_CB Kicked! Force: 13.4, Mode: VelocityChange | Scale: 1.0
+
+[18.58] [KICK-EXEC] Home_CB Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[19.26] [MatchManager] Home_CM has the ball!
+
+[19.26] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.09, Angle: 12.51
+
+[19.26] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[19.26] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.09m | BallSpeed: 1.8/2.1
+
+[19.26] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.09m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[19.28] [PASS-TARGET] Home_CM→Home_CB | pPass:0.90 posVal:0.35 ev:0.32
+
+[19.28] [PASS-TARGET] Home_CM→Home_ST | pPass:0.88 posVal:0.35 ev:0.31
+
+[19.28] [PASS-TARGET] Home_CM→Home_CB2 | pPass:0.76 posVal:0.35 ev:0.27
+
+[19.28] [PASS-TARGET] Home_CM→Home_CM2 | pPass:0.84 posVal:0.35 ev:0.30
+
+[19.28] [PASS-TARGET] Home_CM→Home_GK | pPass:0.86 posVal:0.35 ev:0.30
+
+[19.28] [PASS-DIAG] Home_CM → Home_CB | pPass:0.90 posVal:0.35 ev:0.32
+
+[19.28] [PASS-TARGET] Home_CM→Home_CB | pPass:0.90 posVal:0.35 ev:0.32
+
+[19.28] [PASS-TARGET] Home_CM→Home_ST | pPass:0.88 posVal:0.35 ev:0.31
+
+[19.28] [PASS-TARGET] Home_CM→Home_CB2 | pPass:0.76 posVal:0.35 ev:0.27
+
+[19.28] [PASS-TARGET] Home_CM→Home_CM2 | pPass:0.84 posVal:0.35 ev:0.30
+
+[19.28] [PASS-TARGET] Home_CM→Home_GK | pPass:0.86 posVal:0.35 ev:0.30
+
+[19.28] [KICK-DEBUG] PASS | Dist: 4.1m | Formula: (8.0 + 4.1*0.5 + 80*0.05) [Clamp: 14.1] * Scale:1.0 = 14.1
+
+[19.35] [Home_CB] Waiting for Incoming Pass...
+
+[19.38] <color=cyan>Home_CB is expecting a PASS at (6.73, 0.15, -42.38)!</color>
+
+[19.40] [HOLD-DIAG] Home_CM IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[19.40] [KICK-EXEC] Home_CM Kicked! Force: 14.1, Mode: VelocityChange | Scale: 1.0
+
+[19.40] [KICK-EXEC] Home_CM Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[19.58] [MatchManager] Home_CB has the ball!
+
+[19.58] [AgentBallHandler] Home_CB CLAIMED BALL. Dist: 0.64, Angle: 24.03
+
+[19.58] [DRIBBLE-DEBUG] Speed: 5.1 | Formula: (Lerp(0.5~2.0, 0.51)=1.3) * Scale:1.0 = 1.3 | Interval: 0.20s
+
+[19.58] [DRIBBLE-EXEC] Force: 1.3 (VelocityChange) | BallDist: 0.64m | BallSpeed: 2.2/8.1
+
+[19.58] [ON-BALL] Home_CB | Speed: 5.1 | BallDist: 0.64m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[19.58] <color=green>Away_ST SKILL: TACKLE on Home_CB</color>
+
+[19.58] <color=green>Away_ST SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[19.58] [TACKLE-IMPACT] Home_CB fumbled ball! Stunned for 1.5s. Power: 10
+
+[19.58] [ACTION] Away_ST is attempting TACKLE on Home_CB (Dist: 1.58)
+
+[21.09] [MatchManager] Home_CB has the ball!
+
+[21.09] [AgentBallHandler] Home_CB CLAIMED BALL. Dist: 0.68, Angle: 14.28
+
+[21.09] [DRIBBLE-DEBUG] Speed: 8.7 | Formula: (Lerp(0.5~2.0, 0.87)=1.8) * Scale:1.0 = 1.8 | Interval: 0.20s
+
+[21.09] [DRIBBLE-EXEC] Force: 1.8 (VelocityChange) | BallDist: 0.68m | BallSpeed: 4.6/12.4
+
+[21.09] [ON-BALL] Home_CB | Speed: 8.7 | BallDist: 0.68m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[21.09] [PASS-TARGET] Home_CB→Home_CM | pPass:0.80 posVal:0.35 ev:0.28
+
+[21.09] [PASS-DIAG] Home_CB → Home_CM | pPass:0.80 posVal:0.35 ev:0.28
+
+[21.09] [PASS-TARGET] Home_CB→Home_CM | pPass:0.80 posVal:0.35 ev:0.28
+
+[21.09] [Home_CB] DECISION: PASS (0.28) - [EV] Shoot:0.01 | Pass:0.28 | Dribble:0.08
+
+[21.09] [KICK-DEBUG] PASS | Dist: 14.2m | Formula: (8.0 + 14.2*0.5 + 50*0.05) [Clamp: 17.6] * Scale:1.0 = 17.6
+
+[21.10] <color=cyan>Home_CM is expecting a PASS at (10.11, -1.07, -34.51)!</color>
+
+[21.10] [KICK-EXEC] Home_CB Kicked! Force: 17.6, Mode: VelocityChange | Scale: 1.0
+
+[21.10] [KICK-EXEC] Home_CB Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[21.56] [MatchManager] Away_ST has the ball!
+
+[21.56] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.77, Angle: 14.84
+
+[21.56] [DRIBBLE-DEBUG] Speed: 0.2 | Formula: (Lerp(0.5~2.0, 0.02)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[21.56] [DRIBBLE-SKIP] Speed Limit Reached: 4.9 > 2.3
+
+[21.56] [ON-BALL] Away_ST | Speed: 0.2 | BallDist: 0.77m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[21.58] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.72 posVal:0.46 ev:0.33
+
+[21.58] [PASS-TARGET] Away_ST→Away_CB | pPass:0.43 posVal:0.45 ev:0.19
+
+[21.58] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.72 posVal:0.46 ev:0.33
+
+[21.58] [Away_ST] DECISION: SHOOT (0.39) - [EV] Shoot:0.39 | Pass:0.33 | Dribble:0.34
+
+[21.58] [KICK-DEBUG] SHOOT | Dist: 14.4m | Formula: (15.0 + 14.4*0.8 + 75*0.1) [Clamp: 34.0] * Scale:1.0 = 34.0
+
+[21.60] [HOLD-DIAG] Away_ST IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[21.62] [KICK-EXEC] Away_ST Kicked! Force: 34.0, Mode: VelocityChange | Scale: 1.0
+
+[21.62] [KICK-EXEC] Away_ST Kicked! Relinquishing Possession. Cooldown:1.0s
+
+[22.99] [MatchManager] Away_ST has the ball!
+
+[22.99] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.67, Angle: 14.47
+
+[22.99] [DRIBBLE-DEBUG] Speed: 0.6 | Formula: (Lerp(0.5~2.0, 0.06)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[22.99] [DRIBBLE-SKIP] Speed Limit Reached: 4.9 > 2.7
+
+[22.99] [ON-BALL] Away_ST | Speed: 0.6 | BallDist: 0.67m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[22.99] [SKILL] Home_ST activated DEFENSE BURST (Cooldown: 10.0s)
+
+[22.99] <color=green>Home_ST SKILL: DEFENSE BURST</color>
+
+[23.00] [PASS-TARGET] Away_ST→Away_CM2 | pPass:0.58 posVal:0.46 ev:0.27
+
+[23.00] [PASS-TARGET] Away_ST→Away_CB | pPass:0.55 posVal:0.45 ev:0.25
+
+[23.00] [PASS-DIAG] Away_ST → Away_CM2 | pPass:0.58 posVal:0.46 ev:0.27
+
+[23.00] [Away_ST] DECISION: SHOOT (0.54) - [EV] Shoot:0.54 | Pass:0.27 | Dribble:0.42
+
+[23.00] [KICK-DEBUG] SHOOT | Dist: 6.7m | Formula: (15.0 + 6.7*0.8 + 75*0.1) [Clamp: 27.9] * Scale:1.0 = 27.9
+
+[23.02] [KICK-EXEC] Away_ST Kicked! Force: 27.9, Mode: VelocityChange | Scale: 1.0
+
+[23.02] [KICK-EXEC] Away_ST Kicked! Relinquishing Possession. Cooldown:1.0s
+
+[23.30] [MatchManager] Home_GK has the ball!
+
+[23.30] [AgentBallHandler] Home_GK CLAIMED BALL. Dist: 1.02, Angle: 9.58
+
+[23.30] [DRIBBLE-DEBUG] Speed: 0.4 | Formula: (Lerp(0.5~2.0, 0.04)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[23.30] [DRIBBLE-SKIP] Speed Limit Reached: 4.1 > 2.4
+
+[23.30] [ON-BALL] Home_GK | Speed: 0.4 | BallDist: 1.02m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[23.31] [PASS-TARGET] Home_GK→Home_CM | pPass:0.89 posVal:0.35 ev:0.31
+
+[23.31] [PASS-TARGET] Home_GK→Home_CB | pPass:0.73 posVal:0.35 ev:0.26
+
+[23.31] [PASS-TARGET] Home_GK→Home_ST | pPass:0.80 posVal:0.35 ev:0.28
+
+[23.31] [PASS-TARGET] Home_GK→Home_CB2 | pPass:0.84 posVal:0.35 ev:0.29
+
+[23.31] [PASS-TARGET] Home_GK→Home_CM2 | pPass:0.79 posVal:0.35 ev:0.27
+
+[23.31] [PASS-DIAG] Home_GK → Home_CM | pPass:0.89 posVal:0.35 ev:0.31
+
+[23.31] [PASS-TARGET] Home_GK→Home_CM | pPass:0.89 posVal:0.35 ev:0.31
+
+[23.31] [PASS-TARGET] Home_GK→Home_CB | pPass:0.73 posVal:0.35 ev:0.26
+
+[23.31] [PASS-TARGET] Home_GK→Home_ST | pPass:0.80 posVal:0.35 ev:0.28
+
+[23.31] [PASS-TARGET] Home_GK→Home_CB2 | pPass:0.84 posVal:0.35 ev:0.29
+
+[23.31] [PASS-TARGET] Home_GK→Home_CM2 | pPass:0.79 posVal:0.35 ev:0.27
+
+[23.31] [Home_GK] DECISION: PASS (0.31) - [EV] Shoot:0.02 | Pass:0.31 | Dribble:0.14
+
+[23.31] [KICK-DEBUG] PASS | Dist: 5.5m | Formula: (8.0 + 5.5*0.5 + 50*0.05) [Clamp: 13.2] * Scale:1.0 = 13.2
+
+[23.42] <color=cyan>Home_CM is expecting a PASS at (8.62, -0.41, -44.18)!</color>
+
+[23.44] [HOLD-DIAG] Home_GK IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[23.44] [KICK-EXEC] Home_GK Kicked! Force: 13.2, Mode: VelocityChange | Scale: 1.0
+
+[23.44] [KICK-EXEC] Home_GK Kicked! Relinquishing Possession. Cooldown:0.5s
+
+[24.02] [MatchManager] Away_ST has the ball!
+
+[24.02] [AgentBallHandler] Away_ST CLAIMED BALL. Dist: 0.99, Angle: 11.61
+
+[24.02] [DRIBBLE-DEBUG] Speed: 0.3 | Formula: (Lerp(0.5~2.0, 0.03)=0.6) * Scale:1.0 = 0.6 | Interval: 0.20s
+
+[24.02] [DRIBBLE-EXEC] Force: 0.6 (VelocityChange) | BallDist: 0.99m | BallSpeed: 2.1/2.4
+
+[24.02] [ON-BALL] Away_ST | Speed: 0.3 | BallDist: 0.99m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[24.03] [SKILL] Home_CM2 activated DEFENSE BURST (Cooldown: 10.0s)
+
+[24.03] <color=green>Home_CM2 SKILL: DEFENSE BURST</color>
+
+[24.03] [SKILL] Away_ST activated BREAKTHROUGH! (Cooldown: 20.0s)
+
+[24.03] <color=green>Away_ST SKILL: BREAKTHROUGH!</color>
+
+[24.22] [ON-BALL] Away_ST | Speed: 0.0 | BallDist: 0.82m | Mode: CONTROL (Constraint: ON)
+
+[24.43] [ON-BALL] Away_ST | Speed: 0.0 | BallDist: 0.78m | Mode: CONTROL (Constraint: ON)
+
+[24.44] <color=green>Home_CM SKILL: TACKLE on Away_ST</color>
+
+[24.44] <color=green>Home_CM SKILL: <color=cyan>TACKLE SUCCESS!</color></color>
+
+[24.44] [TACKLE-IMPACT] Away_ST fumbled ball! Stunned for 1.5s. Power: 10
+
+[24.44] [ACTION] Home_CM is attempting TACKLE on Away_ST (Dist: 1.97)
+
+[26.24] [MatchManager] Home_CM has the ball!
+
+[26.24] [AgentBallHandler] Home_CM CLAIMED BALL. Dist: 1.07, Angle: 35.20
+
+[26.24] [DRIBBLE-DEBUG] Speed: 0.1 | Formula: (Lerp(0.5~2.0, 0.01)=0.5) * Scale:1.0 = 0.5 | Interval: 0.20s
+
+[26.24] [DRIBBLE-EXEC] Force: 0.5 (VelocityChange) | BallDist: 1.07m | BallSpeed: 0.9/2.1
+
+[26.24] [ON-BALL] Home_CM | Speed: 0.1 | BallDist: 1.07m | Mode: STUN/COOLDOWN (Constraint: OFF)
+
+[26.25] [PASS-TARGET] Home_CM→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[26.25] [PASS-TARGET] Home_CM→Home_ST | pPass:0.73 posVal:0.35 ev:0.26
+
+[26.25] [PASS-TARGET] Home_CM→Home_CB2 | pPass:0.86 posVal:0.35 ev:0.30
+
+[26.25] [PASS-TARGET] Home_CM→Home_CM2 | pPass:0.80 posVal:0.35 ev:0.28
+
+[26.25] [PASS-TARGET] Home_CM→Home_GK | pPass:0.88 posVal:0.35 ev:0.31
+
+[26.25] [PASS-DIAG] Home_CM → Home_GK | pPass:0.88 posVal:0.35 ev:0.31
+
+[26.25] [PASS-TARGET] Home_CM→Home_CB | pPass:0.81 posVal:0.35 ev:0.28
+
+[26.25] [PASS-TARGET] Home_CM→Home_ST | pPass:0.73 posVal:0.35 ev:0.26
+
+[26.25] [PASS-TARGET] Home_CM→Home_CB2 | pPass:0.86 posVal:0.35 ev:0.30
+
+[26.25] [PASS-TARGET] Home_CM→Home_CM2 | pPass:0.80 posVal:0.35 ev:0.28
+
+[26.25] [PASS-TARGET] Home_CM→Home_GK | pPass:0.88 posVal:0.35 ev:0.31
+
+[26.25] [Home_CM] DECISION: PASS (0.31) - [EV] Shoot:0.02 | Pass:0.31 | Dribble:0.12
+
+[26.25] [KICK-DEBUG] PASS | Dist: 7.1m | Formula: (8.0 + 7.1*0.5 + 80*0.05) [Clamp: 15.5] * Scale:1.0 = 15.5
+
+[26.30] <color=cyan>Home_GK is expecting a PASS at (4.15, 0.08, -46.99)!</color>
+
+[26.30] [HOLD-DIAG] Home_CM IsBusy=True PendingKick=True MoverBusy=False → Hold
+
+[26.32] [KICK-EXEC] Home_CM Kicked! Force: 15.5, Mode: VelocityChange | Scale: 1.0
+
+[26.32] [KICK-EXEC] Home_CM Kicked! Relinquishing Possession. Cooldown:0.5s
+

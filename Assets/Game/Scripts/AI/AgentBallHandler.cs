@@ -115,6 +115,11 @@ namespace Game.Scripts.AI
 
             if (isBehind || isTooFar)
             {
+                // [FIX] 킥 쿨타임 중에는 강제 텔레포트 금지!
+                // 슈팅 후 공이 뒤로 지나갈 때 isBehind=true → 발 앞으로 텔레포트 → velocity=0 → 슛 취소
+                // _ignoreBallInteractionUntil 동안은 이 하드 리셋을 완전히 스킵
+                if (Time.time < _ignoreBallInteractionUntil) return;
+
                 // FORCE TELEPORT (Emergency Recovery)
                 float configDist = (_controller.config) ? _controller.config.DribbleSweetSpotDist : 0.65f;
                 float safeDist = Mathf.Max(configDist, 0.7f);
@@ -126,7 +131,6 @@ namespace Game.Scripts.AI
                 _cachedBallRb.linearVelocity = Vector3.zero; 
                 _cachedBallRb.angularVelocity = Vector3.zero;
                 
-                // Debug.Log($"[{Time.time:F2}] [CONSTRAINT] Hard Reset (Behind/Far)");
                 return;
             }
 
@@ -221,26 +225,29 @@ namespace Game.Scripts.AI
             float targetForce = baseForce * settings.DribbleForceScale;
 
             // [DRIBBLE-DEBUG] Detailed Calculation Log
-            // Filter log to avoid spam (show every 1.0s or on significant change?) -> For now show all for debugging as requested
-            // Format: [DRIBBLE-DEBUG] Speed: 9.0 | Formula: (Base:1.0 + SpeedFactor:8.0) * Scale:1.0 = 9.0 | DribbleInterval: 0.2s
             Debug.Log($"[DRIBBLE-DEBUG] Speed: {currentSpeed:F1} | Formula: (Lerp({settings.dribbleMinForce:F1}~{settings.dribbleMaxForce:F1}, {speedRatio:F2})={baseForce:F1}) * Scale:{settings.DribbleForceScale:F1} = {targetForce:F1} | Interval: {settings.dribbleInterval:F2}s");
 
-            // 5. Execute Dribble (Kick & Loss)
+            // 5. Execute Dribble Kick
             _lastDribbleTime = Time.time;
             
             _cachedBallRb.isKinematic = false;
-            
-            // [CHANGED] Remove artificial velocity sync to allow natural physics
-            // if (_mover != null) _cachedBallRb.linearVelocity = _mover.NavAgent.velocity; 
 
             // [NEW] Speed Limit Check (Prevent ball from flying away)
             float maxDribbleSpeed = (currentSpeed * 1.2f) + 2.0f;
             if (_cachedBallRb.linearVelocity.magnitude < maxDribbleSpeed)
             {
-                // [CHANGED] Use VelocityChange for instant acceleration without mass dependency
-                _cachedBallRb.AddForce(transform.forward * targetForce, ForceMode.VelocityChange);
+                // [CHANGED] Use steeringTarget direction instead of transform.forward
+                Vector3 kickDir = transform.forward; // fallback
+                if (_mover != null && _mover.NavAgent != null && _mover.NavAgent.hasPath)
+                {
+                    Vector3 steeringTarget = _mover.NavAgent.steeringTarget;
+                    Vector3 toSteering = steeringTarget - transform.position;
+                    toSteering.y = 0;
+                    if (toSteering.sqrMagnitude > 0.01f)
+                        kickDir = toSteering.normalized;
+                }
+                _cachedBallRb.AddForce(kickDir * targetForce, ForceMode.VelocityChange);
                 
-                 // [DRIBBLE-EXEC] Execution Log
                 Debug.Log($"[DRIBBLE-EXEC] Force: {targetForce:F1} (VelocityChange) | BallDist: {dist:F2}m | BallSpeed: {_cachedBallRb.linearVelocity.magnitude:F1}/{maxDribbleSpeed:F1}");
             }
             else
@@ -248,11 +255,17 @@ namespace Game.Scripts.AI
                  Debug.Log($"[DRIBBLE-SKIP] Speed Limit Reached: {_cachedBallRb.linearVelocity.magnitude:F1} > {maxDribbleSpeed:F1}");
             }
             
-            // [CRITICAL] Release Possession
-            // Ball leaves foot -> Loss of Control -> Physics takes over
-            MatchManager.Instance.LosePossession(_controller);
-            _ignoreBallInteractionUntil = Time.time + 0.15f; 
+            // [FIX] 드리블 킥 후 소유권을 해제하지 않음 (TRN 상태 플래싱 방지)
+            // 소유권은 UpdatePossessionLogic()의 losePossessionDistance 초과 시에만 해제됨.
+            // 킥 직후 잠깐 공이 멀어지더라도 State Machine은 ATK를 유지함.
+            // 다른 선수가 이 쿨타임 사이에 공을 낚아채지 못하도록 글로벌 잠금도 설정.
+            // [FIX] 드리블 킥 후 쿨다운: 슛 쿨다운(1.0s)이 이미 활성화된 경우 덮어쓰지 않음
+            float newIgnoreUntil = Time.time + 0.15f;
+            if (newIgnoreUntil > _ignoreBallInteractionUntil)
+                _ignoreBallInteractionUntil = newIgnoreUntil;
+            MatchManager.Instance.SetNoPossessionTime(0.15f); // 타 에이전트 소유 차단
         }
+
 
         public void FixedTick()
         {
@@ -958,8 +971,12 @@ namespace Game.Scripts.AI
                      if (myCol != null && ballCol != null)
                      {
                          UnityEngine.Physics.IgnoreCollision(myCol, ballCol, true);
-                         // 0.2초 뒤에 다시 충돌 켜기
-                         StartCoroutine(ResetCollisionRoutine(myCol, ballCol, 0.2f));
+                         // [FIX] 슛은 공이 선수를 지나칠 때까지 충돌 무시 시간 연장 (1.0s)
+                         // 패스는 0.2s로 충분하지만, 슛 후 공이 반대방향(에이전트 뒤)으로 가면
+                         // 0.2s 충돌 복구 후 캡슐과 충돌해 튕겨나가는 문제 방지
+                         bool isShootKick = (_kickRecipient == null && _kickTargetPos != Vector3.zero);
+                         float ignoreCollisionDuration = isShootKick ? 1.0f : 0.2f;
+                         StartCoroutine(ResetCollisionRoutine(myCol, ballCol, ignoreCollisionDuration));
                      }
 
                      kick.rb.isKinematic = false; // 이게 없어서 공이 안 나갔던 겁니다!
@@ -974,25 +991,26 @@ namespace Game.Scripts.AI
                      kick.rb.AddForce(kick.force, ForceMode.VelocityChange); // 속도 모드 사용
                      if (kick.torque != Vector3.zero) kick.rb.AddTorque(kick.torque, ForceMode.VelocityChange);
                      
-                     // 4. 마무리
                      // 4. 마무리 (Possession Release)
-                     // [핵심 추가] 킥을 했으면 더 이상 내 공이 아님!
+                     // [FIX] 슛/패스 구분 쿨다운:
+                     // 슛은 공이 날아갈 시간이 더 필요 → 1.0s, 패스는 0.5s
+                     bool isShoot = (_kickRecipient == null && _kickTargetPos != Vector3.zero);
+                     float cooldown = isShoot ? 1.0f : settings.kickCooldown;
                      
                      // 1. 소유권 해제 알림
                      MatchManager.Instance.LosePossession(_controller);
                      
                      // 2. 드리블 모드 해제
                      _isDribbleActive = false;
+                     _isPreparingKick = false;
                      
-                     // 3. 재소유 쿨타임 (공이 발을 떠나는 동안 다시 잡지 않도록)
-                     // (settings.kickCooldown is 0.5f by default)
-                     _ignoreBallInteractionUntil = Time.time + settings.kickCooldown; 
+                     // 3. 재소유 쿨타임
+                     _ignoreBallInteractionUntil = Time.time + cooldown;
 
-                     // 4. 로그 명시
-                     Debug.Log($"[KICK-EXEC] {name} Kicked! Relinquishing Possession.");
+                     Debug.Log($"[KICK-EXEC] {name} Kicked! Relinquishing Possession. Cooldown:{cooldown:F1}s");
                      
                      BallAerodynamics aero = kick.rb.GetComponent<BallAerodynamics>();
-                     if (aero != null) aero.ResetAerodynamics(); 
+                     if (aero != null) aero.ResetAerodynamics();
                      
                      if (MatchManager.Instance.IsKickOffFirstPass)
                      {

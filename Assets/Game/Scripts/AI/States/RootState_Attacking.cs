@@ -28,13 +28,16 @@ namespace Game.Scripts.AI.States
         private float _aimingTimer      = 0f;
         private float _lastDebugLogTime = -999f;
 
+        // HOLD 패닉 타이머: 이 시간(초) 이상 HOLD가 지속되면 강제로 최선의 행동 실행
+        private float _holdTimer        = 0f;
+        private const float HoldPanicTime = 1.5f; // 1.5초 이상 HOLD → 강제 행동
+
         // 골 위치
         private Vector3 _goalPosition = new Vector3(0, 0, 25f);
 
         // 슛 EV가 이 값 이상이면 패스/드리블을 무시하고 무조건 슛
-        // DecisionEvaluator.ForceShootEVThreshold(0.45f)와 동일 기준을 사용하나
-        // RootState에서도 독립적으로 재검증합니다.
-        private const float ForceShootEVThreshold = 0.45f;
+        // DecisionEvaluator.ForceShootEVThreshold(0.65f)와 동기화
+        private const float ForceShootEVThreshold = 0.65f;
 
         // 설정 Fallback
         private float MaxPassAngle    => agent.config ? agent.config.MaxPassAngle    : 45f;
@@ -99,6 +102,8 @@ namespace Game.Scripts.AI.States
                 if (_decisionTimer >= interval)
                 {
                     _decisionTimer = 0f;
+                    // [FIX] holdTimer는 MakeDecision 결과가 Hold가 아닐 때만 리셋
+                    // 이전에는 MakeDecision 실행 전에 무조건 리셋 → 패닉이 절대 발동 안 됨
                     MakeDecision(ballPos);
                 }
             }
@@ -118,6 +123,12 @@ namespace Game.Scripts.AI.States
 
             // EV 평가기에서 최적 행동 취득
             var decision = _evaluator.EvaluateBestAction(agent, ref _lastActionTime, ref _aimingTimer);
+
+            // [LOGGING] 상세 EV 로그 출력
+            if (!string.IsNullOrEmpty(decision.DebugLog))
+            {
+                LogAction(decision.DebugLog);
+            }
 
             // ─── 골 지향 강제 슛 로직 ───────────────────────────────
             // 슛 EV가 임계값(ForceShootEVThreshold) 이상이면
@@ -145,12 +156,15 @@ namespace Game.Scripts.AI.States
             switch (decision.Action)
             {
                 case "Shoot":
+                    _holdTimer = 0f;
                     ExecuteShoot(decision.Position);
                     break;
                 case "Pass":
+                    _holdTimer = 0f;
                     ExecutePass(decision.Target);
                     break;
                 case "Dribble":
+                    _holdTimer = 0f;
                     ExecuteDribble(decision.Position);
                     break;
                 case "Breakthrough":
@@ -159,6 +173,24 @@ namespace Game.Scripts.AI.States
                     break;
                 case "Hold":
                 default:
+                    // [FIX] HOLD 시 내비게이션 멈추기
+                    agent.Mover?.Stop();
+
+                    // [NEW] HOLD 패닉 타이머: 너무 오래 HOLD면 강제 행동
+                    _holdTimer += Time.fixedDeltaTime;
+                    if (_holdTimer >= HoldPanicTime)
+                    {
+                        _holdTimer = 0f;
+                        // 임계값 무시하고 현재 최선의 행동 강제 실행
+                        var panicDecision = _evaluator.EvaluateForcedAction(agent, ref _lastActionTime);
+                        LogAction($"HOLD PANIC ({HoldPanicTime}s) → {panicDecision.Action} ({panicDecision.Confidence:F2})");
+                        switch (panicDecision.Action)
+                        {
+                            case "Shoot":  ExecuteShoot(panicDecision.Position);  break;
+                            case "Pass":   ExecutePass(panicDecision.Target);      break;
+                            case "Dribble": ExecuteDribble(panicDecision.Position); break;
+                        }
+                    }
                     break;
             }
         }
@@ -198,14 +230,8 @@ namespace Game.Scripts.AI.States
                 return;
             }
 
-            Vector3 toTarget = target.transform.position - agent.transform.position;
-            if (Vector3.Angle(agent.transform.forward, toTarget) > MaxPassAngle)
-            {
-                agent.Mover.RotateToAction(toTarget, null);
-                _lastActionTime = Time.time;
-                return;
-            }
-
+            // [FIXED] 패스 각도 체크 제거 - 각도 무관하게 바로 패스 실행
+            // (킥 준비 로직(UpdateKickLogic)이 자동으로 방향 정렬을 처리함)
             agent.Pass(target);
             _lastActionTime = Time.time;
             LogAction($"PASS to {target.name}");
@@ -213,21 +239,32 @@ namespace Game.Scripts.AI.States
 
         private void ExecuteDribble(Vector3 targetPos)
         {
+            // [SAFETY] 최종 안전망: 목표 위치가 필드 경계를 벗어나지 않도록 클램프
+            float fw = 32f, fl = 48f;
+            if (agent.BallHandler?.settings != null)
+            {
+                fw = agent.BallHandler.settings.fieldHalfWidth;
+                fl = agent.BallHandler.settings.fieldHalfLength;
+            }
+            targetPos.x = Mathf.Clamp(targetPos.x, -(fw - 4f), fw - 4f);
+            targetPos.z = Mathf.Clamp(targetPos.z, -(fl - 4f), fl - 4f);
+
             Vector3 toBall       = MatchManager.Instance.Ball.transform.position - agent.transform.position;
             toBall.y             = 0;
             Vector3 agentForward = agent.transform.forward;
             agentForward.y       = 0;
 
+            // [FIX] 드리블은 연속 행동 — _lastActionTime을 설정하지 않음
+            // (_lastActionTime은 Pass/Shoot 킥에서만 설정)
+
             if (Vector3.Angle(agentForward, toBall) > MaxDribbleAngle)
             {
-                _lastActionTime = Time.time;
                 return;
             }
 
             if (!agent.BallHandler.IsInPocket)
             {
                 agent.Mover.SprintTo(MatchManager.Instance.Ball.transform.position);
-                _lastActionTime = Time.time;
                 return;
             }
 
@@ -249,7 +286,6 @@ namespace Game.Scripts.AI.States
                 agent.SkillSystem?.TryActivateSkill(AgentSkillSystem.SkillType.AttackBurst, 0.05f);
             }
 
-            _lastActionTime = Time.time;
             LogAction($"DRIBBLE to {targetPos}");
         }
 
@@ -363,10 +399,44 @@ namespace Game.Scripts.AI.States
         // =========================================================
         private void LogAction(string msg)
         {
+            // 1. 콘솔 출력 (Throttle 1.0s)
             if (Time.time > _lastDebugLogTime + 1.0f)
             {
                 _lastDebugLogTime = Time.time;
-                Game.Scripts.UI.MatchViewController.Instance?.LogAction($"{agent.name}: {msg}");
+                Debug.Log($"[{agent.name}] {msg}");
+            
+                // 2. [화면 표시] Global Action Log -> User Request: "Home_ST has ball" 뜨는 곳에 표시 (MatchViewController)
+                // 너무 자주 뜨면 정신없으니 중요 결정일 때만 콘솔 스로틀링 타이밍에 맞춰서 업데이트
+                if (msg.Contains("DECISION") || msg.Contains("FORCE") || msg.Contains("SHOOT") || msg.Contains("PASS"))
+                {
+                    // ActionLogDisplay(좌측하단) 대신 MatchViewController(중앙하단) 사용
+                    // Game.Scripts.UI.ActionLogDisplay.AddLog($"[{agent.name}] {msg}"); 
+                    
+                    if (Game.Scripts.UI.MatchViewController.Instance != null)
+                    {
+                        // 우선순위 true로 설정하여 강조
+                        Game.Scripts.UI.MatchViewController.Instance.LogAction(msg, true);
+                    }
+                }
+            }
+
+            // 3. [화면 표시] Player Name Tag (머리 위 상태창) - 2초간 유지
+            // (스로틀링과 무관하게 매번 갱신해도 되지만, 성능을 위해 여기 둠. 
+            // 단, LogAction이 자주 호출되지 않는다면(위의 1.0s 체크 때문에), 
+            // PlayerNameTag 갱신이 늦어질 수 있음. 
+            // 하지만 LogAction 호출부 자체가 중요 결정 시점에만 호출되므로 괜찮음.)
+            var nameTag = agent.GetComponent<Game.Scripts.UI.PlayerNameTag>();
+            if (nameTag != null)
+            {
+                // "DECISION: DRIBBLE (0.35) ..." 형식에서 앞부분만 추출
+                string stateText = msg;
+                if (msg.StartsWith("DECISION: ")) 
+                {
+                    stateText = msg.Replace("DECISION: ", "");
+                    int dashIndex = stateText.IndexOf(" -");
+                    if (dashIndex > 0) stateText = stateText.Substring(0, dashIndex); // 뒷부분 상세 EV 로그는 자름
+                }
+                nameTag.SetStatusText(stateText, 2.0f);
             }
         }
     }

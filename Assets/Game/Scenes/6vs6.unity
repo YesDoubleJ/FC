@@ -311,6 +311,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 45910836}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 45910839}
   m_SourcePrefab: {fileID: 100100000, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
 --- !u!1 &45910826 stripped
 GameObject:
@@ -427,6 +430,17 @@ MonoBehaviour:
   physical: 50
   technique: 50
   composure: 50
+  mental: 50
+  defending: 50
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &45910836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +479,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &45910839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45910826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!21 &87183896
 Material:
   serializedVersion: 8
@@ -1297,6 +1331,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 599840959}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 599840962}
   m_SourcePrefab: {fileID: 100100000, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
 --- !u!1 &599840951 stripped
 GameObject:
@@ -1322,6 +1359,17 @@ MonoBehaviour:
   physical: 80
   technique: 50
   composure: 25
+  mental: 50
+  defending: 75
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &599840953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,6 +1499,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &599840962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599840951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1001 &613372634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1643,6 +1711,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 613372643}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 613372646}
   m_SourcePrefab: {fileID: 100100000, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
 --- !u!1 &613372635 stripped
 GameObject:
@@ -1668,6 +1739,17 @@ MonoBehaviour:
   physical: 50
   technique: 50
   composure: 50
+  mental: 50
+  defending: 50
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &613372637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,6 +1879,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &613372646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613372635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1001 &673608224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1989,6 +2091,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 673608233}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 673608236}
   m_SourcePrefab: {fileID: 100100000, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
 --- !u!1 &673608225 stripped
 GameObject:
@@ -2014,6 +2119,17 @@ MonoBehaviour:
   physical: 80
   technique: 50
   composure: 25
+  mental: 50
+  defending: 75
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &673608227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2143,6 +2259,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &673608236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673608225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1001 &681733755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2335,6 +2471,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 681733766}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 681733769}
   m_SourcePrefab: {fileID: 100100000, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
 --- !u!1 &681733756 stripped
 GameObject:
@@ -2451,6 +2590,17 @@ MonoBehaviour:
   physical: 50
   technique: 50
   composure: 75
+  mental: 50
+  defending: 50
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &681733766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2489,6 +2639,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &681733769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681733756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1 &683495438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,6 +3020,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.Tactics.FormationManager
   homeManager: {fileID: 1749662886}
   awayManager: {fileID: 163012087}
+  TetherRadius: 15
+  TetherForceMax: 3
+  TetherHardLimit: 2
+  CurrentLineHeight: 1
 --- !u!4 &820303961
 Transform:
   m_ObjectHideFlags: 0
@@ -3593,6 +3767,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c2339b4ee5f565042b45b4c57b364cad, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1157896872}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c2339b4ee5f565042b45b4c57b364cad, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1157896875}
   m_SourcePrefab: {fileID: 100100000, guid: c2339b4ee5f565042b45b4c57b364cad, type: 3}
 --- !u!1 &1157896860 stripped
 GameObject:
@@ -3690,6 +3867,17 @@ MonoBehaviour:
   physical: 50
   technique: 50
   composure: 50
+  mental: 50
+  defending: 50
+  goalkeeping: 75
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &1157896869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3711,6 +3899,11 @@ MonoBehaviour:
   ballReceivedTime: 0
   gkSettings: {fileID: 11400000, guid: 52319c4a90e33304d82461357f15bab8, type: 2}
   goalCenter: {fileID: 2125693878}
+  SweeperKeeperEnabled: 0
+  SweeperMaxAdvance: 20
+  SweeperActivationRange: 35
+  ReachDistance: 2.5
+  DiveSpeedMultiplier: 1.5
 --- !u!114 &1157896872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3749,6 +3942,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &1157896875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157896860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1001 &1212055987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3941,6 +4154,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1212055998}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1212056001}
   m_SourcePrefab: {fileID: 100100000, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
 --- !u!1 &1212055988 stripped
 GameObject:
@@ -4057,6 +4273,17 @@ MonoBehaviour:
   physical: 50
   technique: 50
   composure: 75
+  mental: 50
+  defending: 50
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &1212055998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4095,6 +4322,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &1212056001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212055988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1 &1279399361
 GameObject:
   m_ObjectHideFlags: 0
@@ -4428,6 +4675,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1300529611}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1300529614}
   m_SourcePrefab: {fileID: 100100000, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
 --- !u!1 &1300529603 stripped
 GameObject:
@@ -4453,6 +4703,17 @@ MonoBehaviour:
   physical: 80
   technique: 50
   composure: 25
+  mental: 50
+  defending: 75
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &1300529605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4582,6 +4843,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &1300529614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300529603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1 &1311161456
 GameObject:
   m_ObjectHideFlags: 0
@@ -4862,6 +5143,128 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   smoothSpeed: 10
   lockY: 1
+--- !u!1 &1322994166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1322994168}
+  - component: {fileID: 1322994167}
+  - component: {fileID: 1322994171}
+  - component: {fileID: 1322994170}
+  - component: {fileID: 1322994169}
+  - component: {fileID: 1322994172}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1322994167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322994166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c9464671025114cbb404415f41481d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.Managers.FieldManager
+  Length: 100
+  Width: 60
+  GoalWidth: 7.32
+  PenaltyAreaLength: 16.5
+  PenaltyAreaWidth: 40.32
+  FieldCenterTransform: {fileID: 0}
+--- !u!4 &1322994168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322994166}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1322994169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322994166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06383376050379543a203dbab72f5c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.Tactics.MarkingSystem
+  DefaultMode: 2
+  ZoneRadius: 10
+  ManMarkMaxDistance: 25
+  ForceManMarkInBox: 1
+--- !u!114 &1322994170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322994166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4921f7f3853d864eb21ee310c4db2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.Tactics.PitchControlModel
+  GridCols: 12
+  GridRows: 8
+  UpdateInterval: 0.5
+  Sigma: 0.7
+  ShowGizmos: 1
+  GizmoHeight: 0.3
+--- !u!114 &1322994171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322994166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fec026f6ba6f3d459476c7e6e8d4bb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.Tactics.OccupancyMap
+  GridCols: 12
+  GridRows: 8
+  UpdateInterval: 0.5
+  ShowGizmos: 1
+  GizmoHeight: 0.5
+--- !u!114 &1322994172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322994166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131a82c413da8c448b63097856657773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AILODManager
+  LOD0Distance: 30
+  LOD1Distance: 60
+  UpdateInterval: 0.3
+  LOD2AnimSpeedMultiplier: 0.5
+  ShowGizmos: 1
 --- !u!1 &1326891373
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,6 +5488,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1423036546}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1423036549}
   m_SourcePrefab: {fileID: 100100000, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
 --- !u!1 &1423036538 stripped
 GameObject:
@@ -5110,6 +5516,17 @@ MonoBehaviour:
   physical: 80
   technique: 50
   composure: 25
+  mental: 50
+  defending: 75
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &1423036540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5239,6 +5656,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &1423036549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423036538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1 &1457824246
 GameObject:
   m_ObjectHideFlags: 0
@@ -5368,14 +5805,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 502d637ae65319e458437f9e14f0b024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.Physics.BallAerodynamics
-  magnusCoefficient: 0.002
-  airDrag: 0.2
-  groundRollingDrag: 0.8
+  config: {fileID: 11400000, guid: 55d16debf148acf47bb5c16b0cf9ca37, type: 2}
+  ownerCollisionDamping: 0.15
+  nonOwnerCollisionDamping: 0.35
 --- !u!4 &1463017928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8931056953880399548, guid: 8b1b756f15f28424684c702548f63b1e, type: 3}
   m_PrefabInstance: {fileID: 1609942989}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1463017929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463017916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f529ab5ced484c48bbfe6f9be1d0a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.Physics.TrajectoryVisualizer
+  Enabled: 1
+  PredictionTime: 2
+  StepInterval: 0.02
+  MinSpeedToShow: 2
+  StartColor: {r: 1, g: 0.5, b: 0, a: 0.8}
+  EndColor: {r: 0, g: 0.23324871, b: 1, a: 0.1}
+  StartWidth: 0.15
+  EndWidth: 0.02
+  config: {fileID: 11400000, guid: 55d16debf148acf47bb5c16b0cf9ca37, type: 2}
 --- !u!1 &1475001654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5697,6 +6155,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 517798465103680670, guid: 8b1b756f15f28424684c702548f63b1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1463017923}
+    - targetCorrespondingSourceObject: {fileID: 517798465103680670, guid: 8b1b756f15f28424684c702548f63b1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1463017929}
   m_SourcePrefab: {fileID: 100100000, guid: 8b1b756f15f28424684c702548f63b1e, type: 3}
 --- !u!1001 &1612684788
 PrefabInstance:
@@ -5890,6 +6351,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1612684797}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1612684800}
   m_SourcePrefab: {fileID: 100100000, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
 --- !u!1 &1612684789 stripped
 GameObject:
@@ -5915,6 +6379,17 @@ MonoBehaviour:
   physical: 50
   technique: 50
   composure: 50
+  mental: 50
+  defending: 50
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &1612684791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6044,6 +6519,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &1612684800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612684789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1001 &1618980889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6236,6 +6731,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1618980898}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1618980901}
   m_SourcePrefab: {fileID: 100100000, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
 --- !u!1 &1618980890 stripped
 GameObject:
@@ -6261,6 +6759,17 @@ MonoBehaviour:
   physical: 50
   technique: 50
   composure: 50
+  mental: 50
+  defending: 50
+  goalkeeping: 10
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &1618980892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6390,6 +6899,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &1618980901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618980890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1 &1732537895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6755,6 +7284,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3199f3bd01eb0d54a9cd61f5560bb67d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1819963546}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3199f3bd01eb0d54a9cd61f5560bb67d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1819963549}
   m_SourcePrefab: {fileID: 100100000, guid: 3199f3bd01eb0d54a9cd61f5560bb67d, type: 3}
 --- !u!1 &1819963535 stripped
 GameObject:
@@ -6852,6 +7384,17 @@ MonoBehaviour:
   physical: 50
   technique: 50
   composure: 50
+  mental: 50
+  defending: 50
+  goalkeeping: 75
+  Stamina: 100
+  Breath: 100
+  Morale: 0
+  Condition: 1
+  Traits: 
+  BaseStaminaDrainPerSecond: 0.15
+  SprintStaminaMultiplier: 3
+  BreathRecoveryPerSecond: 5
 --- !u!114 &1819963543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6873,6 +7416,11 @@ MonoBehaviour:
   ballReceivedTime: 0
   gkSettings: {fileID: 11400000, guid: 52319c4a90e33304d82461357f15bab8, type: 2}
   goalCenter: {fileID: 1597915801}
+  SweeperKeeperEnabled: 0
+  SweeperMaxAdvance: 20
+  SweeperActivationRange: 35
+  ReachDistance: 2.5
+  DiveSpeedMultiplier: 1.5
 --- !u!114 &1819963546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6911,6 +7459,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1d6b0d8dc8db34c909ee0d2da94d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.AI.AgentMover
+--- !u!114 &1819963549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819963535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5df0c3a9f58af48a25fc255b687f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.UI.DebugOverlay
+  Enabled: 1
+  UpdateInterval: 0.2
+  DisplayDuration: 0.5
+  ShowState: 1
+  ShowIntention: 1
+  ShowUtilityScore: 1
+  ShowLOD: 0
+  ShowStamina: 0
 --- !u!1 &1886474821
 GameObject:
   m_ObjectHideFlags: 0
@@ -7125,3 +7693,4 @@ SceneRoots:
   - {fileID: 1049543017}
   - {fileID: 1749662887}
   - {fileID: 163012088}
+  - {fileID: 1322994168}

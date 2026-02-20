@@ -23,7 +23,8 @@ namespace Game.Scripts.AI.Tactics
         private float ActionLockoutTime => _config ?         _config.ActionLockoutTime : 0.5f;
 
         // 슛 EV가 이 값 이상이면 무조건 슛 (골 지향 강제 임계값)
-        private const float ForceShootEVThreshold = 0.45f;
+        // NOTE: 0.65로 설정하여 명백한 골 기회에서만 강제 슛. 그 아래는 EV 비교로 패스도 선택 가능.
+        private const float ForceShootEVThreshold = 0.65f;
 
         // 경기장 기준: 상대 골대 방향 최대 거리 (위치 가치 정규화에 사용)
         private const float MaxFieldDiagonal = 100f;
@@ -44,6 +45,7 @@ namespace Game.Scripts.AI.Tactics
             public GameObject Target;  // Pass 대상
             public Vector3 Position;   // Shoot/Dribble 목표 지점
             public float Confidence;   // EV 점수
+            public string DebugLog;    // 상세 판단 로그
         }
 
         // =========================================================
@@ -51,24 +53,31 @@ namespace Game.Scripts.AI.Tactics
         // =========================================================
         /// <summary>
         /// 공격 시 특정 위치의 전술적 가치를 0~1로 반환합니다.
-        /// 평가 기준은 오직 상대 골대 중심과의 거리 및 각도입니다.
-        /// - 상대 골대 정중앙 바로 앞 = 1.0
-        /// - 우리 진영 구석 = 0.0
+        /// 골대 절대 거리 기반이 아닌, 공격자의 현재 위치 대비 상대 전진도로 평가합니다.
+        /// - 골문 정중앙 가까이 = 1.0
+        /// - 공격자보다 후방이라도 = 최소 0.35 (빈 공간이면 가치 있음)
         /// </summary>
         public float EvaluatePositionValue(Vector3 position)
         {
-            // 1. 거리 가치: 골대에 가까울수록 높음
-            float distToGoal = Vector3.Distance(position, _goalPosition);
-            // 골대 5m 이내 = 1.0, MaxFieldDiagonal 이상 = 0.0
+            return EvaluatePositionValueRelative(position, _goalPosition, null);
+        }
+
+        /// <summary>공격자 위치 대비 상대 가치 평가</summary>
+        public float EvaluatePositionValueRelative(Vector3 position, Vector3 goalPos, HybridAgentController currentAttacker)
+        {
+            float distToGoal = Vector3.Distance(position, goalPos);
+
+            // 1. 골 거리 가치: 0~1 (Softened - 후방 패스에 너무 낮은 점수 방지)
+            // MaxFieldDiagonal(100) = 0.0 / 5m = 1.0, 비선형 하지 않음(선형)
             float distValue = Mathf.Clamp01(1.0f - (distToGoal / MaxFieldDiagonal));
-            // 비선형 보정: 근거리 가치를 더 강조
-            distValue = distValue * distValue;
+            // 최솟값 보장: 후방이더라도 최소 0.35 (후방 패스 허용)
+            distValue = Mathf.Max(distValue, 0.35f);
 
             // 2. 각도 가치: 골대 정면(x=0)에 가까울수록 높음
             float absX = Mathf.Abs(position.x);
-            float angleValue = Mathf.Lerp(1.0f, 0.1f, Mathf.Clamp01(absX / 30f));
+            float angleValue = Mathf.Lerp(1.0f, 0.2f, Mathf.Clamp01(absX / 30f));
 
-            // 최종 위치 가치 = 거리 가치 × 각도 가치
+            // 최종 위치 가치
             return Mathf.Clamp01(distValue * angleValue);
         }
 
@@ -81,15 +90,24 @@ namespace Game.Scripts.AI.Tactics
 
             // 공 소유 확인
             if (MatchManager.Instance != null && MatchManager.Instance.CurrentBallOwner != agent)
+            {
+                Debug.Log($"[HOLD-DIAG] {agent.name} No Possession → Hold");
                 return result;
+            }
 
             // 이미 킥 실행 중이면 재결정 금지
             if (agent.IsBusy || (agent.BallHandler && agent.BallHandler.HasPendingKick))
+            {
+                Debug.Log($"[HOLD-DIAG] {agent.name} IsBusy={agent.IsBusy} PendingKick={agent.BallHandler?.HasPendingKick} MoverBusy={agent.Mover?.IsBusy} → Hold");
                 return result;
+            }
 
             // 행동 잠금 시간 내이면 대기
             if (Time.time < lastActionTime + ActionLockoutTime)
+            {
+                Debug.Log($"[HOLD-DIAG] {agent.name} ActionLockout remaining={(lastActionTime + ActionLockoutTime - Time.time):F2}s → Hold");
                 return result;
+            }
 
             float distToGoal = Vector3.Distance(agent.transform.position, _goalPosition);
 
@@ -127,24 +145,108 @@ namespace Game.Scripts.AI.Tactics
                 return result;
             }
 
-            // 5. 일반 최대 EV 행동 선택
-            if (evShoot >= ShootThreshold && evShoot >= evPass && evShoot >= evDribble)
+            // 5. [FIX] 임계값 게이트 제거 → 최고 EV 행동이 무조건 승리
+            // 이전: evPass >= PassThreshold (0.25) 조건 → Dribble:0.25 같은 경우 항상 Hold
+            // 수정: Shoot/Pass/Dribble 중 가장 높은 EV를 선택 (최소 바닥값 0.05 이상)
+            string evLog = $"[EV] Shoot:{evShoot:F2} | Pass:{evPass:F2} | Dribble:{evDribble:F2}";
+            const float MinActionEV = 0.05f; // 이 이하는 진짜 아무것도 못하는 상황
+
+            float bestEV = Mathf.Max(evShoot, evPass, evDribble);
+
+            if (bestEV < MinActionEV)
+            {
+                // 진짜 아무 행동도 불가능한 상황
+                result.DebugLog = $"DECISION: HOLD (All EVs < {MinActionEV}) - {evLog}";
+            }
+            else if (evShoot >= evPass && evShoot >= evDribble)
             {
                 result.Action     = "Shoot";
                 result.Position   = _scorer.GetBestShootingTarget(agent, _goalPosition, _goalPosition.z);
                 result.Confidence = evShoot;
+                result.DebugLog   = $"DECISION: SHOOT ({evShoot:F2}) - {evLog}";
             }
-            else if (evPass >= PassThreshold && evPass >= evDribble)
+            else if (evPass >= evDribble)
             {
                 result.Action     = "Pass";
                 result.Target     = FindBestPassTarget(agent);
                 result.Confidence = evPass;
+                result.DebugLog   = $"DECISION: PASS ({evPass:F2}) - {evLog}";
+
+                // 패스 대상이 없으면 드리블로 폴백
+                if (result.Target == null)
+                {
+                    result.Action   = "Dribble";
+                    result.Position = FindBestDribbleTarget(agent, agent.transform.position, false);
+                    result.DebugLog = $"DECISION: DRIBBLE(pass-null-fallback) ({evDribble:F2}) - {evLog}";
+                }
             }
-            else if (evDribble >= DribbleThreshold)
+            else
             {
                 result.Action     = "Dribble";
                 result.Position   = FindBestDribbleTarget(agent, agent.transform.position, false);
                 result.Confidence = evDribble;
+                result.DebugLog   = $"DECISION: DRIBBLE ({evDribble:F2}) - {evLog}";
+            }
+
+            return result;
+        }
+
+        // =========================================================
+        // 패닉 모드: 임계값 무시하고 최선 행동 강제 반환
+        // =========================================================
+        /// \u003csummary\u003e
+        /// HOLD가 일정 시간 이상 지속될 때 호출. ShootThreshold / PassThreshold / DribbleThreshold를
+        /// 무시하고 현재 계산된 EV 중 가장 높은 행동을 강제로 반환합니다.
+        /// 백패스, 낮은 승률의 드리블, 먼 거리 슛 등 모두 허용.
+        /// \u003c/summary\u003e
+        public DecisionResult EvaluateForcedAction(HybridAgentController agent, ref float lastActionTime)
+        {
+            DecisionResult result = new DecisionResult { Action = "Hold", Confidence = 0f };
+
+            // 킥 실행 중이면 wait
+            if (agent.IsBusy || (agent.BallHandler && agent.BallHandler.HasPendingKick))
+                return result;
+
+            // ActionLockout은 유지 (너무 잦은 패닉 방지)
+            if (Time.time < lastActionTime + ActionLockoutTime)
+                return result;
+
+            float evShoot   = CalculateShootEV(agent);
+            float evPass    = CalculatePassEV(agent);
+            float evDribble = CalculateDribbleEV(agent);
+
+            string evLog = $"[PANIC EV] Shoot:{evShoot:F2} | Pass:{evPass:F2} | Dribble:{evDribble:F2}";
+
+            // 임계값 없이 최대 EV 선택
+            if (evShoot >= evPass && evShoot >= evDribble && evShoot > 0f)
+            {
+                result.Action     = "Shoot";
+                result.Position   = _scorer.GetBestShootingTarget(agent, _goalPosition, _goalPosition.z);
+                result.Confidence = evShoot;
+                result.DebugLog   = $"PANIC:SHOOT ({evShoot:F2}) - {evLog}";
+            }
+            else if (evPass >= evDribble && evPass > 0f)
+            {
+                result.Action     = "Pass";
+                result.Target     = FindBestPassTarget(agent);
+                result.Confidence = evPass;
+                result.DebugLog   = $"PANIC:PASS ({evPass:F2}) - {evLog}";
+
+                // 패스 대상이 없으면 드리블로 폴백
+                if (result.Target == null)
+                {
+                    result.Action   = "Dribble";
+                    result.Position = FindBestDribbleTarget(agent, agent.transform.position, true);
+                    result.DebugLog = $"PANIC:DRIBBLE(no-pass-fallback) ({evDribble:F2}) - {evLog}";
+                }
+            }
+            else
+            {
+                // 드리블로 탈출 시도 (forceEvade=true로 측면 가중치)
+                result.Action     = "Dribble";
+                result.Position   = FindBestDribbleTarget(agent, agent.transform.position, true);
+                result.Confidence = evDribble;
+                result.DebugLog   = $"PANIC:DRIBBLE ({evDribble:F2}) - {evLog}";
             }
 
             return result;
@@ -174,17 +276,19 @@ namespace Game.Scripts.AI.Tactics
         private float CalculatePassEV(HybridAgentController agent)
         {
             var bestTarget = FindBestPassTarget(agent);
-            if (bestTarget == null) return 0f;
+            if (bestTarget == null)
+            {
+                Debug.Log($"[PASS-DIAG] {agent.name} FindBestPassTarget=null (teammates={agent.GetTeammates()?.Count ?? 0})");
+                return 0f;
+            }
 
-            // 패스 성공 확률
             var opponents = MatchManager.Instance?.GetOpponents(agent.TeamID);
-            float pPass = _scorer.CalculatePassSuccessProbability(agent, agent.Stats, bestTarget, opponents);
+            float pPass    = _scorer.CalculatePassSuccessProbability(agent, agent.Stats, bestTarget, opponents);
+            float posValue = Mathf.Max(EvaluatePositionValue(bestTarget.transform.position), 0.35f);
 
-            // 수신자 위치 가치 (골대 기준 위치 평가)
-            float posValue = EvaluatePositionValue(bestTarget.transform.position);
-
-            // EV = P(패스 성공) × 수신자 위치 가치
-            return Mathf.Clamp01(pPass * posValue);
+            float ev = Mathf.Clamp01(pPass * posValue);
+            Debug.Log($"[PASS-DIAG] {agent.name} → {bestTarget.name} | pPass:{pPass:F2} posVal:{posValue:F2} ev:{ev:F2}");
+            return ev;
         }
 
         /// <summary>
@@ -215,40 +319,59 @@ namespace Game.Scripts.AI.Tactics
             var teammates  = agent.GetTeammates();
             var opponents  = MatchManager.Instance?.GetOpponents(agent.TeamID);
             GameObject bestTarget = null;
-            float bestEV  = 0f;
+            float bestEV  = -1f;
+
+            const float MIN_PASS_DIST   = 4.0f;  // [FIX] 최소 패스 거리 (너무 가까우면 패스 금지)
+            const float RECENT_PASS_PENALTY = 0.5f; // [FIX] 최근 수신자 EV 페널티 비율
+            const float RECENT_PASS_WINDOW  = 5.0f; // [FIX] 몇 초 이내 재패스를 억제할지
 
             foreach (var tm in teammates)
             {
                 if (tm == agent) continue;
 
-                // 패스 성공 확률 × 수신자 위치 가치
+                // [FIX] 거리 필터: 최소 패스 거리 미만이면 스킵
+                float dist = Vector3.Distance(agent.transform.position, tm.transform.position);
+                if (dist < MIN_PASS_DIST)
+                {
+                    Debug.Log($"[PASS-SKIP] {agent.name}→{tm.name} | Too close ({dist:F1}m < {MIN_PASS_DIST}m)");
+                    continue;
+                }
+
                 float pPass    = _scorer.CalculatePassSuccessProbability(agent, agent.Stats, tm.gameObject, opponents);
-                float posValue = EvaluatePositionValue(tm.transform.position);
+                // [FIX] 백패스 팀메이트도 최소 0.35 posValue 보장
+                float posValue = Mathf.Max(EvaluatePositionValue(tm.transform.position), 0.35f);
                 float ev       = pPass * posValue;
+
+                // [FIX] 최근에 이 에이전트에게 패스받은 팀메이트면 EV 페널티
+                if (agent.LastPassRecipient == tm.gameObject &&
+                    Time.time - agent.LastPassTime < RECENT_PASS_WINDOW)
+                {
+                    ev *= RECENT_PASS_PENALTY;
+                    Debug.Log($"[PASS-PENALTY] {agent.name}→{tm.name} | Recent recipient penalty applied. ev→{ev:F2}");
+                }
+
+                Debug.Log($"[PASS-TARGET] {agent.name}→{tm.name} | pPass:{pPass:F2} posVal:{posValue:F2} ev:{ev:F2}");
 
                 if (ev > bestEV)
                 {
-                    bestEV    = ev;
+                    bestEV     = ev;
                     bestTarget = tm.gameObject;
                 }
             }
+
+            // [FIX] 패스 확정 시 수신자 기록
+            if (bestTarget != null)
+            {
+                agent.LastPassRecipient = bestTarget;
+                agent.LastPassTime      = Time.time;
+            }
+
             return bestTarget;
         }
 
         /// <summary>드리블 후보 지점 중 EV가 가장 높은 목표 위치를 반환합니다.</summary>
         public Vector3 FindBestDribbleTarget(HybridAgentController agent, Vector3 ballPos, bool forceEvade = false)
         {
-            Vector3 dirToGoal = (_goalPosition - ballPos).normalized;
-            Vector3 right     = Vector3.Cross(Vector3.up, dirToGoal);
-
-            // 8방향 후보 지점 생성
-            Vector3[] candidates = new Vector3[8];
-            for (int i = 0; i < 8; i++)
-            {
-                Vector3 dir = Quaternion.AngleAxis(i * 45f, Vector3.up) * dirToGoal;
-                candidates[i] = ballPos + dir.normalized * 10f;
-            }
-
             float w = 32f;
             float l = 48f;
             if (agent.BallHandler && agent.BallHandler.settings)
@@ -257,49 +380,77 @@ namespace Game.Scripts.AI.Tactics
                 l = agent.BallHandler.settings.fieldHalfLength;
             }
 
-            float   bestEV  = -1f;
-            Vector3 bestPos = _goalPosition;
+            // [FIX] 원점을 ballPos → agent.transform.position으로 변경
+            // 이전: 공 위치 기준 8m 목표 → 에이전트가 경계 근처일 때 목표가 필드 밖으로 나감
+            // 수정: 에이전트 발 위치 기준으로 목표 생성
+            Vector3 origin = agent.transform.position;
+            origin.y = 0f;
 
-            foreach (var target in candidates)
+            int numDirections = 12;
+            float angleStep = 360f / numDirections;
+            float dribbleDist = 8f;
+
+            // [FIX] 기준 방향을 agent.transform.forward → 골대 방향으로 변경
+            // 이전: on-ball 상태에서 에이전트가 공(사이드라인 방향)을 바라봄
+            //       → forward가 사이드라인 방향 → 12방향 전체가 사이드라인 기준으로 회전
+            // 수정: 항상 골대 방향을 0도로 고정 → 전방=골대 쪽, 후방=자기 골대 쪽
+            Vector3 toGoal = (_goalPosition - origin);
+            toGoal.y = 0f;
+            Vector3 agentForward = (toGoal.sqrMagnitude > 0.01f) ? toGoal.normalized : Vector3.forward;
+
+            float bestEV  = -1f;
+            Vector3 bestPos = Vector3.ClampMagnitude(origin + agentForward * dribbleDist, 999f);
+            // 기본값도 경계 클램프
+            bestPos.x = Mathf.Clamp(bestPos.x, -(w - 5f), w - 5f);
+            bestPos.z = Mathf.Clamp(bestPos.z, -(l - 5f), l - 5f);
+
+            bool frontalBlocked = (agent.SkillSystem != null) && agent.SkillSystem.IsFrontalBlocked();
+            float pressure = _scorer.CalculatePressureScore(agent);
+
+            for (int i = 0; i < numDirections; i++)
             {
-                // 필드 경계 이탈 페널티
-                if (Mathf.Abs(target.x) > (w - 1f) || Mathf.Abs(target.z) > (l - 1f))
+                float angleDeg = i * angleStep;
+                Vector3 dir = Quaternion.AngleAxis(angleDeg, Vector3.up) * agentForward;
+                Vector3 target = origin + dir * dribbleDist;
+
+                // [FIX] 경계 마진 2f → 5f: 더 일찍 가장자리 방향을 걸러냄
+                if (Mathf.Abs(target.x) > (w - 5f) || Mathf.Abs(target.z) > (l - 5f))
                     continue;
 
-                Vector3 moveDir = (target - ballPos).normalized;
+                float pDribble = _scorer.CalculateDribbleSuccessProbability(agent, agent.Stats, dir);
+                float posValue = Mathf.Max(EvaluatePositionValue(target), 0.25f);
 
-                // 드리블 성공 확률
-                float pDribble = _scorer.CalculateDribbleSuccessProbability(agent, agent.Stats, moveDir);
+                float backwardness = Mathf.Clamp01(angleDeg <= 180f ? angleDeg / 180f : (360f - angleDeg) / 180f);
+                float evadeBonus = forceEvade || frontalBlocked
+                    ? backwardness * pressure * 0.4f
+                    : 0f;
 
-                // 회피 모드: 측면 방향 가중치 증가
-                float evadeBonus = 0f;
                 if (forceEvade)
                 {
-                    float perpendicularity = Mathf.Abs(Vector3.Dot(moveDir, right));
-                    evadeBonus = perpendicularity * 0.3f;
-                    pDribble   = Mathf.Clamp01(pDribble + evadeBonus);
+                    float perpendicularity = Mathf.Abs(Vector3.Dot(dir, agentForward));
+                    evadeBonus += (1f - perpendicularity) * 0.2f;
                 }
 
-                // 목표 지점 위치 가치
-                float posValue = EvaluatePositionValue(target);
+                float ev = pDribble * posValue + evadeBonus;
 
-                // EV = P(드리블) × 위치 가치
-                float ev = pDribble * posValue;
-
-                // 필드 경계 근처: 중앙 방향 보너스
-                bool nearSide = Mathf.Abs(ballPos.x) > (w - 7f);
-                bool nearEnd  = Mathf.Abs(ballPos.z) > (l - 8f);
+                // [FIX] 경계 근처면 중앙 방향에 강한 보너스 (에이전트 위치 기준)
+                bool nearSide = Mathf.Abs(origin.x) > (w - 10f);
+                bool nearEnd  = Mathf.Abs(origin.z) > (l - 10f);
                 if (nearSide || nearEnd)
                 {
-                    Vector3 toCenter = -ballPos.normalized;
-                    if (Vector3.Dot(moveDir, toCenter) > 0.3f)
-                        ev = Mathf.Clamp01(ev + 0.2f);
+                    Vector3 toCenter = -new Vector3(origin.x, 0f, origin.z).normalized;
+                    float alignment  = Vector3.Dot(dir, toCenter);
+                    if (alignment > 0.3f)
+                        ev = Mathf.Clamp01(ev + 0.4f * alignment); // 더 강한 중앙 보너스
+                    else if (alignment < -0.1f)
+                        ev *= 0.15f; // 경계 쪽으로 향하는 방향은 강하게 패널티
                 }
 
                 if (ev > bestEV) { bestEV = ev; bestPos = target; }
             }
             return bestPos;
         }
+
 
         /// <summary>특정 위치의 적 밀도를 반환합니다. (외부 호출 허용)</summary>
         public float CalculateEnemyDensity(Vector3 pos, HybridAgentController agent)
