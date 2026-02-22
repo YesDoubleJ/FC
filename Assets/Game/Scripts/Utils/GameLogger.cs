@@ -9,7 +9,14 @@ namespace Game.Scripts.Utils
 
         public void LogFormat(LogType logType, Object context, string format, params object[] args)
         {
-            m_DefaultLogHandler.LogFormat(logType, context, $"[{Time.time:F2}] {format}", args);
+            try 
+            {
+                m_DefaultLogHandler.LogFormat(logType, context, $"[{Time.time:F2}] {format}", args);
+            }
+            catch (System.Exception)
+            {
+                m_DefaultLogHandler.LogFormat(logType, context, $"[BG-THREAD] {format}", args);
+            }
         }
 
         public void LogException(System.Exception exception, Object context)

@@ -1,0 +1,110 @@
+1. assets-copy
+Copy the asset at path and stores it at newPath. Does AssetDatabase.Refresh() at the end. Use 'assets-find' tool to find assets before copying.
+2. assets-create-folder
+Creates a new folder in the specified parent folder. The parent folder string must start with the 'Assets' folder, and all folders within the parent folder string must already exist. For example, when specifying 'Assets/ParentFolder1/ParentFolder2/', the new folder will be created in 'ParentFolder2' only if ParentFolder1 and ParentFolder2 already exist. Use it to organize scripts and assets in the project. Does AssetDatabase.Refresh() at the end. Returns the GUID of the newly created folder, if successful.
+3. assets-delete
+Delete the assets at paths from the project. Does AssetDatabase.Refresh() at the end. Use 'assets-find' tool to find assets before deleting.
+4. assets-find
+Search the asset database using the search filter string. Allows you to search for Assets. The string argument can provide names, labels or types (classnames).
+5. assets-find-built-in
+Search the built-in assets of the Unity Editor located in the built-in resources: Resources/unity_builtin_extra. Doesn't support GUIDs since built-in assets do not have them.
+6. assets-get-data
+Get asset data from the asset file in the Unity project. It includes all serializable fields and properties of the asset. Use 'assets-find' tool to find asset before using this tool.
+7. assets-material-create
+Create new material asset with default parameters. Creates folders recursively if they do not exist. Provide proper 'shaderName' - use 'assets-shader-list-all' tool to find available shaders.
+8. assets-modify
+Modify asset file in the project. Use 'assets-get-data' tool first to inspect the asset structure before modifying. Not allowed to modify asset file in 'Packages/' folder. Please modify it in 'Assets/' folder.
+9. assets-move
+Move the assets at paths in the project. Should be used for asset rename. Does AssetDatabase.Refresh() at the end. Use 'assets-find' tool to find assets before moving.
+10. assets-refresh
+Refreshes the AssetDatabase. Use it if any file was added or updated in the project outside of Unity API. Use it if need to force scripts recompilation when '.cs' file changed.
+11. assets-prefab-close
+Close currently opened prefab. Use it when you are in prefab editing mode in Unity Editor. Use 'assets-prefab-open' tool to open a prefab first.
+12. assets-prefab-create
+Create a prefab from a GameObject in the current active scene. The prefab will be saved in the project assets at the specified path. Use 'gameobject-find' tool to find the target GameObject first.
+13. assets-prefab-instantiate
+Instantiates prefab in the current active scene. Use 'assets-find' tool to find prefab assets in the project.
+14. assets-prefab-open
+Open prefab edit mode for a specific GameObject. In the Edit mode you can modify the prefab. The modification will be applied to all instances of the prefab across the project. Note: Please use 'assets-prefab-close' tool later to exit prefab editing mode.
+15. assets-prefab-save
+Save a prefab. Use it when you are in prefab editing mode in Unity Editor. Use 'assets-prefab-open' tool to open a prefab first.
+16. assets-shader-list-all
+List all available shaders in the project assets and packages. Returns their names. Use this to find a shader name for 'assets-material-create' tool.
+17. console-get-logs
+Retrieves Unity Editor logs. Useful for debugging and monitoring Unity Editor activity.
+18. editor-application-get-state
+Returns available information about 'UnityEditor.EditorApplication'. Use it to get information about the current state of the Unity Editor application. Such as: playmode, paused state, compilation state, etc.
+19. editor-application-set-state
+Control the Unity Editor application state. You can start, stop, or pause the 'playmode'. Use 'editor-application-get-state' tool to get the current state first.
+20. editor-selection-get
+Get information about the current Selection in the Unity Editor. Use 'editor-selection-set' tool to set the selection.
+21. editor-selection-set
+Set the current Selection in the Unity Editor to the provided objects. Use 'editor-selection-get' tool to get the current selection first.
+22. gameobject-component-add
+Add Component to GameObject in opened Prefab or in a Scene. Use 'gameobject-find' tool to find the target GameObject first. Use 'gameobject-component-list-all' tool to find the component type names to add.
+23. gameobject-component-destroy
+Destroy one or many components from target GameObject. Can't destroy missed components. Use 'gameobject-find' tool to find the target GameObject and 'gameobject-component-get' to get component details first.
+24. gameobject-component-get
+Get detailed information about a specific Component on a GameObject. Returns component type, enabled state, and optionally serialized fields and properties. Use this to inspect component data before modifying it. Use 'gameobject-find' tool to get the list of all components on the GameObject.
+25. gameobject-component-list-all
+List C# class names extended from UnityEngine.Component. Use this to find component type names for 'gameobject-component-add' tool. Results are paginated to avoid overwhelming responses.
+26. gameobject-component-modify
+Modify a specific Component on a GameObject in opened Prefab or in a Scene. Allows direct modification of component fields and properties without wrapping in GameObject structure. Use 'gameobject-component-get' first to inspect the component structure before modifying.
+27. gameobject-create
+Create a new GameObject in opened Prefab or in a Scene. If needed - provide proper 'position', 'rotation' and 'scale' to reduce amount of operations.
+28. gameobject-destroy
+Destroy GameObject and all nested GameObjects recursively in opened Prefab or in a Scene. Use 'gameobject-find' tool to find the target GameObject first.
+29. gameobject-duplicate
+Duplicate GameObjects in opened Prefab or in a Scene. Use 'gameobject-find' tool to find the target GameObjects first.
+30. gameobject-find
+Finds specific GameObject by provided information in opened Prefab or in a Scene. First it looks for the opened Prefab, if any Prefab is opened it looks only there ignoring a scene. If no opened Prefab it looks into current active scene. Returns GameObject information and its children. Also, it returns Components preview just for the target GameObject.
+31. gameobject-modify
+Modify GameObject fields and properties in opened Prefab or in a Scene. You can modify multiple GameObjects at once. Just provide the same number of GameObject references and SerializedMember objects.
+32. gameobject-set-parent
+Set parent GameObject to list of GameObjects in opened Prefab or in a Scene. Use 'gameobject-find' tool to find the target GameObjects first.
+33. object-get-data
+Get data of the specified Unity Object. Returns serialized data of the object including its properties and fields. If need to modify the data use 'object-modify' tool.
+34. object-modify
+Modify the specified Unity Object. Allows direct modification of object fields and properties. Use 'object-get-data' first to inspect the object structure before modifying.
+35. package-add
+Install a package from the Unity Package Manager registry, Git URL, or local path. This operation modifies the project's manifest.json and triggers package resolution. Note: Package installation may trigger a domain reload. The result will be sent after the reload completes. Use 'package-search' tool to search for packages and 'package-list' to list installed packages.
+36. package-list
+List all packages installed in the Unity project (UPM packages). Returns information about each installed package including name, version, source, and description. Use this to check which packages are currently installed before adding or removing packages.
+37. package-remove
+Remove (uninstall) a package from the Unity project. This removes the package from the project's manifest.json and triggers package resolution. Note: Built-in packages and packages that are dependencies of other installed packages cannot be removed. Note: Package removal may trigger a domain reload. The result will be sent after the reload completes. Use 'package-list' tool to list installed packages first.
+38. package-search
+Search for packages in both Unity Package Manager registry and installed packages. Use this to find packages by name before installing them. Returns available versions and installation status. Searches both the Unity registry and locally installed packages (including Git, local, and embedded sources). Results are prioritized: exact name match, exact display name match, name substring, display name substring, description substring. Note: Online mode fetches exact matches from live registry, then supplements with cached substring matches.
+39. reflection-method-call
+Call C# method. Any method could be called, even private methods. It requires to receive proper method schema. Use 'reflection-method-find' to find available method before using it. Receives input parameters and returns result.
+40. reflection-method-find
+Find method in the project using C# Reflection. It looks for all assemblies in the project and finds method by its name, class name and parameters. Even private methods are available. Use 'reflection-method-call' to call the method after finding it.
+41. scene-create
+Create new scene in the project assets. Use 'scene-list-opened' tool to list all opened scenes after creation.
+42. scene-get-data
+This tool retrieves the list of root GameObjects in the specified scene. Use 'scene-list-opened' tool to get the list of all opened scenes.
+43. scene-list-opened
+Returns the list of currently opened scenes in Unity Editor. Use 'scene-get-data' tool to get detailed information about a specific scene.
+44. scene-open
+Open scene from the project asset file. Use 'assets-find' tool to find the scene asset first.
+45. scene-save
+Save Opened scene to the asset file. Use 'scene-list-opened' tool to get the list of all opened scenes.
+46. scene-set-active
+Set the specified opened scene as the active scene. Use 'scene-list-opened' tool to get the list of all opened scenes.
+47. scene-unload
+Unload scene from the Opened scenes in Unity Editor. Use 'scene-list-opened' tool to get the list of all opened scenes.
+48. screenshot-camera
+Captures a screenshot from a camera and returns it as an image. If no camera is specified, uses the Main Camera. Returns the image directly for visual inspection by the LLM.
+49. screenshot-game-view
+Captures a screenshot from the Unity Editor Game View and returns it as an image. Reads the Game View's own render texture directly via the Unity Editor API. The image size matches the current Game View resolution. Returns the image directly for visual inspection by the LLM.
+50. screenshot-scene-view
+Captures a screenshot from the Unity Editor Scene View and returns it as an image. Returns the image directly for visual inspection by the LLM.
+51. script-delete
+Delete the script file(s). Does AssetDatabase.Refresh() and waits for Unity compilation to complete before reporting results. Use 'script-read' tool to read existing script files first.
+52. script-execute
+Compiles and executes C# code dynamically using Roslyn. The provided code must define a class with a static method to execute.
+53. script-read
+Reads the content of a script file and returns it as a string. Use 'script-update-or-create' tool to update or create script files.
+54. script-update-or-create
+Updates or creates script file with the provided C# code. Does AssetDatabase.Refresh() at the end. Provides compilation error details if the code has syntax errors. Use 'script-read' tool to read existing script files first.
+55. tests-run
+Execute Unity tests and return detailed results. Supports filtering by test mode, assembly, namespace, class, and method. Recommended to use 'EditMode' for faster iteration during development.

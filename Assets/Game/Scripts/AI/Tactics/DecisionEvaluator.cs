@@ -155,8 +155,20 @@ namespace Game.Scripts.AI.Tactics
 
             if (bestEV < MinActionEV)
             {
-                // 진짜 아무 행동도 불가능한 상황
-                result.DebugLog = $"DECISION: HOLD (All EVs < {MinActionEV}) - {evLog}";
+                Vector3 myGoal = MatchManager.Instance.GetDefendGoalPosition(agent.TeamID);
+                float distToMyGoal = Vector3.Distance(agent.transform.position, myGoal);
+
+                if (agent.IsGoalkeeper || (distToMyGoal < 30f && _scorer.CalculatePressureScore(agent) > 0.3f))
+                {
+                    result.Action = "Pass"; // Null target = Clearance
+                    result.Target = null;
+                    result.DebugLog = $"DECISION: OVERRIDE-CLEARANCE (No viable options, forced from HOLD) - {evLog}";
+                }
+                else
+                {
+                    // 진짜 아무 행동도 불가능한 상황
+                    result.DebugLog = $"DECISION: HOLD (All EVs < {MinActionEV}) - {evLog}";
+                }
             }
             else if (evShoot >= evPass && evShoot >= evDribble)
             {
@@ -172,12 +184,23 @@ namespace Game.Scripts.AI.Tactics
                 result.Confidence = evPass;
                 result.DebugLog   = $"DECISION: PASS ({evPass:F2}) - {evLog}";
 
-                // 패스 대상이 없으면 드리블로 폴백
+                // 패스 대상이 없으면: 수비 진영이거나 골키퍼면 '클리어런스', 아니면 드리블 폴백
                 if (result.Target == null)
                 {
-                    result.Action   = "Dribble";
-                    result.Position = FindBestDribbleTarget(agent, agent.transform.position, false);
-                    result.DebugLog = $"DECISION: DRIBBLE(pass-null-fallback) ({evDribble:F2}) - {evLog}";
+                    Vector3 myGoal = MatchManager.Instance.GetDefendGoalPosition(agent.TeamID);
+                    float distToMyGoal = Vector3.Distance(agent.transform.position, myGoal);
+
+                    if (agent.IsGoalkeeper || (distToMyGoal < 35f && _scorer.CalculatePressureScore(agent) > 0.2f))
+                    {
+                        // Action == "Pass", Target == null -> 클리어런스로 동작
+                        result.DebugLog = $"DECISION: CLEARANCE(pass-null) - {evLog}";
+                    }
+                    else
+                    {
+                        result.Action   = "Dribble";
+                        result.Position = FindBestDribbleTarget(agent, agent.transform.position, false);
+                        result.DebugLog = $"DECISION: DRIBBLE(pass-null-fallback) ({evDribble:F2}) - {evLog}";
+                    }
                 }
             }
             else
@@ -186,6 +209,20 @@ namespace Game.Scripts.AI.Tactics
                 result.Position   = FindBestDribbleTarget(agent, agent.transform.position, false);
                 result.Confidence = evDribble;
                 result.DebugLog   = $"DECISION: DRIBBLE ({evDribble:F2}) - {evLog}";
+            }
+
+            // [FIX] 골키퍼이거나 위험 지역의 마지막 수비수인데도 드리블을 선택한 경우, 강제로 클리어런스로 전환
+            if (result.Action == "Dribble")
+            {
+                Vector3 myGoal = MatchManager.Instance.GetDefendGoalPosition(agent.TeamID);
+                float distToMyGoal = Vector3.Distance(agent.transform.position, myGoal);
+
+                if (agent.IsGoalkeeper || (distToMyGoal < 30f && _scorer.CalculatePressureScore(agent) > 0.3f))
+                {
+                    result.Action = "Pass"; // Pass with null target = Clearance
+                    result.Target = null;
+                    result.DebugLog = $"DECISION: OVERRIDE-CLEARANCE (Dribble was too risky) - {evLog}";
+                }
             }
 
             return result;
@@ -232,21 +269,45 @@ namespace Game.Scripts.AI.Tactics
                 result.Confidence = evPass;
                 result.DebugLog   = $"PANIC:PASS ({evPass:F2}) - {evLog}";
 
-                // 패스 대상이 없으면 드리블로 폴백
+                // 패스 대상이 없으면 수비 진영이거나 골키퍼일 때 클리어런스
                 if (result.Target == null)
                 {
-                    result.Action   = "Dribble";
-                    result.Position = FindBestDribbleTarget(agent, agent.transform.position, true);
-                    result.DebugLog = $"PANIC:DRIBBLE(no-pass-fallback) ({evDribble:F2}) - {evLog}";
+                    Vector3 myGoal = MatchManager.Instance.GetDefendGoalPosition(agent.TeamID);
+                    float distToMyGoal = Vector3.Distance(agent.transform.position, myGoal);
+
+                    if (agent.IsGoalkeeper || distToMyGoal < 35f)
+                    {
+                        // 클리어런스
+                        result.DebugLog = $"PANIC:CLEARANCE(pass-null) - {evLog}";
+                    }
+                    else
+                    {
+                        result.Action   = "Dribble";
+                        result.Position = FindBestDribbleTarget(agent, agent.transform.position, true);
+                        result.DebugLog = $"PANIC:DRIBBLE(no-pass-fallback) ({evDribble:F2}) - {evLog}";
+                    }
                 }
             }
             else
             {
-                // 드리블로 탈출 시도 (forceEvade=true로 측면 가중치)
-                result.Action     = "Dribble";
-                result.Position   = FindBestDribbleTarget(agent, agent.transform.position, true);
-                result.Confidence = evDribble;
-                result.DebugLog   = $"PANIC:DRIBBLE ({evDribble:F2}) - {evLog}";
+                // 모든 EV가 낮을 때 (패닉): 골키퍼 및 수비수는 즉시 클리어!
+                Vector3 myGoal = MatchManager.Instance.GetDefendGoalPosition(agent.TeamID);
+                float distToMyGoal = Vector3.Distance(agent.transform.position, myGoal);
+
+                if (agent.IsGoalkeeper || distToMyGoal < 35f)
+                {
+                    result.Action   = "Pass"; // Null target = Clearance
+                    result.Target   = null;
+                    result.DebugLog = $"PANIC:CLEARANCE(forced) - {evLog}";
+                }
+                else
+                {
+                    // 공격/미드필더는 공격 진영에서 드리블로 탈출 시도
+                    result.Action     = "Dribble";
+                    result.Position   = FindBestDribbleTarget(agent, agent.transform.position, true);
+                    result.Confidence = evDribble;
+                    result.DebugLog   = $"PANIC:DRIBBLE ({evDribble:F2}) - {evLog}";
+                }
             }
 
             return result;

@@ -63,6 +63,10 @@ namespace Game.Scripts.AI
         public float maxTetherRadius = 1.5f;
 
         [Header("Passing")]
+        [Tooltip("전체 패스 파워 배율 (물리 법칙 수정 후 스케일 조절용)")]
+        [Range(0.1f, 1.0f)]
+        public float passPowerMultiplier = 0.45f;
+
         public float passPowerBase = 8.0f;
         public float passPowerDistFactor = 0.5f;
         public float passPowerMin = 5.0f;
@@ -74,6 +78,10 @@ namespace Game.Scripts.AI
         public float passAlignPullStrengthHard = 20.0f;
 
         [Header("Shooting")]
+        [Tooltip("전체 슛 파워 배율 (물리 법칙 수정 후 스케일 조절용)")]
+        [Range(0.1f, 1.0f)]
+        public float shootPowerMultiplier = 0.45f;
+
         public float shootPowerBase = 15.0f; // Stronger than pass
         public float shootPowerDistFactor = 0.8f;
         public float shootPowerMin = 10.0f;
@@ -83,6 +91,11 @@ namespace Game.Scripts.AI
         [Header("Kicking")]
         [Range(0.1f, 2.0f)]
         public float globalKickPowerScale = 1.0f;
+        
+        [Tooltip("태클 당해서 공을 흘릴 때 튕겨나가는 힘의 배율")]
+        [Range(0.1f, 1.0f)]
+        public float tackleFumbleMultiplier = 0.35f;
+
         public float highClearancePower = 25.0f;
         public float kickMissDistance = 2.5f;
         public float kickCooldown = 0.5f;

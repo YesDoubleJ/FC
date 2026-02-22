@@ -223,6 +223,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -857,7 +861,7 @@ GameObject:
   - component: {fileID: 346778714}
   - component: {fileID: 346778713}
   - component: {fileID: 346778717}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1243,6 +1247,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -1622,6 +1630,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       propertyPath: m_Layer
@@ -2003,6 +2015,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -2382,6 +2398,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       propertyPath: m_Layer
@@ -4066,6 +4086,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -4586,6 +4610,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       propertyPath: m_Layer
@@ -5400,6 +5428,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -5901,6 +5933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.Managers.MatchManager
   halfLengthMinutes: 2.5
+  FieldHalfWidth: 32
+  FieldHalfLength: 48
 --- !u!1 &1508243687
 GameObject:
   m_ObjectHideFlags: 0
@@ -6262,6 +6296,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 50022eb0ba7248b4e8f8cd2035f8cc91, type: 3}
       propertyPath: m_Layer
@@ -6642,6 +6680,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1752310950642210314, guid: 514fcd00a2fd10a44953a438a6ca56b7, type: 3}
       propertyPath: m_Layer

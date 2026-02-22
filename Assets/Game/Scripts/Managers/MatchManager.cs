@@ -32,6 +32,10 @@ namespace Game.Scripts.Managers
         [Header("Settings")]
         public float halfLengthMinutes = 5f;
         
+        [Header("Field Dimensions")]
+        public float FieldHalfWidth = 32f;
+        public float FieldHalfLength = 48f;
+        
         [Header("State")]
         public MatchState CurrentState { get; private set; }
         public int HomeScore { get; private set; } 
@@ -39,6 +43,7 @@ namespace Game.Scripts.Managers
         public float MatchTimer { get; private set; }
         
         public HybridAgentController CurrentBallOwner { get; private set; }
+        public Game.Scripts.Data.Team? LastPossessionTeam { get; private set; } = null;
 
         public Vector3 HomeGoalPosition { get; private set; } = new Vector3(0, 0, -50f);
         public Vector3 AwayGoalPosition { get; private set; } = new Vector3(0, 0, 50f);
@@ -112,6 +117,7 @@ namespace Game.Scripts.Managers
 
             if (CurrentBallOwner == agent) return;
             CurrentBallOwner = agent;
+            LastPossessionTeam = agent.TeamID; // [FIX] 트랜지션 상태에서 공격 지속 여부를 알기 위함
             agent.NotifyPossessionGained();
             logToUI($"{agent.name} has the ball!");
         }
@@ -149,8 +155,43 @@ namespace Game.Scripts.Managers
             }
         }
 
+        private float _dynamicGoalHalfWidth = -1f;
+        private float _dynamicGoalDepth = -1f;
+
+        private void SetupGoalDimensions()
+        {
+            _dynamicGoalHalfWidth = 4.5f;
+            _dynamicGoalDepth = 4.0f;
+
+            Game.Scripts.Gameplay.GoalTrigger[] triggers = FindObjectsByType<Game.Scripts.Gameplay.GoalTrigger>(FindObjectsSortMode.None);
+            if (triggers != null && triggers.Length > 0)
+            {
+                foreach (var trig in triggers)
+                {
+                    if (trig.transform.parent != null)
+                    {
+                        Transform postL = trig.transform.parent.Find("Post_L");
+                        Transform postR = trig.transform.parent.Find("Post_R");
+                        if (postL != null && postR != null)
+                        {
+                            float dist = Mathf.Abs(postL.position.x - postR.position.x) / 2f;
+                            // 공략의 여유폭을 위해 넉넉히 설정
+                            _dynamicGoalHalfWidth = Mathf.Max(_dynamicGoalHalfWidth, dist + 2.0f);
+                        }
+                        
+                        Collider myCol = trig.GetComponent<Collider>();
+                        if (myCol != null)
+                        {
+                            _dynamicGoalDepth = Mathf.Max(_dynamicGoalDepth, myCol.bounds.size.z + 2.0f);
+                        }
+                    }
+                }
+            }
+        }
+
         private void Start()
         {
+            SetupGoalDimensions();
             RefreshBallReference();
             StartKickOff();
         }
@@ -195,10 +236,24 @@ namespace Game.Scripts.Managers
                 if (ballRef != null)
                 {
                     Vector3 pos = ballRef.transform.position;
-                    // Simple Hardcoded Bounds Check for safety
-                    if (pos.y < -2.0f || Mathf.Abs(pos.x) > 40f || Mathf.Abs(pos.z) > 60f)  
+                    // [FIX] 하드코딩된 필드 크기를 변수로 교체 (기즈모 크기 32x48과 일치)
+                    if (pos.y < -2.0f || Mathf.Abs(pos.x) > FieldHalfWidth)  
                     {
-                         OnAttackFailed("OUT OF BOUNDS");
+                         OnAttackFailed("OUT OF BOUNDS (SIDELINE)");
+                    }
+                    else if (Mathf.Abs(pos.z) > FieldHalfLength)
+                    {
+                        // 골대(Goal) 영역인 경우, 즉시 아웃 판정을 내리지 않고 GoalTrigger가 작동할 시간을 줍니다.
+                        if (Mathf.Abs(pos.x) > _dynamicGoalHalfWidth)
+                        {
+                            // 골대를 빗나간 완전한 아웃
+                            OnAttackFailed("OUT OF BOUNDS (ENDLINE)");
+                        }
+                        else if (Mathf.Abs(pos.z) > FieldHalfLength + _dynamicGoalDepth)
+                        {
+                            // 골대 안쪽으로 깊숙이 박혔는데 모종의 이유로 트리거가 안 된 경우 최후의 안전장치
+                            OnAttackFailed("OUT OF BOUNDS (DEEP NET)");
+                        }
                     }
                 }
                 else RefreshBallReference();

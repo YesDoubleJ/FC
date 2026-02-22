@@ -213,8 +213,8 @@ namespace Game.Scripts.AI
                 // [FIX] LOCK SPEED
                 if (_mover) _mover.IsSpeedLocked = true;
                 
-                // Boost speed
-                float multiplier = (_controller.config) ? _controller.config.BreakthroughSpeedMultiplier : 1.5f;
+                // Boost speed (Reduced to prevent teleporting balance issues)
+                float multiplier = (_controller.config) ? _controller.config.BreakthroughSpeedMultiplier : 1.25f;
                 _agent.speed = _preSkillSpeed * multiplier;
                 _agent.acceleration = _preSkillAccel * multiplier;
                 
@@ -222,9 +222,27 @@ namespace Game.Scripts.AI
                 _agent.SetDestination(targetPos);
                 _agent.isStopped = false;
                 
-                // Impulse for immediate "Pop"
-                float impulse = (_controller.config) ? _controller.config.BreakthroughImpulseForce : 15f;
+                // Impulse for immediate "Pop" (Reduced from 15f to 2f. 15f caused instant teleportation)
+                float impulse = (_controller.config) ? _controller.config.BreakthroughImpulseForce : 2f;
                 _rb.AddForce(chargeDir * impulse, ForceMode.Impulse);
+                
+                // [FIX] Breakthrough uses 'kick and run' physics! 
+                // Push the ball forward and disable magnet temporarily so it doesn't instantly teleport back
+                var matchMgr = MatchManager.Instance;
+                if (matchMgr != null && matchMgr.CurrentBallOwner == _controller)
+                {
+                    Rigidbody ballRb = FindFirstObjectByType<BallAerodynamics>()?.GetComponent<Rigidbody>();
+                    if (ballRb != null)
+                    {
+                        // Knock the ball ahead
+                        ballRb.AddForce(chargeDir * (impulse * 3f), ForceMode.Impulse);
+                        
+                        if (_controller.BallHandler != null)
+                        {
+                            _controller.BallHandler.DisableDribbleAssist(1.0f); // 1초간 자석 드리블 무력화
+                        }
+                    }
+                }
                 
                 // [SKILL LOG]
                 Debug.Log($"[SKILL] {name} activated BREAKTHROUGH! (Cooldown: {cooldown:F1}s)");

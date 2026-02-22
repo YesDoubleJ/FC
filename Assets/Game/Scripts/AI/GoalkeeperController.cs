@@ -254,8 +254,9 @@ namespace Game.Scripts.AI
 
             // Settings
             var settings = _gk.gkSettings;
-            float dangerSpeed = settings ? settings.dangerousShotSpeedThreshold : 8.0f;
-            float dangerTime = settings ? settings.dangerousShotTimeThreshold : 2.5f;
+            // [FIX] lowered dangerSpeed to intercept realistic shots (was 8.0, too high)
+            float dangerSpeed = settings ? settings.dangerousShotSpeedThreshold : 2.0f;
+            float dangerTime = settings ? settings.dangerousShotTimeThreshold : 3.5f;
 
             // SMART SAVE LOGIC (User Req: Don't be a scarecrow)
             bool isDangerousShot = false;
@@ -297,11 +298,16 @@ namespace Game.Scripts.AI
                 }
             }
 
-            // 2. Fallback: Close Range Emergency (< 5m & Moving)
-            if (!isDangerousShot && distToBall < 5.0f && ballSpeed > 3.0f)
+            // 2. Fallback: Close Range Emergency (< 8m & Moving)
+            if (!isDangerousShot && distToBall < 8.0f && ballSpeed > 1.5f)
             {
-                 isDangerousShot = true;
-                 interceptPos = _ball.position + (_ballRb.linearVelocity * 0.2f);
+                 // Check if it's moving towards goal or just loose
+                 Vector3 toGoal = (_gk.goalCenter.position - _ball.position).normalized;
+                 if (Vector3.Dot(_ballRb.linearVelocity.normalized, toGoal) > 0.3f || _ballRb.linearVelocity.magnitude < 2f)
+                 {
+                     isDangerousShot = true;
+                     interceptPos = _ball.position + (_ballRb.linearVelocity * 0.2f); // Predict slightly ahead
+                 }
             }
             
             if (isDangerousShot)

@@ -53,7 +53,12 @@ namespace Game.Scripts.AI.DecisionMaking
             float pAngle = Mathf.Lerp(1.0f, 0.1f, Mathf.Clamp01(absX / 30f));
 
             // 3. 슈팅 스탯 확률
-            float pStat = (stats != null) ? Mathf.Clamp01(stats.GetStat(StatType.Shooting) / 100f) : 0.5f;
+            // [FIX] 이전: stat/100f → 기본 스탯 50이면 pStat=0.5, 곱셈으로 천장 형성 (근거리도 0.5 못 넘음)
+            //       수정: CalculatePassSuccessProbability와 동일한 기저선(0.4) + 비율(0.6) 방식 적용
+            //       스탯 10 → 0.46, 스탯 50 → 0.70, 스탯 99 → 0.994
+            float pStat = (stats != null)
+                ? Mathf.Clamp01(0.4f + stats.GetStat(StatType.Shooting) / 100f * 0.6f)
+                : 0.7f;  // stats null 시 중간 능력자 가정
 
             // 최종 슛 성공 확률 = 거리 × 각도 × 능력치
             // 득점 가치 = 1.0 고정 → EV = pSucceed × 1.0

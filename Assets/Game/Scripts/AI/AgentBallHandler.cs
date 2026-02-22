@@ -57,7 +57,7 @@ namespace Game.Scripts.AI
         private static float _lastBallSearchTime = 0f;
 
         public bool HasPendingKick => _pendingKicks.Count > 0;
-        public bool IsPreparingKick => _isPreparingKick; // [NEW] Exposed for RootState
+        public bool IsPreparingKick => _isPreparingKick || HasPendingKick; // [FIX] 물리적으로 킥이 끝날 때까지 대기하도록 포함
         public bool IsInPocket { get; private set; } // Exposed state for RootState decision
 
 
@@ -357,6 +357,42 @@ namespace Game.Scripts.AI
             var matchMgr = MatchManager.Instance;
             if (matchMgr == null) return;
 
+            // --- AERIAL BALL / HEADER LOGIC ---
+            float heightDiff = _cachedBallRb.position.y - transform.position.y;
+            Vector3 diff2D = _cachedBallRb.position - transform.position;
+            diff2D.y = 0;
+            float dist2D = diff2D.magnitude;
+
+            // If it's high up but within horizontal reach
+            if (heightDiff > 0.6f)
+            {
+                // Unconditionally drop possession if it pops up, so DribbleAssist doesn't freeze it in the air
+                if (matchMgr.CurrentBallOwner == _controller)
+                {
+                    matchMgr.LosePossession(_controller);
+                    _cachedBallRb = null; 
+                    _isDribbleActive = false;
+                }
+
+                // If high enough for a header AND close horizontally
+                if (heightDiff > 1.2f && dist2D < 1.5f)
+                {
+                    Rigidbody rbToUse = _cachedBallRb != null ? _cachedBallRb : _sharedBallRb;
+                    if (rbToUse != null)
+                    {
+                        // [FIX] 강한 클리어런스성 헤딩: 위로 뜨지 않고(0.3f) 앞으로 강하게(15.0f) 날려버립니다.
+                        Vector3 headerDir = (transform.forward + Vector3.up * 0.3f).normalized;
+                        rbToUse.linearVelocity = headerDir * 15.0f;
+                        _ignoreBallInteractionUntil = Time.time + 1.5f;
+                        Debug.Log($"[HEADER] {name} headed the high ball powerfully! (Height: {heightDiff:F2})");
+                    }
+                    return; // Cooldown applied, stop
+                }
+
+                // Not headable yet, but too high for feet -> just wait for it to drop
+                return;
+            }
+
             // CLAIM POSSESSION
             if (matchMgr.CurrentBallOwner == null)
             {
@@ -531,9 +567,9 @@ namespace Game.Scripts.AI
         // [중요] 공이 등 뒤(100도 이상)에 있으면 당기는 힘을 0으로 만듦
         // 몸을 뚫고 당겨오는 현상 원천 차단
         float correctionGain = settings.correctionGainMin;
-        if (angleToBall > 100f) 
+        if (angleToBall > 100f || distToBall > 2.0f) 
         {
-            correctionGain = 0f; // 뒤에 있으면 당기지 마! (Constraint나 회전에 맡김)
+            correctionGain = 0f; // 뒤에 있거나 멀리 있으면 순간이동/당기기 방지!
         }
 
         Vector3 correctionVel = posError * correctionGain;
@@ -741,7 +777,7 @@ namespace Game.Scripts.AI
             float dist = Vector3.Distance(transform.position, targetPos);
             float basePower = settings.passPowerBase + (dist * settings.passPowerDistFactor) + (passingStat * 0.05f);
             float clampedPower = Mathf.Clamp(basePower, settings.passPowerMin, settings.passPowerMax);
-            float finalPower = clampedPower * settings.globalKickPowerScale;
+            float finalPower = clampedPower * settings.globalKickPowerScale * settings.passPowerMultiplier;
             
             // [KICK-DEBUG] Pass Force Breakdown
             // Format: [KICK-DEBUG] PASS | Dist: 10.5m | Formula: (Base:8 + Dist:10.5*0.5 + Stat:2) * Scale:1.0 = 15.25
@@ -780,7 +816,7 @@ namespace Game.Scripts.AI
             // Power Calculation
             float basePower = settings.shootPowerBase + (dist * settings.shootPowerDistFactor) + (shootingStat * 0.1f);
             float clampedPower = Mathf.Clamp(basePower, settings.shootPowerMin, settings.shootPowerMax);
-            float finalPower = clampedPower * settings.globalKickPowerScale;
+            float finalPower = clampedPower * settings.globalKickPowerScale * settings.shootPowerMultiplier;
 
             // [KICK-DEBUG] Shoot Force Breakdown
             Debug.Log($"[KICK-DEBUG] SHOOT | Dist: {dist:F1}m | Formula: ({settings.shootPowerBase:F1} + {dist:F1}*{settings.shootPowerDistFactor:F1} + {shootingStat}*0.1) [Clamp: {clampedPower:F1}] * Scale:{settings.globalKickPowerScale:F1} = {finalPower:F1}");
@@ -965,31 +1001,31 @@ namespace Game.Scripts.AI
                          Debug.Log($"[KICK-FIX] Ball clipped inside player. Teleported to {safeKickPos}");
                      }
 
-                     // 2. [핵심] 자가 충돌 무시 (발에 걸림 방지)
-                     Collider myCol = GetComponent<Collider>();
+                     // 2. [핵심] 자가 충돌 무시 (발에 걸림 방지) - 모든 자식(발 등) 포함
+                     Collider[] myCols = GetComponentsInChildren<Collider>();
                      Collider ballCol = kick.rb.GetComponent<Collider>();
-                     if (myCol != null && ballCol != null)
+                     if (myCols.Length > 0 && ballCol != null)
                      {
-                         UnityEngine.Physics.IgnoreCollision(myCol, ballCol, true);
+                         foreach (var col in myCols)
+                         {
+                             UnityEngine.Physics.IgnoreCollision(col, ballCol, true);
+                         }
+                         
                          // [FIX] 슛은 공이 선수를 지나칠 때까지 충돌 무시 시간 연장 (1.0s)
-                         // 패스는 0.2s로 충분하지만, 슛 후 공이 반대방향(에이전트 뒤)으로 가면
-                         // 0.2s 충돌 복구 후 캡슐과 충돌해 튕겨나가는 문제 방지
                          bool isShootKick = (_kickRecipient == null && _kickTargetPos != Vector3.zero);
                          float ignoreCollisionDuration = isShootKick ? 1.0f : 0.2f;
-                         StartCoroutine(ResetCollisionRoutine(myCol, ballCol, ignoreCollisionDuration));
+                         StartCoroutine(ResetCollisionRoutine(myCols, ballCol, ignoreCollisionDuration));
                      }
 
                      kick.rb.isKinematic = false; // 이게 없어서 공이 안 나갔던 겁니다!
 
-                     // 3. 물리력 초기화 및 적용
-                     kick.rb.linearVelocity = Vector3.zero;
-                     kick.rb.angularVelocity = Vector3.zero;
+                     // 3. 물리력 초기화 및 직접 속도 주입 (AddForce의 1프레임 씹힘 방지)
+                     kick.rb.isKinematic = false;
+                     kick.rb.linearVelocity = kick.force; // [FIX] AddForce 대신 직접 속도 할당! 완벽한 강제 킥
+                     if (kick.torque != Vector3.zero) kick.rb.angularVelocity = kick.torque;
                      
                      // [디버그]
-                     Debug.Log($"[KICK-EXEC] {name} Kicked! Force: {kick.force.magnitude:F1}, Mode: VelocityChange | Scale: {settings.globalKickPowerScale:F1}");
-                     
-                     kick.rb.AddForce(kick.force, ForceMode.VelocityChange); // 속도 모드 사용
-                     if (kick.torque != Vector3.zero) kick.rb.AddTorque(kick.torque, ForceMode.VelocityChange);
+                     Debug.Log($"[KICK-EXEC] {name} Kicked! Force/Velocity: {kick.force.magnitude:F1} | Scale: {settings.globalKickPowerScale:F1}");
                      
                      // 4. 마무리 (Possession Release)
                      // [FIX] 슛/패스 구분 쿨다운:
@@ -997,8 +1033,9 @@ namespace Game.Scripts.AI
                      bool isShoot = (_kickRecipient == null && _kickTargetPos != Vector3.zero);
                      float cooldown = isShoot ? 1.0f : settings.kickCooldown;
                      
-                     // 1. 소유권 해제 알림
+                     // 1. 소유권 해제 알림 및 글로벌 락아웃 설정
                      MatchManager.Instance.LosePossession(_controller);
+                     MatchManager.Instance.SetNoPossessionTime(0.15f); // 타 에이전트나 본인이 즉시 가로채는 현상 방지 (공이 선수를 벗어날 시간 확보)
                      
                      // 2. 드리블 모드 해제
                      _isDribbleActive = false;
@@ -1010,7 +1047,7 @@ namespace Game.Scripts.AI
                      Debug.Log($"[KICK-EXEC] {name} Kicked! Relinquishing Possession. Cooldown:{cooldown:F1}s");
                      
                      BallAerodynamics aero = kick.rb.GetComponent<BallAerodynamics>();
-                     if (aero != null) aero.ResetAerodynamics();
+                     if (aero != null) aero.ResetAerodynamics(false); // [FIX] 킥 이후 공을 강제 정지시키는 현상(초기화) 제거! 속도 유지!
                      
                      if (MatchManager.Instance.IsKickOffFirstPass)
                      {
@@ -1020,13 +1057,16 @@ namespace Game.Scripts.AI
              }
         }
 
-        // [새로 추가] 충돌 복구 코루틴
-        private System.Collections.IEnumerator ResetCollisionRoutine(Collider c1, Collider c2, float delay)
+        // [새로 추가] 충돌 복구 코루틴 (배열 처리로 모든 Collider 복구)
+        private System.Collections.IEnumerator ResetCollisionRoutine(Collider[] c1Array, Collider c2, float delay)
         {
             yield return new WaitForSeconds(delay);
-            if (c1 != null && c2 != null)
+            if (c1Array != null && c2 != null)
             {
-                UnityEngine.Physics.IgnoreCollision(c1, c2, false);
+                foreach (var c1 in c1Array)
+                {
+                    if (c1 != null) UnityEngine.Physics.IgnoreCollision(c1, c2, false);
+                }
             }
         }
 
@@ -1073,9 +1113,15 @@ namespace Game.Scripts.AI
 
             _cachedBallRb.isKinematic = false;
             _cachedBallRb.linearVelocity = Vector3.zero; // Reset velocity
-            _cachedBallRb.AddForce(fumbleDir * power, ForceMode.Impulse); 
+            _cachedBallRb.AddForce(fumbleDir * (power * settings.tackleFumbleMultiplier), ForceMode.Impulse); 
 
-            Debug.Log($"[TACKLE-IMPACT] {name} fumbled ball! Stunned for 1.5s. Power: {power}");
+            Debug.Log($"[TACKLE-IMPACT] {name} fumbled ball! Stunned for 1.5s. Power: {power * settings.tackleFumbleMultiplier:F1}");
+        }
+
+        public void DisableDribbleAssist(float duration)
+        {
+            _ignoreBallInteractionUntil = Time.time + duration;
+            _isDribbleActive = false;
         }
 
         public void ResetState()

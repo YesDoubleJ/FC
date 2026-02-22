@@ -121,7 +121,13 @@ namespace Game.Scripts.Physics
                 return;
             }
 
-            _isGrounded = UnityEngine.Physics.Raycast(transform.position, Vector3.down, 0.15f);
+            // [FIX] 공의 실제 크기 비례로 바닥 판정 거리 확충 (0.15f 하드코딩 시 공 크면 영원히 공중 판정)
+            float checkDist = 0.6f;
+            var col = GetComponent<Collider>();
+            if (col != null) checkDist = col.bounds.extents.y + 0.1f;
+
+            _isGrounded = UnityEngine.Physics.Raycast(transform.position, Vector3.down, checkDist) 
+                          || transform.position.y < checkDist + 0.05f;
 
             ApplyAirDrag();
             ApplyGroundFriction();
@@ -143,8 +149,9 @@ namespace Game.Scripts.Physics
                 return;
             }
 
-            // F_drag = -v̂ × C_d × ρ × |v|²
-            _currentDragForce = -velocity.normalized * (_dragCoeff * _airDensity * speedSq);
+            // F_drag = 0.5 * C_d * ρ * A * |v|² (단면적 A ≈ 0.038m²)
+            float area = 0.038f;
+            _currentDragForce = -velocity.normalized * (0.5f * _dragCoeff * _airDensity * area * speedSq);
 
             // 항력이 현재 운동량을 초과하지 않도록 클램프
             float maxDragMagnitude = velocity.magnitude / Time.fixedDeltaTime * _rb.mass;
@@ -162,30 +169,32 @@ namespace Game.Scripts.Physics
             if (!_isGrounded) return;
 
             Vector3 velocity = _rb.linearVelocity;
+            // 수평 속도만을 기준으로 마찰 적용
+            velocity.y = 0f;
             float speed = velocity.magnitude;
 
-            if (speed < 0.05f)
+            if (speed < 0.1f)
             {
                 // 매우 느린 공: 완전 정지
-                if (speed > 0f && speed < 0.3f)
+                if (_rb.linearVelocity.sqrMagnitude > 0f)
                 {
-                    _rb.linearVelocity = Vector3.Lerp(velocity, Vector3.zero, Time.fixedDeltaTime * 5f);
+                    _rb.linearVelocity = Vector3.Lerp(_rb.linearVelocity, Vector3.zero, Time.fixedDeltaTime * 10f);
+                    _rb.angularVelocity = Vector3.Lerp(_rb.angularVelocity, Vector3.zero, Time.fixedDeltaTime * 10f);
                 }
                 return;
             }
 
-            // 구름 저항: 마찰 계수에 비례한 감속 (§3.2)
-            // Wet 잔디 = 마찰 낮음 → 공이 미끄러지듯 이동 (스키드)
-            // Dry 잔디 = 마찰 높음 → 공이 금방 멈춤
-            float frictionForce = _groundFriction * 9.81f * (config != null ? config.BallMass : 0.43f);
+            // 구름 저항: 잔디 마찰력 반영 (기존 0.08은 너무 작아 하염없이 굴러감 -> 0.4로 대폭 상향)
+            float rollingResistanceCoeff = Mathf.Max(0.4f, _groundFriction * 0.5f); 
+            float frictionForce = rollingResistanceCoeff * 9.81f * (config != null ? config.BallMass : 0.43f);
             Vector3 frictionVec = -velocity.normalized * frictionForce;
 
             _rb.AddForce(frictionVec, ForceMode.Force);
 
-            // Rolling Resistance: 각속도 감쇠 (AddTorque) — §3.2
+            // Rolling Resistance: 회전 마찰 (공의 회전 자체도 더 빨리 멈추게 함)
             if (_rb.angularVelocity.magnitude > 0.1f)
             {
-                Vector3 rollingResistance = -_rb.angularVelocity.normalized * _groundFriction * 2f;
+                Vector3 rollingResistance = -_rb.angularVelocity.normalized * _groundFriction * 5f;
                 _rb.AddTorque(rollingResistance, ForceMode.Acceleration);
             }
         }
@@ -298,11 +307,11 @@ namespace Game.Scripts.Physics
         // =========================================================
         // Public API
         // =========================================================
-        public void ResetAerodynamics()
+        public void ResetAerodynamics(bool clearVelocity = true)
         {
             _currentMagnusForce = Vector3.zero;
             _currentDragForce = Vector3.zero;
-            if (_rb != null && !_rb.isKinematic)
+            if (clearVelocity && _rb != null && !_rb.isKinematic)
             {
                 _rb.angularVelocity = Vector3.zero;
                 _rb.linearVelocity  = Vector3.zero;

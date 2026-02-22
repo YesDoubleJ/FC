@@ -247,12 +247,16 @@ namespace Game.Scripts.AI.Tactics
             Vector3 supportDir = Quaternion.Euler(0, angle, 0) * goalDir;
             
             // FIX: Reduce Support Distance (User Req: Follow closer)
-            // Was 18f, High -> 13f (Tight Support)
+            // 미드필더가 공격수와 너무 멀어지지 않도록 (기존 13f -> 9f) 하향 조정
             var config = agent.config;
-            float supportDist = config ? config.MidfieldSupportDist : 13f;
+            float supportDist = config ? config.MidfieldSupportDist : 9f;
             
+            // 전방 침투 강화: ballPos에서 단순히 각도만큼 틀어진 위치가 아니라, 골 방향으로 좀 더 깊게 들어갑니다.
             Vector3 targetPos = ballPos + supportDir * supportDist;
             
+            // 전진 보정: 미드필더는 볼과 수평선 상에 있지 않고, 항상 볼보다 조금 더 전방 공간(GoalDir)을 잡게 강제합니다.
+            targetPos += goalDir * 4.0f; 
+
             // FIX: Relax Box Constraint (User Req: Enter attacking third)
             // Was 35f (Defensive Third Limit). Now 42f (Penalty Spot Level).
             float boxLine = (agent.TeamID == Team.Home) ? 42f : -42f;
@@ -296,20 +300,32 @@ namespace Game.Scripts.AI.Tactics
             Vector3 goalDir = (_goalPosition - ballPos).normalized;
             
             var config = agent.config;
-            float backDist = config ? config.DefenderBackDist : 18f;
+            // 수비수가 너무 뒤로 처지지 않게 18m 유지 간격을 12m로 대폭 좁힙니다.
+            float backDist = config ? config.DefenderBackDist : 12f;
 
             Vector3 targetPos = ballPos - (goalDir * backDist);
 
             // HIGH LINE CONSTRAINT (User Req: Don't retreat)
+            // 공격 시 수비수들이 절대로 자기 진영 깊숙이 남지 않고 하프라인을 넘어서 진영을 끌어올리도록 강제합니다.
             if (agent.TeamID == Team.Home)
             {
-                // Attacking +Z. If Ball > 10, don't drop below -5.
-                if (ballPos.z > 10f && targetPos.z < -5f) targetPos.z = -5f;
+                // Attacking +Z. 공이 넘어갔다면 하프라인(0) 이상으로 전술 라인을 올립니다.
+                if (ballPos.z > 0f) 
+                {
+                    float pushUpLine = Mathf.Min(ballPos.z - 8f, 15f); // 공 바로 뒤 8m, 최대 15m까지 전진
+                    if (targetPos.z < pushUpLine) targetPos.z = pushUpLine;
+                }
+                else if (ballPos.z > -15f && targetPos.z < -10f) targetPos.z = -10f; // 초기 빌드업 시에도 덜 물러남
             }
             else
             {
-                // Attacking -Z. If Ball < -10, don't drop above 5.
-                if (ballPos.z < -10f && targetPos.z > 5f) targetPos.z = 5f;
+                // Attacking -Z.
+                if (ballPos.z < 0f) 
+                {
+                    float pushUpLine = Mathf.Max(ballPos.z + 8f, -15f);
+                    if (targetPos.z > pushUpLine) targetPos.z = pushUpLine;
+                }
+                else if (ballPos.z < 15f && targetPos.z > 10f) targetPos.z = 10f;
             }
 
             // 2. Width (LB/RB)

@@ -1,0 +1,14 @@
+[0.00] <b>[Unit Tests] Starting UtilityScorer Tests...</b>
+
+[0.00] <color=red>[FAIL]</color> ShootScore_Close: Expected > 0.8, Got 0.50
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+Game.Scripts.Utils.GameLogger:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at Assets/Game/Scripts/Utils/GameLogger.cs:12)
+UnityEngine.Debug:LogError (object)
+Game.Scripts.Test.UtilityScorerTestRunner:Assert (string,bool,string) (at Assets/Game/Scripts/Test/UtilityScorerTestRunner.cs:97)
+Game.Scripts.Test.UtilityScorerTestRunner:RunTest_ShootScore_Close () (at Assets/Game/Scripts/Test/UtilityScorerTestRunner.cs:62)
+Game.Scripts.Test.UtilityScorerTestRunner:Start () (at Assets/Game/Scripts/Test/UtilityScorerTestRunner.cs:31)
+
+[0.00] <color=green>[PASS]</color> ShootScore_Far
+
+[0.00] <color=green>[PASS]</color> ShootScore_Angle
+

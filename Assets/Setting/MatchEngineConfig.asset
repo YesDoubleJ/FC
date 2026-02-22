@@ -54,9 +54,9 @@ MonoBehaviour:
   CooldownTackle: 3
   CooldownBodyCheck: 2
   BurstSpeedMultiplier: 1.6
-  BreakthroughSpeedMultiplier: 1.75
+  BreakthroughSpeedMultiplier: 1.25
   BreakthroughPushForce: 10
-  BreakthroughImpulseForce: 15
+  BreakthroughImpulseForce: 2
   TackleStealForce: 12
   TackleImpactForce: 5
   BodyCheckForce: 15
@@ -79,3 +79,15 @@ MonoBehaviour:
   DefenderBackDist: 18
   DefenderWidth: 20
   DebugColorLerpSpeed: 10
+  AirDensity: 1.225
+  BallMass: 0.43
+  MagnusCoeff: 0.0004
+  DragCoeffAir: 0.2
+  GroundFrictionDry: 0.8
+  GroundFrictionWet: 0.4
+  CurrentGroundCondition: 0
+  BaseDecisionTick: 0.2
+  ReactionTimeHuman: 0.7
+  MaxSprintSpeed: 9.8
+  ShotErrorNoise: 15
+  PassErrorNoise: 10

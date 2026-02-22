@@ -94,7 +94,16 @@ namespace Game.Scripts.AI
         public int CurrentLOD { get; set; } = 0;
 
         // Teammate Cache
-        public System.Collections.Generic.List<HybridAgentController> Teammates { get; private set; } = new System.Collections.Generic.List<HybridAgentController>();
+        private System.Collections.Generic.List<HybridAgentController> _teammates = new System.Collections.Generic.List<HybridAgentController>();
+        public System.Collections.Generic.List<HybridAgentController> Teammates 
+        { 
+            get 
+            {
+                // [FIX] 만약 리스트가 비어있다면 (Start 시점 경쟁 조건 등) 즉시 재캐싱 시도
+                if (_teammates == null || _teammates.Count == 0) CacheTeammates();
+                return _teammates;
+            }
+        }
 
         // [FIX] 최근 패스 수신자 추적 (짧은 거리 패스 루프 방지)
         public GameObject LastPassRecipient { get; set; } = null;
@@ -242,44 +251,50 @@ namespace Game.Scripts.AI
         
         public void CacheTeammates()
         {
-            Teammates.Clear();
+            if (_teammates == null) _teammates = new System.Collections.Generic.List<HybridAgentController>();
+            _teammates.Clear();
             
-            // Optimization: Use MatchManager cache if available
+            // 1. MatchManager 캐시 우선 시도
             var matchMgr = MatchManager.Instance;
             if (matchMgr != null)
             {
-                var allAgents = matchMgr.GetAllAgents();
-                foreach (var agent in allAgents)
+                var allAgentsByTeam = matchMgr.GetTeammates(this.TeamID);
+                if (allAgentsByTeam != null && allAgentsByTeam.Count > 0)
                 {
-                    if (agent != this && agent.TeamID == this.TeamID)
+                    foreach (var agent in allAgentsByTeam)
                     {
-                        Teammates.Add(agent);
+                        if (agent != this && !_teammates.Contains(agent))
+                        {
+                            _teammates.Add(agent);
+                        }
                     }
                 }
             }
-            else
+
+            // 2. [Fallback] MatchManager가 비어있거나 찾을 수 없는 경우 (박사님이 달아주신 태그 활용)
+            if (_teammates.Count == 0)
             {
-                // Fallback
-                Debug.LogWarning($"[HybridAgentController] {name}: MatchManager not found! Using slow FindObjectsByType.");
+                string teammateTag = (TeamID == Team.Home) ? "Home" : "Away"; // 태그가 팀 명칭과 정확히 일치하는지 확인 필요
+                // 박사님이 "플레이어 태그 다 달아줌" 하셨으므로 TeamID 에 맞춰서 찾음
                 var allAgents = FindObjectsByType<HybridAgentController>(FindObjectsSortMode.None);
                 foreach (var agent in allAgents)
                 {
                     if (agent != this && agent.TeamID == this.TeamID)
                     {
-                        Teammates.Add(agent);
+                        if (!_teammates.Contains(agent)) _teammates.Add(agent);
                     }
                 }
+            }
+
+            if (_teammates.Count > 0)
+            {
+                 Debug.Log($"[HybridAgentController] {name}: Cached {_teammates.Count} teammates.");
             }
         }
         
         public System.Collections.Generic.List<HybridAgentController> GetTeammates()
         {
-            // [FIX] Start() 순서 경쟁 조건 해결:
-            // CacheTeammates()가 Start()에서 호출될 때 다른 에이전트들이 아직 MatchManager에 등록되지 않아
-            // Teammates 리스트가 비어있는 문제. 비어있으면 매번 재캐시.
-            if (Teammates.Count == 0)
-                CacheTeammates();
-            return Teammates;
+            return Teammates; // 프로퍼티에서 알아서 처리함
         }
 
         // =========================================================

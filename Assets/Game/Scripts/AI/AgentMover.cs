@@ -61,7 +61,7 @@ namespace Game.Scripts.AI
         public bool IsStunned => _stunTimer > 0f;
 
         // Debugging
-        private float _debugTimer = 0f;
+        // private float _debugTimer = 0f;
 
         public void Initialize(HybridAgentController controller)
         {
@@ -302,14 +302,14 @@ namespace Game.Scripts.AI
 
             // 2. Determine Target Direction
             Vector3 lookDir = transform.forward; 
-            bool foundTarget = false;
+            // bool foundTarget = false;
             float speedMult = 1.0f;
 
             // PRIORITY 0: Manual Rotation Override (e.g. Kick/Pass alignment)
             if (_isManualRotationActive)
             {
                 lookDir = _manualRotationTarget - transform.position;
-                foundTarget = true;
+                // foundTarget = true;
                 speedMult = _manualRotationSpeedMult;
                 _isManualRotationActive = false; // Reset for next frame
             }
@@ -317,7 +317,7 @@ namespace Game.Scripts.AI
             else if (IsRecoveringBall && ballExists)
             {
                 lookDir = ballPos - transform.position;
-                foundTarget = true;
+                // foundTarget = true;
             }
             // PRIORITY 2: Stationary (Always face ball)
             else if (isStationary)
@@ -325,12 +325,12 @@ namespace Game.Scripts.AI
                 if (ballExists)
                 {
                     lookDir = ballPos - transform.position;
-                    foundTarget = true;
+                    // foundTarget = true;
                 }
                 else if (_agent.hasPath)
                 {
                     lookDir = _agent.steeringTarget - transform.position;
-                    foundTarget = true;
+                    // foundTarget = true;
                 }
             }
 
@@ -349,7 +349,6 @@ namespace Game.Scripts.AI
                     {
                         lookDir = desiredVelocity;
                     }
-                    foundTarget = true;
                 }
                 else
                 {
@@ -361,7 +360,6 @@ namespace Game.Scripts.AI
                     if (desiredVelocity.magnitude > lookThreshold)
                     {
                         lookDir = desiredVelocity;
-                        foundTarget = true;
                     }
                     else if (ballExists)
                     {
@@ -377,12 +375,10 @@ namespace Game.Scripts.AI
                         {
                             lookDir = desiredVelocity;
                         }
-                        foundTarget = true;
                     }
                     else
                     {
                         lookDir = desiredVelocity;
-                        foundTarget = true;
                     }
                 }
             }

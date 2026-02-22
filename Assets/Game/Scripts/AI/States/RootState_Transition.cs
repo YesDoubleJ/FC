@@ -2,6 +2,7 @@ using UnityEngine;
 using Game.Scripts.AI.HFSM;
 using Game.Scripts.Tactics;
 using Game.Scripts.Managers;
+using Game.Scripts.AI.Tactics;
 
 namespace Game.Scripts.AI.States
 {
@@ -10,7 +11,6 @@ namespace Game.Scripts.AI.States
         // Optimization
         private Collider[] _nearbyBuffer = new Collider[10];
         private float _lastPressureCheckTime;
-        private bool _isPressuredCached;
 
         public RootState_Transition(HybridAgentController agent, StateMachine stateMachine) : base(agent, stateMachine) { }
 
@@ -47,7 +47,7 @@ namespace Game.Scripts.AI.States
 
                     if (distToGoal < maxChaseDist) 
                     {
-                        agent.Mover.MoveTo(ball.position);
+                        agent.Mover.SprintTo(ball.position); // [FIX] Run fast to clear!
                         return; // Priority handling
                     }
                     else
@@ -72,7 +72,6 @@ namespace Game.Scripts.AI.States
                     if (Time.time > _lastPressureCheckTime + 0.2f)
                     {
                         _lastPressureCheckTime = Time.time;
-                        _isPressuredCached = false;
                         
                         // Use NonAlloc to avoid GC
                         int hitCount = UnityEngine.Physics.OverlapSphereNonAlloc(agent.transform.position, 5.0f, _nearbyBuffer);
@@ -82,7 +81,6 @@ namespace Game.Scripts.AI.States
                             var opp = col.GetComponent<HybridAgentController>();
                             if (opp != null && opp.TeamID != agent.TeamID)
                             {
-                                _isPressuredCached = true;
                                 break;
                             }
                         }
@@ -93,10 +91,10 @@ namespace Game.Scripts.AI.States
                     // If comfortable (no pressure), move to intercept. 
                     // If pressured, sprint to intercept.
                     
-                    Vector3 interceptPos = GetInterceptPosition(agent.transform.position, agent.Mover.Speed, ball.position, ballVel);
+                    Vector3 interceptPos = GetInterceptPosition(agent.transform.position, agent.Mover.Speed * 1.4f, ball.position, ballVel);
                     
                     // Don't just stop!
-                    agent.Mover.MoveTo(interceptPos);
+                    agent.Mover.SprintTo(interceptPos); // [FIX] Sprint to receive pass
                     
                     /* REMOVED PASSIVE LOGIC
                     if (_isPressuredCached) { ... } else { agent.ResetPath(); ... } 
@@ -109,16 +107,24 @@ namespace Game.Scripts.AI.States
                 if (IsClosestToBall(ball.position))
                 {
                     // PREDICTIVE CHASING (User Req: Don't chase tail)
-                    Vector3 interceptPos = GetInterceptPosition(agent.transform.position, agent.Mover.Speed, ball.position, ballVel);
-                    agent.Mover.MoveTo(interceptPos);
+                    Vector3 interceptPos = GetInterceptPosition(agent.transform.position, agent.Mover.Speed * 1.4f, ball.position, ballVel);
+                    agent.Mover.SprintTo(interceptPos); // [FIX] Sprint when chasing free ball
                 }
                 else
                 {
                     // If kickoff logic is needed
-                    // For now, just Formation
-                    if (agent.formationManager != null)
+                    // For now, check if our team was just in possession (e.g., passing). 
+                    // If so, maintain support positions instead of dropping back.
+                    if (MatchManager.Instance.LastPossessionTeam == agent.TeamID)
                     {
-                        // FIXED: Pass TeamID to avoid defaulting to Home
+                        Vector3 goalPos = MatchManager.Instance.GetAttackGoalPosition(agent.TeamID);
+                        AttackingTactics tactics = new AttackingTactics(goalPos);
+                        Vector3 supportPos = tactics.GetSupportPosition(agent, ball.position);
+                        tactics.MoveToSafePosition(agent, supportPos);
+                    }
+                    else if (agent.formationManager != null)
+                    {
+                        // FIXED: Returning to formation when opposing team passes or neutral ball
                         agent.Mover.MoveTo(agent.formationManager.GetAnchorPosition(agent.assignedPosition, agent.TeamID));
                     }
                 }

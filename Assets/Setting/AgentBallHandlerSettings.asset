@@ -43,6 +43,7 @@ MonoBehaviour:
   DribbleForceScale: 1
   softGuideStrength: 5
   maxTetherRadius: 1.5
+  passPowerMultiplier: 0.75
   passPowerBase: 8
   passPowerDistFactor: 0.5
   passPowerMin: 5
@@ -52,13 +53,15 @@ MonoBehaviour:
   passAlignSweetSpot: 0.45
   passAlignPullStrengthSimple: 12
   passAlignPullStrengthHard: 20
+  shootPowerMultiplier: 0.75
   shootPowerBase: 15
   shootPowerDistFactor: 0.8
   shootPowerMin: 10
   shootPowerMax: 40
   shootErrorBaseAngle: 10
   globalKickPowerScale: 1
-  highClearancePower: 25
+  tackleFumbleMultiplier: 0.35
+  highClearancePower: 35
   kickMissDistance: 2.5
   kickCooldown: 0.5
   canKickAngle: 65

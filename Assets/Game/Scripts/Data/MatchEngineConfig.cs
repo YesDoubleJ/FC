@@ -132,9 +132,9 @@ namespace Game.Scripts.Data
 
         [Header("Skill Parameters")]
         public float BurstSpeedMultiplier = 1.6f;
-        public float BreakthroughSpeedMultiplier = 1.5f;
+        public float BreakthroughSpeedMultiplier = 1.25f;
         public float BreakthroughPushForce = 10f;
-        public float BreakthroughImpulseForce = 15f;
+        public float BreakthroughImpulseForce = 2f;
         public float TackleStealForce = 12f;
         public float TackleImpactForce = 5f;
         public float BodyCheckForce = 15f;
