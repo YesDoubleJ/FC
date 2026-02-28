@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using Game.Scripts.Managers;
 using Game.Scripts.Data;
+using Unity.Jobs;
+using Unity.Collections;
 
 namespace Game.Scripts.AI.Tactics
 {
@@ -30,11 +32,24 @@ namespace Game.Scripts.AI.Tactics
         public bool ShowGizmos = true;
         public float GizmoHeight = 0.3f;
 
+        // Constants
+        private const int MAX_AGENTS = 22;
+        private const float MIN_SPEED_DIVISOR = 0.1f;
+        private const float DEFAULT_INFLUENCE = 0.5f;
+
         // =========================================================
         // 내부 데이터
         // =========================================================
         private float[,] _homePitchControl;
         private float[,] _awayPitchControl;
+        
+        // Job System Native Arrays
+        private Unity.Collections.NativeArray<float> _homePCResult;
+        private Unity.Collections.NativeArray<float> _awayPCResult;
+        private Unity.Collections.NativeArray<Vector3> _agentPositions;
+        private Unity.Collections.NativeArray<float> _agentSpeeds;
+        private Unity.Collections.NativeArray<int> _agentTeamIDs; // 0 for Home, 1 for Away
+
         private float _cellWidth;
         private float _cellHeight;
         private float _fieldHalfW;
@@ -64,12 +79,30 @@ namespace Game.Scripts.AI.Tactics
             }
             else
             {
-                _fieldHalfW = 30f;
-                _fieldHalfH = 50f;
+                _fieldHalfW = 30f; // fallback
+                _fieldHalfH = 45f;
             }
 
             _cellWidth = (_fieldHalfW * 2f) / GridCols;
             _cellHeight = (_fieldHalfH * 2f) / GridRows;
+            
+            int totalCells = GridCols * GridRows;
+            _homePCResult = new Unity.Collections.NativeArray<float>(totalCells, Unity.Collections.Allocator.Persistent);
+            _awayPCResult = new Unity.Collections.NativeArray<float>(totalCells, Unity.Collections.Allocator.Persistent);
+            
+            // Assume max players on the pitch for arrays
+            _agentPositions = new Unity.Collections.NativeArray<Vector3>(MAX_AGENTS, Unity.Collections.Allocator.Persistent);
+            _agentSpeeds = new Unity.Collections.NativeArray<float>(MAX_AGENTS, Unity.Collections.Allocator.Persistent);
+            _agentTeamIDs = new Unity.Collections.NativeArray<int>(MAX_AGENTS, Unity.Collections.Allocator.Persistent);
+        }
+
+        private void OnDestroy()
+        {
+            if (_homePCResult.IsCreated) _homePCResult.Dispose();
+            if (_awayPCResult.IsCreated) _awayPCResult.Dispose();
+            if (_agentPositions.IsCreated) _agentPositions.Dispose();
+            if (_agentSpeeds.IsCreated) _agentSpeeds.Dispose();
+            if (_agentTeamIDs.IsCreated) _agentTeamIDs.Dispose();
         }
 
         private void Update()
@@ -78,63 +111,123 @@ namespace Game.Scripts.AI.Tactics
             if (_updateTimer >= UpdateInterval)
             {
                 _updateTimer = 0f;
-                RefreshPitchControl();
+                RefreshPitchControlJob();
             }
         }
 
         // =========================================================
-        // 피치 컨트롤 계산
+        // 피치 컨트롤 계산 (Job System)
         // =========================================================
-        private void RefreshPitchControl()
+        [Unity.Burst.BurstCompile]
+        public struct PitchControlJob : Unity.Jobs.IJobParallelFor
+        {
+            [Unity.Collections.ReadOnly] public Unity.Collections.NativeArray<Vector3> AgentPositions;
+            [Unity.Collections.ReadOnly] public Unity.Collections.NativeArray<float> AgentSpeeds;
+            [Unity.Collections.ReadOnly] public Unity.Collections.NativeArray<int> AgentTeamIDs;
+            public int AgentCount;
+
+            public int GridCols;
+            public int GridRows;
+            public float CellWidth;
+            public float CellHeight;
+            public float FieldHalfW;
+            public float FieldHalfH;
+            public float SigmaSquared;
+            public float Sigma;
+
+            public Unity.Collections.NativeArray<float> HomePCResult;
+            public Unity.Collections.NativeArray<float> AwayPCResult;
+
+            public void Execute(int index)
+            {
+                int x = index % GridCols;
+                int y = index / GridCols;
+
+                // Calculate World Position for cell
+                float worldX = (x * CellWidth) - FieldHalfW + (CellWidth / 2f);
+                float worldZ = (y * CellHeight) - FieldHalfH + (CellHeight / 2f);
+                Vector3 cellCenter = new Vector3(worldX, 0.05f, worldZ);
+
+                float homeInfluence = 0f;
+                float awayInfluence = 0f;
+
+                for (int i = 0; i < AgentCount; i++)
+                {
+                    float distance = Vector3.Distance(AgentPositions[i], cellCenter);
+                    float maxSpeed = AgentSpeeds[i];
+                    float arrivalTime = (distance / Mathf.Max(maxSpeed, MIN_SPEED_DIVISOR)) + Sigma; // Reaction time
+
+                    float influence = Mathf.Exp(-Mathf.PI * arrivalTime * arrivalTime / SigmaSquared);
+
+                    if (AgentTeamIDs[i] == 0) // Home
+                    {
+                        homeInfluence += influence;
+                    }
+                    else
+                    {
+                        awayInfluence += influence;
+                    }
+                }
+
+                float total = homeInfluence + awayInfluence;
+                HomePCResult[index] = total > 0.001f ? homeInfluence / total : DEFAULT_INFLUENCE;
+                AwayPCResult[index] = total > 0.001f ? awayInfluence / total : DEFAULT_INFLUENCE;
+            }
+        }
+
+        private void RefreshPitchControlJob()
         {
             var agents = FindObjectsByType<Game.Scripts.AI.HybridAgentController>(FindObjectsSortMode.None);
+            
+            int agentCount = Mathf.Min(agents.Length, MAX_AGENTS);
 
-            for (int x = 0; x < GridCols; x++)
+            // Populate Input Data
+            for (int i = 0; i < agentCount; i++)
             {
-                for (int y = 0; y < GridRows; y++)
+                _agentPositions[i] = agents[i].transform.position;
+                
+                var stats = agents[i].GetComponent<PlayerStats>();
+                float maxSpeed = 6f; // 기본값
+                if (stats != null)
                 {
-                    Vector3 cellCenter = CellToWorld(x, y);
-                    float homeInfluence = 0f;
-                    float awayInfluence = 0f;
-
-                    foreach (var agent in agents)
-                    {
-                        float arrivalTime = EstimateArrivalTime(agent, cellCenter);
-                        float influence = Mathf.Exp(-Mathf.PI * arrivalTime * arrivalTime / _sigmaSquared);
-
-                        if (agent.TeamID == Team.Home)
-                            homeInfluence += influence;
-                        else
-                            awayInfluence += influence;
-                    }
-
-                    // 정규화: PC = home / (home + away), 0.5 = 균등
-                    float total = homeInfluence + awayInfluence;
-                    _homePitchControl[x, y] = total > 0.001f ? homeInfluence / total : 0.5f;
-                    _awayPitchControl[x, y] = total > 0.001f ? awayInfluence / total : 0.5f;
+                    maxSpeed = Mathf.Lerp(4f, 9.8f, stats.GetEffectiveStat(StatType.Speed) / 100f);
                 }
+                _agentSpeeds[i] = maxSpeed;
+                _agentTeamIDs[i] = agents[i].TeamID == Team.Home ? 0 : 1;
             }
-        }
 
-        /// <summary>
-        /// 선수의 특정 지점까지 예상 도달 시간 (초).
-        /// t = distance / maxSpeed + reactionTime
-        /// </summary>
-        private float EstimateArrivalTime(Game.Scripts.AI.HybridAgentController agent, Vector3 targetPos)
-        {
-            float distance = Vector3.Distance(agent.transform.position, targetPos);
+            int totalCells = GridCols * GridRows;
 
-            // 선수 속도 추정 (Speed 스탯 기반)
-            var stats = agent.GetComponent<PlayerStats>();
-            float maxSpeed = 6f; // 기본값
-            if (stats != null)
+            PitchControlJob job = new PitchControlJob
             {
-                maxSpeed = Mathf.Lerp(4f, 9.8f, stats.GetEffectiveStat(StatType.Speed) / 100f);
-            }
+                AgentPositions = _agentPositions,
+                AgentSpeeds = _agentSpeeds,
+                AgentTeamIDs = _agentTeamIDs,
+                AgentCount = agentCount,
+                GridCols = GridCols,
+                GridRows = GridRows,
+                CellWidth = _cellWidth,
+                CellHeight = _cellHeight,
+                FieldHalfW = _fieldHalfW,
+                FieldHalfH = _fieldHalfH,
+                SigmaSquared = _sigmaSquared,
+                Sigma = Sigma,
+                HomePCResult = _homePCResult,
+                AwayPCResult = _awayPCResult
+            };
 
-            // 반응 시간 추가
-            float reactionTime = Sigma; // ReactionTimeHuman
-            return (distance / Mathf.Max(maxSpeed, 0.1f)) + reactionTime;
+            // Schedule and Complete immediately (Wait for it since it's used next frame)
+            Unity.Jobs.JobHandle jobHandle = job.Schedule(totalCells, 16);
+            jobHandle.Complete();
+
+            // Dump back to 2D array for existing API compatibility
+            for(int i = 0; i < totalCells; i++)
+            {
+                int x = i % GridCols;
+                int y = i / GridCols;
+                _homePitchControl[x, y] = _homePCResult[i];
+                _awayPitchControl[x, y] = _awayPCResult[i];
+            }
         }
 
         // =========================================================

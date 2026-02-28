@@ -139,10 +139,6 @@ namespace Game.Scripts.UI
             if (_agent.Mover != null && _agent.Mover.IsRecoveringBall)
                 return "TRAP";
 
-            // Skill Active
-            if (_agent.SkillSystem != null && _agent.SkillSystem.IsBreakthroughActive)
-                return "BURST";
-
             return "";
         }
     }

@@ -2,6 +2,7 @@ using UnityEngine;
 using Game.Scripts.AI.DecisionMaking;
 using Game.Scripts.Managers;
 using Game.Scripts.Data;
+using Game.Scripts.Tactics;
 
 namespace Game.Scripts.AI.Tactics
 {
@@ -22,6 +23,17 @@ namespace Game.Scripts.AI.Tactics
         private float BreakawayDistance => _config != null ? _config.BreakawayDistance : 14f;
         private float ActionLockoutTime => _config ?         _config.ActionLockoutTime : 0.5f;
 
+        // =========================================================
+        // Tactical Tuning Constants
+        // =========================================================
+        private const float TEMPO_FAST_MULT_PASS = 1.25f;
+        private const float TEMPO_SLOW_MULT_PASS = 0.8f;
+        private const float TEMPO_FAST_MULT_DRIBBLE = 0.75f;
+        private const float TEMPO_SLOW_MULT_DRIBBLE = 1.2f;
+        private const float RISK_FWD_MULT = 1.4f;
+        private const float RISK_BWD_MULT = 0.8f;
+        private const float POS_VALUE_MIN = 0.35f;
+
         // 슛 EV가 이 값 이상이면 무조건 슛 (골 지향 강제 임계값)
         // NOTE: 0.65로 설정하여 명백한 골 기회에서만 강제 슛. 그 아래는 EV 비교로 패스도 선택 가능.
         private const float ForceShootEVThreshold = 0.65f;
@@ -41,7 +53,7 @@ namespace Game.Scripts.AI.Tactics
         // =========================================================
         public struct DecisionResult
         {
-            public string Action;      // "Pass", "Shoot", "Dribble", "Hold", "Breakthrough"
+            public string Action;      // "Pass", "Shoot", "Dribble", "Hold"
             public GameObject Target;  // Pass 대상
             public Vector3 Position;   // Shoot/Dribble 목표 지점
             public float Confidence;   // EV 점수
@@ -111,17 +123,6 @@ namespace Game.Scripts.AI.Tactics
 
             float distToGoal = Vector3.Distance(agent.transform.position, _goalPosition);
 
-            // 1. 스킬: Breakthrough
-            if (agent.SkillSystem != null && agent.SkillSystem.IsFrontalBlocked())
-            {
-                if (agent.SkillSystem.CanUseBreakthrough)
-                {
-                    result.Action     = "Breakthrough";
-                    result.Confidence = 1.0f;
-                    return result;
-                }
-            }
-
             // 2. 단독 돌파(Breakaway) 로직
             if (CheckBreakaway(agent, distToGoal) && distToGoal > BreakawayDistance)
             {
@@ -131,10 +132,38 @@ namespace Game.Scripts.AI.Tactics
                 return result;
             }
 
+            // [NEW] Discipline Check (Human Flaw - §4.5)
+            // Example: 10% chance to ignore tactical multipliers if stamina is low, modified by License Level
+            bool passedDiscipline = true;
+            if (agent.Stats != null)
+            {
+                float staminaFactor = 1f - (agent.Stats.Stamina / 100f);
+                float baseDiscipline = Mathf.Lerp(0.95f, 0.4f, staminaFactor);
+
+                float licenseMultiplier = 1.0f;
+                if (PlayerLicenseManager.Instance != null)
+                {
+                    Game.Scripts.Tactics.Data.LicenseLevel level = PlayerLicenseManager.Instance.CurrentLicense;
+                    if (level >= Game.Scripts.Tactics.Data.LicenseLevel.Pro) licenseMultiplier = 1.0f;
+                    else if (level >= Game.Scripts.Tactics.Data.LicenseLevel.A_1) licenseMultiplier = 0.95f;
+                    else if (level >= Game.Scripts.Tactics.Data.LicenseLevel.B_1) licenseMultiplier = 0.85f;
+                    else if (level >= Game.Scripts.Tactics.Data.LicenseLevel.C_1) licenseMultiplier = 0.70f;
+                    else licenseMultiplier = 0.50f; // None
+                }
+
+                float finalDisciplineChance = baseDiscipline * licenseMultiplier;
+
+                if (UnityEngine.Random.value > finalDisciplineChance)
+                {
+                    passedDiscipline = false;
+                    Debug.Log($"[DISCIPLINE] {agent.name} failed discipline check! (Chance: {finalDisciplineChance:F2}) Ignoring tactical instructions.");
+                }
+            }
+
             // 3. EV 계산
-            float evShoot   = CalculateShootEV(agent);
-            float evPass    = CalculatePassEV(agent);
-            float evDribble = CalculateDribbleEV(agent);
+            float evShoot   = CalculateShootEV(agent, passedDiscipline);
+            float evPass    = CalculatePassEV(agent, passedDiscipline);
+            float evDribble = CalculateDribbleEV(agent, passedDiscipline);
 
             // 4. 골 지향 강제: 슛 EV가 임계값 이상이면 무조건 슛
             if (evShoot >= ForceShootEVThreshold)
@@ -180,7 +209,7 @@ namespace Game.Scripts.AI.Tactics
             else if (evPass >= evDribble)
             {
                 result.Action     = "Pass";
-                result.Target     = FindBestPassTarget(agent);
+                result.Target     = FindBestPassTarget(agent, passedDiscipline);
                 result.Confidence = evPass;
                 result.DebugLog   = $"DECISION: PASS ({evPass:F2}) - {evLog}";
 
@@ -248,9 +277,9 @@ namespace Game.Scripts.AI.Tactics
             if (Time.time < lastActionTime + ActionLockoutTime)
                 return result;
 
-            float evShoot   = CalculateShootEV(agent);
-            float evPass    = CalculatePassEV(agent);
-            float evDribble = CalculateDribbleEV(agent);
+            float evShoot   = CalculateShootEV(agent, true);
+            float evPass    = CalculatePassEV(agent, true);
+            float evDribble = CalculateDribbleEV(agent, true);
 
             string evLog = $"[PANIC EV] Shoot:{evShoot:F2} | Pass:{evPass:F2} | Dribble:{evDribble:F2}";
 
@@ -265,7 +294,7 @@ namespace Game.Scripts.AI.Tactics
             else if (evPass >= evDribble && evPass > 0f)
             {
                 result.Action     = "Pass";
-                result.Target     = FindBestPassTarget(agent);
+                result.Target     = FindBestPassTarget(agent, true);
                 result.Confidence = evPass;
                 result.DebugLog   = $"PANIC:PASS ({evPass:F2}) - {evLog}";
 
@@ -318,9 +347,12 @@ namespace Game.Scripts.AI.Tactics
         // =========================================================
 
         /// <summary>
-        /// 슛 EV = 슛 성공 확률 × 1.0 (득점은 항상 최고 가치)
+        /// Calculates the Expected Value (EV) of a shooting action.
         /// </summary>
-        private float CalculateShootEV(HybridAgentController agent)
+        /// <param name="agent">The agent evaluating the action.</param>
+        /// <param name="applyTactics">Whether to apply team tactical modifiers.</param>
+        /// <returns>The calculated EV value (0-1).</returns>
+        private float CalculateShootEV(HybridAgentController agent, bool applyTactics)
         {
             // 슛 성공 확률 (UtilityScorer 위임)
             float pShoot = _scorer.CalculateShootScore(agent.transform.position, agent.Stats, _goalPosition);
@@ -332,11 +364,14 @@ namespace Game.Scripts.AI.Tactics
         }
 
         /// <summary>
-        /// 패스 EV = 패스 성공 확률 × 수신자 위치 가치
+        /// Calculates the Expected Value (EV) of a passing action, considering tactical tempo and role modifiers.
         /// </summary>
-        private float CalculatePassEV(HybridAgentController agent)
+        /// <param name="agent">The agent evaluating the action.</param>
+        /// <param name="applyTactics">Whether to apply team tactical modifiers.</param>
+        /// <returns>The calculated EV value (0-1).</returns>
+        private float CalculatePassEV(HybridAgentController agent, bool applyTactics)
         {
-            var bestTarget = FindBestPassTarget(agent);
+            var bestTarget = FindBestPassTarget(agent, applyTactics);
             if (bestTarget == null)
             {
                 Debug.Log($"[PASS-DIAG] {agent.name} FindBestPassTarget=null (teammates={agent.GetTeammates()?.Count ?? 0})");
@@ -345,17 +380,39 @@ namespace Game.Scripts.AI.Tactics
 
             var opponents = MatchManager.Instance?.GetOpponents(agent.TeamID);
             float pPass    = _scorer.CalculatePassSuccessProbability(agent, agent.Stats, bestTarget, opponents);
-            float posValue = Mathf.Max(EvaluatePositionValue(bestTarget.transform.position), 0.35f);
+            float posValue = Mathf.Max(EvaluatePositionValue(bestTarget.transform.position), POS_VALUE_MIN);
 
-            float ev = Mathf.Clamp01(pPass * posValue);
-            Debug.Log($"[PASS-DIAG] {agent.name} → {bestTarget.name} | pPass:{pPass:F2} posVal:{posValue:F2} ev:{ev:F2}");
+            // [NEW] Tactical Tempo Adjustment
+            float tempoMultiplier = 1.0f;
+            if (applyTactics && agent.TacticsConfig != null)
+            {
+                // Tempo
+                float tempoValue = agent.TacticsConfig.InPossession.Tempo switch {
+                    Game.Scripts.Tactics.Data.Tempo.Fast => 100f,
+                    Game.Scripts.Tactics.Data.Tempo.Slow => 0f,
+                    _ => 50f
+                };
+                tempoMultiplier = Mathf.Lerp(TEMPO_SLOW_MULT_PASS, TEMPO_FAST_MULT_PASS, tempoValue / 100f);            }
+
+            // [NEW] Role Modifier
+            float roleModifier = 1.0f;
+            if (applyTactics && agent.gameObject.TryGetComponent<TacticalRoleData>(out var roleData) && roleData.Role != null)
+            {
+                roleModifier = roleData.Role.PassModifier;
+            }
+
+            float ev = Mathf.Clamp01(pPass * posValue * tempoMultiplier * roleModifier);
+            Debug.Log($"[PASS-DIAG] {agent.name} → {bestTarget.name} | pPass:{pPass:F2} posVal:{posValue:F2} tempo:{tempoMultiplier:F2} ev:{ev:F2}");
             return ev;
         }
 
         /// <summary>
-        /// 드리블 EV = 드리블 성공 확률 × 목표 지점 위치 가치
+        /// Calculates the Expected Value (EV) of a dribbling action, considering tactical tempo and role modifiers.
         /// </summary>
-        private float CalculateDribbleEV(HybridAgentController agent)
+        /// <param name="agent">The agent evaluating the action.</param>
+        /// <param name="applyTactics">Whether to apply team tactical modifiers.</param>
+        /// <returns>The calculated EV value (0-1).</returns>
+        private float CalculateDribbleEV(HybridAgentController agent, bool applyTactics)
         {
             Vector3 dribbleTarget = FindBestDribbleTarget(agent, agent.transform.position, false);
             Vector3 direction     = (dribbleTarget - agent.transform.position);
@@ -366,8 +423,27 @@ namespace Game.Scripts.AI.Tactics
             // 목표 지점의 위치 가치
             float posValue = EvaluatePositionValue(dribbleTarget);
 
+            // [NEW] Tactical Tempo Adjustment
+            float tempoMultiplier = 1.0f;
+            if (applyTactics && agent.TacticsConfig != null)
+            {
+                // High Tempo decreases Dribble EV (prefer passing), Low Tempo increases it
+                float tempoValue = agent.TacticsConfig.InPossession.Tempo switch {
+                    Game.Scripts.Tactics.Data.Tempo.Fast => 100f,
+                    Game.Scripts.Tactics.Data.Tempo.Slow => 0f,
+                    _ => 50f
+                };
+                tempoMultiplier = Mathf.Lerp(TEMPO_SLOW_MULT_DRIBBLE, TEMPO_FAST_MULT_DRIBBLE, tempoValue / 100f);            }
+
+            // [NEW] Role Modifier
+            float roleModifier = 1.0f;
+            if (applyTactics && agent.gameObject.TryGetComponent<TacticalRoleData>(out var roleData) && roleData.Role != null)
+            {
+                roleModifier = roleData.Role.DribbleModifier;
+            }
+
             // EV = P(드리블 성공) × 목표 지점 가치
-            return Mathf.Clamp01(pDribble * posValue);
+            return Mathf.Clamp01(pDribble * posValue * tempoMultiplier * roleModifier);
         }
 
         // =========================================================
@@ -375,7 +451,7 @@ namespace Game.Scripts.AI.Tactics
         // =========================================================
 
         /// <summary>팀 동료 중 EV 관점에서 가장 좋은 패스 대상을 반환합니다.</summary>
-        private GameObject FindBestPassTarget(HybridAgentController agent)
+        private GameObject FindBestPassTarget(HybridAgentController agent, bool applyTactics)
         {
             var teammates  = agent.GetTeammates();
             var opponents  = MatchManager.Instance?.GetOpponents(agent.TeamID);
@@ -385,6 +461,19 @@ namespace Game.Scripts.AI.Tactics
             const float MIN_PASS_DIST   = 4.0f;  // [FIX] 최소 패스 거리 (너무 가까우면 패스 금지)
             const float RECENT_PASS_PENALTY = 0.5f; // [FIX] 최근 수신자 EV 페널티 비율
             const float RECENT_PASS_WINDOW  = 5.0f; // [FIX] 몇 초 이내 재패스를 억제할지
+
+            // [NEW] Tactical Risk Adjustment (Passing Directness)
+            float riskMultiplier = 1.0f;
+            if (applyTactics && agent.TacticsConfig != null)
+            {
+                // 0 to 1 scaling, passing directness boosts progressive passes
+                float riskTakingValue = agent.TacticsConfig.InPossession.BuildUpRiskTaking switch {
+                    Game.Scripts.Tactics.Data.RiskTaking.High => 100f,
+                    Game.Scripts.Tactics.Data.RiskTaking.Low => 0f,
+                    _ => 50f
+                };
+                riskMultiplier = riskTakingValue / 100f; 
+            }
 
             foreach (var tm in teammates)
             {
@@ -400,7 +489,18 @@ namespace Game.Scripts.AI.Tactics
 
                 float pPass    = _scorer.CalculatePassSuccessProbability(agent, agent.Stats, tm.gameObject, opponents);
                 // [FIX] 백패스 팀메이트도 최소 0.35 posValue 보장
-                float posValue = Mathf.Max(EvaluatePositionValue(tm.transform.position), 0.35f);
+                float posValue = Mathf.Max(EvaluatePositionValue(tm.transform.position), POS_VALUE_MIN);
+                
+                // [NEW] Risk/Directness modification
+                if (applyTactics) 
+                {
+                    // Forward pass gets EV boost if Risk Taking is high
+                    bool isForward = (agent.TeamID == Team.Home) ? (tm.transform.position.z > agent.transform.position.z) : (tm.transform.position.z < agent.transform.position.z);
+                    if (isForward) posValue *= Mathf.Lerp(1.0f, RISK_FWD_MULT, riskMultiplier);
+                    // Safe back pass EV reduced slightly if Risk taking is high
+                    else posValue *= Mathf.Lerp(1.0f, RISK_BWD_MULT, riskMultiplier);
+                }
+
                 float ev       = pPass * posValue;
 
                 // [FIX] 최근에 이 에이전트에게 패스받은 팀메이트면 EV 페널티

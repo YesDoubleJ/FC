@@ -35,7 +35,10 @@ namespace Game.Scripts.Managers
         [Header("Field Dimensions")]
         public float FieldHalfWidth = 32f;
         public float FieldHalfLength = 48f;
-        
+        [Header("Tactics Defaults (Assigned to whole team)")]
+        public Game.Scripts.Tactics.Data.TacticsConfig HomeTeamTactics;
+        public Game.Scripts.Tactics.Data.TacticsConfig AwayTeamTactics;
+
         [Header("State")]
         public MatchState CurrentState { get; private set; }
         public int HomeScore { get; private set; } 
@@ -193,9 +196,93 @@ namespace Game.Scripts.Managers
         {
             SetupGoalDimensions();
             RefreshBallReference();
+            
+            // [FIX] Unity Start() 호출 순서 비보장 대응:
+            // HybridAgentController.Start()가 아직 안 불렸을 수 있으므로
+            // 여기서 씬의 모든 에이전트를 강제로 등록합니다.
+            var allFound = FindObjectsByType<HybridAgentController>(FindObjectsSortMode.None);
+            foreach (var a in allFound)
+            {
+                if (!allAgents.Contains(a)) RegisterAgent(a);
+            }
+            
+            AssignTeamTactics(); // [NEW] Apply TacticsConfig to agents
             StartKickOff();
         }
         
+        // [NEW] Distribute TacticsConfig to all agents
+        private void AssignTeamTactics()
+        {
+            foreach (var agent in allAgents)
+            {
+                if (agent.TeamID == Game.Scripts.Data.Team.Home && HomeTeamTactics != null)
+                {
+                    agent.TacticsConfig = HomeTeamTactics;
+                    
+                    // Assign Formation Position Role
+                    if (HomeTeamTactics.SelectedFormation != null)
+                    {
+                        AssignRoleFromFormation(agent, HomeTeamTactics.SelectedFormation);
+                    }
+                }
+                else if (agent.TeamID == Game.Scripts.Data.Team.Away && AwayTeamTactics != null)
+                {
+                    agent.TacticsConfig = AwayTeamTactics;
+                    
+                    // Assign Formation Position Role
+                    if (AwayTeamTactics.SelectedFormation != null)
+                    {
+                        AssignRoleFromFormation(agent, AwayTeamTactics.SelectedFormation);
+                    }
+                }
+            }
+        }
+
+        private void AssignRoleFromFormation(HybridAgentController agent, Game.Scripts.Tactics.Data.FormationData formation)
+        {
+            if (formation == null || formation.Slots == null)
+            {
+                Debug.LogWarning($"[MatchManager] Cannot assign role: Formation or Slots is null for agent {agent.name}");
+                return;
+            }
+
+            if (Game.Scripts.Tactics.PlayerLicenseManager.Instance != null && !formation.IsUnlocked(Game.Scripts.Tactics.PlayerLicenseManager.Instance.CurrentLicense))
+            {
+                Debug.LogWarning($"[MatchManager] Formation {formation.FormationName} requires {formation.RequiredLicense} license, but manager has {Game.Scripts.Tactics.PlayerLicenseManager.Instance.CurrentLicense}. Falling back to default positioning.");
+                return;
+            }
+
+            Game.Scripts.Tactics.FormationPosition pos = agent.assignedPosition; 
+            var slot = formation.GetSlot(pos);
+            
+            if (slot == null)
+            {
+                Debug.LogWarning($"[MatchManager] Agent {agent.name} has assignedPosition '{pos}', but Formation '{formation.name}' DOES NOT HAVE A SLOT for this position! They will be placed at (0,0) offset.");
+                return;
+            }
+
+            if (slot.AllowedRoles != null && slot.AllowedRoles.Count > 0)
+            {
+                var role = slot.AllowedRoles[0]; // Currently gets the first available role
+                if (role != null)
+                {
+                    if (!agent.TryGetComponent<Game.Scripts.Tactics.TacticalRoleData>(out var roleData))
+                    {
+                        roleData = agent.gameObject.AddComponent<Game.Scripts.Tactics.TacticalRoleData>();
+                    }
+                    roleData.AssignRole(role);
+                }
+                else
+                {
+                    Debug.LogWarning($"[MatchManager] Role at slot {pos} is null in formation {formation.name} for agent {agent.name}.");
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"[MatchManager] Agent {agent.name} is in slot '{pos}', but Formation '{formation.name}' doesn't have any AllowedRoles defined for this slot.");
+            }
+        }
+
         public void RefreshBallReference()
         {
             ballRef = GameObject.Find("Ball");
@@ -286,11 +373,15 @@ namespace Game.Scripts.Managers
 
         private void ResetPlayerPositions()
         {
-            var agents = allAgents;
-            if (agents == null || agents.Count == 0) 
+            // [FIX] Start() 순서 비보장 문제 해결: 
+            // 항상 FindObjectsByType으로 전체 에이전트를 확보하고,
+            // 아직 등록 안 된 에이전트가 있으면 자동 등록합니다.
+            var allFound = FindObjectsByType<HybridAgentController>(FindObjectsSortMode.None);
+            foreach (var a in allFound)
             {
-                 agents = new System.Collections.Generic.List<HybridAgentController>(FindObjectsByType<HybridAgentController>(FindObjectsSortMode.None));
+                if (!allAgents.Contains(a)) RegisterAgent(a);
             }
+            var agents = allAgents;
 
             // 1. 일단 모두 끕니다. (여기서 isKinematic = true가 됨)
             SetPlayersActiveState(false); 
@@ -319,6 +410,8 @@ namespace Game.Scripts.Managers
                         targetPos = agent.formationManager.GetKickoffPosition(agent.assignedPosition, agent.TeamID, isKickOffTeam);
                     else
                         targetPos = new Vector3((agent.GetInstanceID() % 5) * 5, 0, (agent.TeamID == Game.Scripts.Data.Team.Home) ? -10 : 10); 
+                    
+                    Debug.Log($"[KICKOFF DEBUG] {agent.name} (Team: {agent.TeamID}, Pos: {agent.assignedPosition}) -> TargetPos: {targetPos}");
                     lookDir = (Vector3.zero - targetPos).normalized;
                 }
 

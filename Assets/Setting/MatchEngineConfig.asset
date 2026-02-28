@@ -48,21 +48,17 @@ MonoBehaviour:
   DribbleCloseThreshold: 0.5
   StatMinMultiplier: 0.75
   StatMaxMultiplier: 1.25
-  CooldownDefenseBurst: 10
-  CooldownAttackBurst: 10
-  CooldownBreakthrough: 20
   CooldownTackle: 3
   CooldownBodyCheck: 2
-  BurstSpeedMultiplier: 1.6
-  BreakthroughSpeedMultiplier: 1.25
-  BreakthroughPushForce: 10
-  BreakthroughImpulseForce: 2
   TackleStealForce: 12
   TackleImpactForce: 5
   BodyCheckForce: 15
   MaxPassAngle: 45
   MaxDribbleAngle: 45
   LookAtMoveDirectionThreshold: 5.5
+  TacticsTuning: {fileID: 11400000, guid: 7d4a0a17a0f18f2469c596ba50215bdb, type: 2}
+  PressingIntensity: 1
+  DefensiveLineHeight: 0.5
   TackleRange: 2
   BodyCheckRange: 1.5
   RedZoneDistance: 25

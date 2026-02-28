@@ -5,10 +5,12 @@ namespace Game.Scripts.Tactics
         GK,
         CB_Left, CB_Right,
         LB, RB,
+        CDM, LDM, RDM,
         CM_Left, CM_Right,
         LM, RM,
+        CAM, LAM, RAM,
+        LW, RW,
         ST_Left, ST_Right,
-        ST_Center, // New for 6vs6
-        CDM, CAM   // New Central Positions
+        ST_Center
     }
 }

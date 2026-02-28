@@ -90,8 +90,6 @@ namespace Game.Scripts.AI.States
         // =========================================================
         private void RunFieldPlayerLogic(Transform ball, MatchManager matchMgr)
         {
-            if (agent.SkillSystem != null && agent.SkillSystem.IsBreakthroughActive) return;
-
             Vector3 ballPos    = ball.position;
             bool hasPossession = (matchMgr.CurrentBallOwner == agent);
 
@@ -166,10 +164,6 @@ namespace Game.Scripts.AI.States
                 case "Dribble":
                     _holdTimer = 0f;
                     ExecuteDribble(decision.Position);
-                    break;
-                case "Breakthrough":
-                    agent.SkillSystem.ActivateBreakthrough();
-                    _lastActionTime = Time.time;
                     break;
                 case "Hold":
                 default:
@@ -271,19 +265,19 @@ namespace Game.Scripts.AI.States
             bool isBlocked = agent.SkillSystem.IsFrontalBlocked();
             if (isBlocked)
             {
-                if (agent.SkillSystem.CanUseBreakthrough)
-                {
-                    agent.SkillSystem.ActivateBreakthrough();
-                    Game.Scripts.UI.MatchViewController.Instance?.LogAction($"{agent.name} BREAKTHROUGH!");
-                    _lastActionTime = Time.time;
-                    return;
-                }
                 agent.Mover.MoveTo(targetPos);
             }
             else
             {
-                agent.Mover.SprintTo(targetPos);
-                agent.SkillSystem?.TryActivateSkill(AgentSkillSystem.SkillType.AttackBurst, 0.05f);
+                float dist = Vector3.Distance(agent.transform.position, targetPos);
+                if (dist > 5.0f)
+                {
+                    agent.Mover.SprintTo(targetPos);
+                }
+                else
+                {
+                    agent.Mover.MoveTo(targetPos);
+                }
             }
 
             LogAction($"DRIBBLE to {targetPos}");
@@ -323,8 +317,10 @@ namespace Game.Scripts.AI.States
                 return;
             }
 
-            Vector3 supportPos = _tactics.GetSupportPosition(agent, ballPos);
+            // [NEW] Use Pitch Control Evaluator to find the best empty pocket
+            Vector3 supportPos = _tactics.GetOptimalSupportSpot(agent);
             _tactics.MoveToSafePosition(agent, supportPos);
+            // LogAction("Moving to Pitch Control Optimal Support Spot"); // Uncomment for debugging
         }
 
         private bool IsPassIncoming()

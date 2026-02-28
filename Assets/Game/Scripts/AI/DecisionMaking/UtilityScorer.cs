@@ -57,7 +57,7 @@ namespace Game.Scripts.AI.DecisionMaking
             //       수정: CalculatePassSuccessProbability와 동일한 기저선(0.4) + 비율(0.6) 방식 적용
             //       스탯 10 → 0.46, 스탯 50 → 0.70, 스탯 99 → 0.994
             float pStat = (stats != null)
-                ? Mathf.Clamp01(0.4f + stats.GetStat(StatType.Shooting) / 100f * 0.6f)
+                ? Mathf.Clamp01(0.4f + stats.GetEffectiveStat(StatType.Shooting) / 100f * 0.6f)
                 : 0.7f;  // stats null 시 중간 능력자 가정
 
             // 최종 슛 성공 확률 = 거리 × 각도 × 능력치
@@ -94,7 +94,7 @@ namespace Game.Scripts.AI.DecisionMaking
             float pLane = Mathf.Lerp(1.0f, 0.5f, interceptRisk); // 위험해도 최소 0.5 유지
 
             // 3. 패스 스탯 확률
-            float pStat = (stats != null) ? Mathf.Clamp01(0.4f + stats.GetStat(StatType.Passing) / 100f * 0.6f) : 0.5f;
+            float pStat = (stats != null) ? Mathf.Clamp01(0.4f + stats.GetEffectiveStat(StatType.Passing) / 100f * 0.6f) : 0.5f;
             // [FIX] 스탯 10이면 0.46, 스탯 70이면 0.82, 스탯 99면 0.99
             // 이전: GetStat/100 → 스탯 50 = 0.5, 3개 곱하면 너무 낮음
 
@@ -124,7 +124,7 @@ namespace Game.Scripts.AI.DecisionMaking
             float pFrontal = frontalBlocked ? 0.35f : 1.0f;
 
             // 3. 드리블 스탯 확률
-            float pStat = (stats != null) ? Mathf.Clamp01(stats.GetStat(StatType.Dribbling) / 100f) : 0.5f;
+            float pStat = (stats != null) ? Mathf.Clamp01(stats.GetEffectiveStat(StatType.Dribbling) / 100f) : 0.5f;
 
             return Mathf.Clamp01(pSpace * pFrontal * pStat);
         }
@@ -140,12 +140,20 @@ namespace Game.Scripts.AI.DecisionMaking
             var opponents = MatchManager.Instance.GetOpponents(agent.TeamID);
             if (opponents == null) return 0f;
 
+            float pressingIntensity = 1.0f;
+            if (agent.TacticsConfig != null)
+            {
+                pressingIntensity = agent.TacticsConfig.OutOfPossession.TackleIntensity == Game.Scripts.Tactics.Data.TackleIntensity.Strong ? 2.0f : 
+                                    (agent.TacticsConfig.OutOfPossession.TackleIntensity == Game.Scripts.Tactics.Data.TackleIntensity.Weak ? 0.5f : 1.0f);
+            }
+            float effectiveRadius = DangerRadius * pressingIntensity;
+
             foreach (var other in opponents)
             {
                 if (other == null) continue;
                 float dist = Vector3.Distance(agent.transform.position, other.transform.position);
-                if (dist < DangerRadius)
-                    pressure += Mathf.Pow(1f - (dist / DangerRadius), 2f) * 0.5f;
+                if (dist < effectiveRadius)
+                    pressure += Mathf.Pow(1f - (dist / effectiveRadius), 2f) * 0.5f * pressingIntensity;
             }
             return Mathf.Clamp01(pressure);
         }

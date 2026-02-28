@@ -124,17 +124,10 @@ namespace Game.Scripts.Data
         // 4. SKILLS & COOLDOWNS (from AgentSkillSettings)
         // =================================================================================================
         [Header("Skills & Cooldowns")]
-        public float CooldownDefenseBurst = 5.0f;
-        public float CooldownAttackBurst = 5.0f;
-        public float CooldownBreakthrough = 5.0f;
         public float CooldownTackle = 3.0f;
         public float CooldownBodyCheck = 3.0f;
 
         [Header("Skill Parameters")]
-        public float BurstSpeedMultiplier = 1.6f;
-        public float BreakthroughSpeedMultiplier = 1.25f;
-        public float BreakthroughPushForce = 10f;
-        public float BreakthroughImpulseForce = 2f;
         public float TackleStealForce = 12f;
         public float TackleImpactForce = 5f;
         public float BodyCheckForce = 15f;
@@ -146,6 +139,15 @@ namespace Game.Scripts.Data
         public float MaxPassAngle = 45f;
         public float MaxDribbleAngle = 45f;
         public float LookAtMoveDirectionThreshold = 5.5f;
+
+        [Header("Global Tactical Tuning")]
+        public AI.Settings.TacticsTuningSettings TacticsTuning;
+
+        [Header("Tactical Settings")]
+        [Tooltip("Pressing intensity multiplier for the defending team.")]
+        [Range(0.5f, 2.0f)] public float PressingIntensity = 1.0f;
+        [Tooltip("Defensive line height scalar (0 = deep, 1 = high line).")]
+        [Range(0f, 1f)] public float DefensiveLineHeight = 0.5f;
 
         // Defending
         public float TackleRange = 2.0f;

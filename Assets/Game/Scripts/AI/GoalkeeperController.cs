@@ -262,12 +262,14 @@ namespace Game.Scripts.AI
             bool isDangerousShot = false;
             Vector3 interceptPos = Vector3.zero;
 
+            Vector3 goalPos = _gk.goalCenter != null ? _gk.goalCenter.position : new Vector3(0, 0, _gk.CurrentGoalLineZ);
+
             // 1. Check Trajectory (Is it heading to goal?)
             if (ballSpeed > dangerSpeed) // Fast ball
             {
                 // Simple prediction: Is velocity pointing to goal?
                 Vector3 ballVel = _ballRb.linearVelocity;
-                Vector3 toGoal = (_gk.goalCenter.position - _ball.position).normalized;
+                Vector3 toGoal = (goalPos - _ball.position).normalized;
                 float dot = Vector3.Dot(ballVel.normalized, toGoal);
                 
                 if (dot > 0.8f) // Heading roughly towards goal
@@ -302,7 +304,7 @@ namespace Game.Scripts.AI
             if (!isDangerousShot && distToBall < 8.0f && ballSpeed > 1.5f)
             {
                  // Check if it's moving towards goal or just loose
-                 Vector3 toGoal = (_gk.goalCenter.position - _ball.position).normalized;
+                 Vector3 toGoal = (goalPos - _ball.position).normalized;
                  if (Vector3.Dot(_ballRb.linearVelocity.normalized, toGoal) > 0.3f || _ballRb.linearVelocity.magnitude < 2f)
                  {
                      isDangerousShot = true;
@@ -344,7 +346,7 @@ namespace Game.Scripts.AI
             
             // NEW POSITIONING LOGIC: BISECT ANGLE & COVER ZONES
             
-            Vector3 goalPos = _gk.goalCenter != null ? _gk.goalCenter.position : new Vector3(0, 0, _gk.CurrentGoalLineZ);
+            goalPos = _gk.goalCenter != null ? _gk.goalCenter.position : new Vector3(0, 0, _gk.CurrentGoalLineZ);
             Vector3 ballPos = _ball.position;
 
             // 1. Calculate base vector from Goal to Ball

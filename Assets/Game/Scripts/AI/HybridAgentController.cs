@@ -38,6 +38,7 @@ namespace Game.Scripts.AI
         public FormationManager formationManager;
         public FormationPosition assignedPosition;
         public TacticalRole tacticalRole;
+        public Game.Scripts.Tactics.Data.TacticsConfig TacticsConfig;
         public bool IsGoalkeeper { get; private set; }
 
         // Tuning Config
@@ -331,8 +332,6 @@ namespace Game.Scripts.AI
         // =========================================================
         // SKILL FACADE
         // =========================================================
-        public bool CanUseDribbleBurst => SkillSystem.CanUseBreakthrough; // Alias
-        public void ActivateDribbleBurst() => SkillSystem.ActivateBreakthrough(); // Alias
 
 
 
@@ -387,7 +386,6 @@ namespace Game.Scripts.AI
             Color targetColor = _originalColor;
             
             if (Mover.IsRecoveringBall) targetColor = Color.yellow; // TRAP
-            else if (SkillSystem.IsBreakthroughActive) targetColor = Color.red; // SKILL
             else if (BallHandler.HasPendingKick) targetColor = Color.green; // KICK
             else if (Mover.IsBusy) targetColor = Color.cyan; // AIMING
             else if (MatchManager.Instance != null && MatchManager.Instance.CurrentBallOwner == this) targetColor = Color.white; // DRIBBLE

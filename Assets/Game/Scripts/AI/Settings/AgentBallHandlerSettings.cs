@@ -71,7 +71,7 @@ namespace Game.Scripts.AI
         public float passPowerDistFactor = 0.5f;
         public float passPowerMin = 5.0f;
         public float passPowerMax = 30.0f;
-        public float passErrorBaseAngle = 15.0f;
+        public float passErrorBaseAngle = 10.0f;
         public float passAlignTimeout = 1.0f;
         public float passAlignSweetSpot = 0.45f;
         public float passAlignPullStrengthSimple = 12.0f;
@@ -86,7 +86,7 @@ namespace Game.Scripts.AI
         public float shootPowerDistFactor = 0.8f;
         public float shootPowerMin = 10.0f;
         public float shootPowerMax = 40.0f;
-        public float shootErrorBaseAngle = 10.0f; // More precise than pass
+        public float shootErrorBaseAngle = 15.0f; // Wider error for shooting
 
         [Header("Kicking")]
         [Range(0.1f, 2.0f)]

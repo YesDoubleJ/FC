@@ -110,12 +110,6 @@ namespace Game.Scripts.AI.States
             recoverPoint.z = Mathf.Clamp(recoverPoint.z, -l, l);
 
             agent.Mover.SprintTo(recoverPoint);
-
-            // Skill Use
-            if (agent.SkillSystem.CanUseDefenseBurst)
-            {
-                agent.SkillSystem.ActivateDefenseBurst();
-            }
         }
 
         // =========================================================
@@ -129,7 +123,7 @@ namespace Game.Scripts.AI.States
                  // Back off slightly to reset after failed tackle
                  Vector3 dirFromBall = (agent.transform.position - ballPos).normalized;
                  Vector3 standOffPos = ballPos + dirFromBall * 3.5f;
-                 SetSafeDestination(standOffPos);
+                 SetSafeDestination(standOffPos, false);
                  agent.Mover.RotateToAction(ballPos - agent.transform.position, null);
                  return;
              }
@@ -207,14 +201,7 @@ namespace Game.Scripts.AI.States
              else
              {
                  // Move to Position
-                 SetSafeDestination(interceptPos);
-                 
-                 // [NEW] Use Skills while Chasing
-                 if (distToBall > 3.0f && distToBall < 15.0f)
-                 {
-                     // 10% chance per frame to use burst if behind
-                     agent.SkillSystem.TryActivateSkill(AgentSkillSystem.SkillType.DefenseBurst, 0.05f); 
-                 }
+                 SetSafeDestination(interceptPos, true); // Sprint to press
              }
 
              // [NEW] AUTO-TACKLE LOGIC
@@ -250,18 +237,57 @@ namespace Game.Scripts.AI.States
             if (agent.formationManager == null) 
             {
                 // Fallback if no formation
-                SetSafeDestination(ballPos + (agent.transform.position - ballPos).normalized * 5f);
+                SetSafeDestination(ballPos + (agent.transform.position - ballPos).normalized * 5f, false);
                 return; 
             }
 
-            // 1. Identify Threat in My Zone
-            HybridAgentController dangerEnemy = FindDangerousEnemy(matchMgr);
             Vector3 basePos = agent.formationManager.GetAnchorPosition(agent.assignedPosition, agent.TeamID);
 
+            // 1. ZONAL SHIFT & DEFENSIVE LINE (Phase-based)
+            float shiftX = Mathf.Clamp(ballPos.x * 0.4f, -15f, 15f);
+            basePos.x += shiftX;
+            basePos.z += (ballPos.z - basePos.z) * 0.2f; // Slight vertical compression
+
+            // Apply TacticsConfig Defensive Line Modifier
+            if (agent.TacticsConfig != null)
+            {
+                float defendGoalZ = matchMgr.GetDefendGoalPosition(agent.TeamID).z;
+                float attackGoalZ = matchMgr.GetAttackGoalPosition(agent.TeamID).z;
+                float fieldLength = Mathf.Abs(attackGoalZ - defendGoalZ);
+                
+                // Determine Phase based on ball position
+                float ballDistFromGoal = Mathf.Abs(ballPos.z - defendGoalZ);
+                float phaseRatio = ballDistFromGoal / fieldLength;
+
+                Game.Scripts.Tactics.Data.DefensiveLine currentLineSetting = Game.Scripts.Tactics.Data.DefensiveLine.Normal;
+                
+                // Deep in our half (< 33%) -> Low Block Phase
+                if (phaseRatio < 0.33f) currentLineSetting = agent.TacticsConfig.OutOfPossession.LowBlockLine;
+                // Middle third -> Mid Block Phase
+                else if (phaseRatio < 0.66f) currentLineSetting = agent.TacticsConfig.OutOfPossession.MidBlockLine;
+                // Attack third -> High Block Phase
+                else currentLineSetting = agent.TacticsConfig.OutOfPossession.HighBlockLine;
+
+                // Determine Offset
+                float zOffset = 0f;
+                // Normal is 0.
+                if (currentLineSetting == Game.Scripts.Tactics.Data.DefensiveLine.Low) zOffset = -10f; // Pull back 10 meters
+                else if (currentLineSetting == Game.Scripts.Tactics.Data.DefensiveLine.High) zOffset = 10f; // Push up 10 meters
+
+                // Apply offset relative to attacking direction
+                float directionMultiplier = (defendGoalZ < 0) ? 1f : -1f; // If defend goal is negative Z (Home), positive offset moves forward
+                basePos.z += zOffset * directionMultiplier;
+            }
+
+            // 2. Identify Threat in My Zone
+            HybridAgentController dangerEnemy = FindDangerousEnemy(matchMgr, basePos);
+
+            Vector3 targetPos = basePos;
             bool shouldMark = false;
+
             if (dangerEnemy != null)
             {
-                // Check if in my zone (15m radius from anchor)
+                // Check if in my zone (15m radius from shifted anchor)
                 if (Vector3.Distance(dangerEnemy.transform.position, basePos) < 15f)
                 {
                     shouldMark = true;
@@ -273,7 +299,8 @@ namespace Game.Scripts.AI.States
                 if (isCB)
                 {
                     float enemyDistToGoal = Vector3.Distance(dangerEnemy.transform.position, matchMgr.GetDefendGoalPosition(agent.TeamID));
-                    if (enemyDistToGoal < 25f) shouldMark = true;
+                    // Require central danger (x within 15m)
+                    if (enemyDistToGoal < 25f && Mathf.Abs(dangerEnemy.transform.position.x) < 15f) shouldMark = true;
                 }
             }
 
@@ -288,20 +315,42 @@ namespace Game.Scripts.AI.States
                 Vector3 guardDir = (goalDir * 0.7f + ballDir * 0.3f).normalized;
                 Vector3 markPos = dangerEnemy.transform.position + (guardDir * 1.5f);
 
-                SetSafeDestination(markPos);
+                // Blend Anchor and Mark Pos (Formation Gravity)
+                // If enemy is further from my base, pull me back to base
+                float distToEnemy = Vector3.Distance(basePos, dangerEnemy.transform.position);
+                float anchorWeight = Mathf.Clamp01((distToEnemy - 5f) / 10f); // 5m=0%, 15m=100%
+                
+                targetPos = Vector3.Lerp(markPos, basePos, anchorWeight);
                 agent.Mover.RotateToAction(dangerEnemy.transform.position - agent.transform.position, null);
             }
             else
             {
-                // ZONAL SHIFT (Sliding)
-                // Shift base position slightly towards ball to compress space
-                float shiftX = Mathf.Clamp(ballPos.x * 0.35f, -10f, 10f);
-                basePos.x += shiftX;
-                basePos.z += (ballPos.z - basePos.z) * 0.1f; // Slight vertical compression
-
-                SetSafeDestination(basePos);
                 agent.Mover.RotateToAction(ballPos - agent.transform.position, null);
             }
+
+            // 3. APPLY REPULSION (Teammate avoidance to prevent clumps)
+            Vector3 repulsion = GetRepulsionVector(targetPos, 3.5f);
+            targetPos += repulsion;
+
+            // 4. SPRINT LOGIC (Stamina Conservation)
+            bool shouldSprint = false;
+            float distToTarget = Vector3.Distance(agent.transform.position, targetPos);
+            if (distToTarget > 10f)
+            {
+                float distToBall = Vector3.Distance(agent.transform.position, ballPos);
+                // Sprint to recover if ball is somewhat nearby, or if critically out of position
+                if (distToBall < 30f || distToTarget > 25f)
+                {
+                    shouldSprint = true;
+                }
+            }
+            else if (shouldMark && dangerEnemy != null && dangerEnemy.Mover != null && dangerEnemy.Mover.IsSprinting)
+            {
+                // Track sprinting opponent
+                shouldSprint = true; 
+            }
+
+            SetSafeDestination(targetPos, shouldSprint);
         }
 
         // =========================================================
@@ -335,22 +384,43 @@ namespace Game.Scripts.AI.States
             return true;
         }
 
-        private HybridAgentController FindDangerousEnemy(MatchManager matchMgr)
+        private HybridAgentController FindDangerousEnemy(MatchManager matchMgr, Vector3 shiftedBasePos)
         {
             // Optimization: Use Cached Opponents List
             var opponents = matchMgr.GetOpponents(agent.TeamID);
+            var teammates = agent.GetTeammates();
             HybridAgentController bestCandidate = null;
-            float maxThreat = -1f;
+            float maxThreat = -999f;
 
             Vector3 myGoal = matchMgr.GetDefendGoalPosition(agent.TeamID);
 
             foreach(var opp in opponents)
             {
-                // Simple Threat Assessment: Proximity to Goal + Openness
+                // Simple Threat Assessment: Proximity to Goal + Proximity to my Zone
                 float distToGoal = Vector3.Distance(opp.transform.position, myGoal);
-                if (distToGoal > 35f) continue; // Not dangerous
+                if (distToGoal > 40f) continue; // Not dangerous
 
-                float threat = (40f - distToGoal); // Closer = Higher Threat
+                float distToBase = Vector3.Distance(opp.transform.position, shiftedBasePos);
+                
+                // Base threat: Closer to goal + Closer to my zone
+                float threat = (40f - distToGoal) + (20f - distToBase);
+
+                // ROLE SEPARATION (1대1 마크 중복 방지)
+                // Penalty if a teammate is already marking this opponent
+                int teammatesMarking = 0;
+                foreach(var tm in teammates)
+                {
+                    if (tm == agent || tm.IsGoalkeeper) continue; // Don't count myself or GK
+                    float tmDistToOpp = Vector3.Distance(tm.transform.position, opp.transform.position);
+                    if (tmDistToOpp < 3.5f) // Teammate is very close to opponent
+                    {
+                        teammatesMarking++;
+                    }
+                }
+                
+                // Huge penalty if 1 teammate is already on him, even more if 2+
+                threat -= (teammatesMarking * 30f);
+
                 if (threat > maxThreat)
                 {
                     maxThreat = threat;
@@ -360,7 +430,35 @@ namespace Game.Scripts.AI.States
             return bestCandidate;
         }
 
-        private void SetSafeDestination(Vector3 targetPos)
+        private Vector3 GetRepulsionVector(Vector3 myTargetPos, float radius)
+        {
+            Vector3 repulsion = Vector3.zero;
+            int count = 0;
+            var teammates = agent.GetTeammates();
+            
+            foreach(var tm in teammates)
+            {
+                if (tm == agent || tm.IsGoalkeeper) continue; // Ignore GK in outfield spacing
+                
+                float dist = Vector3.Distance(myTargetPos, tm.transform.position);
+                if (dist < radius && dist > 0.1f)
+                {
+                    Vector3 away = (myTargetPos - tm.transform.position).normalized;
+                    // Stronger repulsion the closer they are
+                    repulsion += away * (radius - dist) / radius; 
+                    count++;
+                }
+            }
+            if (count > 0) 
+            {
+                Vector3 finalRepulsion = (repulsion / count).normalized * 2.5f; // Push by max 2.5m
+                finalRepulsion.y = 0; // Keep horizontal
+                return finalRepulsion;
+            }
+            return Vector3.zero;
+        }
+
+        private void SetSafeDestination(Vector3 targetPos, bool sprint = false)
         {
             // Simple field clamp using Settings
             float w = FieldHalfWidth;
@@ -369,7 +467,10 @@ namespace Game.Scripts.AI.States
             targetPos.x = Mathf.Clamp(targetPos.x, -w, w);
             targetPos.z = Mathf.Clamp(targetPos.z, -l, l);
             
-            agent.Mover.MoveTo(targetPos);
+            if (sprint)
+                agent.Mover.SprintTo(targetPos);
+            else
+                agent.Mover.MoveTo(targetPos);
         }
 
         public override void PhysicsExecute() { }

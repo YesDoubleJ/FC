@@ -28,7 +28,8 @@ namespace Game.Scripts.AI
                 if (_stats != null)
                 {
                     // Formula: Stat 1 -> 75%, Stat 100 -> 125%
-                    float t = Mathf.InverseLerp(1f, 100f, _stats.speed);
+                    float effectiveSpeed = _stats.GetEffectiveStat(StatType.Speed);
+                    float t = Mathf.InverseLerp(1f, 100f, effectiveSpeed);
                     float multiplier = Mathf.Lerp(_controller.config.StatMinMultiplier, _controller.config.StatMaxMultiplier, t);
                     return baseVal * multiplier;
                 }
@@ -57,6 +58,7 @@ namespace Game.Scripts.AI
 
         // [NEW] Skill & Status Flags
         public bool IsSpeedLocked { get; set; } = false; // If true, MoveTo/SprintTo won't change speed
+        public bool IsSprinting { get; private set; } = false;
         private float _stunTimer = 0f;
         public bool IsStunned => _stunTimer > 0f;
 
@@ -133,6 +135,17 @@ namespace Game.Scripts.AI
 
         public void Tick()
         {
+            if (_stats != null)
+            {
+                _stats.UpdateRuntime(Time.deltaTime, IsSprinting);
+                if (_stats.Breath < 5f)
+                {
+                    IsSprinting = false; // Force jog if exhausted
+                }
+            }
+
+            UpdateDynamicSpeed();
+
             // Debugging: Check Movement status every 1s
             /*
             if (Time.time > _debugTimer + 1.0f)
@@ -170,6 +183,26 @@ namespace Game.Scripts.AI
 
             SyncAgentToBody();
             RotateCharacter();
+        }
+
+        private void UpdateDynamicSpeed()
+        {
+            if (_agent == null || IsSpeedLocked) return;
+
+            float targetSpeed = BaseMoveSpeed;
+            if (IsSprinting)
+            {
+                float sprintMult = (_controller.config) ? _controller.config.SprintMultiplier : 1.4f;
+                targetSpeed *= sprintMult;
+            }
+
+            var matchMgr = Game.Scripts.Managers.MatchManager.Instance;
+            if (matchMgr != null && matchMgr.CurrentBallOwner == _controller)
+            {
+                targetSpeed *= 0.95f; // Ball carrier penalty
+            }
+
+            _agent.speed = targetSpeed;
         }
 
         public void FixedTick()
@@ -247,8 +280,16 @@ namespace Game.Scripts.AI
             Vector3 forceDir = (desiredVelocity - currentVelocity);
             forceDir.y = 0;
 
+            // [NEW] DYNAMIC TETHERING (§6.2)
+            var matchMgr = Game.Scripts.Managers.MatchManager.Instance; // Moved declaration up
+            if (matchMgr != null && _controller.formationManager != null)
+            {
+                Vector3 tetherForce = _controller.formationManager.GetTetherForce(transform.position, _controller.assignedPosition, _controller.TeamID);
+                forceDir += tetherForce;
+            }
+
             // DRIBBLE PIVOT LOGIC (User Req: Turn South -> Turn North with ball)
-            var matchMgr = Game.Scripts.Managers.MatchManager.Instance;
+            // var matchMgr = Game.Scripts.Managers.MatchManager.Instance; // Original declaration, now moved up
             if (matchMgr != null && matchMgr.CurrentBallOwner == _controller)
             {
                  if (desiredVelocity.sqrMagnitude > 0.5f)
@@ -500,6 +541,7 @@ namespace Game.Scripts.AI
 
         public void Stop()
         {
+            IsSprinting = false;
             if (_agent.isOnNavMesh) _agent.ResetPath();
             _agent.velocity = Vector3.zero;
             _rb.linearVelocity = Vector3.zero;
@@ -507,6 +549,7 @@ namespace Game.Scripts.AI
 
         public void ApplyStun(float duration)
         {
+            IsSprinting = false;
             _stunTimer = duration;
             if (_agent.isOnNavMesh) _agent.ResetPath();
             // _rb.linearVelocity remains active (knockback physics)
@@ -514,22 +557,27 @@ namespace Game.Scripts.AI
 
         public void MoveTo(Vector3 dest)
         {
+            IsSprinting = false;
             if (_agent.isOnNavMesh) 
             {
-                // Inspect-driven Speed Control
-                if (!IsSpeedLocked) _agent.speed = BaseMoveSpeed;
                 _agent.SetDestination(dest);
+                _agent.isStopped = false;
             }
         }
 
         public void SprintTo(Vector3 target)
         {
-            MoveTo(target);
-            // Sprint is 1.4x the base speed
-            if (!IsSpeedLocked && _agent != null)
+            if (_stats != null && _stats.Breath < 5f)
             {
-                float sprintMult = (_controller.config) ? _controller.config.SprintMultiplier : 1.4f;
-                _agent.speed = BaseMoveSpeed * sprintMult; 
+                MoveTo(target); // Fallback to jog if exhausted
+                return;
+            }
+
+            IsSprinting = true;
+            if (_agent.isOnNavMesh)
+            {
+                _agent.SetDestination(target);
+                _agent.isStopped = false;
             }
         }
 

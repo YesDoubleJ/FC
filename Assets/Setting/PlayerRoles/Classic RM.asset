@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99ed12898f687f4f972b6355796e9ae, type: 3}
+  m_Name: Classic RM
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.Tactics.Data.PositionRoleConfig
+  _requiredLicense: 0
+  BasePosition: 7
+  BuildUpRole: 33
+  ProgressionRole: 33
+  FinalThirdRole: 33
+  LowBlockRole: 27
+  MidBlockRole: 27
+  HighBlockRole: 27
+  BuildUpInstructions:
+    AttackWidth: 1
+    AttackHeight: 1
+    Patience: 1
+    PassRisk: 1
+    ShootFrequency: 1
+    CrossFrequency: 1
+    DribbleFrequency: 1
+    SpaceDribbleFrequency: 1
+    MarkingStyle: 1
+    ChallengeIntensity: 1
+  ProgressionInstructions:
+    AttackWidth: 1
+    AttackHeight: 1
+    Patience: 1
+    PassRisk: 1
+    ShootFrequency: 1
+    CrossFrequency: 1
+    DribbleFrequency: 1
+    SpaceDribbleFrequency: 1
+    MarkingStyle: 1
+    ChallengeIntensity: 1
+  FinalThirdInstructions:
+    AttackWidth: 1
+    AttackHeight: 1
+    Patience: 1
+    PassRisk: 1
+    ShootFrequency: 1
+    CrossFrequency: 1
+    DribbleFrequency: 1
+    SpaceDribbleFrequency: 1
+    MarkingStyle: 1
+    ChallengeIntensity: 1
+  LowBlockInstructions:
+    AttackWidth: 1
+    AttackHeight: 1
+    Patience: 1
+    PassRisk: 1
+    ShootFrequency: 1
+    CrossFrequency: 1
+    DribbleFrequency: 1
+    SpaceDribbleFrequency: 1
+    MarkingStyle: 1
+    ChallengeIntensity: 1
+  MidBlockInstructions:
+    AttackWidth: 1
+    AttackHeight: 1
+    Patience: 1
+    PassRisk: 1
+    ShootFrequency: 1
+    CrossFrequency: 1
+    DribbleFrequency: 1
+    SpaceDribbleFrequency: 1
+    MarkingStyle: 1
+    ChallengeIntensity: 1
+  HighBlockInstructions:
+    AttackWidth: 1
+    AttackHeight: 1
+    Patience: 1
+    PassRisk: 1
+    ShootFrequency: 1
+    CrossFrequency: 1
+    DribbleFrequency: 1
+    SpaceDribbleFrequency: 1
+    MarkingStyle: 1
+    ChallengeIntensity: 1
+  PassModifier: 1
+  ShootModifier: 1
+  DribbleModifier: 1

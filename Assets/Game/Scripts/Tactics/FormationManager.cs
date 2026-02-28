@@ -12,9 +12,8 @@ namespace Game.Scripts.Tactics
     /// </summary>
     public class FormationManager : MonoBehaviour
     {
-        [Header("Managers")]
-        [SerializeField] private HomeFormationManager homeManager;
-        [SerializeField] private AwayFormationManager awayManager;
+        // Legacy managers removed
+
 
         // =========================================================
         // §6.2 테더링 설정
@@ -33,28 +32,15 @@ namespace Game.Scripts.Tactics
         [Tooltip("현재 수비 라인 높이")]
         public LineHeight CurrentLineHeight = LineHeight.MidBlock;
 
+        [Header("Global Settings")]
+        public Game.Scripts.Data.MatchEngineConfig EngineConfig;
+
         private Transform ballTransform;
 
         private void Awake()
         {
             var ballObj = GameObject.Find("Ball"); 
             if (ballObj != null) ballTransform = ballObj.transform;
-
-            // Auto-find managers if not assigned
-            if (homeManager == null) homeManager = FindFirstObjectByType<HomeFormationManager>();
-            if (awayManager == null) awayManager = FindFirstObjectByType<AwayFormationManager>();
-            
-            // Auto-create if missing (Safety fallback)
-            if (homeManager == null) 
-            {
-                var go = new GameObject("HomeFormationManager");
-                homeManager = go.AddComponent<HomeFormationManager>();
-            }
-            if (awayManager == null) 
-            {
-                var go = new GameObject("AwayFormationManager");
-                awayManager = go.AddComponent<AwayFormationManager>();
-            }
         }
 
         private void ForceRepositionPlayer(string name, Vector3 pos)
@@ -77,6 +63,47 @@ namespace Game.Scripts.Tactics
             return GetAnchorPosition(pos, Game.Scripts.Data.Team.Home);
         }
 
+        // Helper: get base offset using new FormationData (or fallback to old manager)
+        private Vector3 GetBaseOffset(FormationPosition pos, Game.Scripts.Data.Team team)
+        {
+            Vector3 offset = Vector3.zero;
+
+            var tactics = (team == Game.Scripts.Data.Team.Home) 
+                ? MatchManager.Instance?.HomeTeamTactics 
+                : MatchManager.Instance?.AwayTeamTactics;
+
+            if (tactics != null && tactics.SelectedFormation != null)
+            {
+                Vector2 basePos = tactics.SelectedFormation.GetPosition(pos);
+
+                float fieldHalfWidth = 32f;
+                float fieldHalfLength = 48f;
+
+                if (MatchManager.Instance != null)
+                {
+                    fieldHalfWidth = MatchManager.Instance.FieldHalfWidth;
+                    fieldHalfLength = MatchManager.Instance.FieldHalfLength;
+                }
+
+                float offsetX = basePos.x * fieldHalfWidth;
+                float offsetZ = basePos.y * fieldHalfLength;
+
+                if (team == Game.Scripts.Data.Team.Away)
+                {
+                    offsetX = -offsetX;
+                    offsetZ = -offsetZ;
+                }
+
+                offset = new Vector3(offsetX, 0f, offsetZ);
+            }
+            else
+            {
+                Debug.LogWarning($"[FormationManager] No Tactics Config or Formation Data found for team {team}!");
+            }
+
+            return offset;
+        }
+
         public Vector3 GetAnchorPosition(FormationPosition pos, Game.Scripts.Data.Team team)
         {
             float ballZ = 0f;
@@ -89,10 +116,54 @@ namespace Game.Scripts.Tactics
                 ballZ = ballTransform.position.z;
             }
             
-            // Get Offset from Managers
-            Vector3 offset = Vector3.zero;
-            if (team == Game.Scripts.Data.Team.Home && homeManager != null) offset = homeManager.GetOffset(pos);
-            else if (team == Game.Scripts.Data.Team.Away && awayManager != null) offset = awayManager.GetOffset(pos);
+            // Get Offset 
+            Vector3 offset = GetBaseOffset(pos, team);
+            
+            // --- Apply Dynamic Width (Phase 4) ---
+            if (MatchManager.Instance != null)
+            {
+                var tactics = (team == Game.Scripts.Data.Team.Home) 
+                    ? MatchManager.Instance.HomeTeamTactics 
+                    : MatchManager.Instance.AwayTeamTactics;
+
+                if (tactics != null)
+                {
+                    bool inPossession = false;
+                    var owner = MatchManager.Instance.CurrentBallOwner;
+                    if (owner != null)
+                    {
+                        inPossession = (owner.TeamID == team);
+                    }
+
+                    float widthMultiplier = 1.0f;
+                    
+                    // Ensured Global Config Load
+                    if (EngineConfig == null) EngineConfig = Resources.Load<Game.Scripts.Data.MatchEngineConfig>("DefaultMatchEngineConfig");
+                    var tuning = EngineConfig != null ? EngineConfig.TacticsTuning : null;
+
+                    if (inPossession)
+                    {
+                        switch (tactics.InPossession.AttackingWidth)
+                        {
+                            case Game.Scripts.Tactics.Data.AttackWidth.Narrow: widthMultiplier = tuning != null ? tuning.AttackingWidthNarrow : 0.75f; break;
+                            case Game.Scripts.Tactics.Data.AttackWidth.Normal: widthMultiplier = tuning != null ? tuning.AttackingWidthNormal : 1.0f; break;
+                            case Game.Scripts.Tactics.Data.AttackWidth.Wide: widthMultiplier = tuning != null ? tuning.AttackingWidthWide : 1.25f; break;
+                        }
+                    }
+                    else
+                    {
+                        switch (tactics.OutOfPossession.DefensiveWidth)
+                        {
+                            case Game.Scripts.Tactics.Data.DefensiveWidth.Narrow: widthMultiplier = tuning != null ? tuning.DefensiveWidthNarrow : 0.75f; break;
+                            case Game.Scripts.Tactics.Data.DefensiveWidth.Normal: widthMultiplier = tuning != null ? tuning.DefensiveWidthNormal : 1.0f; break;
+                            case Game.Scripts.Tactics.Data.DefensiveWidth.Wide: widthMultiplier = tuning != null ? tuning.DefensiveWidthWide : 1.25f; break;
+                        }
+                    }
+                    
+                    offset.x *= widthMultiplier;
+                }
+            }
+            // -------------------------------------
             
             // Get Field Dimensions
             float fieldLimit = 45f;
@@ -116,7 +187,7 @@ namespace Game.Scripts.Tactics
             float minZ = -fieldLimit;
             float maxZ = fieldLimit;
             
-            if (pos == FormationPosition.GK)
+            if (pos == FormationPosition.GK || ((int)pos) == 0) // Treat index 0 as GK for fallback
             {
                 // GK Clamping depends on team?
                 if (team == Game.Scripts.Data.Team.Home) { minZ = -gkLimit; maxZ = 40f; }
@@ -134,12 +205,52 @@ namespace Game.Scripts.Tactics
             return new Vector3(offset.x, 0.05f, finalZ);
         }
 
+        // Helper specifically for Kickoff offsets which are defined independently
+        private Vector3 GetKickoffBaseOffset(FormationPosition pos, Game.Scripts.Data.Team team, bool isOffensive)
+        {
+            Vector3 offset = Vector3.zero;
+
+            var tactics = (team == Game.Scripts.Data.Team.Home) 
+                ? MatchManager.Instance?.HomeTeamTactics 
+                : MatchManager.Instance?.AwayTeamTactics;
+
+            if (tactics != null && tactics.SelectedFormation != null)
+            {
+                // [NEW] Use the new KickoffPosition which considers Offensive/Defensive states
+                Vector2 basePos = tactics.SelectedFormation.GetKickoffPosition(pos, isOffensive);
+
+                float fieldHalfWidth = 32f;
+                float fieldHalfLength = 48f;
+
+                if (MatchManager.Instance != null)
+                {
+                    fieldHalfWidth = MatchManager.Instance.FieldHalfWidth;
+                    fieldHalfLength = MatchManager.Instance.FieldHalfLength;
+                }
+
+                float offsetX = basePos.x * fieldHalfWidth;
+                float offsetZ = basePos.y * fieldHalfLength;
+
+                if (team == Game.Scripts.Data.Team.Away)
+                {
+                    offsetX = -offsetX;
+                    offsetZ = -offsetZ;
+                }
+
+                offset = new Vector3(offsetX, 0f, offsetZ);
+            }
+            else
+            {
+                Debug.LogWarning($"[FormationManager] No Tactics Config or Formation Data found for team {team}!");
+            }
+
+            return offset;
+        }
+
         // kick-off specific position
         public Vector3 GetKickoffPosition(FormationPosition pos, Game.Scripts.Data.Team team, bool isKickOffTeam)
         {
-            Vector3 offset = Vector3.zero;
-            if (team == Game.Scripts.Data.Team.Home && homeManager != null) offset = homeManager.GetOffset(pos);
-            else if (team == Game.Scripts.Data.Team.Away && awayManager != null) offset = awayManager.GetOffset(pos);
+            Vector3 offset = GetKickoffBaseOffset(pos, team, isKickOffTeam);
 
             // KICKOFF START POSITION LOGIC
             // User Request: Don't mess up the formation settings! Just enforce Rules.
@@ -156,7 +267,7 @@ namespace Game.Scripts.Tactics
             if (isKickOffTeam && isStriker)
             {
                  // Central Striker takes priority for center spot
-                 if (pos == FormationPosition.ST_Center)
+                 if (pos == FormationPosition.ST_Center) 
                  {
                      float strikerZ = (team == Game.Scripts.Data.Team.Home) ? -0.9f : 0.9f; // 0.9m (Safe but close)
                      return new Vector3(0, 0.05f, strikerZ); 

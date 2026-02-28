@@ -48,6 +48,129 @@ namespace Game.Scripts.AI.Tactics
 
             return ClampToFieldBounds(targetPos, agent);
         }
+
+        public Vector3 GetOptimalSupportSpot(HybridAgentController agent)
+        {
+            var matchMgr = MatchManager.Instance;
+            if (matchMgr == null || matchMgr.Ball == null) return agent.transform.position;
+
+            Vector3 ballPos = matchMgr.Ball.transform.position;
+            
+            // 1. Get Base Geometric Target (Traditional logic, now with Phase integration)
+            Vector3 baseTarget = GetSupportPosition(agent, ballPos);
+
+            // 2. Generate Local Candidate Points
+            // Pitch Control Sampling (grid-less)
+            int sampleCount = 8;
+            float sampleRadius = 5.0f;
+            
+            // [MODIFIED] Phase 4: Center search around Formation Anchor instead of completely tactical target
+            // This prevents players from wandering too far from their designated structure.
+            Vector3 searchCenter = baseTarget;
+            if (agent.formationManager != null)
+            {
+                searchCenter = agent.formationManager.GetAnchorPosition(agent.assignedPosition, agent.TeamID);
+                
+                // Maintain the line shift with the ball
+                float shiftZ = (ballPos.z - searchCenter.z) * 0.45f; 
+                searchCenter.z += shiftZ;
+                float shiftX = (ballPos.x - searchCenter.x) * 0.2f;
+                searchCenter.x += shiftX;
+
+                // Adjust sample radius based on AttackingWidth config
+                if (agent.TacticsConfig != null)
+                {
+                    if (agent.TacticsConfig.InPossession.AttackingWidth == Game.Scripts.Tactics.Data.AttackWidth.Wide) sampleRadius = 7.0f;
+                    else if (agent.TacticsConfig.InPossession.AttackingWidth == Game.Scripts.Tactics.Data.AttackWidth.Narrow) sampleRadius = 3.0f;
+                }
+            }
+
+            Vector3 bestPoint = baseTarget;
+            float bestScore = -9999f;
+
+            for (int i = 0; i < sampleCount; i++)
+            {
+                // Generate point in a circle around the search center
+                float angle = i * Mathf.PI * 2f / sampleCount;
+                Vector3 candidate = searchCenter + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * sampleRadius;
+
+                // Clamp to field bounds
+                candidate = ClampToFieldBounds(candidate, agent);
+
+                // 3. Evaluate Point
+                float score = 0f;
+
+                // A. Base Proximity Score (Prefer staying closer to tactical baseline)
+                float distToBase = Vector3.Distance(candidate, baseTarget);
+                score -= distToBase * 0.1f; // Small penalty for moving away from tactical anchor
+
+                // B. Pitch Control Score (Space Safety)
+                score += PitchControlEvaluator.GetControlScore(candidate, agent.TeamID);
+
+                // C. Pass Lane Score (Visibility to ball)
+                score += PitchControlEvaluator.GetPassLaneScore(candidate, agent.TeamID) * 2.0f; // High weight for clear pass lane
+
+                // D. Apply Phase-Based TacticsConfig Multipliers
+                if (agent.TacticsConfig != null)
+                {
+                    float attackGoalZ = matchMgr.GetAttackGoalPosition(agent.TeamID).z;
+                    float defendGoalZ = matchMgr.GetDefendGoalPosition(agent.TeamID).z;
+                    float fieldLength = Mathf.Abs(attackGoalZ - defendGoalZ);
+                    
+                    // Determine Phase based on ball position
+                    float ballDistFromDefendGoal = Mathf.Abs(ballPos.z - defendGoalZ);
+                    float phaseRatio = ballDistFromDefendGoal / fieldLength;
+
+                    float forwardBonus = 0f;
+                    float spaceBonus = 0f;
+
+                    // Build-up Phase (< 33%)
+                    if (phaseRatio < 0.33f)
+                    {
+                        // Higher Risk Taking -> rewarding positions further up the pitch
+                        float riskVal = agent.TacticsConfig.InPossession.BuildUpRiskTaking == Game.Scripts.Tactics.Data.RiskTaking.High ? 1.5f : (agent.TacticsConfig.InPossession.BuildUpRiskTaking == Game.Scripts.Tactics.Data.RiskTaking.Low ? 0.5f : 1.0f);
+                        forwardBonus = riskVal * 2.0f; 
+                    }
+                    // Progression Phase
+                    else if (phaseRatio < 0.66f)
+                    {
+                        // Higher PenetrationFrequency -> heavily rewarding forward runs into space
+                        float penVal = agent.TacticsConfig.InPossession.PenetrationFrequency == Game.Scripts.Tactics.Data.PenetrationFrequency.High ? 1.5f : (agent.TacticsConfig.InPossession.PenetrationFrequency == Game.Scripts.Tactics.Data.PenetrationFrequency.Low ? 0.5f : 1.0f);
+                        forwardBonus = penVal * 3.0f;
+                        spaceBonus = penVal * 1.5f;
+                    }
+                    // Final Third Phase
+                    else
+                    {
+                        // Higher PenetrationFrequency -> reward pitch control in dangerous areas
+                        float penVal = agent.TacticsConfig.InPossession.PenetrationFrequency == Game.Scripts.Tactics.Data.PenetrationFrequency.High ? 1.5f : (agent.TacticsConfig.InPossession.PenetrationFrequency == Game.Scripts.Tactics.Data.PenetrationFrequency.Low ? 0.5f : 1.0f);
+                        forwardBonus = penVal * 2.5f;
+                    }
+
+                    // Apply Forward Bonus (Is candidate closer to attack goal than baseTarget?)
+                    float candidateForwardDiff = Mathf.Abs(candidate.z - defendGoalZ) - Mathf.Abs(baseTarget.z - defendGoalZ);
+                    if (candidateForwardDiff > 0)
+                    {
+                        score += candidateForwardDiff * forwardBonus;
+                    }
+
+                    // Apply Space Bonus (SupportSpacing makes players spread out more)
+                    if (spaceBonus > 0f)
+                    {
+                        score += (distToBase * 0.2f * spaceBonus); // Negate the base proximity penalty slightly
+                    }
+                }
+
+                if (score > bestScore)
+                {
+                    bestScore = score;
+                    bestPoint = candidate;
+                }
+            }
+
+            // Teammate repulsion is already handled partially by PitchControlEvaluator and GetSupportPosition.
+            return ClampToFieldBounds(bestPoint, agent);
+        }
         
         private Vector3 ApplySeparation(HybridAgentController agent, Vector3 targetPos, Vector3 ballPos)
         {
@@ -71,20 +194,27 @@ namespace Game.Scripts.AI.Tactics
                  targetPos = ballPos + (pushDir * minSeparation);
             }
 
-            // 2. 다른 동료들과의 겹침 방지 (간단 버전)
-            // (성능을 위해 본인 주변 5m만 체크)
-            /*
+            // 2. 다른 동료들과의 겹침 방지 (척력)
             var teammates = agent.GetTeammates();
+            Vector3 repulsion = Vector3.zero;
+            int count = 0;
             foreach (var tm in teammates)
             {
-                if (tm == agent) continue;
-                if (Vector3.Distance(targetPos, tm.transform.position) < 3.0f)
+                if (tm == agent || tm.IsGoalkeeper) continue; // Ignore self and GK
+                float distToTm = Vector3.Distance(targetPos, tm.transform.position);
+                if (distToTm < 4.5f && distToTm > 0.1f)
                 {
-                    Vector3 fleeDir = (targetPos - tm.transform.position).normalized;
-                    targetPos += fleeDir * 2.0f; // 2m 옆으로 비켜섬
+                    Vector3 away = (targetPos - tm.transform.position).normalized;
+                    repulsion += away * (4.5f - distToTm) / 4.5f;
+                    count++;
                 }
             }
-            */
+            if (count > 0)
+            {
+                repulsion = (repulsion / count).normalized * 3.5f; // Push out by max 3.5m
+                repulsion.y = 0;
+                targetPos += repulsion;
+            }
 
             return targetPos;
         }
@@ -103,12 +233,22 @@ namespace Game.Scripts.AI.Tactics
                 return;
             }
 
-            // SMART SPRINT LOGIC (Attack Support)
-            // If we are far from position (> 8m), SPRINT to get there.
-            // If close, use normal move for precision.
+            // SMART SPRINT LOGIC (Attack Support & Stamina Conservation)
+            // If we are far from position (> 8m), we MIGHT sprint.
+            // But if we are far from the ball (> 25m), we jog to conserve stamina unless we are way out of position.
             float threshold = (agent.config) ? agent.config.SupportSprintThreshold : 8.0f;
             
+            bool shouldSprint = false;
             if (dist > threshold)
+            {
+                float distToBall = Vector3.Distance(safePos, MatchManager.Instance.Ball.transform.position);
+                if (distToBall < 25f || dist > 20f) 
+                {
+                    shouldSprint = true; // Sprint if play is nearby, or if critically out of position
+                }
+            }
+
+            if (shouldSprint)
             {
                 agent.Mover.SprintTo(safePos);
             }
@@ -123,20 +263,59 @@ namespace Game.Scripts.AI.Tactics
         // =========================================================
         private Vector3 GetGeometricSupportSpot(HybridAgentController agent, Vector3 ballPos)
         {
-            switch (agent.assignedPosition)
+            Vector3 target = Vector3.zero;
+            string posName = agent.assignedPosition.ToString();
+            
+            bool isStriker = posName.StartsWith("ST") || posName.StartsWith("LW") || posName.StartsWith("RW");
+            bool isDefender = posName.StartsWith("CB") || posName.EndsWith("B") /* LB, RB */;
+
+            if (isStriker)
             {
-                case FormationPosition.ST_Left:
-                case FormationPosition.ST_Right:
-                case FormationPosition.ST_Center:
-                    return GetSupportTarget_Striker(agent, ballPos);
-                case FormationPosition.CM_Left:
-                case FormationPosition.CM_Right:
-                case FormationPosition.LM:
-                case FormationPosition.RM:
-                    return GetSupportTarget_Midfielder(agent, ballPos);
-                default:
-                    return GetSupportTarget_Defender(agent, ballPos);
+                target = GetSupportTarget_Striker(agent, ballPos);
             }
+            else if (isDefender)
+            {
+                target = GetSupportTarget_Defender(agent, ballPos);
+            }
+            else
+            {
+                target = GetSupportTarget_Midfielder(agent, ballPos);
+            }
+
+            // [NEW] FORMATION GRAVITY (포지션 복원력)
+            // Prevent swarm ball by pulling players back to their actual formation slots
+            if (agent.formationManager != null)
+            {
+                Vector3 basePos = agent.formationManager.GetAnchorPosition(agent.assignedPosition, agent.TeamID);
+                
+                // Shift basePos vertically based on ball position to maintain attacking lines collectively
+                // e.g., line pushes up as ball goes forward
+                float shiftZ = (ballPos.z - basePos.z) * 0.45f; // Follow the ball 45% of the distance
+                basePos.z += shiftZ;
+                
+                // Shift slightly laterally towards ball
+                float shiftX = (ballPos.x - basePos.x) * 0.2f;
+                basePos.x += shiftX;
+                
+                // Blend: Strategic Target vs Formation Anchor
+                // Striker = 60% Target, 40% Formation
+                // Midfielder = 50% Target, 50% Formation
+                // Defender = 30% Target, 70% Formation
+                float blendWeight = isStriker ? 0.4f : (isDefender ? 0.7f : 0.5f);
+
+                if (agent.TacticsConfig != null)
+                {
+                    // If high penetration frequency in progression, allow strikers to abandon formation anchor
+                    float penVal = agent.TacticsConfig.InPossession.PenetrationFrequency == Game.Scripts.Tactics.Data.PenetrationFrequency.High ? 1.5f : (agent.TacticsConfig.InPossession.PenetrationFrequency == Game.Scripts.Tactics.Data.PenetrationFrequency.Low ? 0.5f : 1.0f);
+                    if (isStriker) blendWeight -= (penVal * 0.2f);
+                }
+
+                blendWeight = Mathf.Clamp01(blendWeight);
+                
+                target = Vector3.Lerp(target, basePos, blendWeight);
+            }
+
+            return target;
         }
 
         // =========================================================
@@ -300,19 +479,25 @@ namespace Game.Scripts.AI.Tactics
             Vector3 goalDir = (_goalPosition - ballPos).normalized;
             
             var config = agent.config;
-            // 수비수가 너무 뒤로 처지지 않게 18m 유지 간격을 12m로 대폭 좁힙니다.
-            float backDist = config ? config.DefenderBackDist : 12f;
+            var tacticsConfig = agent.TacticsConfig;
+            float defLineVal = tacticsConfig != null ? (tacticsConfig.OutOfPossession.MidBlockLine == Game.Scripts.Tactics.Data.DefensiveLine.High ? 1f : (tacticsConfig.OutOfPossession.MidBlockLine == Game.Scripts.Tactics.Data.DefensiveLine.Low ? 0f : 0.5f)) : 0.5f;
+            float defLineMultiplier = Mathf.Lerp(1.5f, 0.6f, defLineVal);
+            // 수비수가 너무 뒤로 처지지 않게 18m 유지 간격을 12m로 대폭 좁힙니다. (전술 지침에 따라 조절)
+            float backDist = (config != null ? config.DefenderBackDist : 12f) * defLineMultiplier;
 
             Vector3 targetPos = ballPos - (goalDir * backDist);
 
             // HIGH LINE CONSTRAINT (User Req: Don't retreat)
             // 공격 시 수비수들이 절대로 자기 진영 깊숙이 남지 않고 하프라인을 넘어서 진영을 끌어올리도록 강제합니다.
+            float defLineValForPush = tacticsConfig != null ? (tacticsConfig.OutOfPossession.MidBlockLine == Game.Scripts.Tactics.Data.DefensiveLine.High ? 1f : (tacticsConfig.OutOfPossession.MidBlockLine == Game.Scripts.Tactics.Data.DefensiveLine.Low ? 0f : 0.5f)) : 0.5f;
+            float pushUpMax = Mathf.Lerp(5f, 25f, defLineValForPush);
+
             if (agent.TeamID == Team.Home)
             {
                 // Attacking +Z. 공이 넘어갔다면 하프라인(0) 이상으로 전술 라인을 올립니다.
                 if (ballPos.z > 0f) 
                 {
-                    float pushUpLine = Mathf.Min(ballPos.z - 8f, 15f); // 공 바로 뒤 8m, 최대 15m까지 전진
+                    float pushUpLine = Mathf.Min(ballPos.z - 8f, pushUpMax); // 공 바로 뒤 8m, 최대 pushUpMax까지 전진
                     if (targetPos.z < pushUpLine) targetPos.z = pushUpLine;
                 }
                 else if (ballPos.z > -15f && targetPos.z < -10f) targetPos.z = -10f; // 초기 빌드업 시에도 덜 물러남
@@ -322,7 +507,7 @@ namespace Game.Scripts.AI.Tactics
                 // Attacking -Z.
                 if (ballPos.z < 0f) 
                 {
-                    float pushUpLine = Mathf.Max(ballPos.z + 8f, -15f);
+                    float pushUpLine = Mathf.Max(ballPos.z + 8f, -pushUpMax);
                     if (targetPos.z > pushUpLine) targetPos.z = pushUpLine;
                 }
                 else if (ballPos.z < 15f && targetPos.z > 10f) targetPos.z = 10f;

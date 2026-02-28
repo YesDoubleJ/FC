@@ -216,13 +216,14 @@ namespace Game.Scripts.Physics
                 return;
             }
 
-            // §3.1 공식: 마그누스 힘의 방향 = 각속도 × 선속도의 외적
-            Vector3 magnusDir = Vector3.Cross(angularVelocity, velocity).normalized;
+            // §3.1 공식: 마그누스 힘의 방향 및 크기 = 각속도(ω) × 선속도(v)의 외적 수식 적용
+            // (기존 이미지 누락으로 인해 스핀량이 배제되고 속도의 제곱(|v|²)만 사용되었던 치명적 물리 오류 수정)
+            Vector3 magnusCross = Vector3.Cross(angularVelocity, velocity);
+            
+            // 외적 벡터(magnusCross)의 크기 자체가 스핀량(|ω|)과 속도(|v|)에 비례하므로 이를 활용
+            float magnusMagnitude = _magnusCoeff * _airDensity * magnusCross.magnitude;
 
-            // 힘의 크기: C_L × ρ × |v|²
-            float magnusMagnitude = _magnusCoeff * _airDensity * velocity.sqrMagnitude;
-
-            Vector3 targetForce = magnusDir * magnusMagnitude;
+            Vector3 targetForce = magnusCross.normalized * magnusMagnitude;
 
             // 안전 클램프: 과도한 힘 방지
             if (targetForce.magnitude > 15f)

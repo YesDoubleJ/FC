@@ -87,7 +87,7 @@ namespace Game.Scripts.UI
                     
                     actionLogText.alignment = TextAnchor.LowerCenter;
                     
-                    actionLogText.fontSize = 40; 
+                    actionLogText.fontSize = 30; 
                     actionLogText.horizontalOverflow = HorizontalWrapMode.Overflow;
                     actionLogText.verticalOverflow = VerticalWrapMode.Overflow;
                 }

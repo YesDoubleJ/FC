@@ -16,7 +16,7 @@
       "url": "https://packages.unity.com"
     },
     "com.ivanmurzak.unity.mcp": {
-      "version": "0.48.0",
+      "version": "0.51.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {

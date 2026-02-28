@@ -28,18 +28,10 @@ namespace Game.Scripts.AI
         private float _preSkillAccel = -1f;
 
         // Timers
-        private float _defenseBurstCooldownTimer = 0f;
-        private float _attackBurstCooldownTimer = 0f;
-        private float _breakthroughCooldownTimer = 0f;
         private float _tackleCooldownTimer = 0f;
         private float _bodyCheckCooldownTimer = 0f;
 
         // Skill States
-        public bool IsBreakthroughActive { get; private set; }
-
-        public bool CanUseBreakthrough => _breakthroughCooldownTimer <= 0f;
-        public bool CanUseAttackBurst => _attackBurstCooldownTimer <= 0f;
-        public bool CanUseDefenseBurst => _defenseBurstCooldownTimer <= 0f;
         public bool CanTackle => _tackleCooldownTimer <= 0f;
         public bool CanBodyCheck => _bodyCheckCooldownTimer <= 0f;
 
@@ -67,7 +59,6 @@ namespace Game.Scripts.AI
         public void ResetSkills()
         {
             StopAllCoroutines();
-            IsBreakthroughActive = false;
             
             // Restore Speed/Accel if modified
             if (_agent != null && _preSkillSpeed > 0)
@@ -79,9 +70,6 @@ namespace Game.Scripts.AI
             _preSkillAccel = -1f;
 
             // Optional: Reset cooldowns to ready state?
-            _defenseBurstCooldownTimer = 0f;
-            _attackBurstCooldownTimer = 0f;
-            _breakthroughCooldownTimer = 0f;
             _tackleCooldownTimer = 0f;
             _bodyCheckCooldownTimer = 0f;
         }
@@ -89,9 +77,6 @@ namespace Game.Scripts.AI
         public void Tick()
         {
             float dt = Time.deltaTime;
-            if (_defenseBurstCooldownTimer > 0) _defenseBurstCooldownTimer -= dt;
-            if (_attackBurstCooldownTimer > 0) _attackBurstCooldownTimer -= dt;
-            if (_breakthroughCooldownTimer > 0) _breakthroughCooldownTimer -= dt;
             if (_tackleCooldownTimer > 0) _tackleCooldownTimer -= dt;
             if (_bodyCheckCooldownTimer > 0) _bodyCheckCooldownTimer -= dt;
         }
@@ -99,167 +84,6 @@ namespace Game.Scripts.AI
         // =========================================================
         // SKILLS
         // =========================================================
-
-        public void ActivateDefenseBurst()
-        {
-            if (!CanUseDefenseBurst) return;
-            
-            float cooldown = (_controller.config) ? _controller.config.CooldownDefenseBurst : 5.0f;
-            _defenseBurstCooldownTimer = cooldown; 
-            
-            // [SKILL LOG]
-            Debug.Log($"[SKILL] {name} activated DEFENSE BURST (Cooldown: {cooldown:F1}s)");
-            LogSkill("DEFENSE BURST");
-            
-            // Physics Boost (Instant Stop & Face Ball)
-            if (_agent.isOnNavMesh) _agent.ResetPath();
-            _rb.linearVelocity = Vector3.zero;
-            
-            // Visual feedback handled by state usually, but valid here too.
-        }
-
-        public void ActivateAttackBurst()
-        {
-             if (!CanUseAttackBurst) return;
-             
-             StartCoroutine(AttackBurstRoutine());
-        }
-
-        private System.Collections.IEnumerator AttackBurstRoutine()
-        {
-            float cooldown = (_controller.config) ? _controller.config.CooldownAttackBurst : 5.0f;
-            _attackBurstCooldownTimer = cooldown;
-            
-            // [SKILL LOG]
-            Debug.Log($"[SKILL] {name} activated ATTACK BURST (Cooldown: {cooldown:F1}s)");
-            LogSkill("ATTACK BURST");
-
-            if (_agent.isOnNavMesh)
-            {
-                // Capture original state
-                _preSkillSpeed = _agent.speed;
-                _preSkillAccel = _agent.acceleration;
-                
-                // [FIX] LOCK SPREED to prevent AgentMover from resetting it
-                if (_mover) _mover.IsSpeedLocked = true;
-
-                // Pure Speed Boost
-                float multiplier = (_controller.config) ? _controller.config.BurstSpeedMultiplier : 1.6f;
-                _agent.speed = _preSkillSpeed * multiplier;
-                _agent.acceleration = _preSkillAccel * multiplier;
-                
-                yield return new WaitForSeconds(3.0f);
-                
-                // Restore
-                _agent.speed = _preSkillSpeed;
-                _agent.acceleration = _preSkillAccel;
-                
-                if (_mover) _mover.IsSpeedLocked = false;
-                
-                _preSkillSpeed = -1f;
-            }
-        }
-
-        public void ActivateBreakthrough()
-        {
-             if (!CanUseBreakthrough) return;
-             
-             StartCoroutine(BreakthroughRoutine());
-        }
-
-        private System.Collections.IEnumerator BreakthroughRoutine()
-        {
-            IsBreakthroughActive = true;
-            float cooldown = (_controller.config) ? _controller.config.CooldownBreakthrough : 5.0f;
-            _breakthroughCooldownTimer = cooldown;
-            
-            // 1. PUSH NEARBY OPPONENTS (Optimized)
-            int hitCount = UnityEngine.Physics.OverlapSphereNonAlloc(transform.position, 3f, _nearbyColliders);
-            for (int i = 0; i < hitCount; i++)
-            {
-                var collider = _nearbyColliders[i];
-                var opponent = collider.GetComponent<HybridAgentController>();
-                if (opponent != null && opponent.TeamID != _controller.TeamID)
-                {
-                    Vector3 pushDir = (opponent.transform.position - transform.position).normalized;
-                    Rigidbody opponentRb = opponent.GetComponent<Rigidbody>();
-                    if (opponentRb != null)
-                    {
-                        float pushForce = (_controller.config) ? _controller.config.BreakthroughPushForce : 10f;
-                        opponentRb.AddForce(pushDir * pushForce, ForceMode.Impulse);
-                        
-                        // [FIX] Apply Stun to pushed opponents
-                        var oppMover = opponent.GetComponent<AgentMover>();
-                        if (oppMover) oppMover.ApplyStun(0.5f);
-                    }
-                }
-            }
-            
-            // 2. CHARGE FORWARD
-            float goalDirection = (_controller.TeamID == Data.Team.Home) ? 1f : -1f;
-            float targetZ = (MatchManager.Instance != null) 
-                          ? MatchManager.Instance.GetAttackGoalPosition(_controller.TeamID).z 
-                          : 52.0f * goalDirection;
-
-            Vector3 chargeDir = new Vector3(0, 0, goalDirection);
-            Vector3 targetPos = new Vector3(transform.position.x, 0, targetZ);
-            
-            if (_agent.isOnNavMesh)
-            {
-                // Capture original state
-                _preSkillSpeed = _agent.speed;
-                _preSkillAccel = _agent.acceleration;
-                
-                // [FIX] LOCK SPEED
-                if (_mover) _mover.IsSpeedLocked = true;
-                
-                // Boost speed (Reduced to prevent teleporting balance issues)
-                float multiplier = (_controller.config) ? _controller.config.BreakthroughSpeedMultiplier : 1.25f;
-                _agent.speed = _preSkillSpeed * multiplier;
-                _agent.acceleration = _preSkillAccel * multiplier;
-                
-                // FIX: Set Destination so AgentMover doesn't fight the movement!
-                _agent.SetDestination(targetPos);
-                _agent.isStopped = false;
-                
-                // Impulse for immediate "Pop" (Reduced from 15f to 2f. 15f caused instant teleportation)
-                float impulse = (_controller.config) ? _controller.config.BreakthroughImpulseForce : 2f;
-                _rb.AddForce(chargeDir * impulse, ForceMode.Impulse);
-                
-                // [FIX] Breakthrough uses 'kick and run' physics! 
-                // Push the ball forward and disable magnet temporarily so it doesn't instantly teleport back
-                var matchMgr = MatchManager.Instance;
-                if (matchMgr != null && matchMgr.CurrentBallOwner == _controller)
-                {
-                    Rigidbody ballRb = FindFirstObjectByType<BallAerodynamics>()?.GetComponent<Rigidbody>();
-                    if (ballRb != null)
-                    {
-                        // Knock the ball ahead
-                        ballRb.AddForce(chargeDir * (impulse * 3f), ForceMode.Impulse);
-                        
-                        if (_controller.BallHandler != null)
-                        {
-                            _controller.BallHandler.DisableDribbleAssist(1.0f); // 1초간 자석 드리블 무력화
-                        }
-                    }
-                }
-                
-                // [SKILL LOG]
-                Debug.Log($"[SKILL] {name} activated BREAKTHROUGH! (Cooldown: {cooldown:F1}s)");
-                LogSkill("BREAKTHROUGH!");
-                
-                yield return new WaitForSeconds(1.0f);
-                
-                // Restore
-                _agent.speed = _preSkillSpeed;
-                _agent.acceleration = _preSkillAccel;
-                
-                if (_mover) _mover.IsSpeedLocked = false;
-                _preSkillSpeed = -1f;
-            }
-            
-            IsBreakthroughActive = false;
-        }
 
         public void AttemptTackle(HybridAgentController target)
         {
@@ -347,43 +171,9 @@ namespace Game.Scripts.AI
 
         public enum SkillType
         {
-            AttackBurst,
-            DefenseBurst,
-            Breakthrough,
             Tackle,
             BodyCheck
         }
 
-        public bool TryActivateSkill(SkillType type, float probability = 1.0f)
-        {
-            // PROBABILITY CHECK
-            if (probability < 1.0f && Random.value > probability) return false;
-
-            switch (type)
-            {
-                case SkillType.AttackBurst:
-                    if (CanUseAttackBurst)
-                    {
-                        ActivateAttackBurst();
-                        return true;
-                    }
-                    break;
-                case SkillType.DefenseBurst:
-                    if (CanUseDefenseBurst)
-                    {
-                        ActivateDefenseBurst();
-                        return true;
-                    }
-                    break;
-                case SkillType.Breakthrough:
-                    if (CanUseBreakthrough)
-                    {
-                        ActivateBreakthrough();
-                        return true;
-                    }
-                    break;
-            }
-            return false;
-        }
     }
 }

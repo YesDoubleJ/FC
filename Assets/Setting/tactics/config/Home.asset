@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6621451441c28ce459efb908250667fb, type: 3}
+  m_Name: Home
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Scripts.Tactics.Data.TacticsConfig
+  _requiredLicense: 0
+  Mentality: 2
+  SelectedFormation: {fileID: 11400000, guid: 350ba1e526d1295409bf23eea12fdbdd, type: 2}
+  InPossession:
+    PassingStyle: 2
+    Tempo: 2
+    Transition: 0
+    TimeWasting: 0
+    AttackingWidth: 2
+    BuildUpRiskTaking: 1
+    AttackFocus: 0
+    PenetrationFrequency: 2
+  OutOfPossession:
+    TackleIntensity: 0
+    OffsideTrap: 0
+    DefensiveWidth: 2
+    LowBlockLine: 0
+    LowBlockTransition: 2
+    FlankSpace: 2
+    MidBlockLine: 0
+    MidBlockTransition: 2
+    HighBlockLine: 0
+    HighBlockGKPress: 1
+    HighBlockDefendStyle: 2
+    HighBlockTransition: 2
